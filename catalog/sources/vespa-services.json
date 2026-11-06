@@ -1,0 +1,1503 @@
+{
+ "domain": "vespa-services",
+ "sources": [
+  {
+   "id": "padc-vespa-vims-satellites",
+   "name": "Cassini VIMS spectral cubes of Saturn's satellites (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/vims_satellites/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (vims_satellites.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/vims_satellites.epn_core"
+    }
+   ],
+   "targets": [
+    "saturn",
+    "titan",
+    "rhea",
+    "dione",
+    "iapetus",
+    "enceladus",
+    "mimas",
+    "tethys",
+    "phoebe",
+    "hyperion",
+    "epimetheus",
+    "janus",
+    "prometheus",
+    "pandora",
+    "pan"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "mwir"
+   ],
+   "formats": [
+    "ISIS3",
+    "PDS3"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "EPN-TAP service listing about 295,000 calibrated Cassini VIMS spectral cubes of Saturn's moons (Titan, Rhea, Dione, Iapetus, Enceladus, Mimas, Tethys, Phoebe, Hyperion and small moons). Cubes span roughly 0.35-5.1 micron and are given as ISIS3 or PDS files, with links to the University of Nantes VIMS site. Queries are open; no login.",
+   "tags": [
+    "vims",
+    "cassini",
+    "padc",
+    "nantes",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "calibrated"
+   ],
+   "temporal": "2004-2017",
+   "instruments": [
+    "VIMS"
+   ],
+   "missions": [
+    "Cassini-Huygens"
+   ]
+  },
+  {
+   "id": "padc-vespa-vvex",
+   "name": "VIRTIS Venus Express nominal mission (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/vvex/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (vvex.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/vvex.epn_core"
+    }
+   ],
+   "targets": [
+    "venus",
+    "earth",
+    "mars",
+    "mercury"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "spectra",
+    "imagery"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "swir",
+    "mwir"
+   ],
+   "formats": [
+    "PDS3"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "EPN-TAP index of about 46,000 Venus Express VIRTIS observations (spectral cubes and spectra) from the nominal mission, covering roughly 0.3-5 micron. Products are PDS files; a few entries are calibration observations of stars, Earth, Mars or Mercury. Open access.",
+   "tags": [
+    "virtis",
+    "venus express",
+    "vex",
+    "padc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "calibrated"
+   ],
+   "temporal": "2006-2014",
+   "instruments": [
+    "VIRTIS"
+   ],
+   "missions": [
+    "Venus Express"
+   ]
+  },
+  {
+   "id": "padc-vespa-usgs-wms",
+   "name": "USGS Astrogeology WMS map layers (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/usgs_wms/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (usgs_wms.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/usgs_wms.epn_core"
+    }
+   ],
+   "targets": [
+    "mercury",
+    "venus",
+    "earth",
+    "moon",
+    "mars",
+    "phobos",
+    "deimos",
+    "ceres",
+    "vesta",
+    "jupiter",
+    "io",
+    "europa",
+    "ganymede",
+    "callisto",
+    "saturn",
+    "mimas",
+    "enceladus",
+    "tethys",
+    "dione",
+    "rhea",
+    "titan",
+    "hyperion",
+    "iapetus",
+    "phoebe",
+    "uranus",
+    "neptune"
+   ],
+   "data_types": [
+    "map",
+    "mosaic",
+    "imagery",
+    "dem"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "formats": [
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "wms",
+    "web-ui"
+   ],
+   "description": "EPN-TAP catalogue of 55 USGS Astrogeology WMS map layers (global mosaics and base maps from THEMIS, MOLA, MDIS, Voyager, Cassini ISS, Dawn FC, SELENE TC and others) covering about 26 bodies from Mercury to Neptune. Granules point to WMS services so layers can be loaded in GIS or web maps. No login.",
+   "tags": [
+    "usgs",
+    "wms",
+    "astrogeology",
+    "basemap",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "mosaic",
+    "derived"
+   ]
+  },
+  {
+   "id": "padc-vespa-gaia-asteroids",
+   "name": "Gaia DR3 asteroid reflectance spectra (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/gaia_asteroids/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (gaia_asteroids.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/gaia_asteroids.epn_core"
+    }
+   ],
+   "targets": [
+    "asteroids",
+    "ceres",
+    "comets"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 60,500 BP/RP reflectance spectra of asteroids (plus a few comets and dwarf planets) from Gaia Data Release 3, 16 spectral points between about 374 and 1034 nm, derived as the ratio of asteroid flux to a solar-analogue flux. Spectra are served as VOTables through EPN-TAP. Open access.",
+   "tags": [
+    "gaia",
+    "dr3",
+    "reflectance",
+    "sso",
+    "padc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "2014-2017",
+   "instruments": [
+    "BP/RP"
+   ],
+   "missions": [
+    "Gaia"
+   ]
+  },
+  {
+   "id": "padc-vespa-m4ast",
+   "name": "M4AST asteroid spectra database (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/m4ast/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (m4ast.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/m4ast.epn_core"
+    }
+   ],
+   "targets": [
+    "asteroids",
+    "ceres"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "formats": [
+    "CSV",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "EPN-TAP view of the M4AST compiled database of about 6,300 asteroid spectra in the visible and near-infrared (0.33-4.1 micron), maintained with IMCCE. Spectra are delivered as plain-text and VOTable files. Open access.",
+   "tags": [
+    "m4ast",
+    "imcce",
+    "asteroid spectra",
+    "padc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ]
+  },
+  {
+   "id": "padc-vespa-spectro-asteroids",
+   "name": "Asteroid spectra from VizieR libraries (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/spectro_asteroids/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (spectro_asteroids.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/spectro_asteroids.epn_core"
+    }
+   ],
+   "targets": [
+    "asteroids",
+    "ceres"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "mwir",
+    "tir"
+   ],
+   "formats": [
+    "FITS",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "Compilation of about 6,400 asteroid spectra (visible to mid-infrared, around 0.3-13 micron) built from several VizieR catalogues, with reformatted VOTable or FITS files and thumbnails. Instruments include SpeX, X-Shooter, IRC and COMICS; ephemerides come from Miriade (IMCCE). Open access.",
+   "tags": [
+    "asteroid spectra",
+    "vizier",
+    "miriade",
+    "padc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ]
+  },
+  {
+   "id": "padc-vespa-spectro-planets",
+   "name": "Spectra of planets and satellites (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/spectro_planets/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (spectro_planets.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/spectro_planets.epn_core"
+    }
+   ],
+   "targets": [
+    "sun",
+    "mercury",
+    "venus",
+    "earth",
+    "moon",
+    "mars",
+    "ceres",
+    "jupiter",
+    "io",
+    "europa",
+    "ganymede",
+    "callisto",
+    "saturn",
+    "rhea",
+    "dione",
+    "titan",
+    "uranus",
+    "neptune",
+    "pluto"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "swir",
+    "mwir"
+   ],
+   "formats": [
+    "FITS",
+    "PDS3",
+    "CSV",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "Compilation of 136 global spectra of planets, satellites, Ceres, Pluto and the Sun in the visible and near-infrared for quick reference, from the Tohoku-Hiroshima-Nagoya Planet Spectra Library, USGS spectral libraries and others. Files are VOTable, FITS, PDS3-detached or text, with links to the originals. Open access.",
+   "tags": [
+    "planet spectra",
+    "thn",
+    "padc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "padc-vespa-vega-iks-halley",
+   "name": "Vega-1 IKS infrared spectra of comet Halley (VESPA EPN-TAP)",
+   "provider": "Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/iks/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (iks.epn_core)",
+     "url": "http://voparis-tap-planeto.obspm.fr/tableinfo/iks.epn_core"
+    }
+   ],
+   "targets": [
+    "halley"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "swir",
+    "mwir",
+    "tir"
+   ],
+   "formats": [
+    "CSV",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 200 radiance spectra of comet 1P/Halley (roughly 2.5-12 micron) from the IKS spectrometer on Vega-1, reformatted from the PDS Small Bodies Node data set and updated. Served as text and VOTable files via EPN-TAP. Open access.",
+   "tags": [
+    "iks",
+    "vega-1",
+    "halley",
+    "padc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "calibrated"
+   ],
+   "temporal": "1986",
+   "instruments": [
+    "IKS"
+   ],
+   "missions": [
+    "Vega 1"
+   ]
+  },
+  {
+   "id": "cdpp-vespa-illu67p",
+   "name": "Illumination maps of comet 67P (VESPA EPN-TAP)",
+   "provider": "CDPP, IRAP (Toulouse)",
+   "agency": [
+    "CDPP",
+    "IRAP",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://cdpp-epntap.irap.omp.eu/tableinfo/illu67p.epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "https://cdpp-epntap.irap.omp.eu/tap/capabilities"
+    },
+    {
+     "label": "VESPA portal",
+     "url": "https://vespa.obspm.fr/planetary/data/"
+    }
+   ],
+   "targets": [
+    "67p"
+   ],
+   "data_types": [
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "Modelled illumination maps of comet 67P/Churyumov-Gerasimenko computed from the Rosetta shape model, with about 189,000 granules (maps as JPEG, accompanying VOTables and thumbnails) covering 2014-2016 observing conditions. Useful for interpreting Rosetta imaging and spectroscopy. Open access.",
+   "tags": [
+    "rosetta",
+    "illumination",
+    "cdpp",
+    "irap",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "2014-2016",
+   "missions": [
+    "Rosetta"
+   ]
+  },
+  {
+   "id": "idoc-vespa-omega-maps",
+   "name": "OMEGA mineral maps of Mars (VESPA EPN-TAP)",
+   "provider": "IDOC / MEDOC, Institut d'Astrophysique Spatiale (IAS), Universite Paris-Saclay",
+   "agency": [
+    "IAS",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://idoc-dachs.ias.u-psud.fr/tableinfo/omega_maps.epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "https://idoc-dachs.ias.u-psud.fr/tap/capabilities"
+    },
+    {
+     "label": "VESPA portal",
+     "url": "https://vespa.obspm.fr/planetary/data/"
+    }
+   ],
+   "targets": [
+    "mars"
+   ],
+   "data_types": [
+    "map",
+    "hyperspectral"
+   ],
+   "spectral": [
+    "nir",
+    "swir"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "Ten Mars Express OMEGA mineral-abundance maps (FITS) served through the IAS IDOC EPN-TAP service, complementing the OMEGA L3 cubes in the same data centre. Open access.",
+   "tags": [
+    "omega",
+    "mars express",
+    "mineral maps",
+    "ias",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "instruments": [
+    "OMEGA"
+   ],
+   "missions": [
+    "Mars Express"
+   ]
+  },
+  {
+   "id": "idoc-vespa-gaia-dem",
+   "name": "SDO GAIA-DEM differential emission measure maps (VESPA EPN-TAP)",
+   "provider": "IDOC / MEDOC, Institut d'Astrophysique Spatiale (IAS), Universite Paris-Saclay",
+   "agency": [
+    "IAS",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://idoc/medoc/gaia_dem/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "https://idoc-dachs.ias.u-psud.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (gaia_dem.epn_core)",
+     "url": "https://idoc-dachs.ias.u-psud.fr/tableinfo/gaia_dem.epn_core"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "map",
+    "imagery"
+   ],
+   "spectral": [
+    "uv",
+    "xray"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 990,000 GAIA-DEM maps of the solar corona, modelling the differential emission measure from SDO/AIA EUV images, distributed as FITS through the MEDOC EPN-TAP service. Open access.",
+   "tags": [
+    "gaia-dem",
+    "sdo",
+    "aia",
+    "medoc",
+    "dem",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "2010-present",
+   "instruments": [
+    "AIA"
+   ],
+   "missions": [
+    "SDO"
+   ]
+  },
+  {
+   "id": "idoc-vespa-eit-syn",
+   "name": "EUV-SYN SoHO/EIT synchronous synoptic maps (VESPA EPN-TAP)",
+   "provider": "IDOC / MEDOC, Institut d'Astrophysique Spatiale (IAS), Universite Paris-Saclay",
+   "agency": [
+    "IAS",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://idoc/medoc/eit_syn/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "https://idoc-dachs.ias.u-psud.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (eit_syn.epn_core)",
+     "url": "https://idoc-dachs.ias.u-psud.fr/tableinfo/eit_syn.epn_core"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "map",
+    "mosaic"
+   ],
+   "spectral": [
+    "uv"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 18,500 synchronous synoptic EUV maps of the full solar sphere in heliographic coordinates, built from SoHO/EIT images in its four wavelength bands, served as FITS via MEDOC EPN-TAP. Open access.",
+   "tags": [
+    "eit",
+    "soho",
+    "euv-syn",
+    "medoc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "1996-2010",
+   "instruments": [
+    "EIT"
+   ],
+   "missions": [
+    "SOHO"
+   ]
+  },
+  {
+   "id": "idoc-vespa-synopticmaps",
+   "name": "SSA solar synoptic maps from HMI and AIA (VESPA EPN-TAP)",
+   "provider": "IDOC / MEDOC, Institut d'Astrophysique Spatiale (IAS), Universite Paris-Saclay",
+   "agency": [
+    "IAS",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://idoc-dachs.ias.u-psud.fr/tableinfo/synopticmaps.epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "https://idoc-dachs.ias.u-psud.fr/tap/capabilities"
+    },
+    {
+     "label": "VESPA portal",
+     "url": "https://vespa.obspm.fr/planetary/data/"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "map",
+    "imagery"
+   ],
+   "spectral": [
+    "uv",
+    "visible"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 109,000 solar synoptic maps (archived, nowcast and forecast types) from SDO/HMI and AIA produced in the IDOC Solar Systems Archive chain, as FITS with preview images, via MEDOC EPN-TAP. Open access.",
+   "tags": [
+    "synoptic maps",
+    "hmi",
+    "aia",
+    "ssa",
+    "medoc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "2012-present",
+   "instruments": [
+    "HMI",
+    "AIA"
+   ],
+   "missions": [
+    "SDO"
+   ]
+  },
+  {
+   "id": "latmos-vespa-spicam",
+   "name": "SPICAM Mars atmospheric profiles (VESPA EPN-TAP)",
+   "provider": "LATMOS, IPSL (Guyancourt)",
+   "agency": [
+    "LATMOS",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://latmos.ipsl/spicam/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://vo.projet.latmos.ipsl.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (spicam.epn_core)",
+     "url": "http://vo.projet.latmos.ipsl.fr/tableinfo/spicam.epn_core"
+    }
+   ],
+   "targets": [
+    "mars"
+   ],
+   "data_types": [
+    "atmosphere",
+    "spectra"
+   ],
+   "spectral": [
+    "uv"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 4,600 vertical profiles of Mars atmospheric CO2 density, temperature, ozone and aerosol extinction derived from Mars Express SPICAM UV stellar and solar occultations. Served as VOTables via EPN-TAP; also includes Mars Climate Database model comparison entries. Open access.",
+   "tags": [
+    "spicam",
+    "mars express",
+    "occultation",
+    "latmos",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "2004-2011",
+   "instruments": [
+    "SPICAM"
+   ],
+   "missions": [
+    "Mars Express"
+   ]
+  },
+  {
+   "id": "kis-vespa-chrotel",
+   "name": "ChroTel full-disk solar chromosphere images (VESPA EPN-TAP)",
+   "provider": "Leibniz-Institut fuer Sonnenphysik (KIS) Science Data Centre",
+   "agency": [
+    "KIS",
+    "Europlanet"
+   ],
+   "country": [
+    "Germany"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://leibniz-kis/chrotel/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://dachs.sdc.leibniz-kis.de/tap/capabilities"
+    },
+    {
+     "label": "Table description (chrotel.epn_core)",
+     "url": "http://dachs.sdc.leibniz-kis.de/tableinfo/chrotel.epn_core"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 260,000 full-disk images of the solar chromosphere from the Chromospheric Telescope (ChroTel, Teide Observatory, Tenerife) in Ca II K, H-alpha and He I 10830, cadence down to one minute. Data are delivered as tar archives through EPN-TAP. Open access.",
+   "tags": [
+    "chrotel",
+    "chromosphere",
+    "teide",
+    "kis",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "calibrated"
+   ],
+   "temporal": "2012-2020",
+   "instruments": [
+    "ChroTel"
+   ]
+  },
+  {
+   "id": "kis-vespa-gris",
+   "name": "GREGOR GRIS infrared solar spectro-polarimetric scans (VESPA EPN-TAP)",
+   "provider": "Leibniz-Institut fuer Sonnenphysik (KIS) Science Data Centre",
+   "agency": [
+    "KIS",
+    "Europlanet"
+   ],
+   "country": [
+    "Germany"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://leibniz-kis/gris/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://dachs.sdc.leibniz-kis.de/tap/capabilities"
+    },
+    {
+     "label": "Table description (gris.epn_core)",
+     "url": "http://dachs.sdc.leibniz-kis.de/tableinfo/gris.epn_core"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "spectra",
+    "polarimetry"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 1,250 slit-scan datasets from the GREGOR Infrared Spectrograph (GRIS) with TIP-II covering roughly 1.08-1.57 micron, for photosphere and chromosphere studies; slit about 60 arcsec with 0.13 arcsec sampling. Delivered as tar archives via EPN-TAP. Open access.",
+   "tags": [
+    "gris",
+    "gregor",
+    "tip-ii",
+    "kis",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "temporal": "2014-2021",
+   "instruments": [
+    "GRIS"
+   ]
+  },
+  {
+   "id": "kis-vespa-lars",
+   "name": "LARS absolutely calibrated solar spectra (VESPA EPN-TAP)",
+   "provider": "Leibniz-Institut fuer Sonnenphysik (KIS) Science Data Centre",
+   "agency": [
+    "KIS",
+    "Europlanet"
+   ],
+   "country": [
+    "Germany"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://leibniz-kis/lars/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://dachs.sdc.leibniz-kis.de/tap/capabilities"
+    },
+    {
+     "label": "Table description (lars.epn_core)",
+     "url": "http://dachs.sdc.leibniz-kis.de/tableinfo/lars.epn_core"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 610 absolutely calibrated high-resolution solar spectra (roughly 480-750 nm) from the Laser Absolute Reference Spectrograph at the Vacuum Tower Telescope, Tenerife; data become public one year after observation. Delivered as tar archives via EPN-TAP.",
+   "tags": [
+    "lars",
+    "vtt",
+    "teide",
+    "kis",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "calibrated"
+   ],
+   "temporal": "2016-2018",
+   "instruments": [
+    "LARS"
+   ]
+  },
+  {
+   "id": "aisas-vespa-comps-lso",
+   "name": "CoMP-S coronagraphic spectro-polarimetric data, Lomnicky Peak (VESPA EPN-TAP)",
+   "provider": "Lomnicky Peak Observatory, Astronomical Institute of the Slovak Academy of Sciences",
+   "agency": [
+    "AISAS",
+    "Europlanet"
+   ],
+   "country": [
+    "Slovakia"
+   ],
+   "kind": "archive",
+   "url": "http://193.87.1.40:8080/tableinfo/lso.epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://193.87.1.40:8080/tap/capabilities"
+    },
+    {
+     "label": "VESPA portal",
+     "url": "https://vespa.obspm.fr/planetary/data/"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "imagery",
+    "polarimetry"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 9,800 coronal and prominence data cubes from CoMP-S, a spectro-polarimeter with a 4-stage Lyot filter on the Zeiss coronagraph at Lomnicky Peak Observatory, observing emission lines in visible and near-infrared. Served as packed FITS via EPN-TAP. Open access; the service sits on a bare IP address and may be unavailable at times.",
+   "tags": [
+    "comp-s",
+    "lso",
+    "coronagraph",
+    "lomnicky",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "temporal": "2025-present",
+   "instruments": [
+    "CoMP-S"
+   ]
+  },
+  {
+   "id": "rob-vespa-uset-sunspot-groups",
+   "name": "USET sunspot group catalogue and drawings (VESPA EPN-TAP)",
+   "provider": "Royal Observatory of Belgium (SIDC / USET)",
+   "agency": [
+    "ROB",
+    "Europlanet"
+   ],
+   "country": [
+    "Belgium"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://ksb-orb.dc/uset_sunspot_group/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "https://vo-tap.oma.be/tap/capabilities"
+    },
+    {
+     "label": "Table description (uset_sunspot_group.epn_core)",
+     "url": "https://vo-tap.oma.be/tableinfo/uset_sunspot_group.epn_core"
+    }
+   ],
+   "targets": [
+    "sun"
+   ],
+   "data_types": [
+    "imagery",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "formats": [
+    "PNG",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 109,000 sunspot-group records derived from daily solar drawings of the Uccle Solar Equatorial Table (USET), with PNG and JPEG images; the catalogue spans more than eight decades and is updated daily. Open access.",
+   "tags": [
+    "uset",
+    "sunspots",
+    "uccle",
+    "sidc",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "derived"
+   ],
+   "temporal": "1940s-present",
+   "instruments": [
+    "USET"
+   ]
+  },
+  {
+   "id": "amu-vespa-parsec",
+   "name": "Europlanet Telescope Network (PARSEC) observation database (VESPA EPN-TAP)",
+   "provider": "Adam Mickiewicz University (Poznan), Europlanet Telescope Network",
+   "agency": [
+    "AMU",
+    "Europlanet"
+   ],
+   "country": [
+    "Poland"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://aoi.amu.parsec/parsec/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://parsec-europlanet.eu:81/tap/capabilities"
+    },
+    {
+     "label": "Table description (parsec.epn_core)",
+     "url": "http://parsec-europlanet.eu:81/tableinfo/parsec.epn_core"
+    }
+   ],
+   "targets": [
+    "asteroids"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 4,500 FITS CCD images from Europlanet Telescope Network members, mostly asteroid and exoplanet-transit follow-up observations (also Gaia alerts) from 2020-2023. Open access; the host uses a non-standard port 81.",
+   "tags": [
+    "parsec",
+    "europlanet telescope network",
+    "amu",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "levels": [
+    "raw"
+   ],
+   "temporal": "2020-2023"
+  },
+  {
+   "id": "nancay-vespa-nda",
+   "name": "Nancay Decameter Array radio observations of Jupiter and the Sun (VESPA EPN-TAP)",
+   "provider": "Station de Radioastronomie de Nancay, Observatoire de Paris - PSL",
+   "agency": [
+    "Observatoire de Paris",
+    "CNRS",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.nancay/nda/q/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://vogate.obs-nancay.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (nda.epn_core)",
+     "url": "http://vogate.obs-nancay.fr/tableinfo/nda.epn_core"
+    }
+   ],
+   "targets": [
+    "jupiter",
+    "sun"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "radio"
+   ],
+   "formats": [
+    "FITS",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 36,600 dynamic spectra of decametric radio emission (5-80 MHz) from Jupiter and the Sun recorded since 1990 with the Nancay Decameter Array, a phased array of 144 helicoidal antennas with both polarisations. Files in FITS and CDF. Open access.",
+   "tags": [
+    "nda",
+    "nancay",
+    "decametric",
+    "jupiter radio",
+    "maser",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "temporal": "1990-present",
+   "instruments": [
+    "NDA"
+   ]
+  },
+  {
+   "id": "maser-vespa-cassini-rpws-kronos",
+   "name": "Cassini RPWS Kronos radio database (VESPA EPN-TAP)",
+   "provider": "MASER / Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "http://voparis-tap-maser.obspm.fr/tableinfo/cassini_rpws.epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-maser.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "VESPA portal",
+     "url": "https://vespa.obspm.fr/planetary/data/"
+    }
+   ],
+   "targets": [
+    "saturn",
+    "jupiter",
+    "venus",
+    "earth",
+    "sun"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "radio"
+   ],
+   "formats": [
+    "PNG",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "About 1.6 million granules of the Kronos database of Cassini RPWS/HFR radio data (3.5 kHz-16 MHz), covering Saturn kilometric radiation and Jupiter, Venus, Earth and solar bursts, delivered as plots (PNG/GIF/PDF), text and binary products. Open access.",
+   "tags": [
+    "rpws",
+    "kronos",
+    "cassini",
+    "skr",
+    "maser",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "temporal": "1997-2017",
+   "instruments": [
+    "RPWS"
+   ],
+   "missions": [
+    "Cassini-Huygens"
+   ]
+  },
+  {
+   "id": "maser-vespa-voyager-pra",
+   "name": "Voyager Planetary Radio Astronomy datasets (VESPA EPN-TAP)",
+   "provider": "MASER / Paris Astronomical Data Centre (PADC), Observatoire de Paris - PSL",
+   "agency": [
+    "PADC",
+    "Observatoire de Paris",
+    "Europlanet"
+   ],
+   "country": [
+    "France"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.maser/voyager_pra/epn/epn_core",
+   "links": [
+    {
+     "label": "TAP endpoint (EPN-TAP)",
+     "url": "http://voparis-tap-maser.obspm.fr/tap/capabilities"
+    },
+    {
+     "label": "Table description (voyager_pra.epn_core)",
+     "url": "http://voparis-tap-maser.obspm.fr/tableinfo/voyager_pra.epn_core"
+    }
+   ],
+   "targets": [
+    "jupiter",
+    "saturn",
+    "uranus",
+    "neptune"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "radio"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "description": "Catalogue of 17 Voyager PRA datasets (1.2 kHz-1.3 MHz) of radio emissions at Jupiter, Saturn, Uranus and Neptune, originally published by PDS, NSSDC, GSFC, University of Iowa and CNES/SERAD. Served as binary files. Open access.",
+   "tags": [
+    "voyager",
+    "pra",
+    "planetary radio astronomy",
+    "maser",
+    "epn-tap",
+    "vespa"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05",
+   "temporal": "1979-1989",
+   "instruments": [
+    "PRA"
+   ],
+   "missions": [
+    "Voyager"
+   ]
+  }
+ ]
+}

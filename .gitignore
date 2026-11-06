@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+cache/
+tests/data/*
+# viewer test sources live next to their generated rasters
+!tests/data/viewer/
+tests/data/viewer/*
+!tests/data/viewer/*.py
+!tests/data/viewer/*.mjs
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+catalog/user/

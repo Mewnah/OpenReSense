@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenReSense</title>
+  <link rel="stylesheet" href="/vendor/ol/ol.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/explore.css">
+  <link rel="stylesheet" href="css/viewer.css">
+  <link rel="stylesheet" href="css/globe.css">
+  <script>window.CESIUM_BASE_URL = '/vendor/cesium/';</script>
+  <script src="/vendor/proj4/proj4.js"></script>
+  <script src="/vendor/ol/dist/ol.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#explore">Open<b>ReSense</b></a>
+    <nav class="tabs" aria-label="Main">
+      <a href="#explore" data-tab="explore">Explore</a>
+      <a href="#search" data-tab="search">Search</a>
+      <a href="#viewer" data-tab="viewer">Viewer</a>
+    </nav>
+    <div class="topbar-right">
+      <button class="btn ghost" id="settings-btn" title="Settings" aria-label="Settings">⚙</button>
+    </div>
+  </header>
+  <main>
+    <section id="tab-explore" class="tab"></section>
+    <section id="tab-search" class="tab" hidden></section>
+    <section id="tab-viewer" class="tab" hidden></section>
+  </main>
+  <dialog id="settings-dlg" class="dlg">
+    <form method="dialog">
+      <h3>Settings</h3>
+      <label>NASA Earthdata token <span class="muted">(for downloading CMR / ASF / DAAC data; create one at urs.earthdata.nasa.gov → Generate Token)</span>
+        <input class="input" name="earthdata_token" type="password" autocomplete="off" placeholder="not set">
+      </label>
+      <p class="muted">Stored only on this computer in cache/settings.json.</p>
+      <div class="row end">
+        <button class="btn" value="cancel">Cancel</button>
+        <button class="btn primary" value="save">Save</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

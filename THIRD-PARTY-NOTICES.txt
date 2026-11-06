@@ -1,0 +1,61 @@
+OpenReSense is MIT-licensed (see LICENSE). Its Windows releases (installer and portable zip) also contain the
+third-party software below, each under its own license. This is a summary; the full license texts ship with the
+components where noted, and the upstream projects publish them all.
+
+PYTHON
+  CPython 3.12 (embeddable package)   PSF License 2.0, with the notices of the libraries it bundles (OpenSSL,
+                                      libffi, SQLite, zlib, bzip2, XZ, expat, ...)       python\LICENSE.txt
+
+PYTHON PACKAGES (python\Lib\site-packages; each package's license is in its *.dist-info folder)
+  rasterio, numpy, pandas, astropy, h5py, pyhdf, pyproj, pdr, Pillow, fastapi, starlette, uvicorn, httpx, httpcore,
+  pydantic and their dependencies: BSD, MIT, Apache-2.0, PSF and similar permissive licenses.
+
+NATIVE LIBRARIES BUNDLED INSIDE THOSE PACKAGES (python\Lib\site-packages\*.libs, h5py)
+  GDAL                           MIT                      https://gdal.org
+  GEOS (geos, geos_c)            LGPL-2.1-or-later        https://libgeos.org   source: https://github.com/libgeos/geos
+  PROJ                           MIT                      https://proj.org
+  libgeotiff                     MIT                      https://github.com/OSGeo/libgeotiff
+  libtiff                        libtiff (BSD-style)      https://libtiff.gitlab.io/libtiff/
+  libjpeg-turbo / IJG libjpeg    IJG and BSD-3-Clause     https://libjpeg-turbo.org
+  libpng                         libpng license           http://www.libpng.org
+  giflib                         MIT                      https://giflib.sourceforge.net
+  libwebp, libsharpyuv           BSD-3-Clause             https://chromium.googlesource.com/webm/libwebp
+  OpenJPEG                       BSD-2-Clause             https://www.openjpeg.org
+  LERC                           Apache-2.0               https://github.com/Esri/lerc
+  HDF5 (hdf5, hdf5_hl)           HDF5 license (BSD-style) https://www.hdfgroup.org
+  HDF4 (hdf, mfhdf, xdr)         HDF4 license (BSD-style) https://www.hdfgroup.org
+  szip                           BSD-style                https://www.hdfgroup.org
+  netCDF-C                       BSD-3-Clause (UCAR)      https://www.unidata.ucar.edu/software/netcdf/
+  SQLite                         Public domain            https://sqlite.org
+  SpatiaLite                     MPL-1.1 (tri-licensed MPL-1.1 / GPL-2.0+ / LGPL-2.1+; used under MPL-1.1)
+                                                          https://www.gaia-gis.it/fossil/libspatialite
+  FreeXL                         MPL-1.1 (same tri-license; used under MPL-1.1)
+                                                          https://www.gaia-gis.it/fossil/freexl
+  libpq (PostgreSQL client)      PostgreSQL License       https://www.postgresql.org
+  libcurl                        curl license (MIT-style) https://curl.se
+  OpenSSL 3 (libcrypto, libssl)  Apache-2.0               https://www.openssl.org
+  libxml2                        MIT                      https://gitlab.gnome.org/GNOME/libxml2
+  expat                          MIT                      https://libexpat.github.io
+  json-c                         MIT                      https://github.com/json-c/json-c
+  PCRE2                          BSD-3-Clause             https://www.pcre.org
+  libiconv                       LGPL-2.1-or-later        https://www.gnu.org/software/libiconv/
+  minizip, zlib                  zlib license             https://zlib.net
+  tinyxml2                       zlib license             https://github.com/leethomason/tinyxml2
+  zstd                           BSD-3-Clause             https://facebook.github.io/zstd/
+  XZ Utils (liblzma)             0BSD                     https://tukaani.org/xz/
+  Qhull                          Qhull license            http://www.qhull.org
+  OpenBLAS                       BSD-3-Clause             https://www.openblas.net
+  Microsoft Visual C++ runtime (msvcp140)  redistributed under the Visual Studio redistribution terms
+
+  GEOS and libiconv are LGPL libraries. They are used unmodified, as separate DLLs that can be replaced with
+  compatible builds; their source code is available at the addresses above.
+
+WEB LIBRARIES (node_modules)
+  OpenLayers                     BSD-2-Clause             node_modules\ol\LICENSE.md
+  CesiumJS                       Apache-2.0, with the notices of its bundled libraries   node_modules\cesium\LICENSE.md
+  proj4js                        MIT                      node_modules\proj4\LICENSE.md
+
+IMAGES
+  Body thumbnails in web\img\bodies are NASA, JPL, USGS and JHUAPL public-domain images and ESA images, each listed
+  with its author and source in web\img\bodies\CREDITS.md. Two are CC BY-SA 3.0 IGO: 67P/Churyumov-Gerasimenko
+  (ESA/Rosetta/NAVCAM) and (2867) Steins (ESA/OSIRIS Team MPS/UPD/LAM/IAA/RSSD/INTA/UPM/DASP/IDA).

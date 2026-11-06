@@ -1,0 +1,3447 @@
+{
+  "domain": "moon",
+  "sources": [
+    {
+      "id": "alsj-afj",
+      "name": "Apollo Lunar Surface Journal and Flight Journal",
+      "provider": "NASA History Office",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "catalog",
+      "url": "https://www.nasa.gov/history/alsj-and-afj/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Apollo"
+      ],
+      "data_types": [
+        "imagery",
+        "historical",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Annotated mission journals with image indexes, panoramas and mapping links for the Apollo landing and orbital missions; useful for locating specific frames and sites.",
+      "tags": [
+        "alsj",
+        "afj",
+        "apollo journal"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "apollo-image-archive-asu",
+      "name": "Apollo Image Archive (ASU)",
+      "provider": "Arizona State University School of Earth and Space Exploration",
+      "agency": [
+        "ASU",
+        "NASA"
+      ],
+      "kind": "archive",
+      "url": "https://apollo.im-ldi.com/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Apollo 11-17"
+      ],
+      "instruments": [
+        "Hasselblad",
+        "Metric camera",
+        "Panoramic camera"
+      ],
+      "data_types": [
+        "imagery",
+        "historical",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "TIFF",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1969-1972",
+      "description": "High-resolution scans of Apollo film: Hasselblad surface/orbital frames, Metric (mapping) and Panoramic camera images. Browse by mission/magazine/frame and download scans. apollo.sese.asu.edu redirects here.",
+      "tags": [
+        "apollo",
+        "film scans",
+        "hasselblad",
+        "metric",
+        "panoramic",
+        "asu"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Formats approximate."
+    },
+    {
+      "id": "astropedia-clementine-uvvis-mosaic",
+      "name": "Clementine UVVIS global mosaic 118 m (USGS Astropedia)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/moon_clementine_uvvis_global_mosaic_118m",
+      "links": [
+        {
+          "label": "Lunar Orbiter + Clementine hybrid 59 m",
+          "url": "https://astrogeology.usgs.gov/search/map/moon_lunar_orbiter_clementine_uvvisv2_hybrid_mosaic_59m"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Clementine"
+      ],
+      "instruments": [
+        "UVVIS"
+      ],
+      "data_types": [
+        "mosaic",
+        "multispectral",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "uv",
+        "nir"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "118 m/px",
+      "description": "Global monochrome Clementine UVVIS mosaic at 118 m/px; sibling 750 nm and 5-band warped mosaics and a Lunar Orbiter + Clementine hybrid are listed in Astropedia. Public domain; large downloads.",
+      "tags": [
+        "clementine",
+        "uvvis",
+        "750nm",
+        "color mosaic"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Formats approximate."
+    },
+    {
+      "id": "astropedia-kaguya-tc-ortho",
+      "name": "Kaguya TC global orthomosaic and morning/evening mosaics (474 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS",
+        "JAXA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/moon_selene_kaguya_tc_global_orthomosaic_474m",
+      "links": [
+        {
+          "label": "TC morning/evening mosaics",
+          "url": "https://astrogeology.usgs.gov/search/map/moon-kaguya-tc-global-mosaic"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SELENE (Kaguya)"
+      ],
+      "instruments": [
+        "TC"
+      ],
+      "data_types": [
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "474 m/px",
+      "description": "Global monochrome Kaguya Terrain Camera orthomosaic at 474 m/px with companion low-Sun morning and evening mosaics, useful for morphology.",
+      "tags": [
+        "kaguya tc",
+        "orthomosaic"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "astropedia-lola-dem-118m",
+      "name": "Moon LRO LOLA DEM 118 m (Astropedia)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/moon_lro_lola_dem_118m",
+      "links": [
+        {
+          "label": "Astropedia Moon listing",
+          "url": "https://astrogeology.usgs.gov/search?pmi-target=moon"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LOLA"
+      ],
+      "data_types": [
+        "dem",
+        "altimetry",
+        "map"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "118 m/px",
+      "description": "Global LOLA digital elevation model at 118 m/px (256 ppd) packaged by USGS Astropedia; hillshade and color products are listed in the same catalog.",
+      "tags": [
+        "lola dem",
+        "astropedia"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "astropedia-sldem2015",
+      "name": "SLDEM2015 - LOLA + Kaguya TC merged DEM (59 m, 60N-60S)",
+      "provider": "USGS Astrogeology / NASA GSFC / JAXA",
+      "agency": [
+        "USGS",
+        "NASA",
+        "JAXA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/moon_lro_lola_selene_kaguya_tc_dem_merge_60n60s_59m",
+      "links": [
+        {
+          "label": "Shaded relief merge",
+          "url": "https://astrogeology.usgs.gov/search/map/moon_lro_lola_selene_kaguya_tc_shaded_relief_merge_60n60s_59m"
+        },
+        {
+          "label": "SLDEM2015 tiles (MIT)",
+          "url": "https://imbrium.mit.edu/BROWSE/SLDEM2015/"
+        },
+        {
+          "label": "ODE SLDEM page",
+          "url": "https://ode.rsl.wustl.edu/moon/pagehelp/Content/Missions_Instruments/LRO/LOLA/SLDEM.htm"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter",
+        "SELENE (Kaguya)"
+      ],
+      "instruments": [
+        "LOLA",
+        "TC"
+      ],
+      "data_types": [
+        "dem",
+        "altimetry",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "JP2",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "59 m/px",
+      "description": "Merged global DEM of LOLA heights and Kaguya TC stereo DTMs between 60N and 60S at 512 ppd (~59 m/px), about 22 GB. Also available from the LOLA PDS node as PDS IMG and JP2 tiles.",
+      "tags": [
+        "sldem",
+        "sldem2015",
+        "merged dem"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "astropedia-unified-geologic-map",
+      "name": "Unified Geologic Map of the Moon 1:5M (2020)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS",
+        "LPI"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/unified_geologic_map_of_the_moon_1_5m_2020",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Digital global geologic map of the Moon combining six Apollo-era regional maps (April 2020), as a GIS package (zip, Esri formats), with PDF and JPEG versions. CC0.",
+      "tags": [
+        "geologic map",
+        "fortezzo",
+        "gis"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Vector GIS package; format approximate."
+    },
+    {
+      "id": "asu-clementine-color",
+      "name": "Clementine color images of the Moon (ASU SER)",
+      "provider": "Arizona State University School of Earth and Space Exploration",
+      "agency": [
+        "ASU"
+      ],
+      "kind": "dataset",
+      "url": "https://ser.im-ldi.com/MOON/clem_color.html",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Clementine"
+      ],
+      "data_types": [
+        "multispectral",
+        "map",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "ASU page of Clementine color (ratio/composite) products with links to Lunar Orbiter, Apollo and LROC resources hosted by the same group.",
+      "tags": [
+        "clementine",
+        "color ratio"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Product formats not enumerated."
+    },
+    {
+      "id": "asu-lroc-data-node",
+      "name": "LROC Data Node (ASU) - NAC/WAC image search and RDR products",
+      "provider": "Arizona State University (LROC Science Operations Center)",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "archive",
+      "url": "https://data.lroc.im-ldi.com/lroc",
+      "links": [
+        {
+          "label": "LROC main site",
+          "url": "https://lroc.im-ldi.com/"
+        },
+        {
+          "label": "Image search",
+          "url": "https://data.lroc.im-ldi.com/lroc/search"
+        },
+        {
+          "label": "LROC PDS archive",
+          "url": "https://pds.lroc.im-ldi.com/data/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter",
+        "LRO"
+      ],
+      "instruments": [
+        "LROC NAC",
+        "LROC WAC"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "dem",
+        "stereo"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "JP2",
+        "GeoTIFF",
+        "PNG",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "wms"
+      ],
+      "resolution": "0.5-2 m/px (NAC); ~100 m/px global (WAC)",
+      "temporal": "2009-present",
+      "description": "Search interface for Lunar Reconnaissance Orbiter Camera Narrow Angle (NAC) and Wide Angle (WAC) images and derived RDR products (mosaics, DTMs). Images can be found by map, coordinates or product id and downloaded as raw EDR or calibrated/map-projected products. The former wms.lroc.asu.edu host now redirects here.",
+      "tags": [
+        "lroc",
+        "nac",
+        "wac",
+        "lro",
+        "asu",
+        "lunar reconnaissance orbiter camera"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "asu-lunaserv",
+      "name": "Lunaserv Global Explorer (ASU map server)",
+      "provider": "Arizona State University (SOC)",
+      "agency": [
+        "ASU"
+      ],
+      "kind": "map-service",
+      "url": "https://data.im-ldi.com/lunaserv.html",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "mosaic",
+        "map",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "wms",
+        "wmts",
+        "web-ui"
+      ],
+      "description": "Map server hosting ShadowCam, LROC and other lunar layers; entry point to ASU web map services.",
+      "tags": [
+        "lunaserv",
+        "wms",
+        "asu"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Service types inferred from page title; confirm capabilities."
+    },
+    {
+      "id": "chandrayaan1-pds-geosciences",
+      "name": "Chandrayaan-1 - PDS Geosciences Node (M3, Mini-SAR)",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS",
+        "ISRO"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/chandrayaan1/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Chandrayaan-1"
+      ],
+      "instruments": [
+        "M3",
+        "Mini-SAR"
+      ],
+      "data_types": [
+        "hyperspectral",
+        "sar",
+        "radar",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2008-2009",
+      "description": "NASA-hosted Chandrayaan-1 payload data including the Moon Mineralogy Mapper (M3) and Mini-SAR as PDS3 products; also searchable via ODE.",
+      "tags": [
+        "chandrayaan-1",
+        "m3",
+        "mini-sar",
+        "moon mineralogy mapper"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "china-vo-ce3-pcam",
+      "name": "Chang'e-3 Yutu Panoramic Camera data (China-VO)",
+      "provider": "China-VO / NAOC",
+      "agency": [
+        "NAOC"
+      ],
+      "country": [
+        "China"
+      ],
+      "kind": "dataset",
+      "url": "https://casdc.china-vo.org/archive/change3/p.html",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Chang'e-3"
+      ],
+      "instruments": [
+        "PCAM"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2013-2014",
+      "description": "Page of Chang'e-3 Yutu rover panoramic camera (PCAM) data from the China Astronomical Data Center.",
+      "tags": [
+        "chang'e 3",
+        "yutu",
+        "pcam"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Formats approximate."
+    },
+    {
+      "id": "clementine-pds-geosciences",
+      "name": "Clementine - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/clementine/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Clementine"
+      ],
+      "data_types": [
+        "altimetry",
+        "radar",
+        "map"
+      ],
+      "spectral": [
+        "radio",
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Geosciences Node pages for Clementine derived, altimetry and bistatic radar data, with links to related products.",
+      "tags": [
+        "clementine",
+        "lidar",
+        "bistatic"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Holdings not itemised; page confirmed to load."
+    },
+    {
+      "id": "clementine-pds-imaging",
+      "name": "Clementine - PDS Imaging Node data bundle",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+      "agency": [
+        "NASA",
+        "JPL",
+        "USGS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/clementine.html",
+      "links": [
+        {
+          "label": "Clementine mission portal",
+          "url": "https://pds-imaging.jpl.nasa.gov/portal/clementine_mission.html"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Clementine"
+      ],
+      "instruments": [
+        "UVVIS",
+        "NIR",
+        "HIRES",
+        "LWIR"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "mosaic",
+        "thermal"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "IMQ",
+        "VICAR",
+        "ISIS2"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "resolution": "~100-200 m/px (UVVIS/NIR)",
+      "temporal": "1994",
+      "description": "Clementine (1994) UVVIS, NIR, HIRES, LWIR and star tracker imagery, plus map-projected basemaps and the UVVIS digital image model. Notable for multispectral global coverage.",
+      "tags": [
+        "clementine",
+        "dsps",
+        "uvvis",
+        "nir"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Formats approximate.",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "clpds-change",
+      "name": "Lunar and Planetary Data Release System (CLPDS, NAOC)",
+      "provider": "National Astronomical Observatories, CAS / CNSA",
+      "agency": [
+        "CNSA",
+        "NAOC"
+      ],
+      "country": [
+        "China"
+      ],
+      "kind": "archive",
+      "url": "https://moon.bao.ac.cn/",
+      "links": [
+        {
+          "label": "CE-5 section",
+          "url": "https://moon.bao.ac.cn/ce5web/index_en.jsp"
+        },
+        {
+          "label": "CE-3 PCAM (China-VO)",
+          "url": "https://casdc.china-vo.org/archive/change3/p.html"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Chang'e-1",
+        "Chang'e-2",
+        "Chang'e-3",
+        "Chang'e-4",
+        "Chang'e-5",
+        "Chang'e-6"
+      ],
+      "instruments": [
+        "CCD stereo camera",
+        "PCAM",
+        "VNIS",
+        "LPR",
+        "landing camera"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "dem",
+        "stereo",
+        "hyperspectral",
+        "radar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS4",
+        "PNG"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Official release system for Chang'e-1 through Chang'e-6 and Yutu/Yutu-2 data in PDS4: CCD stereo images, global DOM/DEM products, lander/rover cameras (PCAM, VNIS, terrain and landing cameras) and LPR radar. Interface is chiefly Chinese and downloads normally require account registration.",
+      "tags": [
+        "chang'e",
+        "change",
+        "chang e",
+        "yutu",
+        "clpds",
+        "naoc",
+        "gras"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Registration requirement unconfirmed (page is JS-rendered)."
+    },
+    {
+      "id": "cnsa-clep-news",
+      "name": "CNSA / China Lunar Exploration Program image releases",
+      "provider": "China National Space Administration",
+      "agency": [
+        "CNSA"
+      ],
+      "country": [
+        "China"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.cnsa.gov.cn/english/",
+      "links": [
+        {
+          "label": "CLEP site",
+          "url": "https://www.clep.org.cn/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Chang'e-4",
+        "Chang'e-5",
+        "Chang'e-6"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "CNSA English site for official Chang'e mission news and image releases; scientific datasets are released through CLPDS rather than this site.",
+      "tags": [
+        "cnsa",
+        "clep",
+        "chang'e 6",
+        "far side"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "darts-selene",
+      "name": "SELENE (Kaguya) data archive (DARTS)",
+      "provider": "JAXA ISAS / SELENE Data Archive",
+      "agency": [
+        "JAXA"
+      ],
+      "kind": "archive",
+      "url": "https://darts.isas.jaxa.jp/planet/pdap/selene/",
+      "targets": [
+        "moon"
+      ],
+      "description": "Level 2 products of the Kaguya (SELENE) lunar orbiter: Terrain Camera and Multiband Imager images, spectral profiler, lunar radar sounder, laser altimeter, gamma-ray and magnetometer data, with a map-based search tool. PDS3-style products; open download.",
+      "links": [
+        {
+          "label": "SELENE PDAP search app",
+          "url": "https://darts.isas.jaxa.jp/en/app/about/pdap-selene-app"
+        },
+        {
+          "label": "PDS3 file tree",
+          "url": "https://data.darts.isas.jaxa.jp/pub/pds3/"
+        },
+        {
+          "label": "Kaguya (JAXA)",
+          "url": "https://www.kaguya.jaxa.jp/"
+        },
+        {
+          "label": "DARTS SELENE project page",
+          "url": "https://darts.isas.jaxa.jp/planet/project/selene/"
+        }
+      ],
+      "access": "open",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "SELENE/Kaguya",
+        "SELENE (Kaguya)"
+      ],
+      "instruments": [
+        "TC",
+        "MI",
+        "SP",
+        "LRS",
+        "LALT",
+        "GRS",
+        "LISM",
+        "HDTV"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "spectra",
+        "dem",
+        "altimetry",
+        "radar",
+        "xray-gamma",
+        "stereo",
+        "hyperspectral",
+        "video",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar",
+        "gamma",
+        "swir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "IMQ",
+        "JP2",
+        "MP4"
+      ],
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "resolution": "TC 10 m/px; MI 20-62 m/px",
+      "temporal": "2007-2009",
+      "tags": [
+        "kaguya",
+        "selene",
+        "terrain camera",
+        "multiband imager",
+        "spectral profiler",
+        "darts"
+      ],
+      "verified": "2026-11-05",
+      "connector": "ode"
+    },
+    {
+      "id": "esa-psa-smart1",
+      "name": "SMART-1 data - ESA Planetary Science Archive",
+      "provider": "ESA PSA",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://psa.esa.int/psa/",
+      "links": [
+        {
+          "label": "SMART-1 (Cosmos)",
+          "url": "https://www.cosmos.esa.int/web/smart-1"
+        },
+        {
+          "label": "SMART-1 mission page",
+          "url": "https://www.esa.int/missions/about-us/directorates/science/smart-1/smart-1"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SMART-1"
+      ],
+      "instruments": [
+        "AMIE",
+        "SIR",
+        "D-CIXS",
+        "XSM"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap",
+        "ftp"
+      ],
+      "temporal": "2004-2006",
+      "description": "ESA PSA hosts SMART-1 AMIE camera images, D-CIXS and XSM X-ray, and SIR near-infrared spectrometer data (lunar orbit 2004-2006). Select SMART-1 in the PSA mission list.",
+      "tags": [
+        "smart-1",
+        "amie",
+        "psa",
+        "esa"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "firefly-blue-ghost-1",
+      "name": "Firefly Blue Ghost Mission 1 lunar lander",
+      "provider": "Firefly Aerospace",
+      "agency": [
+        "Firefly Aerospace",
+        "NASA"
+      ],
+      "kind": "raw-feed",
+      "url": "https://fireflyspace.com/missions/blue-ghost-mission-1/",
+      "targets": [
+        "moon"
+      ],
+      "description": "Blue Ghost Mission 1 landed in Mare Crisium in March 2025 under NASA's CLPS programme; Firefly published surface images, time-lapses and an eclipse sequence. Payload science data go to NASA PDS.",
+      "access": "open",
+      "country": [
+        "USA"
+      ],
+      "missions": [
+        "Blue Ghost Mission 1"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "temporal": "2025",
+      "tags": [
+        "firefly",
+        "blue ghost",
+        "clps",
+        "mare crisium"
+      ],
+      "verified": "2026-11-05",
+      "formats": [
+        "JPEG",
+        "MP4"
+      ]
+    },
+    {
+      "id": "grail-pds-geosciences",
+      "name": "GRAIL lunar gravity - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL) / MIT",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/grail/default.htm",
+      "links": [
+        {
+          "label": "GRAIL directory",
+          "url": "https://pds-geosciences.wustl.edu/grail/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "GRAIL"
+      ],
+      "instruments": [
+        "LGRS",
+        "MoonKAM"
+      ],
+      "data_types": [
+        "map",
+        "imagery"
+      ],
+      "spectral": [
+        "radio",
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2011-2012",
+      "description": "Gravity Recovery and Interior Laboratory data: spherical-harmonic gravity models, Bouguer/free-air anomaly and crustal thickness maps, and MoonKAM images. Gridded gravity maps are derived rasters rather than imagery.",
+      "tags": [
+        "grail",
+        "gravity",
+        "bouguer",
+        "moonkam"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "intuitive-machines-im1",
+      "name": "Intuitive Machines IM-1 (Odysseus) and IM-2 missions",
+      "provider": "Intuitive Machines",
+      "agency": [
+        "Intuitive Machines"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.intuitivemachines.com/im-1",
+      "links": [
+        {
+          "label": "IM-2",
+          "url": "https://www.intuitivemachines.com/im-2"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "IM-1",
+        "IM-2"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2024-2025",
+      "description": "Commercial CLPS lander missions (IM-1 Feb 2024 near Malapert A; IM-2 2025). The company site shows mission imagery; no raw camera archive was found.",
+      "tags": [
+        "odysseus",
+        "clps",
+        "athena",
+        "im-2"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ispace-hakuto-r",
+      "name": "ispace Hakuto-R lunar lander missions",
+      "provider": "ispace inc.",
+      "agency": [
+        "ispace"
+      ],
+      "kind": "raw-feed",
+      "url": "https://www.ispace-inc.com/",
+      "targets": [
+        "moon"
+      ],
+      "description": "Japanese company whose Hakuto-R M1 (2023) and M2 Resilience (2025) landers reached the Moon; mission pages publish descent and surface images from the landers and the Tenacious rover. Images are press releases rather than an archive.",
+      "access": "open",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "Hakuto-R M1",
+        "Hakuto-R M2",
+        "HAKUTO-R M1",
+        "HAKUTO-R M2"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "temporal": "2023, 2025",
+      "tags": [
+        "ispace",
+        "hakuto-r",
+        "resilience",
+        "tenacious"
+      ],
+      "verified": "2026-11-05",
+      "formats": [
+        "JPEG"
+      ]
+    },
+    {
+      "id": "isro-issdc",
+      "name": "ISRO ISSDC - Indian Space Science Data Centre",
+      "provider": "ISRO Indian Space Science Data Centre (ISSDC)",
+      "agency": [
+        "ISRO"
+      ],
+      "kind": "portal",
+      "url": "https://www.issdc.gov.in/",
+      "targets": [
+        "moon",
+        "mars",
+        "sun"
+      ],
+      "description": "Primary archive and dissemination centre for ISRO planetary and space-science payload data (Chandrayaan-1/2/3, Mars Orbiter Mission, Aditya-L1, AstroSat). Public releases are served through the PRADAN portal and the MOM long-term archive browser.",
+      "links": [
+        {
+          "label": "Indian Space Science Data Archive (ISDA)",
+          "url": "https://www.issdc.gov.in/isda.html"
+        },
+        {
+          "label": "MOM long-term archive browser",
+          "url": "https://mrbrowse.issdc.gov.in/MOMLTA/Homepage.xhtml"
+        },
+        {
+          "label": "Release announcements",
+          "url": "https://www.issdc.gov.in/archive_announcements.html"
+        }
+      ],
+      "access": "free-registration",
+      "country": [
+        "India"
+      ],
+      "missions": [
+        "Chandrayaan-1",
+        "Chandrayaan-2",
+        "Chandrayaan-3",
+        "Mars Orbiter Mission",
+        "Aditya-L1"
+      ],
+      "data_types": [
+        "imagery",
+        "hyperspectral",
+        "dem",
+        "radar",
+        "spectra",
+        "sar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir",
+        "radar",
+        "swir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4",
+        "PDS3"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "tags": [
+        "issdc",
+        "isro",
+        "isda",
+        "indian space science data centre",
+        "pradan"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "isro-pradan-ch2",
+      "name": "Chandrayaan-2 orbiter data (TMC-2, OHRC, IIRS, DFSAR, CLASS)",
+      "provider": "ISRO ISSDC",
+      "agency": [
+        "ISRO"
+      ],
+      "kind": "dataset",
+      "url": "https://pradan.issdc.gov.in/ch2/",
+      "targets": [
+        "moon"
+      ],
+      "description": "Chandrayaan-2 orbiter data via PRADAN: Terrain Mapping Camera-2 stereo images and DEMs (5 m), Orbiter High Resolution Camera (~0.25 m/px), IIRS hyperspectral imager, dual-frequency SAR (DFSAR, L and S band), CLASS X-ray and others. Releases are by phased batches, including a large radar set released in late 2025; login (free account) required.",
+      "access": "free-registration",
+      "country": [
+        "India"
+      ],
+      "missions": [
+        "Chandrayaan-2"
+      ],
+      "instruments": [
+        "TMC-2",
+        "OHRC",
+        "IIRS",
+        "DFSAR",
+        "CLASS",
+        "XSM"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "dem",
+        "hyperspectral",
+        "sar",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar",
+        "xray",
+        "swir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "resolution": "OHRC ~0.25 m/px; TMC-2 5 m/px",
+      "temporal": "2019-present",
+      "tags": [
+        "chandrayaan-2",
+        "ch2",
+        "ohrc",
+        "tmc",
+        "dfsar",
+        "iirs",
+        "tmc-2"
+      ],
+      "verified": "2026-11-05",
+      "links": [
+        {
+          "label": "ISRO Chandrayaan-2 images",
+          "url": "https://www.isro.gov.in/Chandrayaan2.html"
+        }
+      ]
+    },
+    {
+      "id": "isro-pradan-ch3",
+      "name": "Chandrayaan-3 lander and rover data",
+      "provider": "ISRO ISSDC",
+      "agency": [
+        "ISRO"
+      ],
+      "kind": "dataset",
+      "url": "https://pradan.issdc.gov.in/ch3/",
+      "targets": [
+        "moon"
+      ],
+      "description": "Data from the Chandrayaan-3 mission (Vikram lander and Pragyan rover, August 2023, near the lunar south pole) including lander and rover camera images and instrument data such as ChaSTE and ILSA. Download through PRADAN with a free account.",
+      "links": [
+        {
+          "label": "ISRO mission page",
+          "url": "https://www.isro.gov.in/Chandrayaan3.html"
+        }
+      ],
+      "access": "free-registration",
+      "country": [
+        "India"
+      ],
+      "missions": [
+        "Chandrayaan-3"
+      ],
+      "instruments": [
+        "LHVC",
+        "LPDC",
+        "RAMBHA",
+        "ChaSTE",
+        "APXS",
+        "LIBS"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "temporal": "2023",
+      "tags": [
+        "chandrayaan-3",
+        "ch3",
+        "pragyan",
+        "vikram",
+        "shiv shakti"
+      ],
+      "verified": "2026-11-05",
+      "formats": [
+        "PDS4"
+      ]
+    },
+    {
+      "id": "jaxa-slim-mbc",
+      "name": "SLIM lander Multi-Band Camera (DARTS)",
+      "provider": "JAXA ISAS",
+      "agency": [
+        "JAXA"
+      ],
+      "country": [
+        "Japan"
+      ],
+      "kind": "mission-site",
+      "url": "https://darts.isas.jaxa.jp/en/missions/slim",
+      "links": [
+        {
+          "label": "ISAS SLIM page",
+          "url": "https://www.isas.jaxa.jp/en/missions/spacecraft/current/slim.html"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SLIM"
+      ],
+      "instruments": [
+        "MBC"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2024",
+      "description": "DARTS mission page for SLIM (landed January 2024). The MBC took 10-band 750-1650 nm images of rocks; the dataset list was marked 'in preparation' when checked, so data availability must be confirmed. Image releases are documented on JAXA press pages.",
+      "tags": [
+        "slim",
+        "moon sniper",
+        "mbc"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Format uncertain; data listed as in preparation."
+    },
+    {
+      "id": "kaguya-mission-gallery",
+      "name": "KAGUYA (SELENE) mission site and image gallery",
+      "provider": "JAXA",
+      "agency": [
+        "JAXA"
+      ],
+      "country": [
+        "Japan"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.kaguya.jaxa.jp/index_e.htm",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SELENE (Kaguya)"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "MP4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "JAXA mission website with HDTV movies and images; science data are at DARTS.",
+      "tags": [
+        "kaguya",
+        "hdtv",
+        "earthrise"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "kaguya-pds-geosciences",
+      "name": "Kaguya data - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS",
+        "JAXA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/kaguya/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SELENE (Kaguya)"
+      ],
+      "data_types": [
+        "mosaic",
+        "dem",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "NASA-hosted Kaguya data and derived products (for example TC/MI mosaics and merged DEMs), accessible alongside LRO data in ODE.",
+      "tags": [
+        "kaguya",
+        "sldem"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Holdings not itemised."
+    },
+    {
+      "id": "kari-kpds",
+      "name": "KPDS - KARI Planetary Data System (KPLO / Danuri)",
+      "provider": "Korea Aerospace Research Institute (KARI)",
+      "agency": [
+        "KARI",
+        "KASA"
+      ],
+      "kind": "archive",
+      "url": "https://www.kari.re.kr/kpds/?lang=EN",
+      "targets": [
+        "moon"
+      ],
+      "description": "Public release system for the Korea Pathfinder Lunar Orbiter (Danuri): the Lunar Terrain Imager (LUTI), PolCam, wide-angle polarimetric camera, KMAG, KGRS and others, in PDS4 format, with thumbnail and metadata viewers. ShadowCam, a NASA instrument on Danuri, publishes through the NASA PDS instead.",
+      "access": "open",
+      "country": [
+        "South Korea"
+      ],
+      "missions": [
+        "KPLO",
+        "Danuri",
+        "KPLO (Danuri)"
+      ],
+      "instruments": [
+        "LUTI",
+        "PolCam",
+        "KGRS",
+        "KMAG",
+        "ShadowCam"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry",
+        "xray-gamma",
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "gamma",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4",
+        "FITS"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "temporal": "2022-present",
+      "tags": [
+        "kpds",
+        "danuri",
+        "kari",
+        "luti",
+        "polcam",
+        "korea"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "kasa-kplo-danuri",
+      "name": "KASA - Korea Pathfinder Lunar Orbiter (Danuri) mission",
+      "provider": "Korea AeroSpace Administration (KASA) / KARI",
+      "agency": [
+        "KASA",
+        "KARI"
+      ],
+      "country": [
+        "South Korea"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.kasa.go.kr/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "KPLO / Danuri"
+      ],
+      "instruments": [
+        "LUTI",
+        "PolCam",
+        "ShadowCam"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Agency site of the Korea AeroSpace Administration, which operates the Danuri (KPLO) lunar orbiter. Science data are released through KPDS; ShadowCam data through the NASA PDS.",
+      "tags": [
+        "kplo",
+        "danuri",
+        "korea"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lcross-pds-geosciences",
+      "name": "LCROSS - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/lcross/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LCROSS"
+      ],
+      "data_types": [
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir",
+        "mwir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2009",
+      "description": "Data from the 2009 Lunar Crater Observation and Sensing Satellite impact into Cabeus crater, including shepherding-spacecraft spectrometer and photometer data.",
+      "tags": [
+        "lcross",
+        "cabeus",
+        "impact"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lcross-pds-imaging",
+      "name": "LCROSS - PDS Imaging Node volumes",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/lcross.html",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LCROSS"
+      ],
+      "data_types": [
+        "imagery",
+        "thermal"
+      ],
+      "spectral": [
+        "visible",
+        "mwir",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2009",
+      "description": "LCROSS camera imagery (visible and mid-IR cameras on the shepherding spacecraft) of the Centaur impact plume and Cabeus.",
+      "tags": [
+        "lcross",
+        "impact"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "loirp-pds",
+      "name": "Lunar Orbiter Image Recovery Project (LOIRP) - PDS Imaging Node",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/loirp.html",
+      "links": [
+        {
+          "label": "LOIRP atlas search",
+          "url": "https://pds-imaging.jpl.nasa.gov/portal/loirp_mission.html"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Orbiter 1-5"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1966-1967",
+      "description": "Re-digitized images from all five 1966-1967 Lunar Orbiter missions recovered from original analog tapes, higher fidelity than earlier film scans. Published on PDS in January 2018.",
+      "tags": [
+        "loirp",
+        "lunar orbiter",
+        "historical"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Formats approximate.",
+      "country": [
+        "USA"
+      ],
+      "instruments": [
+        "Photographic film"
+      ]
+    },
+    {
+      "id": "lola-south-pole-dems-pgda",
+      "name": "LOLA high-resolution south pole site DEMs (PGDA, ~5 m)",
+      "provider": "NASA GSFC Planetary Geodynamics Data Archive",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "dataset",
+      "url": "https://pgda.gsfc.nasa.gov/products/78",
+      "links": [
+        {
+          "label": "A New View of the Lunar South Pole from LOLA",
+          "url": "https://pgda.gsfc.nasa.gov/products/90"
+        },
+        {
+          "label": "PGDA home",
+          "url": "https://pgda.gsfc.nasa.gov/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LOLA"
+      ],
+      "data_types": [
+        "dem",
+        "altimetry",
+        "map"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "~5 m/px (site DEMs)",
+      "description": "High-resolution LOLA-derived topography (about 5 m/px) for south polar landing-site regions, with slope and illumination companions. Distributed as rasters from PGDA.",
+      "tags": [
+        "lola",
+        "polar",
+        "artemis landing sites",
+        "south pole"
+      ],
+      "verified": "2026-11-05",
+      "notes": "File formats from general knowledge; confirm on product page."
+    },
+    {
+      "id": "lpi-apollo-image-atlas",
+      "name": "LPI Apollo Image Atlas and Apollo Surface Panoramas",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "kind": "archive",
+      "url": "https://www.lpi.usra.edu/resources/apollo/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Apollo 8-17"
+      ],
+      "data_types": [
+        "imagery",
+        "historical",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "browse",
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1968-1972",
+      "description": "Atlas of Apollo orbital and surface photography (metric, panoramic, Hasselblad) with browse and scans, plus Apollo surface panorama resources. Loading not confirmed due to bot blocking.",
+      "tags": [
+        "apollo",
+        "lpi",
+        "hasselblad",
+        "metric camera",
+        "panoramic camera"
+      ],
+      "notes": "403 to bots (Cloudflare).",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "lpi-lunar-orbiter-resources",
+      "name": "LPI Lunar Orbiter Photo Gallery and Digital Atlas",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "kind": "archive",
+      "url": "https://www.lpi.usra.edu/resources/lunar_orbiter/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Orbiter 1-5"
+      ],
+      "data_types": [
+        "imagery",
+        "historical",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1966-1967",
+      "description": "LPI collection of scanned Lunar Orbiter frames and the Digital Lunar Orbiter Photographic Atlas of the Moon (675 plates). The LPI site blocks automated fetches, so loading was not confirmed.",
+      "tags": [
+        "lpi",
+        "lunar orbiter atlas",
+        "bowker hughes"
+      ],
+      "notes": "403 to bots (Cloudflare); existence confirmed by web search only.",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "lro-diviner-pds",
+      "name": "LRO Diviner Lunar Radiometer - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS",
+        "UCLA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter",
+        "LRO"
+      ],
+      "instruments": [
+        "Diviner"
+      ],
+      "data_types": [
+        "thermal",
+        "map",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "mwir",
+        "tir",
+        "far-ir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "CSV",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk",
+        "web-ui"
+      ],
+      "temporal": "2009-present",
+      "description": "Diviner thermal-infrared radiometer data: raw EDR, calibrated brightness-temperature RDR tables by hour, and derived gridded global and polar products (temperature, rock abundance, bolometric maps). RDRs are ASCII tables with detached labels, so imagery requires gridding or use of the derived rasters.",
+      "tags": [
+        "diviner",
+        "dlre",
+        "lunar temperatures",
+        "rock abundance"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "lro-lamp-pds",
+      "name": "LRO LAMP - Lyman Alpha Mapping Project data (PDS Imaging Node)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL) / SwRI",
+      "agency": [
+        "NASA",
+        "SwRI"
+      ],
+      "kind": "archive",
+      "url": "https://planetarydata.jpl.nasa.gov/img/data/lro/lamp/rdr/",
+      "links": [
+        {
+          "label": "LRO volumes index",
+          "url": "https://pds-imaging.jpl.nasa.gov/volumes/lro.html"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LAMP"
+      ],
+      "data_types": [
+        "uv",
+        "spectra",
+        "map"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "LAMP far-ultraviolet spectrograph data: raw and calibrated FITS products and gridded Lyman-alpha/off-band brightness maps, including nightside maps of permanently shadowed regions. Directory listing; newer PDS4 releases are indexed on the LRO volumes page.",
+      "tags": [
+        "lamp",
+        "far-uv",
+        "psr",
+        "lyman alpha"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lro-lend-pds",
+      "name": "LRO LEND neutron detector - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL) / IKI",
+      "agency": [
+        "NASA",
+        "PDS",
+        "IKI"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/lend.htm",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LEND"
+      ],
+      "data_types": [
+        "map",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "xray",
+        "gamma"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Lunar Exploration Neutron Detector data (Russian IKI instrument): count-rate tables and derived neutron suppression/hydrogen maps. Non-imaging but widely used to map polar hydrogen.",
+      "tags": [
+        "lend",
+        "neutron",
+        "hydrogen",
+        "water ice"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lro-lola-pds",
+      "name": "LRO LOLA - PDS Geosciences Node (GDR, DEMs, shot data)",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/lola.htm",
+      "links": [
+        {
+          "label": "LOLA GDR directory",
+          "url": "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/"
+        },
+        {
+          "label": "LOLA PDS Data Node (MIT)",
+          "url": "https://imbrium.mit.edu/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter",
+        "LRO"
+      ],
+      "instruments": [
+        "LOLA"
+      ],
+      "data_types": [
+        "altimetry",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "JP2",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk",
+        "web-ui"
+      ],
+      "resolution": "118 m/px global; 5-20 m polar",
+      "temporal": "2009-present",
+      "description": "Lunar Orbiter Laser Altimeter archive: ~118 m/px global DEM and radius maps, polar gridded DEMs, slope/roughness/reflectance products, and raw ranging shots. Global GDRs are PDS3 IMG/LBL rasters readable by GDAL.",
+      "tags": [
+        "lola",
+        "gdr",
+        "topography",
+        "laser altimeter"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "lro-minirf-pds",
+      "name": "LRO Mini-RF - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS",
+        "JHUAPL"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/lro/mrf.htm",
+      "links": [
+        {
+          "label": "Mini-RF bistatic PDS4 bundle",
+          "url": "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_minirf_bistatic/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter",
+        "LRO"
+      ],
+      "instruments": [
+        "Mini-RF"
+      ],
+      "data_types": [
+        "sar",
+        "radar",
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk",
+        "web-ui"
+      ],
+      "description": "Mini-RF S- and X-band synthetic aperture radar archive: raw packetized data, calibrated strips, InSAR, polar and global mosaics, and bistatic radar products (PDS4 releases updated through 2025-2026). Includes circular polarization ratio (CPR) products used for ice studies.",
+      "tags": [
+        "mini-rf",
+        "minirf",
+        "sar",
+        "cpr",
+        "bistatic radar"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "temporal": "2009-present"
+    },
+    {
+      "id": "lroc-nac-rdr-products",
+      "name": "LROC NAC mosaics, DTMs and polar products (RDR)",
+      "provider": "Arizona State University (LROC Science Operations Center)",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "dataset",
+      "url": "https://data.lroc.im-ldi.com/lroc/rdr_product_select",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LROC NAC"
+      ],
+      "data_types": [
+        "mosaic",
+        "dem",
+        "stereo",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "JP2",
+        "GeoTIFF",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "0.5-5 m/px",
+      "description": "Selector for LROC reduced-data products: NAC regional and polar mosaics, NAC stereo-derived digital terrain models, landing-site and Apollo-site mosaics, and WAC products. Products are map-projected and individually downloadable.",
+      "tags": [
+        "nac dtm",
+        "polar mosaic",
+        "psr",
+        "lroc rdr"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lroc-pds-archive",
+      "name": "LROC PDS Archive (pds.lroc.im-ldi.com)",
+      "provider": "Arizona State University (LROC Science Operations Center)",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "archive",
+      "url": "https://pds.lroc.im-ldi.com/data/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LROC NAC",
+        "LROC WAC"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Directory-style PDS archive of LROC raw (EDR), calibrated (CDR) and derived data volumes served by the LROC team. Best for bulk or scripted downloads of NAC/WAC data with PDS labels.",
+      "tags": [
+        "lroc",
+        "edr",
+        "cdr",
+        "pds archive"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "notes": "Format list approximate; verify per volume."
+    },
+    {
+      "id": "lroc-quickmap",
+      "name": "LROC QuickMap (Moon)",
+      "provider": "Arizona State University (LROC Science Operations Center)",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "tool",
+      "url": "https://quickmap.lroc.im-ldi.com/",
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "vesta",
+        "ceres"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "dem",
+        "altimetry",
+        "thermal",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir",
+        "radar"
+      ],
+      "levels": [
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "wmts",
+        "https"
+      ],
+      "resolution": "up to sub-metre (NAC)",
+      "description": "Browser-based interactive Moon map with layers from LROC NAC/WAC, LOLA, Diviner, Mini-RF, Kaguya, Clementine, M3, GRAIL and more, with measurement, 3D and footprint-overlay tools. Useful to locate NAC frames and global/polar layers before downloading the underlying products. quickmap.lroc.asu.edu redirects here.",
+      "tags": [
+        "quickmap",
+        "lroc",
+        "moon viewer",
+        "qmap",
+        "lunar viewer"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "lroc-wac-global-mosaic",
+      "name": "LROC WAC Global Mosaic (~100 m, 303 ppd)",
+      "provider": "Arizona State University (LROC Science Operations Center)",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "dataset",
+      "url": "https://data.lroc.im-ldi.com/lroc/view_rdr/WAC_GLOBAL",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LROC WAC"
+      ],
+      "data_types": [
+        "mosaic",
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "JP2",
+        "GeoTIFF",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "~100 m/px (303 ppd)",
+      "description": "Global normalized-reflectance WAC monochrome mosaic (about 100 m/px) with the multispectral and derived WAC products and the GLD100 global DTM listed nearby in the RDR catalog. Download as map-projected tiles from the LROC RDR pages; also served via Moon Trek tiles.",
+      "tags": [
+        "wac",
+        "global mosaic",
+        "gld100",
+        "lroc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lunar-prospector-pds",
+      "name": "Lunar Prospector - PDS Geosciences Node",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/lunarp/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Prospector"
+      ],
+      "instruments": [
+        "GRS",
+        "NS",
+        "APS",
+        "MAG/ER"
+      ],
+      "data_types": [
+        "xray-gamma",
+        "map",
+        "spectra"
+      ],
+      "spectral": [
+        "gamma"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1998-1999",
+      "description": "Lunar Prospector (1998-1999) gamma-ray, neutron, alpha-particle and magnetometer/electron reflectometer data, with derived elemental (Fe, Th, K, Ti) and hydrogen maps. Gridded tables/maps rather than conventional images.",
+      "tags": [
+        "lunar prospector",
+        "gamma ray",
+        "thorium"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "m3-pds-imaging",
+      "name": "Moon Mineralogy Mapper (M3) - PDS Imaging Node volumes",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+      "agency": [
+        "NASA",
+        "JPL",
+        "ISRO"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/m3.html",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Chandrayaan-1"
+      ],
+      "instruments": [
+        "M3"
+      ],
+      "data_types": [
+        "hyperspectral",
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "resolution": "140 m/px global; 70 m/px target",
+      "temporal": "2008-2009",
+      "description": "M3 hyperspectral cubes (0.43-3.0 um) at about 140 m/px global mode and 70 m/px target mode: level 0, 1B and 2 products as PDS3 cubes.",
+      "tags": [
+        "m3",
+        "moon mineralogy mapper",
+        "hyperspectral"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "nasa-artemis-ii-multimedia",
+      "name": "Artemis II multimedia (crew photos and videos)",
+      "provider": "NASA",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "catalog",
+      "url": "https://www.nasa.gov/artemis-ii-multimedia/",
+      "links": [
+        {
+          "label": "Journey to the Moon gallery",
+          "url": "https://www.nasa.gov/gallery/journey-to-the-moon/"
+        }
+      ],
+      "targets": [
+        "moon",
+        "earth"
+      ],
+      "missions": [
+        "Artemis II"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG",
+        "MP4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2026",
+      "description": "Official image and video releases from the crewed Artemis II lunar flyby, including crew photographs of the Moon and Earth. Public-domain JPEG and video.",
+      "tags": [
+        "artemis",
+        "orion",
+        "crew photos"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-image-library",
+      "name": "NASA Image and Video Library",
+      "provider": "NASA",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://images.nasa.gov/",
+      "links": [
+        {
+          "label": "API",
+          "url": "https://images-api.nasa.gov/"
+        }
+      ],
+      "targets": [
+        "earth",
+        "moon",
+        "mars",
+        "sun",
+        "mercury",
+        "venus",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "video",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "browse",
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF",
+        "MP4"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "rest",
+        "https"
+      ],
+      "description": "NASA-wide searchable library of public images, video and audio, including mission imagery from Apollo to current planetary missions. Browse-quality releases with metadata and a public JSON API.",
+      "tags": [
+        "nasa images",
+        "api",
+        "apollo",
+        "artemis",
+        "images.nasa.gov",
+        "media"
+      ],
+      "verified": "2026-11-05",
+      "regions": [
+        "global"
+      ]
+    },
+    {
+      "id": "nasa-moon-trek",
+      "name": "NASA Moon Trek",
+      "provider": "NASA JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/moon/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "mosaic",
+        "dem",
+        "map",
+        "multispectral",
+        "thermal"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "wmts",
+        "xyz",
+        "https"
+      ],
+      "description": "Web portal with lunar layers (LROC WAC, LOLA, Kaguya, M3, Diviner, Clementine, geologic maps), measuring tools, 3D views and downloadable layers. Public tile services exist (verified example: geographic tiles for LRO WAC global mosaic and LOLA color-shaded relief).",
+      "tags": [
+        "trek",
+        "moon trek",
+        "wmts",
+        "moon"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "nasa-photojournal",
+      "name": "NASA Photojournal",
+      "provider": "NASA JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://science.nasa.gov/photojournal/",
+      "targets": [
+        "moon",
+        "mercury",
+        "venus",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "map",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse",
+        "mosaic"
+      ],
+      "formats": [
+        "TIFF",
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "JPL's long-running public collection of processed planetary images with captions and cataloged by target and mission (PIA numbers). Browse-level release images, now hosted on science.nasa.gov; photojournal.jpl.nasa.gov redirects there.",
+      "tags": [
+        "photojournal",
+        "pia",
+        "press images"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-svs-cgi-moon-kit",
+      "name": "NASA SVS - CGI Moon Kit",
+      "provider": "NASA Scientific Visualization Studio",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "dataset",
+      "url": "https://svs.gsfc.nasa.gov/4720/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "map",
+        "dem",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "TIFF",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Global LRO color/LOLA elevation map and displacement textures for rendering. Derived visualization products rather than science data.",
+      "tags": [
+        "cgi moon kit",
+        "svs",
+        "texture"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Resolution not stated."
+    },
+    {
+      "id": "ode-moon",
+      "name": "Orbital Data Explorer - Moon",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://ode.rsl.wustl.edu/moon/",
+      "links": [
+        {
+          "label": "Product search",
+          "url": "https://ode.rsl.wustl.edu/moon/productsearch"
+        },
+        {
+          "label": "ODE REST service",
+          "url": "https://oderest.rsl.wustl.edu/livegds/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "thermal",
+        "radar",
+        "spectra",
+        "mosaic",
+        "hyperspectral",
+        "altimetry"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "tir",
+        "radar",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "ISIS3",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "rest",
+        "https"
+      ],
+      "description": "PDS Geosciences Orbital Data Explorer (ODE) for Moon: footprint-based search and map interface over orbital instrument products (imagery, spectrometer cubes, altimetry, radar) with direct PDS download links. Has a documented REST API (oderest.rsl.wustl.edu).",
+      "tags": [
+        "ode",
+        "orbital data explorer",
+        "lunar search",
+        "moon"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-earthbased-radar",
+      "name": "Earth-based lunar radar (Arecibo, Green Bank) - PDS Geosciences",
+      "provider": "NASA PDS Geosciences Node (WUSTL)",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/earthbased/",
+      "targets": [
+        "moon",
+        "mercury",
+        "venus",
+        "mars"
+      ],
+      "data_types": [
+        "radar",
+        "map"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Earth-based radar datasets including Arecibo and Green Bank maps of the Moon (backscatter, circular polarization ratio) alongside other targets.",
+      "tags": [
+        "arecibo",
+        "green bank",
+        "gbt",
+        "earth-based radar"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Lunar holdings not itemised."
+    },
+    {
+      "id": "pds-imaging-atlas-moon",
+      "name": "PDS Imaging Atlas (lunar missions)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "portal",
+      "url": "https://pds-imaging.jpl.nasa.gov/search/",
+      "links": [
+        {
+          "label": "Mission portals",
+          "url": "https://pds-imaging.jpl.nasa.gov/portal/"
+        }
+      ],
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "venus"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "hyperspectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "rest",
+        "https"
+      ],
+      "description": "Cross-mission search of PDS Imaging Node holdings with Moon targets (Lunar Orbiter, Clementine, LRO, M3, LCROSS, Chandrayaan, KPLO) and file download.",
+      "tags": [
+        "atlas",
+        "pds imaging"
+      ],
+      "connector": "pds-atlas",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-imaging-lro-volumes",
+      "name": "PDS Imaging Node - LRO online data volumes",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/lro.html",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter",
+        "LRO"
+      ],
+      "instruments": [
+        "LROC",
+        "LAMP",
+        "LCROSS"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "uv"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Index of LRO volumes hosted by the PDS Imaging Node, including LROC and LAMP data in PDS3 and PDS4 (LAMP PDS4 releases through March 2025 listed). Links to bulk directories.",
+      "tags": [
+        "pds imaging node",
+        "lro",
+        "atlas"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "temporal": "2009-present"
+    },
+    {
+      "id": "project-apollo-archive-flickr",
+      "name": "Project Apollo Archive (Flickr - Earth photography)",
+      "provider": "Project Apollo Archive",
+      "agency": [
+        "NASA",
+        "Community"
+      ],
+      "kind": "archive",
+      "url": "https://www.flickr.com/photos/projectapolloarchive/",
+      "targets": [
+        "earth",
+        "moon"
+      ],
+      "description": "Full-resolution scans of Apollo and Gemini photography from NASA Hasselblad mission magazines, including Earth views from orbit and translunar coast (Blue Marble AS17-148-22727 among them). Public-domain, Flickr and Archive.org hosting.",
+      "regions": [
+        "global"
+      ],
+      "missions": [
+        "Apollo",
+        "Gemini",
+        "Apollo 7-17"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "temporal": "1965-1972",
+      "tags": [
+        "apollo",
+        "gemini",
+        "hasselblad",
+        "blue marble",
+        "flickr",
+        "project apollo"
+      ],
+      "notes": "url did not load from automated fetch (403/502/TLS/DNS); site believed live, not confirmed",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "shadowcam-asu",
+      "name": "ShadowCam (KPLO/Danuri) - ShadowCam data site",
+      "provider": "Arizona State University (ShadowCam SOC)",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "archive",
+      "url": "https://shadowcam.im-ldi.com/",
+      "links": [
+        {
+          "label": "ShadowCam PDS archive",
+          "url": "https://pds.shadowcam.im-ldi.com/"
+        },
+        {
+          "label": "Image and map server",
+          "url": "https://data.im-ldi.com/lunaserv.html"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "KPLO (Danuri)"
+      ],
+      "instruments": [
+        "ShadowCam"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS4",
+        "PDS3",
+        "JP2"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "~1.7 m/px nominal",
+      "temporal": "2022-present",
+      "description": "NASA instrument on Korea's Danuri orbiter, far more sensitive than LROC NAC, imaging permanently shadowed regions. The site provides browsing and release notes for batches submitted to PDS roughly quarterly (releases through June 2026 announced). Archive is large (multiple TiB per release).",
+      "tags": [
+        "shadowcam",
+        "psr",
+        "danuri",
+        "kplo",
+        "shadowed regions"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "notes": "Formats approximate."
+    },
+    {
+      "id": "surveyor-archive-project",
+      "name": "Surveyor Archive Project (Univ. of Arizona SIC)",
+      "provider": "University of Arizona Space Imagery Center",
+      "agency": [
+        "UArizona"
+      ],
+      "kind": "archive",
+      "url": "https://sic.lpl.arizona.edu/surveyor-digitization/surveyor-archive-project",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Surveyor 1-7"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1966-1968",
+      "description": "Project digitizing roughly 87,600 Surveyor lander TV images to PDS-compliant archives. The page describes project status and access.",
+      "tags": [
+        "surveyor",
+        "lander",
+        "historical"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Check page for current data availability; formats approximate."
+    },
+    {
+      "id": "ucla-diviner-site",
+      "name": "Diviner team site (UCLA) - data products and maps",
+      "provider": "UCLA Diviner Science Team",
+      "agency": [
+        "NASA",
+        "UCLA"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.diviner.ucla.edu/data",
+      "links": [
+        {
+          "label": "Diviner home",
+          "url": "https://www.diviner.ucla.edu/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "Diviner"
+      ],
+      "data_types": [
+        "thermal",
+        "map"
+      ],
+      "spectral": [
+        "tir",
+        "mwir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Team page describing Diviner data products and pointing to their PDS locations, including global temperature references and south polar data releases. Useful for product descriptions and release notes.",
+      "tags": [
+        "diviner",
+        "ucla"
+      ],
+      "verified": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,4602 @@
+{
+  "domain": "mars",
+  "sources": [
+    {
+      "id": "analysts-notebook",
+      "name": "Analyst's Notebook",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://an.rsl.wustl.edu/",
+      "links": [
+        {
+          "label": "MSL",
+          "url": "https://an.rsl.wustl.edu/msl/"
+        },
+        {
+          "label": "MER",
+          "url": "https://an.rsl.wustl.edu/mer/"
+        },
+        {
+          "label": "Phoenix",
+          "url": "https://an.rsl.wustl.edu/phx/"
+        },
+        {
+          "label": "InSight",
+          "url": "https://an.rsl.wustl.edu/ins/"
+        },
+        {
+          "label": "Help",
+          "url": "https://an.rsl.wustl.edu/help/"
+        }
+      ],
+      "targets": [
+        "mars",
+        "moon"
+      ],
+      "missions": [
+        "MER",
+        "MSL",
+        "Mars 2020",
+        "Phoenix",
+        "Viking",
+        "Mars Pathfinder",
+        "InSight",
+        "Apollo"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Web tool that organises rover, lander and sampling mission data (images, spectra, documents) by sol or station in context with maps. Covers MER, MSL, Phoenix, InSight, Mars 2020 and legacy lunar missions. Link each product back to its PDS file.",
+      "tags": [
+        "analyst's notebook",
+        "an",
+        "rover data"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "asu-mastcamz",
+      "name": "Mastcam-Z team site (ASU)",
+      "provider": "Arizona State University Mastcam-Z team",
+      "agency": [
+        "ASU",
+        "NASA"
+      ],
+      "kind": "mission-site",
+      "url": "https://mastcamz.asu.edu/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "stereo"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "browse",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Perseverance Mastcam-Z team site with color, multispectral and stereo panoramas and links to PDS data.",
+      "missions": [
+        "Mars 2020"
+      ],
+      "instruments": [
+        "Mastcam-Z"
+      ],
+      "tags": [
+        "mastcam-z",
+        "perseverance"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "asu-themis",
+      "name": "THEMIS team site and data tools (ASU)",
+      "provider": "Arizona State University Mars Space Flight Facility",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "mission-site",
+      "url": "https://themis.asu.edu/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "thermal",
+        "imagery",
+        "mosaic"
+      ],
+      "spectral": [
+        "tir",
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "ISIS3",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Mars Odyssey THEMIS team site: browse and download IR (100 m/px) and visible (18 m/px) images, global mosaics and tools such as THEMIS Image Explorer / JMARS integration.",
+      "missions": [
+        "Mars Odyssey",
+        "2001 Mars Odyssey"
+      ],
+      "instruments": [
+        "THEMIS"
+      ],
+      "resolution": "18 m (VIS); 100 m (IR)",
+      "temporal": "2001-present",
+      "tags": [
+        "themis",
+        "odyssey"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "aws-usgs-ctx-dtms",
+      "name": "NASA/USGS controlled CTX DTMs (AWS Open Data)",
+      "provider": "USGS Astrogeology / NASA, hosted on AWS Open Data",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-controlled-mro-ctx-dtms/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "calibrated"
+      ],
+      "formats": [
+        "COG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "description": "Targeted CTX DTMs and orthoimages built from globally bundle-adjusted CTX images (ISIS jigsaw), stored as COGs in the astrogeo-ard S3 bucket with a STAC catalog. CC0 licensed, anonymous access.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "CTX"
+      ],
+      "resolution": "~20 m/px DTM; ~6 m/px ortho",
+      "tags": [
+        "ctx",
+        "dtm",
+        "cog",
+        "s3",
+        "aws",
+        "astrogeo-ard",
+        "stac"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/"
+        }
+      ],
+      "connector": "stac:usgs-astro",
+      "temporal": "2023-2025"
+    },
+    {
+      "id": "aws-usgs-hirise-dtms",
+      "name": "NASA/USGS controlled HiRISE DTMs (AWS Open Data)",
+      "provider": "USGS Astrogeology / NASA, hosted on AWS Open Data",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-mars-hirise-dtms/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "calibrated"
+      ],
+      "formats": [
+        "COG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "description": "HiRISE digital terrain models controlled to MOLA and converted to Cloud-Optimized GeoTIFF in the public astrogeo-ard S3 bucket (us-west-2, no AWS account needed), with STAC catalog. CC0 licensed.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "HiRISE"
+      ],
+      "resolution": "DTM ~1 m/px; orthoimage 0.25 m/px",
+      "tags": [
+        "hirise",
+        "dtm",
+        "cog",
+        "s3",
+        "aws",
+        "astrogeo-ard",
+        "stac"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/mars/hirise_dtms/"
+        }
+      ],
+      "connector": "stac:usgs-astro",
+      "temporal": "2009-2023"
+    },
+    {
+      "id": "aws-usgs-hirise-rdr",
+      "name": "NASA/USGS HiRISE map-projected RDR as COG (AWS Open Data)",
+      "provider": "USGS Astrogeology / NASA, hosted on AWS Open Data",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-mars-hirise/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "description": "HiRISE map-projected images converted to Cloud-Optimized GeoTIFF with a STAC catalog in the astrogeo-ard bucket. Not photogrammetrically controlled, so do not co-register with controlled DTM products.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "HiRISE"
+      ],
+      "resolution": "0.25-1.3 m/px",
+      "tags": [
+        "hirise",
+        "cog",
+        "s3",
+        "aws",
+        "stac"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/mars/uncontrolled_hirise/"
+        }
+      ],
+      "connector": "stac:usgs-astro",
+      "temporal": "2006-2025"
+    },
+    {
+      "id": "clpds-tianwen1",
+      "name": "Tianwen-1 data (CLPDS / NAOC GRAS)",
+      "provider": "China Lunar and Planetary Data System, NAOC Ground Research and Application System",
+      "agency": [
+        "CNSA",
+        "NAOC"
+      ],
+      "kind": "archive",
+      "url": "https://moon.bao.ac.cn/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "hyperspectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS4",
+        "TIFF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Chinese Lunar and Planetary Data System portal publishing Tianwen-1 science data (orbiter HiRIC 0.5 m, MoRIC 76 m global color, MMS, plus Zhurong rover cameras and instruments) in releases; the Mars section may require navigation in Chinese and registration for some downloads.",
+      "country": [
+        "China"
+      ],
+      "missions": [
+        "Tianwen-1"
+      ],
+      "instruments": [
+        "HiRIC",
+        "MoRIC",
+        "MMS",
+        "Zhurong cameras"
+      ],
+      "links": [
+        {
+          "label": "CLPDS",
+          "url": "https://clpds.bao.ac.cn/"
+        },
+        {
+          "label": "MoRIC global color map DOI",
+          "url": "https://doi.org/10.12350/CLPDS.GRAS.TW1.MoRIC-DOM_076_Charts.vA"
+        }
+      ],
+      "resolution": "HiRIC 0.5 m; MoRIC 76 m global",
+      "temporal": "2021-present",
+      "tags": [
+        "tianwen-1",
+        "zhurong",
+        "hiric",
+        "moric",
+        "clpds",
+        "china",
+        "naoc",
+        "gras"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "crism-jhuapl",
+      "name": "CRISM team site (JHU/APL)",
+      "provider": "Johns Hopkins Applied Physics Laboratory",
+      "agency": [
+        "JHUAPL",
+        "NASA"
+      ],
+      "kind": "mission-site",
+      "url": "http://crism.jhuapl.edu/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "hyperspectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "CRISM instrument team site with product descriptions, CAT software for ENVI, and documentation. Data are in PDS Geosciences.",
+      "missions": [
+        "MRO"
+      ],
+      "instruments": [
+        "CRISM"
+      ],
+      "tags": [
+        "crism"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "dlr-hmc30",
+      "name": "HRSC HMC-30 regional DTM and orthoimage mosaics",
+      "provider": "DLR Institute of Planetary Research; FU Berlin",
+      "agency": [
+        "DLR",
+        "FU Berlin"
+      ],
+      "kind": "dataset",
+      "url": "https://hrscteam.dlr.de/public/data/regionaldtms.php",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "mosaic",
+        "map",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Systematic Mars Express HRSC quadrangle products on a modified USGS MC-30 tiling: DTM mosaics (50 m grid; areoid and spheroid versions) and 12.5 m orthoimage mosaics, plus a 1:700,000 topographic map series. Public download from the HRSC team site.",
+      "country": [
+        "Germany"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "HRSC"
+      ],
+      "resolution": "DTM 50 m; ortho 12.5 m",
+      "tags": [
+        "hmc-30",
+        "mc-30",
+        "hrsc",
+        "quadrangle",
+        "dtm"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "dlr-hrsc-team",
+      "name": "HRSC team (DLR Institute of Planetary Research)",
+      "provider": "DLR Institute of Planetary Research",
+      "agency": [
+        "DLR"
+      ],
+      "kind": "mission-site",
+      "url": "https://hrscteam.dlr.de/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Mars Express HRSC co-investigator team site with information on camera products, processing and data access. Pointer site to PSA/PDS.",
+      "country": [
+        "Germany"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "HRSC"
+      ],
+      "tags": [
+        "hrsc",
+        "dlr"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "emm-sdc",
+      "name": "Emirates Mars Mission Science Data Center (EMM SDC)",
+      "provider": "Mohammed bin Rashid Space Centre (MBRSC) / LASP",
+      "agency": [
+        "MBRSC",
+        "UAE Space Agency"
+      ],
+      "kind": "archive",
+      "url": "https://sdc.emiratesmarsmission.ae/",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "description": "Public archive for the Hope probe: EXI (visible/UV imager with multi-band full-disc images of Mars), EMIRS (thermal IR spectrometer) and EMUS (far-UV spectrometer) with data from Mars orbit since 2021. Open data in releases with documentation; some download features need a free account.",
+      "links": [
+        {
+          "label": "Data access",
+          "url": "https://sdc.emiratesmarsmission.ae/data"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://sdc.emiratesmarsmission.ae/documentation"
+        }
+      ],
+      "access": "open",
+      "country": [
+        "UAE"
+      ],
+      "missions": [
+        "Emirates Mars Mission",
+        "Hope",
+        "Emirates Mars Mission (Hope)"
+      ],
+      "instruments": [
+        "EXI",
+        "EMIRS",
+        "EMUS"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "atmosphere",
+        "multispectral",
+        "uv",
+        "thermal"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "NetCDF",
+        "PNG"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "temporal": "2021-present",
+      "tags": [
+        "emm",
+        "hope probe",
+        "al amal",
+        "exi",
+        "emirs",
+        "emus",
+        "hope",
+        "uae"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-mars-express-site",
+      "name": "ESA Mars Express mission site (image releases)",
+      "provider": "ESA Science & Technology",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "mission-site",
+      "url": "https://sci.esa.int/web/mars-express/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "ESA mission page with HRSC image releases, news and instrument pages; processed color images and 3D perspective views (browse quality) with links to archives.",
+      "country": [
+        "Europe"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "tags": [
+        "mars express",
+        "hrsc images"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-mars",
+      "name": "ESA Planetary Science Archive (PSA) - Mars missions",
+      "provider": "ESA European Space Astronomy Centre (ESAC)",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://psa.esa.int/psa/",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "imagery",
+        "hyperspectral",
+        "dem",
+        "radar",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "radar",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "tap",
+        "ftp"
+      ],
+      "description": "ESA's official archive for Mars Express (HRSC, OMEGA, MARSIS, PFS, SPICAM, VMC, ASPERA), ExoMars TGO (CaSSIS, NOMAD, ACS, FREND) and Beagle 2 data in PDS3/PDS4. Search UI, TAP and EPN-TAP services and an FTP/HTTP tree; open access.",
+      "country": [
+        "Europe"
+      ],
+      "missions": [
+        "Mars Express",
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "HRSC",
+        "OMEGA",
+        "MARSIS",
+        "CaSSIS",
+        "NOMAD",
+        "ACS",
+        "VMC"
+      ],
+      "links": [
+        {
+          "label": "PSA FTP/HTTP tree",
+          "url": "https://archives.esac.esa.int/psa/ftp/"
+        },
+        {
+          "label": "Mars Express at PSA",
+          "url": "https://www.cosmos.esa.int/web/psa/mars-express"
+        },
+        {
+          "label": "ExoMars 2016 at PSA",
+          "url": "https://www.cosmos.esa.int/web/psa/ExoMars2016"
+        }
+      ],
+      "tags": [
+        "psa",
+        "esac",
+        "esa archive"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-mex-hrsc",
+      "name": "Mars Express HRSC (PSA)",
+      "provider": "ESA PSA; DLR Institute of Planetary Research",
+      "agency": [
+        "ESA",
+        "DLR"
+      ],
+      "kind": "dataset",
+      "url": "https://archives.esac.esa.int/psa/ftp/MARS-EXPRESS/HRSC/",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "dem",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "ftp"
+      ],
+      "description": "Mars Express High Resolution Stereo Camera archive: Level 2 radiometrically calibrated images, Level 3/4 map-projected images, stereo DTMs and orthoimages (up to ~10 m/px, 5-channel color plus stereo), and Phobos/Deimos observations. PDS3 IMG with detached labels.",
+      "country": [
+        "Germany",
+        "Europe"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "HRSC",
+        "SRC"
+      ],
+      "resolution": "10-50 m/px (SRC ~2 m)",
+      "temporal": "2004-present",
+      "links": [
+        {
+          "label": "HRSC high-level data announcement (ESA)",
+          "url": "https://sci.esa.int/web/mars-express/-/42328-hrsc-high-level-data-products-available"
+        },
+        {
+          "label": "Mars Express HRSC (PSA)",
+          "url": "https://psa.esa.int/psa/"
+        }
+      ],
+      "tags": [
+        "hrsc",
+        "src",
+        "mex",
+        "stereo camera",
+        "mars express",
+        "dtm",
+        "orthoimage"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-mex-marsis",
+      "name": "Mars Express MARSIS (PSA)",
+      "provider": "ESA PSA; ASI / Univ. Rome / NASA JPL",
+      "agency": [
+        "ESA",
+        "ASI"
+      ],
+      "kind": "dataset",
+      "url": "https://archives.esac.esa.int/psa/ftp/MARS-EXPRESS/MARSIS/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "radar"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "ftp"
+      ],
+      "description": "MARSIS subsurface and ionospheric radar sounder data: calibrated echoes and derived products for Mars polar layered deposits and subsurface structure.",
+      "country": [
+        "Italy",
+        "Europe"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "MARSIS"
+      ],
+      "tags": [
+        "marsis",
+        "radar sounder"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-mex-omega",
+      "name": "Mars Express OMEGA (PSA)",
+      "provider": "ESA Planetary Science Archive (ESAC)",
+      "agency": [
+        "ESA",
+        "CNRS",
+        "CNES"
+      ],
+      "kind": "dataset",
+      "url": "https://psa.esa.int/psa/",
+      "targets": [
+        "mars"
+      ],
+      "description": "OMEGA visible/near-IR imaging spectrometer on Mars Express (0.35-5.1 micrometres), giving mineralogy cubes of the Martian surface and atmosphere. Data are in the PSA; derived products are also hosted by IAS and MarsSI.",
+      "access": "open",
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "OMEGA"
+      ],
+      "data_types": [
+        "hyperspectral",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "protocols": [
+        "https",
+        "web-ui",
+        "ftp"
+      ],
+      "temporal": "2004-present",
+      "tags": [
+        "omega",
+        "mex",
+        "imaging spectrometer",
+        "mars express"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "France",
+        "Europe"
+      ],
+      "links": [
+        {
+          "label": "Mars Express OMEGA (PSA)",
+          "url": "https://archives.esac.esa.int/psa/ftp/MARS-EXPRESS/OMEGA/"
+        }
+      ]
+    },
+    {
+      "id": "esa-psa-mex-vmc",
+      "name": "Mars Express Visual Monitoring Camera (VMC webcam)",
+      "provider": "ESA PSA; ESA Mars Express operations",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "dataset",
+      "url": "https://archives.esac.esa.int/psa/ftp/MARS-EXPRESS/VMC/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "PNG",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "ftp"
+      ],
+      "description": "Mars Express VMC (Mars Webcam) low-resolution color frames of Mars from orbit (2007-present), with calibrated images archived in the PSA since 2020.",
+      "country": [
+        "Europe"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "VMC"
+      ],
+      "links": [
+        {
+          "label": "VMC blog",
+          "url": "https://blogs.esa.int/vmc/"
+        }
+      ],
+      "temporal": "2007-present",
+      "tags": [
+        "vmc",
+        "webcam",
+        "mars webcam"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-tgo-acs",
+      "name": "ExoMars TGO ACS (PSA)",
+      "provider": "ESA PSA; IKI RAS",
+      "agency": [
+        "ESA",
+        "Roscosmos"
+      ],
+      "kind": "dataset",
+      "url": "https://archives.esac.esa.int/psa/ftp/ExoMars2016/em16_tgo_acs/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "spectra",
+        "atmosphere"
+      ],
+      "spectral": [
+        "nir",
+        "mwir",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "ftp"
+      ],
+      "description": "Atmospheric Chemistry Suite near-, mid- and thermal-IR spectrometer data for Mars atmosphere; spectra and profiles, not images.",
+      "country": [
+        "Russia",
+        "Europe"
+      ],
+      "missions": [
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "ACS"
+      ],
+      "tags": [
+        "acs",
+        "tgo"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-tgo-cassis",
+      "name": "ExoMars TGO CaSSIS raw/calibrated (PSA)",
+      "provider": "ESA PSA; University of Bern",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "dataset",
+      "url": "https://archives.esac.esa.int/psa/ftp/ExoMars2016/em16_tgo_cas/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "ftp"
+      ],
+      "description": "Official PDS4 archive of CaSSIS raw, partially processed and calibrated framelet/image products (bundle em16_tgo_cas). Released six months after acquisition; stitched science products are also listed in ODE.",
+      "country": [
+        "Europe"
+      ],
+      "missions": [
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "CaSSIS"
+      ],
+      "temporal": "2018-present",
+      "tags": [
+        "cassis",
+        "tgo",
+        "pds4"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-psa-tgo-nomad",
+      "name": "ExoMars TGO NOMAD (PSA)",
+      "provider": "ESA PSA; BIRA-IASB",
+      "agency": [
+        "ESA",
+        "BIRA-IASB"
+      ],
+      "kind": "dataset",
+      "url": "https://archives.esac.esa.int/psa/ftp/ExoMars2016/em16_tgo_nmd/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "spectra",
+        "atmosphere"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir",
+        "mwir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "ftp"
+      ],
+      "description": "NOMAD UV-visible and infrared spectrometer data (solar occultation, limb, nadir) for Mars atmospheric composition. Spectral rather than image data.",
+      "country": [
+        "Belgium",
+        "Europe"
+      ],
+      "missions": [
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "NOMAD"
+      ],
+      "links": [
+        {
+          "label": "NOMAD team site",
+          "url": "https://nomad.aeronomie.be/"
+        }
+      ],
+      "tags": [
+        "nomad",
+        "tgo"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "fu-berlin-hrsc-maps",
+      "name": "FU Berlin HRSC webGIS and map server",
+      "provider": "Freie Universitaet Berlin, Planetary Sciences and Remote Sensing",
+      "agency": [
+        "FU Berlin",
+        "DLR"
+      ],
+      "kind": "portal",
+      "url": "https://maps.planet.fu-berlin.de/",
+      "targets": [
+        "mars"
+      ],
+      "description": "Dynamic web map server of the FU Berlin Planetary Sciences group for HRSC (Mars Express) level 3/4 map-projected image and DTM products, searchable by orbit, with direct file download. Newer mosaics are offered as cloud-optimised GeoTIFFs.",
+      "access": "open",
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "HRSC"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "stereo",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "GeoTIFF"
+      ],
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "country": [
+        "Germany"
+      ],
+      "resolution": "12.5-50 m/px",
+      "tags": [
+        "hrsc",
+        "fu berlin",
+        "hrsc webgis",
+        "webgis"
+      ],
+      "verified": "2026-11-05",
+      "links": [
+        {
+          "label": "Planetary Sciences group",
+          "url": "https://www.geo.fu-berlin.de/en/geol/fachrichtungen/planet/index.html"
+        }
+      ]
+    },
+    {
+      "id": "google-maps-mars",
+      "name": "Google Maps / Earth Mars layer",
+      "provider": "Google",
+      "agency": [
+        "Google"
+      ],
+      "kind": "map-service",
+      "url": "https://www.google.com/maps/space/mars/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Interactive Mars globe in Google Maps using mosaics from MOLA, THEMIS, CTX and other NASA data; viewing only, no raw data download.",
+      "tags": [
+        "google mars",
+        "google earth mars"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "inaf-cassis-stereo-archive",
+      "name": "CaSSIS stereo DTM and orthoimage archive (INAF-OAPD)",
+      "provider": "INAF Astronomical Observatory of Padova",
+      "agency": [
+        "INAF",
+        "ASI"
+      ],
+      "kind": "dataset",
+      "url": "https://cassis.oapd.inaf.it/archive/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "stereo",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Repository of 450+ CaSSIS stereo-derived DTMs and orthoimages (3DPD pipeline, MOLA-referenced) with online visualization and download; a copy at the ASI SSDC is planned. Not held in the PSA. Server did not respond from the curator's network on 2026-11-05.",
+      "country": [
+        "Italy"
+      ],
+      "missions": [
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "CaSSIS"
+      ],
+      "temporal": "2018-present",
+      "tags": [
+        "cassis",
+        "dtm",
+        "orthoimage",
+        "inaf",
+        "padova",
+        "3dpd"
+      ],
+      "notes": "URL from published literature (ISPRS 2025/EPSC-DPS 2025); not reachable from curator network, unverified"
+    },
+    {
+      "id": "isro-issdc-pradan",
+      "name": "ISSDC PRADAN data portal",
+      "provider": "Indian Space Science Data Centre (ISSDC), ISRO",
+      "agency": [
+        "ISRO"
+      ],
+      "kind": "portal",
+      "url": "https://pradan.issdc.gov.in/",
+      "targets": [
+        "moon",
+        "sun",
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "hyperspectral",
+        "dem",
+        "radar",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir",
+        "radar",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4",
+        "PDS3"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "ISRO's data download portal for planetary and space science missions including Mars Orbiter Mission, Chandrayaan, AstroSat. Free registration required to download; some data public via ISSDC archives.",
+      "country": [
+        "India"
+      ],
+      "missions": [
+        "Chandrayaan-2",
+        "Chandrayaan-3",
+        "Aditya-L1",
+        "Mars Orbiter Mission"
+      ],
+      "tags": [
+        "pradan",
+        "isro",
+        "issdc"
+      ],
+      "verified": "2026-11-05",
+      "links": [
+        {
+          "label": "Chandrayaan-2",
+          "url": "https://pradan.issdc.gov.in/ch2/"
+        },
+        {
+          "label": "Chandrayaan-3",
+          "url": "https://pradan.issdc.gov.in/ch3/"
+        },
+        {
+          "label": "Aditya-L1",
+          "url": "https://pradan.issdc.gov.in/al1/"
+        }
+      ]
+    },
+    {
+      "id": "isro-mom-lta",
+      "name": "ISRO Mars Orbiter Mission Long Term Archive (ISSDC)",
+      "provider": "Indian Space Science Data Centre (ISSDC), ISRO",
+      "agency": [
+        "ISRO"
+      ],
+      "kind": "archive",
+      "url": "https://mrbrowse.issdc.gov.in/MOMLTA/",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "imagery",
+        "thermal",
+        "atmosphere"
+      ],
+      "spectral": [
+        "visible",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Browse interface for ISRO's Mars Orbiter Mission archive (2014-2020): Mars Colour Camera (MCC) images, Methane Sensor, Thermal Infrared Imaging Spectrometer (TIS), Lyman Alpha Photometer and MENCA, in PDS3. Citation of ISRO/ISSDC required.",
+      "country": [
+        "India"
+      ],
+      "missions": [
+        "Mars Orbiter Mission"
+      ],
+      "instruments": [
+        "MCC",
+        "TIS",
+        "MSM",
+        "LAP",
+        "MENCA"
+      ],
+      "links": [
+        {
+          "label": "MOM at ISSDC",
+          "url": "https://www.issdc.gov.in/marsmission.html"
+        },
+        {
+          "label": "PRADAN portal",
+          "url": "https://pradan.issdc.gov.in/"
+        }
+      ],
+      "temporal": "2014-2022",
+      "tags": [
+        "mom",
+        "mangalyaan",
+        "mcc",
+        "tis",
+        "issdc",
+        "pradan"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "jaxa-darts-planetary",
+      "name": "JAXA DARTS planetary data archive",
+      "provider": "JAXA ISAS Data ARchives and Transmission System",
+      "agency": [
+        "JAXA"
+      ],
+      "kind": "archive",
+      "url": "https://darts.isas.jaxa.jp/planet/",
+      "targets": [
+        "mars",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "JAXA ISAS archive of planetary mission data (Nozomi/Planet-B, Kaguya, Hayabusa, Akatsuki; MMX archive expected). Open access, PDS-style products.",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "Nozomi"
+      ],
+      "tags": [
+        "darts",
+        "isas",
+        "nozomi",
+        "planet-b",
+        "japan"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "jaxa-mmx",
+      "name": "JAXA MMX (Martian Moons eXploration) mission",
+      "provider": "JAXA Institute of Space and Astronautical Science",
+      "agency": [
+        "JAXA",
+        "ISAS"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.mmx.jaxa.jp/en/",
+      "targets": [
+        "phobos",
+        "deimos",
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "browse",
+        "raw"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "JAXA's mission to Phobos and Deimos with Phobos sample return; launched October 2026 on an H3 rocket with arrival at Mars planned for 2027. Cameras (TENGOO, OROCHI), MIRS, MEGANE and other instruments; no science data released yet, archive expected via JAXA DARTS/PDS.",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "MMX"
+      ],
+      "instruments": [
+        "TENGOO",
+        "OROCHI",
+        "MIRS",
+        "MEGANE"
+      ],
+      "temporal": "2026-2031 (planned)",
+      "tags": [
+        "mmx",
+        "phobos sample return",
+        "phobos",
+        "deimos",
+        "jaxa",
+        "martian moons"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "jmars-mars",
+      "name": "JMARS (Java Mission-planning and Analysis for Remote Sensing)",
+      "provider": "Arizona State University Mars Space Flight Facility",
+      "agency": [
+        "ASU",
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://jmars.asu.edu/",
+      "links": [
+        {
+          "label": "JMARS Mars site",
+          "url": "https://jmars.mars.asu.edu/"
+        }
+      ],
+      "targets": [
+        "mars",
+        "moon",
+        "mercury",
+        "vesta",
+        "ceres",
+        "venus",
+        "phobos",
+        "europa",
+        "ganymede",
+        "callisto",
+        "io"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "thermal",
+        "hyperspectral",
+        "map",
+        "mosaic",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "tir",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "GeoTIFF",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Free GIS-like desktop application from ASU that streams global mosaics, THEMIS, TES, MOLA, CRISM, CTX, HiRISE, LROC and other orbital layers. Lets you search image stamps, make custom maps and export data. Java download; no account needed.",
+      "tags": [
+        "jmars",
+        "asu",
+        "gis",
+        "themis",
+        "mars space flight facility"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mars-raw-insight",
+      "name": "InSight raw images",
+      "provider": "NASA/JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "raw-feed",
+      "url": "https://mars.nasa.gov/insight/multimedia/raw-images/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Raw image browser for InSight IDC and ICC cameras by sol (mission ended 2022).",
+      "missions": [
+        "InSight"
+      ],
+      "connector": "mars-raw",
+      "temporal": "2018-2022",
+      "tags": [
+        "insight"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mars-raw-m2020",
+      "name": "Mars 2020 Perseverance raw images",
+      "provider": "NASA/JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "raw-feed",
+      "url": "https://mars.nasa.gov/mars2020/multimedia/raw-images/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Raw JPEG images from Perseverance (Mastcam-Z, SuperCam RMI, WATSON, Navcam, Hazcam, Cachecam) and Ingenuity, released each sol with a JSON feed.",
+      "missions": [
+        "Mars 2020"
+      ],
+      "connector": "mars-raw",
+      "temporal": "2021-present",
+      "tags": [
+        "perseverance",
+        "raw images",
+        "ingenuity"
+      ],
+      "links": [
+        {
+          "label": "JSON feed",
+          "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=mars2020&feedtype=json&num=25&page=0&order=sol+desc"
+        }
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mars-raw-msl",
+      "name": "MSL Curiosity raw images",
+      "provider": "NASA/JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "raw-feed",
+      "url": "https://mars.nasa.gov/msl/multimedia/raw-images/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Raw JPEG images from Curiosity cameras (Mastcam, MAHLI, MARDI, ChemCam RMI, Navcam, Hazcam) released each sol, with a JSON feed. Browse-quality JPEG, not calibrated PDS data.",
+      "missions": [
+        "MSL"
+      ],
+      "connector": "mars-raw",
+      "temporal": "2012-present",
+      "tags": [
+        "curiosity",
+        "msl",
+        "raw images"
+      ],
+      "links": [
+        {
+          "label": "JSON feed",
+          "url": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&num=25&page=0&order=sol+desc"
+        }
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "marssi",
+      "name": "MarsSI",
+      "provider": "Laboratoire de Geologie de Lyon (LGL-TPE), Universite Lyon 1",
+      "agency": [
+        "CNRS",
+        "Univ. Lyon 1",
+        "UCBL"
+      ],
+      "kind": "tool",
+      "url": "https://marssi.univ-lyon1.fr/MarsSI/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "hyperspectral",
+        "stereo"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ENVI"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Web application for on-demand processing of Mars orbital data: CRISM and HiRISE/CTX stereo DTM generation and CRISM map-projected products using the ISIS and Ames Stereo Pipeline. Free account required.",
+      "country": [
+        "France"
+      ],
+      "tags": [
+        "marssi",
+        "lyon",
+        "orthorectification",
+        "dtm",
+        "crism"
+      ],
+      "verified": "2026-11-05",
+      "missions": [
+        "MRO",
+        "Mars Express"
+      ],
+      "instruments": [
+        "CTX",
+        "HiRISE",
+        "HRSC",
+        "CRISM",
+        "OMEGA"
+      ]
+    },
+    {
+      "id": "maven-iuvs-sdc",
+      "name": "MAVEN IUVS and instrument data (LASP SDC)",
+      "provider": "LASP Science Data Center, University of Colorado Boulder",
+      "agency": [
+        "NASA",
+        "LASP"
+      ],
+      "kind": "archive",
+      "url": "https://lasp.colorado.edu/maven/sdc/public/",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "uv",
+        "atmosphere",
+        "imagery"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4",
+        "NetCDF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "MAVEN Science Data Center for IUVS (UV imaging spectrograph images of Mars atmosphere and corona), plus other instruments. Open; products in PDS4 plus quick-look; some IUVS images show Phobos/Deimos.",
+      "missions": [
+        "MAVEN"
+      ],
+      "instruments": [
+        "IUVS"
+      ],
+      "links": [
+        {
+          "label": "IUVS datasets",
+          "url": "https://lasp.colorado.edu/maven/sdc/public/pages/datasets/iuvs.html"
+        }
+      ],
+      "tags": [
+        "maven",
+        "iuvs",
+        "uv"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "msss-ctx-mro",
+      "name": "MSSS MRO CTX/MARCI instrument pages",
+      "provider": "Malin Space Science Systems",
+      "agency": [
+        "MSSS",
+        "NASA"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.msss.com/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Malin Space Science Systems builds and operates CTX and MARCI; site includes MOC, CTX and MARCI information and image releases. Primary data are in PDS.",
+      "missions": [
+        "MRO",
+        "Mars Global Surveyor"
+      ],
+      "instruments": [
+        "CTX",
+        "MARCI",
+        "MOC"
+      ],
+      "tags": [
+        "msss",
+        "malin",
+        "ctx",
+        "marci"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "msss-moc-gallery",
+      "name": "MSSS MOC image gallery",
+      "provider": "Malin Space Science Systems",
+      "agency": [
+        "MSSS",
+        "NASA"
+      ],
+      "kind": "mission-site",
+      "url": "https://asimov.msss.com/moc_gallery/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse",
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Browsable gallery of released MGS MOC images with subject indexes, plus catalogs of all MOC narrow-angle and wide-angle images with browse and full-resolution downloads.",
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "instruments": [
+        "MOC"
+      ],
+      "resolution": "1.4-12 m/px",
+      "tags": [
+        "moc",
+        "msss"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "murray-ctx-mosaic",
+      "name": "Global CTX Mosaic of Mars (Murray Lab, Caltech)",
+      "provider": "Bruce Murray Laboratory for Planetary Visualization, Caltech",
+      "agency": [
+        "Caltech",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://murray-lab.caltech.edu/CTX/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "JP2"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "wms"
+      ],
+      "description": "Global ~5 m/px mosaic of ~110,000 MRO CTX images (5.7 terapixels) with an information-preserving processing method, distributed as downloadable tiles and a 3D streaming view. Also archived in the PDS.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "CTX"
+      ],
+      "resolution": "~5 m/px",
+      "tags": [
+        "ctx",
+        "global mosaic",
+        "murray lab",
+        "dickson"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-crism",
+      "name": "CRISM EDR/TRDR/MTRDR (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node; JHU/APL",
+      "agency": [
+        "NASA",
+        "JHUAPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/mro/crism.htm",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "hyperspectral",
+        "spectra",
+        "map",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "ENVI"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "CRISM hyperspectral cubes (362-3920 nm, up to 544 bands): full- and half-resolution targeted observations (TRDR), multispectral map-projected tiles (MRDR/MTRDR) and derived summary parameter products. 18-36 m/px; PDS3 with ENVI-style headers.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "CRISM"
+      ],
+      "resolution": "18-36 m/px",
+      "temporal": "2006-2022",
+      "tags": [
+        "crism",
+        "trdr",
+        "mtrdr",
+        "mrdr",
+        "imaging spectrometer"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-geosciences-node-mars",
+      "name": "PDS Geosciences Node (GEO)",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/",
+      "links": [
+        {
+          "label": "Data services",
+          "url": "https://pds-geosciences.wustl.edu/dataserv/"
+        },
+        {
+          "label": "Lunar data",
+          "url": "https://pds-geosciences.wustl.edu/lunar/"
+        }
+      ],
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos",
+        "moon",
+        "mercury",
+        "venus",
+        "asteroids"
+      ],
+      "data_types": [
+        "hyperspectral",
+        "dem",
+        "radar",
+        "altimetry",
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "tir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "ISIS3",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "PDS node for solid-surface data of the terrestrial planets and the Moon: orbital imaging spectrometer, altimetry, radar and gravity data plus rover and lander science. Hosts CRISM, LOLA, MOLA, Magellan, MESSENGER, LRO Diviner and Mini-RF archives with per-mission landing pages.",
+      "tags": [
+        "pds",
+        "geosciences node",
+        "wustl",
+        "gsfc",
+        "geo node"
+      ],
+      "verified": "2026-11-05",
+      "missions": [
+        "MRO",
+        "Mars Global Surveyor",
+        "Mars Odyssey",
+        "MER",
+        "MSL",
+        "Mars 2020"
+      ]
+    },
+    {
+      "id": "pds-imaging-mariner-mars",
+      "name": "Mariner 4/6/7/9 Mars images (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mariner.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "PDS volumes for Mariner 4, 6, 7 and 9 Mars images (1965-1972), including restored versions of the early data.",
+      "missions": [
+        "Mariner 4",
+        "Mariner 6",
+        "Mariner 7",
+        "Mariner 9"
+      ],
+      "temporal": "1965-1972",
+      "tags": [
+        "mariner",
+        "historical"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-imaging-mro-volumes",
+      "name": "MRO imaging volumes - CTX, MARCI, HiRISE (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mro.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "atmosphere",
+        "weather",
+        "stereo",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Online PDS volumes for Mars Reconnaissance Orbiter cameras, including the full CTX EDR archive (~6 m/px grayscale) and MARCI daily wide-angle UV/visible swaths. Volumes are PDS3 and browsable per release.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "CTX",
+        "MARCI",
+        "HiRISE"
+      ],
+      "resolution": "CTX ~6 m/px; MARCI ~1 km/px",
+      "temporal": "2006-present",
+      "links": [
+        {
+          "label": "MRO mission portal",
+          "url": "https://pds-imaging.jpl.nasa.gov/portal/mro_mission.html"
+        }
+      ],
+      "tags": [
+        "ctx",
+        "context camera",
+        "marci",
+        "mro"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-imaging-node-mars",
+      "name": "PDS Imaging Node - Mars volumes",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL",
+        "USGS"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/",
+      "targets": [
+        "mars",
+        "mercury",
+        "venus",
+        "moon",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "VICAR",
+        "ISIS3",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest",
+        "bulk"
+      ],
+      "description": "Index of PDS online volumes for Mars imaging: MRO HiRISE/CTX/MARCI, MGS MOC, Viking, MER, MSL, Mars 2020, InSight, Phoenix and Pathfinder. Data files are directly downloadable over HTTPS; also exposed through the Imaging Atlas and PDS4 registry.",
+      "missions": [
+        "MRO",
+        "Mars Global Surveyor",
+        "Viking",
+        "MER",
+        "MSL",
+        "Mars 2020",
+        "InSight",
+        "Phoenix",
+        "Mars Pathfinder"
+      ],
+      "links": [
+        {
+          "label": "Imaging Atlas search",
+          "url": "https://pds-imaging.jpl.nasa.gov/search/"
+        },
+        {
+          "label": "Imaging Node portal",
+          "url": "https://pds-imaging.jpl.nasa.gov/portal/"
+        },
+        {
+          "label": "Bulk HTTPS tree",
+          "url": "https://planetarydata.jpl.nasa.gov/img/data/"
+        }
+      ],
+      "tags": [
+        "pds imaging",
+        "atlas",
+        "image atlas",
+        "volumes",
+        "edr",
+        "rdr"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "connector": "pds-atlas"
+    },
+    {
+      "id": "pds-insight",
+      "name": "InSight IDC/ICC cameras (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/insight.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "InSight lander Instrument Deployment and Context Camera images from Elysium Planitia (2018-2022) as PDS4 bundles.",
+      "missions": [
+        "InSight"
+      ],
+      "instruments": [
+        "IDC",
+        "ICC"
+      ],
+      "temporal": "2018-2022",
+      "tags": [
+        "insight",
+        "idc",
+        "icc"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-m2020-geosciences",
+      "name": "Mars 2020 SuperCam, PIXL, SHERLOC, RIMFAX (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/mars2020/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "spectra",
+        "radar"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "PDS4 data from Perseverance spectrometers and radar: SuperCam, PIXL, SHERLOC, RIMFAX, MOXIE, MEDA.",
+      "missions": [
+        "Mars 2020"
+      ],
+      "instruments": [
+        "SuperCam",
+        "PIXL",
+        "SHERLOC",
+        "RIMFAX"
+      ],
+      "temporal": "2021-present",
+      "tags": [
+        "supercam",
+        "pixl",
+        "sherloc",
+        "rimfax"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-m2020-imaging",
+      "name": "Mars 2020 Perseverance and Ingenuity (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mars2020.html",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mars 2020"
+      ],
+      "instruments": [
+        "Mastcam-Z",
+        "Navcam",
+        "Hazcam",
+        "SuperCam RMI",
+        "SHERLOC WATSON",
+        "PIXL",
+        "Ingenuity cameras"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4",
+        "VICAR"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "temporal": "2021-present",
+      "description": "PDS4 bundles of Perseverance camera images (Mastcam-Z, Navcam, Hazcam, Cachecam, EDL cameras, SuperCam, SHERLOC, PIXL) and the Ingenuity helicopter.",
+      "tags": [
+        "perseverance",
+        "mastcam-z",
+        "watson",
+        "ingenuity",
+        "mars2020"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-mer-geosciences",
+      "name": "MER spectrometers and rover data (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/mer/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "tir",
+        "visible",
+        "nir",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Spirit and Opportunity Mini-TES, APXS, Moessbauer, MI and Pancam products, plus the mission's Analyst's Notebook links.",
+      "missions": [
+        "MER"
+      ],
+      "instruments": [
+        "Mini-TES",
+        "APXS",
+        "Mossbauer",
+        "Pancam"
+      ],
+      "temporal": "2004-2018",
+      "tags": [
+        "mer",
+        "mini-tes"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-mer-imaging",
+      "name": "MER Spirit/Opportunity cameras (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mer.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "stereo",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "VICAR"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Mars Exploration Rover Pancam, Microscopic Imager, Navcam, Hazcam EDR/RDR image volumes (2004-2018) with downloadable PDS3 data.",
+      "missions": [
+        "MER",
+        "MER-A Spirit",
+        "MER-B Opportunity"
+      ],
+      "instruments": [
+        "Pancam",
+        "MI",
+        "Navcam",
+        "Hazcam",
+        "Microscopic Imager"
+      ],
+      "temporal": "2004-2018",
+      "tags": [
+        "spirit",
+        "opportunity",
+        "pancam",
+        "mer"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-mgs-geophysics",
+      "name": "Mars Global Surveyor datasets (PDS Geosciences index)",
+      "provider": "NASA PDS Geosciences Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "map",
+        "dem",
+        "altimetry"
+      ],
+      "spectral": [
+        "radio",
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Index of MGS datasets at the Geosciences Node: MOLA, TES, magnetometer/electron reflectometer (global crustal magnetic field maps) and radio science gravity.",
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "tags": [
+        "mgs",
+        "magnetic field",
+        "gravity"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-mgs-moc",
+      "name": "MGS MOC narrow/wide-angle (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node; Malin Space Science Systems",
+      "agency": [
+        "NASA",
+        "MSSS",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mgs.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Mars Global Surveyor Mars Orbiter Camera EDR volumes: narrow-angle (1.4-12 m/px) and wide-angle images from 1997-2006, in PDS3.",
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "instruments": [
+        "MOC"
+      ],
+      "resolution": "1.4-12 m/px (NA)",
+      "temporal": "1997-2006",
+      "tags": [
+        "moc",
+        "mgs",
+        "narrow angle",
+        "wide angle"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-mgs-mola",
+      "name": "MOLA MEGDR / PEDR (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node; NASA GSFC",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/mola.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "altimetry"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived",
+        "raw"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Mars Orbiter Laser Altimeter topography: gridded MEGDR global DEMs (up to 128 ppd), shot-by-shot PEDR altimetry and derived products; the reference for Mars's global topography.",
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "instruments": [
+        "MOLA"
+      ],
+      "resolution": "~463 m/px (128 ppd)",
+      "tags": [
+        "mola",
+        "megdr",
+        "pedr",
+        "topography"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "temporal": "1997-2006"
+    },
+    {
+      "id": "pds-mgs-tes",
+      "name": "MGS TES (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/mgs/tes.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "spectra",
+        "thermal",
+        "map"
+      ],
+      "spectral": [
+        "tir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Thermal Emission Spectrometer spectra and gridded maps (surface temperature, albedo, thermal inertia, dust and ice opacity, mineral abundance) for Mars.",
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "instruments": [
+        "TES"
+      ],
+      "tags": [
+        "tes",
+        "thermal emission spectrometer"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-mro-hirise",
+      "name": "HiRISE EDR/RDR/DTM archive (PDS, UA HiRISE)",
+      "provider": "HiRISE Operations Center, LPL, University of Arizona (PDS Imaging/Geosciences)",
+      "agency": [
+        "NASA",
+        "UArizona"
+      ],
+      "kind": "dataset",
+      "url": "https://hirise-pds.lpl.arizona.edu/PDS/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "JP2",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Official PDS archive of HiRISE EDR and map-projected / non-projected RDR images (0.25-1.3 m/px, red/color/IR bands) plus stereo DTMs and orthoimages, served directly by the HiRISE team. Products are PDS3 IMG and JPEG 2000.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "HiRISE"
+      ],
+      "resolution": "0.25-1.3 m/px",
+      "temporal": "2006-present",
+      "links": [
+        {
+          "label": "HiRISE DTM catalog",
+          "url": "https://www.uahirise.org/dtm/"
+        },
+        {
+          "label": "HiRISE site and browse",
+          "url": "https://www.uahirise.org/"
+        },
+        {
+          "label": "HiWish",
+          "url": "https://www.uahirise.org/hiwish/"
+        }
+      ],
+      "tags": [
+        "hirise",
+        "rdr",
+        "edr",
+        "dtm",
+        "orthoimage",
+        "mro"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-mro-mcs",
+      "name": "MRO Mars Climate Sounder and Mars atmosphere data (PDS Atmospheres)",
+      "provider": "NASA PDS Atmospheres Node, New Mexico State University",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "archive",
+      "url": "https://atmos.nmsu.edu/data_and_services/atmospheres_data/MARS/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "atmosphere"
+      ],
+      "spectral": [
+        "tir",
+        "mwir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Atmospheres Node Mars data including MRO MCS limb profiles of temperature, dust and water ice, plus Viking, Phoenix and InSight meteorology. Mainly atmospheric profile data, not images.",
+      "missions": [
+        "MRO",
+        "Viking",
+        "Phoenix",
+        "InSight",
+        "MAVEN"
+      ],
+      "instruments": [
+        "MCS"
+      ],
+      "tags": [
+        "mcs",
+        "atmospheres node"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-msl-geosciences",
+      "name": "MSL ChemCam, APXS, CheMin, SAM (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/msl/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "uv",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Curiosity geochemistry and mineralogy datasets including ChemCam LIBS spectra and RMI images, APXS, CheMin XRD and SAM.",
+      "missions": [
+        "MSL"
+      ],
+      "instruments": [
+        "ChemCam",
+        "APXS",
+        "CheMin",
+        "SAM"
+      ],
+      "temporal": "2012-present",
+      "tags": [
+        "chemcam",
+        "apxs",
+        "chemin"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-msl-imaging",
+      "name": "MSL cameras (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/msl.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "VICAR"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Curiosity camera archives on PDS: Mastcam, MAHLI, MARDI, Navcam, Hazcam EDR/RDR including color-corrected and mosaic products.",
+      "missions": [
+        "MSL",
+        "MSL Curiosity"
+      ],
+      "instruments": [
+        "Mastcam",
+        "MAHLI",
+        "MARDI",
+        "Navcam",
+        "Hazcam"
+      ],
+      "temporal": "2012-present",
+      "tags": [
+        "curiosity",
+        "mastcam",
+        "mahli",
+        "mardi",
+        "msl"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-ode-mars",
+      "name": "Orbital Data Explorer - Mars",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://ode.rsl.wustl.edu/mars/",
+      "links": [
+        {
+          "label": "ODE REST API",
+          "url": "https://oderest.rsl.wustl.edu/"
+        },
+        {
+          "label": "ODE help",
+          "url": "https://ode.rsl.wustl.edu/mars/pagehelp/"
+        },
+        {
+          "label": "Product search",
+          "url": "https://ode.rsl.wustl.edu/mars/productsearch"
+        },
+        {
+          "label": "ODE REST service",
+          "url": "https://oderest.rsl.wustl.edu/livegds/"
+        }
+      ],
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "imagery",
+        "hyperspectral",
+        "dem",
+        "thermal",
+        "spectra",
+        "altimetry",
+        "radar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "tir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "PDS Geosciences Orbital Data Explorer (ODE) for Mars: footprint-based search and map interface over orbital instrument products (imagery, spectrometer cubes, altimetry, radar) with direct PDS download links. Has a documented REST API (oderest.rsl.wustl.edu).",
+      "tags": [
+        "ode",
+        "orbital data explorer",
+        "mars"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05",
+      "missions": [
+        "MRO",
+        "Mars Global Surveyor",
+        "Mars Odyssey",
+        "Viking",
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "CRISM",
+        "HiRISE",
+        "CTX",
+        "THEMIS",
+        "MOC",
+        "MOLA",
+        "TES",
+        "SHARAD",
+        "CaSSIS"
+      ]
+    },
+    {
+      "id": "pds-odyssey-grs",
+      "name": "Mars Odyssey GRS/HEND/NS (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/odyssey/grs.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "xray-gamma",
+        "map"
+      ],
+      "spectral": [
+        "gamma"
+      ],
+      "levels": [
+        "raw",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Gamma Ray Spectrometer, neutron spectrometer and HEND data for Mars near-surface hydrogen and elemental composition, including gridded maps and time series.",
+      "missions": [
+        "Mars Odyssey"
+      ],
+      "instruments": [
+        "GRS",
+        "HEND",
+        "NS"
+      ],
+      "tags": [
+        "grs",
+        "hend",
+        "neutron",
+        "hydrogen"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-odyssey-themis",
+      "name": "Odyssey THEMIS EDR/RDR (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node / ASU",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/odyssey/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "thermal",
+        "imagery",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "tir",
+        "visible",
+        "gamma"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Official PDS archive for Mars Odyssey: THEMIS IR/VIS EDR and RDR images, GRS and other instruments. Also served via ODE.",
+      "missions": [
+        "Mars Odyssey"
+      ],
+      "instruments": [
+        "THEMIS",
+        "GRS",
+        "MARIE"
+      ],
+      "tags": [
+        "themis",
+        "odyssey",
+        "edr",
+        "rdr"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-pathfinder",
+      "name": "Mars Pathfinder IMP / Sojourner (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mpf.html",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Mars Pathfinder lander camera (IMP) and Sojourner rover images from Ares Vallis, 1997, in PDS3 volumes.",
+      "missions": [
+        "Mars Pathfinder"
+      ],
+      "instruments": [
+        "IMP",
+        "Sojourner cameras"
+      ],
+      "temporal": "1997",
+      "tags": [
+        "pathfinder",
+        "sojourner",
+        "imp",
+        "mpf"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "pds-phoenix",
+      "name": "Phoenix Mars Lander (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "UArizona",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/phx.html",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Phoenix"
+      ],
+      "instruments": [
+        "SSI",
+        "RAC",
+        "OM"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "temporal": "2008",
+      "description": "Phoenix Surface Stereo Imager, Robotic Arm Camera and Optical Microscope EDRs from the northern plains.",
+      "tags": [
+        "phoenix",
+        "ssi",
+        "phx"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sharad",
+      "name": "SHARAD radargrams (PDS Geosciences)",
+      "provider": "NASA PDS Geosciences Node; ASI / Sapienza",
+      "agency": [
+        "NASA",
+        "ASI"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-geosciences.wustl.edu/missions/mro/sharad.htm",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "radar"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Shallow Radar sounder EDR and RDR radargrams plus derived products for Mars subsurface structure (polar layered deposits, buried ice). PDS3 binary products with labels.",
+      "missions": [
+        "MRO",
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "SHARAD"
+      ],
+      "tags": [
+        "sharad",
+        "radar sounder",
+        "radargram"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "temporal": "2006-present"
+    },
+    {
+      "id": "pds-small-bodies-phobos2",
+      "name": "Phobos 2 VSK-Fregat images and KRFM (PDS Small Bodies)",
+      "provider": "NASA PDS Small Bodies Node",
+      "agency": [
+        "NASA",
+        "IKI"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-smallbodies.astro.umd.edu/data_sb/missions/phobos2/index.shtml",
+      "targets": [
+        "phobos",
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archived data from the Soviet Phobos 2 spacecraft (1989): VSK-Fregat images of Mars and Phobos (37 Phobos frames, up to ~40 m resolution), KRFM radiometer photometry and Termoskan. Preserved for historical reasons; no absolute calibration.",
+      "missions": [
+        "Phobos 2"
+      ],
+      "instruments": [
+        "VSK",
+        "KRFM",
+        "Termoskan"
+      ],
+      "temporal": "1989",
+      "tags": [
+        "phobos 2",
+        "vsk",
+        "krfm",
+        "soviet"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-viking-orbiter",
+      "name": "Viking Orbiter and Lander images (PDS Imaging)",
+      "provider": "NASA PDS Imaging Node",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "dataset",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/viking.html",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "historical",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "VICAR",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Viking Orbiter 1 and 2 Visual Imaging Subsystem images (1976-1980): EDR, RDR and MDIM mosaics; also Viking Lander camera products. Includes Phobos and Deimos images. PDS3 with VICAR files.",
+      "missions": [
+        "Viking",
+        "Viking 1",
+        "Viking 2"
+      ],
+      "instruments": [
+        "VIS"
+      ],
+      "temporal": "1976-1982",
+      "tags": [
+        "viking",
+        "vis",
+        "mdim",
+        "viking lander"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "photojournal-mars",
+      "name": "NASA Photojournal - Mars",
+      "provider": "NASA JPL Photojournal",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "catalog",
+      "url": "https://science.nasa.gov/photojournal/galleries/pj-mars/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Processed, captioned images from Mars missions with PIA catalog numbers, many with full-resolution TIFF/JPEG downloads. Releases only, not raw archives.",
+      "tags": [
+        "photojournal",
+        "pia"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "planetarydata-jpl-img-mirror",
+      "name": "PDS Imaging Node bulk data directory (planetarydata.jpl.nasa.gov/img/data)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://planetarydata.jpl.nasa.gov/img/data/",
+      "targets": [
+        "mars",
+        "mercury",
+        "venus",
+        "moon",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "VICAR"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Direct HTTPS directory listing of Imaging Node mission data (the pds-imaging.jpl.nasa.gov/data/ path redirects here). Use it for wget or rsync-style bulk downloads of raw and calibrated image volumes.",
+      "tags": [
+        "bulk",
+        "directory",
+        "pds",
+        "bulk download"
+      ],
+      "verified": "2026-11-05",
+      "missions": [
+        "MRO",
+        "MER",
+        "MSL",
+        "Mars 2020",
+        "InSight"
+      ]
+    },
+    {
+      "id": "sbn-shape-models",
+      "name": "PDS SBN shape models and maps",
+      "provider": "NASA PDS Small Bodies Node",
+      "agency": [
+        "NASA",
+        "PDS"
+      ],
+      "kind": "dataset",
+      "url": "https://sbn.psi.edu/pds/shape-models/",
+      "targets": [
+        "asteroids",
+        "comets",
+        "eros",
+        "itokawa",
+        "ryugu",
+        "bennu",
+        "vesta",
+        "ceres",
+        "67p",
+        "mathilde",
+        "gaspra",
+        "ida",
+        "halley",
+        "wild-2",
+        "tempel-1",
+        "hartley-2",
+        "borrelly",
+        "didymos",
+        "dimorphos",
+        "phobos",
+        "deimos",
+        "steins",
+        "lutetia",
+        "arrokoth"
+      ],
+      "description": "Catalogue of archived 3D shape models and derived maps for asteroids and comets from spacecraft, radar and lightcurve data. Useful for projecting imagery onto the 3D body.",
+      "data_types": [
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "radar"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "OBJ",
+        "PDS3",
+        "PDS4"
+      ],
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "access": "open",
+      "tags": [
+        "shape model",
+        "dsk",
+        "obj",
+        "polyhedron",
+        "phobos",
+        "deimos",
+        "3d"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "trek-mars",
+      "name": "NASA Mars Trek",
+      "provider": "NASA JPL Solar System Treks Project",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "tool",
+      "url": "https://trek.nasa.gov/mars/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic",
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "GeoTIFF",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "wmts",
+        "wms",
+        "web-ui",
+        "rest",
+        "xyz"
+      ],
+      "description": "Web portal with streaming global and regional Mars basemaps (MOLA, THEMIS, CTX, HiRISE footprints), layer comparison, measurement, 3D view, DEM profile and WMTS/WMS services for external GIS.",
+      "tags": [
+        "mars trek",
+        "solar system treks",
+        "trek",
+        "mars"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ]
+    },
+    {
+      "id": "uahirise-site",
+      "name": "HiRISE image catalog and gallery (uahirise.org)",
+      "provider": "HiRISE Operations Center, Lunar and Planetary Laboratory, University of Arizona",
+      "agency": [
+        "NASA",
+        "UArizona"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.uahirise.org/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived",
+        "browse"
+      ],
+      "formats": [
+        "JP2",
+        "JPEG",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Official HiRISE site: searchable catalog of released observations (by map, keyword, coordinate), anaglyphs, DTM catalog, HiWish public suggestions, image of the day and downloads in JP2/JPEG/PDS formats.",
+      "missions": [
+        "MRO"
+      ],
+      "instruments": [
+        "HiRISE"
+      ],
+      "links": [
+        {
+          "label": "Image catalog",
+          "url": "https://www.uahirise.org/catalog/"
+        },
+        {
+          "label": "DTM catalog",
+          "url": "https://www.uahirise.org/dtm/"
+        },
+        {
+          "label": "HiWish",
+          "url": "https://www.uahirise.org/hiwish/"
+        }
+      ],
+      "resolution": "0.25-1.3 m/px",
+      "temporal": "2006-present",
+      "tags": [
+        "hirise",
+        "anaglyph",
+        "hiwish"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ucl-imars-hrsc",
+      "name": "UCL-MSSL iMars HRSC dataset (PSA)",
+      "provider": "UCL Mullard Space Science Laboratory, via ESA PSA",
+      "agency": [
+        "ESA",
+        "UCL"
+      ],
+      "kind": "dataset",
+      "url": "https://www.cosmos.esa.int/web/psa/UCL-MSSL_iMars_HRSC_v1.0",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "User-contributed HRSC-derived products from the EU iMars project (co-registered, higher-level mosaics and DTMs for change detection) published in the PSA with a DOI.",
+      "country": [
+        "UK"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "HRSC"
+      ],
+      "tags": [
+        "imars",
+        "hrsc",
+        "ucl"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "unibe-cassis-observations",
+      "name": "CaSSIS observations portal (University of Bern)",
+      "provider": "Space Research and Planetary Sciences, University of Bern",
+      "agency": [
+        "Univ. Bern",
+        "ESA"
+      ],
+      "kind": "portal",
+      "url": "https://observations.cassis.unibe.ch/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "browse"
+      ],
+      "formats": [
+        "PDS4",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Browse interface for ExoMars Trace Gas Orbiter CaSSIS observations: color/stereo images at ~4.5 m/px with thumbnails, map search and links to released products and PSA data.",
+      "country": [
+        "Switzerland"
+      ],
+      "missions": [
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "CaSSIS"
+      ],
+      "resolution": "4.5 m/px",
+      "temporal": "2018-present",
+      "tags": [
+        "cassis",
+        "tgo",
+        "exomars",
+        "bern"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "unibe-cassis-site",
+      "name": "CaSSIS team site (University of Bern)",
+      "provider": "University of Bern, Space Research and Planetary Sciences",
+      "agency": [
+        "Univ. Bern",
+        "ESA"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.cassis.unibe.ch/",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "description": "Team website of the Colour and Stereo Surface Imaging System on ExoMars TGO, with image releases, news and pointers to the official data in the PSA.",
+      "access": "open",
+      "missions": [
+        "ExoMars TGO"
+      ],
+      "instruments": [
+        "CaSSIS"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "browse"
+      ],
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "country": [
+        "Switzerland"
+      ],
+      "tags": [
+        "cassis",
+        "bern"
+      ],
+      "verified": "2026-11-05",
+      "formats": [
+        "PDS3"
+      ]
+    },
+    {
+      "id": "usgs-astro-stac-mars",
+      "name": "USGS Astrogeology STAC catalog (Mars collections)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "api",
+      "url": "https://stac.astrogeology.usgs.gov/browser/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem",
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "COG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "stac",
+        "rest",
+        "https"
+      ],
+      "description": "STAC API and browser for USGS planetary analysis-ready data including Mars CTX/HiRISE DTMs and mosaics, THEMIS and others, with COG assets. Open, anonymous.",
+      "connector": "stac:usgs-astro",
+      "tags": [
+        "stac",
+        "astrogeology"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-mars-geologic-map-sim3292",
+      "name": "Geologic Map of Mars (SIM 3292)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "kind": "dataset",
+      "url": "https://pubs.usgs.gov/sim/3292/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "binary",
+        "KML"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "1:20M global geologic map of Mars (Tanaka et al. 2014) with PDF sheets, pamphlet and GIS database ZIP of geologic units; useful context over imagery.",
+      "tags": [
+        "geologic map",
+        "sim3292",
+        "gis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-mola-dem",
+      "name": "Mars MGS MOLA DEM 463 m (Astropedia)",
+      "provider": "USGS Astrogeology",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_mgs_mola_dem_463m",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Global MOLA digital elevation model at 463 m/px in simple cylindrical projection, ready for GIS use as GeoTIFF; the standard topographic basemap for Mars.",
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "instruments": [
+        "MOLA"
+      ],
+      "resolution": "463 m/px",
+      "tags": [
+        "mola",
+        "dem",
+        "astropedia"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-mola-hrsc-blend",
+      "name": "Mars MOLA-HRSC blended DEM 200 m (Astropedia)",
+      "provider": "USGS Astrogeology; DLR",
+      "agency": [
+        "USGS",
+        "DLR"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_mgs_mola_mex_hrsc_blended_dem_global_200m",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Global 200 m/px DEM blending MOLA with Mars Express HRSC topography for finer detail than MOLA alone. GeoTIFF.",
+      "missions": [
+        "Mars Global Surveyor",
+        "Mars Express"
+      ],
+      "resolution": "200 m/px",
+      "tags": [
+        "blended dem",
+        "hrsc",
+        "mola"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-planetary-maps-mars-wms",
+      "name": "USGS planetarymaps.usgs.gov OGC web map services",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "map-service",
+      "url": "https://planetarymaps.usgs.gov/",
+      "links": [
+        {
+          "label": "Mars simple cylindrical WMS",
+          "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map"
+        },
+        {
+          "label": "Mars WMS capabilities",
+          "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map&service=WMS&request=GetCapabilities"
+        },
+        {
+          "label": "Moon WMS capabilities",
+          "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/moon/moon_simp_cyl.map&service=WMS&request=GetCapabilities"
+        },
+        {
+          "label": "Astro web maps description",
+          "url": "https://www.usgs.gov/tools/astro-web-maps"
+        }
+      ],
+      "targets": [
+        "mars",
+        "moon",
+        "mercury",
+        "venus",
+        "vesta",
+        "ceres",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "rhea",
+        "mimas",
+        "dione",
+        "tethys",
+        "iapetus",
+        "phobos"
+      ],
+      "data_types": [
+        "mosaic",
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "PNG",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "wms",
+        "https"
+      ],
+      "description": "Public WMS and WFS endpoints serving USGS planetary global mosaics, DEM color shades and geologic maps per body, usable directly in QGIS, ArcGIS and web maps. Capabilities documents list the layers; Mars example is the simple cylindrical map file.",
+      "tags": [
+        "wms",
+        "planetarymaps",
+        "basemap",
+        "wfs",
+        "ogc",
+        "qgis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-themis-day-ir-mosaic",
+      "name": "THEMIS Day IR Global Mosaic 100 m v12 (Astropedia)",
+      "provider": "ASU / USGS Astrogeology",
+      "agency": [
+        "ASU",
+        "USGS"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_odyssey_themis_ir_day_global_mosaic_100m_v12",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic",
+        "thermal"
+      ],
+      "spectral": [
+        "tir"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Global Mars Odyssey THEMIS daytime IR mosaic at 100 m/px (~21 GB GeoTIFF). Values are stretched and blended into a seamless visual mosaic, not calibrated temperatures; Astropedia also lists regional controlled mosaics and night IR mosaics.",
+      "missions": [
+        "Mars Odyssey"
+      ],
+      "instruments": [
+        "THEMIS"
+      ],
+      "resolution": "100 m/px",
+      "tags": [
+        "themis",
+        "global mosaic",
+        "astropedia",
+        "day ir"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-viking-global-products",
+      "name": "Viking global products and lander mosaics (Astropedia)",
+      "provider": "USGS Astrogeology",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/mars-viking-global-products",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Astropedia entry grouping Viking-era global Mars products (MDIM mosaics and tiles); a companion entry holds Viking Lander 2 rectified photomosaics.",
+      "missions": [
+        "Viking"
+      ],
+      "links": [
+        {
+          "label": "Viking Lander 2 rectified photomosaics",
+          "url": "https://astrogeology.usgs.gov/search/map/mars_viking_lander_2_rectified_photomosaics"
+        }
+      ],
+      "tags": [
+        "viking",
+        "mdim",
+        "astropedia"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-viking-mdim21-color",
+      "name": "Viking MDIM 2.1 colorized global mosaic 232 m (Astropedia)",
+      "provider": "USGS Astrogeology; NASA Ames",
+      "agency": [
+        "USGS",
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_viking_colorized_global_mosaic_232m",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Global color mosaic from ~4,600 Viking Orbiter images at 256 ppd (~232 m/px), controlled to Mariner 9/Viking network; a grayscale MDIM 2.1 version also exists. Color is an artificial composite.",
+      "missions": [
+        "Viking"
+      ],
+      "resolution": "~232 m/px",
+      "tags": [
+        "mdim",
+        "viking",
+        "mosaic"
+      ],
+      "links": [
+        {
+          "label": "MDIM 2.1 grayscale",
+          "url": "https://astrogeology.usgs.gov/search/map/viking_mdim2_1_grayscale_global_mosaic_232m"
+        }
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "vespa-epntap-mars",
+      "name": "VESPA / EPN-TAP Mars data services",
+      "provider": "Europlanet VESPA, Observatoire de Paris",
+      "agency": [
+        "Europlanet",
+        "CNRS"
+      ],
+      "kind": "api",
+      "url": "https://vespa.obspm.fr/planetary/data/",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "tap",
+        "web-ui"
+      ],
+      "description": "Virtual planetary observatory with EPN-TAP services from many Mars data providers, searchable through the VESPA portal or TAP clients such as TOPCAT.",
+      "country": [
+        "France",
+        "Europe"
+      ],
+      "connector": "epntap",
+      "tags": [
+        "vespa",
+        "epn-tap",
+        "europlanet"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "vo-tianwen1-moric",
+      "name": "Tianwen-1 MoRIC true-color map of Mars (VO / HiPS)",
+      "provider": "NAOC GRAS via GAVO / CDS",
+      "agency": [
+        "NAOC",
+        "CNSA"
+      ],
+      "kind": "dataset",
+      "url": "https://dc.g-vo.org/rr/q/lp/custom/CDS/P/Mars/Tianwen1-MoRIC",
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "mosaic",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Virtual Observatory registry record for the 76 m/px Tianwen-1 MoRIC global true-color map of Mars (HiPS), viewable in Aladin and other HiPS clients.",
+      "country": [
+        "China"
+      ],
+      "missions": [
+        "Tianwen-1"
+      ],
+      "instruments": [
+        "MoRIC"
+      ],
+      "resolution": "76 m/px",
+      "tags": [
+        "moric",
+        "hips",
+        "aladin",
+        "tianwen-1"
+      ],
+      "verified": "2026-11-05"
+    }
+  ]
+}

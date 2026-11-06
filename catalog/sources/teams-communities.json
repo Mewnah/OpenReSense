@@ -1,0 +1,496 @@
+{
+  "domain": "teams-communities",
+  "sources": [
+    {
+      "id": "zooniverse-planet-four",
+      "name": "Planet Four (Zooniverse citizen-science catalog of Mars south polar fans)",
+      "provider": "Zooniverse / Planet Four science team (M. Schwamb, M. Aye et al.)",
+      "agency": [
+        "Zooniverse"
+      ],
+      "kind": "dataset",
+      "url": "https://www.zooniverse.org/projects/mschwamb/planet-four",
+      "links": [
+        {
+          "label": "Planet Four: Terrains",
+          "url": "https://www.zooniverse.org/projects/mschwamb/planet-four-terrains"
+        },
+        {
+          "label": "Planet Four: Ridges",
+          "url": "https://www.zooniverse.org/projects/mschwamb/planet-four-ridges"
+        },
+        {
+          "label": "p4tools (Python access to the catalog)",
+          "url": "https://github.com/michaelaye/p4tools"
+        }
+      ],
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mars Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "HiRISE"
+      ],
+      "data_types": [
+        "imagery",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "browse"
+      ],
+      "formats": [
+        "CSV",
+        "PNG"
+      ],
+      "resolution": "HiRISE image tiles",
+      "description": "Zooniverse citizen-science projects in which volunteers mark seasonal fans and blotches (and in sibling projects terrains and ridges) on HiRISE images of Mars. The aggregated results form a catalog of roughly 400,000 south polar seasonal fans (Icarus 2018) that can be loaded with the p4tools Python package. planetfour.org redirects to the Zooniverse project. Classifying requires a free Zooniverse account; the catalog itself is open.",
+      "tags": [
+        "planet four",
+        "p4",
+        "fans",
+        "blotches",
+        "cryo jets",
+        "zooniverse",
+        "citizen science",
+        "hirise"
+      ],
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    },
+    {
+      "id": "lroc-team-site",
+      "name": "LROC team site (featured images, atlases, curated downloads)",
+      "provider": "Arizona State University - LROC Science Operations Center",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "mission-site",
+      "url": "https://lroc.im-ldi.com/",
+      "links": [
+        {
+          "label": "Featured Images",
+          "url": "https://lroc.im-ldi.com/images"
+        },
+        {
+          "label": "Lunar Atlases (PSR Atlas, Pits Atlas)",
+          "url": "https://lroc.im-ldi.com/atlases"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Reconnaissance Orbiter"
+      ],
+      "instruments": [
+        "LROC",
+        "NAC",
+        "WAC"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "description": "Team site of the Lunar Reconnaissance Orbiter Camera. It hosts the Featured Images archive (956 annotated NAC/WAC posts), atlases of permanently shadowed regions and lunar pits, Gigapan panoramas, videos and a Curated Downloads section, and links on to the LROC Data Portal, PDS archive and QuickMap. Complements the separately catalogued LROC data node and PDS archive; no login needed.",
+      "tags": [
+        "lroc",
+        "nac",
+        "wac",
+        "psr atlas",
+        "pits atlas",
+        "lunar pits",
+        "featured images",
+        "gigapan"
+      ],
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    },
+    {
+      "id": "bjj-planetary-maps-images",
+      "name": "Bjorn Jonsson planetary maps and processed spacecraft images",
+      "provider": "Bjorn Jonsson (independent image processor, Iceland)",
+      "agency": [
+        "Independent"
+      ],
+      "country": [
+        "Iceland"
+      ],
+      "kind": "dataset",
+      "url": "https://bjj.mmedia.is/",
+      "links": [
+        {
+          "label": "Planetary maps",
+          "url": "https://bjj.mmedia.is/data/planetary_maps.html"
+        },
+        {
+          "label": "Planetary images",
+          "url": "https://bjj.mmedia.is/images/index.html"
+        }
+      ],
+      "targets": [
+        "venus",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "rhea",
+        "neptune",
+        "vesta",
+        "rings"
+      ],
+      "missions": [
+        "Voyager",
+        "Galileo",
+        "Cassini",
+        "Dawn"
+      ],
+      "data_types": [
+        "mosaic",
+        "map",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "description": "Carefully reprocessed global maps (Jupiter from Voyager 1/2 and Cassini, Io, Europa, Ganymede, Callisto, Saturn, its rings, Rhea, Neptune, Venus) and processed raw images from Voyager, Galileo and Dawn (Vesta), derived from original mission data without AI enhancement. Licensed CC BY-NC 4.0 with extra permission for scientific, educational and outreach use with attribution; the author asks that maps not be mirrored. Also offers the IMG2PNG converter for raw spacecraft images.",
+      "tags": [
+        "voyager",
+        "galileo",
+        "cassini",
+        "jupiter map",
+        "image processing",
+        "img2png",
+        "reprocessed"
+      ],
+      "notes": "Full-resolution download format not stated on index pages; thumbnails are JPG/PNG.",
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    },
+    {
+      "id": "planetary-society-space-image-library",
+      "name": "The Bruce Murray Space Image Library (The Planetary Society)",
+      "provider": "The Planetary Society",
+      "agency": [
+        "Planetary Society"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.planetary.org/space-images",
+      "links": [
+        {
+          "label": "Amateur images",
+          "url": "https://www.planetary.org/space-images/amateur-images"
+        }
+      ],
+      "targets": [
+        "sun",
+        "mercury",
+        "venus",
+        "earth",
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "description": "Curated gallery of photos and videos from space agencies plus artwork, diagrams and amateur-processed images, filterable by subject (planets, small bodies, Universe, Amateur Images) and mission. It is a browse and discovery layer; reuse terms are per image, and the landing page does not state licence or download details.",
+      "tags": [
+        "amateur images",
+        "image processing",
+        "outreach"
+      ],
+      "notes": "Per-image download and licence terms not verified.",
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    },
+    {
+      "id": "openspace-project",
+      "name": "OpenSpace (open-source astrovisualization with planetary globe browsing)",
+      "provider": "OpenSpace Project",
+      "agency": [
+        "OpenSpace"
+      ],
+      "kind": "tool",
+      "url": "https://www.openspaceproject.com/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://docs.openspaceproject.com/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/OpenSpace/OpenSpace"
+        }
+      ],
+      "targets": [
+        "earth",
+        "mars",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "PNG"
+      ],
+      "description": "Free MIT-licensed, cross-platform software for interactive visualisation of the solar system and universe, with a globe browser that shows real planetary surface data (for example Mars from HiRISE imagery, Earth satellite products). Used on desktops and in planetarium domes. The planetary layers shipped or streamed are listed in the documentation.",
+      "tags": [
+        "globe browsing",
+        "planetarium",
+        "visualization",
+        "3d"
+      ],
+      "notes": "Exact list of planetary layers and formats not verified.",
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    },
+    {
+      "id": "nasa-ammos-vicar",
+      "name": "VICAR open source (NASA/JPL image processing system, VISOR)",
+      "provider": "NASA JPL - MIPL / AMMOS",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://github.com/NASA-AMMOS/VICAR",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mars 2020",
+        "MSL",
+        "InSight",
+        "MER",
+        "Phoenix"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "VICAR",
+        "PDS3"
+      ],
+      "protocols": [
+        "https"
+      ],
+      "description": "Apache-2.0 release of the VICAR image processing system, in development since 1966, including VISOR (formerly the Mars Suite) used for operational and PDS archive processing of recent Mars surface missions. Needed to process VICAR-format images natively, with calibration files for Mars 2020, MSL, InSight, MER and Phoenix. Source needs Git LFS plus third-party packages; Linux and macOS binaries are provided.",
+      "tags": [
+        "vicar",
+        "visor",
+        "mipl",
+        "image converter",
+        "mars suite"
+      ],
+      "verified": "2026-11-05",
+      "access": "open"
+    },
+    {
+      "id": "virtual-moon-atlas",
+      "name": "Virtual Moon Atlas (VMA)",
+      "provider": "Christian Legrand and Patrick Chevalley (ap-i.net)",
+      "agency": [
+        "Independent"
+      ],
+      "country": [
+        "France"
+      ],
+      "kind": "tool",
+      "url": "https://www.ap-i.net/avl/en/start",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "map",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "binary"
+      ],
+      "description": "Free GPL lunar atlas and observation-planning program for Windows and Linux. It ships lunar textures such as LRO WAC and WAC colour relief, historical maps (1635-1949), geology/topography/mineral overlays and image libraries, and runs offline. Textures and database content carry external copyrights and may only be used within VMA.",
+      "tags": [
+        "vma",
+        "lunar atlas",
+        "amateur",
+        "observation planning"
+      ],
+      "notes": "Add-on texture download details not verified.",
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    },
+    {
+      "id": "asu-msff-mars-webmaps",
+      "name": "ASU Mars Space Flight Facility - mission webmaps (THEMIS, HiRISE, MOC, CTX, HRSC, Viking)",
+      "provider": "Arizona State University - Mars Space Flight Facility",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "mission-site",
+      "url": "https://mars.asu.edu/",
+      "links": [
+        {
+          "label": "Mars images maps",
+          "url": "https://themis.asu.edu/maps"
+        },
+        {
+          "label": "CTX webmap",
+          "url": "https://global-data.mars.asu.edu/bin/ctx.pl"
+        },
+        {
+          "label": "Mars data",
+          "url": "http://jmars.asu.edu/data"
+        }
+      ],
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mars Odyssey",
+        "Mars Reconnaissance Orbiter",
+        "Mars Global Surveyor",
+        "Mars Express",
+        "Viking"
+      ],
+      "instruments": [
+        "THEMIS",
+        "HiRISE",
+        "CTX",
+        "MOC",
+        "HRSC"
+      ],
+      "data_types": [
+        "imagery",
+        "thermal",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "tir"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "PNG"
+      ],
+      "description": "Home of the THEMIS team and the JMARS developers, with per-mission web maps for browsing image coverage over Mars background maps (albedo, shaded relief, MOLA) that point to the Mars Image Explorer and JMARS for search. Complements the separately catalogued JMARS, THEMIS and Image Explorer entries; no login.",
+      "tags": [
+        "msff",
+        "global-data",
+        "themis maps",
+        "footprints"
+      ],
+      "notes": "Download links not verified on the webmap pages; they act mainly as coverage browsers.",
+      "verified": "2026-11-05",
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4394 @@
+{
+ "domain": "earth-platforms",
+ "sources": [
+  {
+   "id": "airbus-oneatlas",
+   "name": "Airbus OneAtlas",
+   "provider": "Airbus Defence and Space",
+   "agency": [
+    "Airbus"
+   ],
+   "kind": "portal",
+   "url": "https://oneatlas.airbus.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Commercial platform for Pleiades, Pleiades Neo, SPOT and SAR imagery with global basemap and sample/trial data. Browsing the catalog is free; imagery purchase requires an account.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "stereo"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "JP2"
+   ],
+   "access": "commercial",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "wmts"
+   ],
+   "resolution": "0.3-1.5 m",
+   "tags": [
+    "pleiades",
+    "spot",
+    "oneatlas",
+    "airbus"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "allen-coral-atlas",
+   "name": "Allen Coral Atlas",
+   "provider": "Arizona State University / Planet / Vulcan",
+   "agency": [
+    "ASU",
+    "Planet"
+   ],
+   "kind": "portal",
+   "url": "https://allencoralatlas.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global shallow reef maps (benthic habitat, geomorphic zones, bathymetry) derived from Planet satellite imagery at 5 m, downloadable under CC BY after registration.",
+   "regions": [
+    "oceans"
+   ],
+   "data_types": [
+    "map",
+    "ocean",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "~5 m",
+   "tags": [
+    "coral reefs",
+    "bathymetry"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "asf-hyp3",
+   "name": "ASF HyP3 On-Demand SAR Processing",
+   "provider": "Alaska Satellite Facility",
+   "agency": [
+    "NASA",
+    "ASF"
+   ],
+   "kind": "tool",
+   "url": "https://hyp3-docs.asf.alaska.edu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Cloud service for on-demand RTC, InSAR (interferograms), autoRIFT and burst processing of Sentinel-1 and other SAR data. Free monthly quota with Earthdata login; outputs are GeoTIFFs.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "rest",
+    "web-ui"
+   ],
+   "tags": [
+    "hyp3",
+    "rtc",
+    "insar",
+    "interferogram"
+   ],
+   "connector": "asf",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "asf-vertex",
+   "name": "ASF DAAC Vertex",
+   "provider": "Alaska Satellite Facility",
+   "agency": [
+    "NASA",
+    "ASF"
+   ],
+   "kind": "portal",
+   "url": "https://search.asf.alaska.edu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Search and on-demand processing portal for SAR data: Sentinel-1, ALOS PALSAR, UAVSAR, SMAP, RADARSAT-1, ERS, JERS-1, Seasat, NISAR and OPERA products. Free with Earthdata login; links directly to HyP3.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "SAFE",
+    "GeoTIFF",
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "temporal": "1978-present",
+   "tags": [
+    "vertex",
+    "asf",
+    "sentinel-1",
+    "alos palsar",
+    "uavsar"
+   ],
+   "links": [
+    {
+     "label": "ASF API docs",
+     "url": "https://docs.asf.alaska.edu/api/basics/"
+    }
+   ],
+   "connector": "asf",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "aster-gdem",
+   "name": "ASTER Global DEM (GDEM v3)",
+   "provider": "METI / NASA",
+   "agency": [
+    "NASA",
+    "METI"
+   ],
+   "kind": "dataset",
+   "url": "https://lpdaac.usgs.gov/products/astgtmv003/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global 1 arc-second DEM from ASTER stereo imagery covering 83N-83S. Distributed via LP DAAC with Earthdata login.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "dem",
+    "stereo"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "resolution": "30 m",
+   "tags": [
+    "astgtm",
+    "aster dem"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "aster-lp-daac",
+   "name": "ASTER (Terra) Level-1T and Higher Products",
+   "provider": "NASA / METI / LP DAAC",
+   "agency": [
+    "NASA",
+    "METI"
+   ],
+   "kind": "dataset",
+   "url": "https://lpdaac.usgs.gov/data/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Archive of Terra ASTER VNIR/SWIR/TIR products (15/30/90 m), including surface temperature, emissivity and kinetic temperature; accessible via Earthdata Search with free login. The SWIR bands failed in 2008.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "Terra"
+   ],
+   "instruments": [
+    "ASTER"
+   ],
+   "data_types": [
+    "multispectral",
+    "thermal"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF4",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "15-90 m",
+   "temporal": "1999-present",
+   "tags": [
+    "aster",
+    "terra"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "astronaut-photography-gateway",
+   "name": "Gateway to Astronaut Photography of Earth",
+   "provider": "NASA Johnson Space Center",
+   "agency": [
+    "NASA",
+    "JSC"
+   ],
+   "kind": "archive",
+   "url": "https://eol.jsc.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Archive of over 4 million photographs of Earth taken by astronauts from Mercury, Gemini, Apollo, Skylab, Shuttle and ISS (1961-present), searchable by place, date and camera, with Cities at Night. Free JPEG/RAW downloads and georeferencing for many frames.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "ISS",
+    "Shuttle",
+    "Skylab",
+    "Apollo",
+    "Gemini"
+   ],
+   "data_types": [
+    "imagery",
+    "historical",
+    "night-lights"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG",
+    "TIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "temporal": "1961-present",
+   "tags": [
+    "eol",
+    "jsc",
+    "iss photos",
+    "cities at night",
+    "astronaut photos"
+   ],
+   "links": [
+    {
+     "label": "Search Photos",
+     "url": "https://eol.jsc.nasa.gov/SearchPhotos/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "aws-open-data-registry",
+   "name": "Registry of Open Data on AWS",
+   "provider": "Amazon Web Services",
+   "agency": [
+    "AWS"
+   ],
+   "kind": "catalog",
+   "url": "https://registry.opendata.aws/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Searchable index of public datasets hosted on S3, including most major EO archives (Landsat, Sentinel-1/2, NAIP, GOES, Himawari, Copernicus DEM, Maxar open data, 3DEP lidar, MODIS, NISAR sample data). Most buckets are anonymous-read; some are requester-pays. Each entry lists bucket ARN, licence and tutorials.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem",
+    "lidar",
+    "weather",
+    "aerial",
+    "atmosphere",
+    "ocean"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF",
+    "NetCDF",
+    "Zarr",
+    "LAS",
+    "JP2"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "web-ui"
+   ],
+   "tags": [
+    "aws",
+    "s3",
+    "open data on aws"
+   ],
+   "links": [
+    {
+     "label": "Earth observation tag",
+     "url": "https://registry.opendata.aws/tag/earth-observation/"
+    },
+    {
+     "label": "Satellite imagery tag",
+     "url": "https://registry.opendata.aws/tag/satellite-imagery/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "blacksky-spectra",
+   "name": "BlackSky Spectra / Imagery",
+   "provider": "BlackSky",
+   "agency": [
+    "BlackSky"
+   ],
+   "kind": "portal",
+   "url": "https://www.blacksky.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Commercial high-revisit high-resolution optical imagery (about 1 m) from the BlackSky Gen-2/Gen-3 constellation via the Spectra platform. Sample imagery is shown; data are sold.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "commercial",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "~0.5-1 m",
+   "tags": [
+    "blacksky",
+    "gen-3",
+    "high revisit"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "brazil-data-cube",
+   "name": "Brazil Data Cube",
+   "provider": "INPE",
+   "agency": [
+    "INPE"
+   ],
+   "kind": "portal",
+   "url": "https://data.inpe.br/bdc/web/",
+   "targets": [
+    "earth"
+   ],
+   "description": "INPE's data cube infrastructure with analysis-ready Landsat, Sentinel-2, CBERS-4 and MODIS cubes for Brazil, served via STAC and the sits R package. Open access with registration for processing services.",
+   "country": [
+    "Brazil"
+   ],
+   "regions": [
+    "south-america",
+    "amazon"
+   ],
+   "data_types": [
+    "multispectral",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "stac",
+    "web-ui"
+   ],
+   "tags": [
+    "bdc",
+    "inpe",
+    "cbers",
+    "sits"
+   ],
+   "notes": "url did not load from automated fetch (403/502/TLS/DNS); site believed live, not confirmed URL moved 2026-11-05.",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "canada-eodms-rcm",
+   "name": "EODMS (RADARSAT / RCM)",
+   "provider": "Canadian Space Agency / NRCan",
+   "agency": [
+    "CSA",
+    "NRCan"
+   ],
+   "kind": "portal",
+   "url": "https://www.eodms-sgdot.nrcan-rncan.gc.ca/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Earth Observation Data Management System of Canada: archive of RADARSAT-1/2 and RADARSAT Constellation Mission (RCM) SAR data, plus aerial photos. Free registration; RCM data open under licence.",
+   "country": [
+    "Canada"
+   ],
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "RADARSAT-2",
+    "RCM"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "tags": [
+    "radarsat",
+    "rcm",
+    "eodms"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "capella-open-data",
+   "name": "Capella Space Open Data",
+   "provider": "Capella Space",
+   "agency": [
+    "Capella"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/capella_opendata/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Sample SAR products (SLC, GEO, GEC, CPHD, SIDD) from Capella's X-band constellation, offered under CC BY 4.0 with a STAC catalog and AWS bucket.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NITF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac",
+    "web-ui"
+   ],
+   "resolution": "0.5-1 m",
+   "tags": [
+    "capella",
+    "sar open data"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "code-de",
+   "name": "CODE-DE",
+   "provider": "German Aerospace Center / BKG",
+   "agency": [
+    "DLR",
+    "BKG"
+   ],
+   "kind": "portal",
+   "url": "https://code-de.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "German national Copernicus access platform providing Sentinel data and Copernicus services for German public bodies and research, with EO Finder search and cloud resources. Registration is required for most services.",
+   "country": [
+    "Germany"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "SAFE"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "copernicus germany",
+    "dias"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "copernicus-browser",
+   "name": "Copernicus Browser (CDSE)",
+   "provider": "ESA / European Commission",
+   "agency": [
+    "ESA",
+    "EC"
+   ],
+   "kind": "portal",
+   "url": "https://browser.dataspace.copernicus.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Official viewer of the Copernicus Data Space Ecosystem for Sentinel-1/2/3/5P and other Copernicus data with band-math visualisation, time series and product download. Browsing is open; downloads and processing need a free CDSE account.",
+   "country": [
+    "EU"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "atmosphere",
+    "ocean"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "SAFE",
+    "JP2",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "tags": [
+    "cdse",
+    "copernicus data space ecosystem",
+    "sentinel browser"
+   ],
+   "connector": "stac:cdse",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "copernicus-marine",
+   "name": "Copernicus Marine Service (CMEMS)",
+   "provider": "Mercator Ocean International",
+   "agency": [
+    "Mercator",
+    "EC"
+   ],
+   "kind": "portal",
+   "url": "https://marine.copernicus.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Satellite-based and model ocean products: SST, ocean colour, sea level, sea ice and waves, with Python toolbox, WMTS and subsetting service. Free account required.",
+   "country": [
+    "EU"
+   ],
+   "regions": [
+    "oceans"
+   ],
+   "data_types": [
+    "ocean",
+    "ice",
+    "altimetry"
+   ],
+   "spectral": [
+    "visible",
+    "tir",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "Zarr"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "wmts",
+    "opendap"
+   ],
+   "tags": [
+    "cmems",
+    "sea surface temperature",
+    "ocean colour"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "creodias",
+   "name": "CREODIAS",
+   "provider": "CloudFerro",
+   "agency": [
+    "CloudFerro"
+   ],
+   "kind": "portal",
+   "url": "https://creodias.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "European DIAS cloud platform holding a mirror of Sentinel, Landsat and Copernicus service data with EO Finder search and a processing cloud. Searching is public; compute and some access need an account (commercial with trial).",
+   "country": [
+    "Poland",
+    "EU"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "SAFE",
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "opensearch",
+    "odata",
+    "s3"
+   ],
+   "tags": [
+    "dias",
+    "cloudferro",
+    "eo finder"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "desis-iss",
+   "name": "DESIS (ISS hyperspectral)",
+   "provider": "DLR / Teledyne Brown Engineering",
+   "agency": [
+    "DLR",
+    "Teledyne"
+   ],
+   "kind": "portal",
+   "url": "https://teledyne.tcloudhost.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "DLR Earth Sensing Imaging Spectrometer on the ISS (30 m, 235 bands 400-1000 nm). Data are available through the Teledyne portal; also in DLR EOC and NASA catalogs.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "DESIS"
+   ],
+   "data_types": [
+    "hyperspectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "30 m",
+   "temporal": "2018-present",
+   "tags": [
+    "desis",
+    "iss"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "digital-earth-pacific",
+   "name": "Digital Earth Pacific",
+   "provider": "SPC / Pacific Community",
+   "agency": [
+    "SPC"
+   ],
+   "kind": "portal",
+   "url": "https://digitalearthpacific.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Pacific Islands data cube providing analysis-ready Landsat/Sentinel products and derived coastline, water and mangrove layers for Pacific nations, accessible via STAC and cloud storage.",
+   "country": [
+    "Fiji",
+    "Pacific"
+   ],
+   "regions": [
+    "pacific"
+   ],
+   "data_types": [
+    "multispectral",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "stac",
+    "s3",
+    "web-ui"
+   ],
+   "tags": [
+    "dep",
+    "odc pacific"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "dynamic-world",
+   "name": "Dynamic World",
+   "provider": "Google / World Resources Institute",
+   "agency": [
+    "Google",
+    "WRI"
+   ],
+   "kind": "dataset",
+   "url": "https://dynamicworld.app/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Near-real-time global 10 m land use/land cover probabilities for every Sentinel-2 scene since 2015, produced by a deep learning model. Accessible through Earth Engine and the Explorer web app.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "10 m",
+   "temporal": "2015-present",
+   "tags": [
+    "dynamicworld",
+    "land cover"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "earth-search-element84",
+   "name": "Element 84 Earth Search",
+   "provider": "Element 84",
+   "agency": [
+    "Element 84"
+   ],
+   "kind": "api",
+   "url": "https://element84.com/earth-search/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Free public STAC API indexing open datasets on AWS: Sentinel-2 L2A (COGs), Sentinel-1 GRD, Landsat C2 L2, NAIP, Copernicus DEM and others. No login needed; assets are links into open S3 buckets.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem",
+    "aerial"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "JP2"
+   ],
+   "access": "open",
+   "protocols": [
+    "stac",
+    "s3",
+    "rest"
+   ],
+   "tags": [
+    "earth search",
+    "e84",
+    "stac aws"
+   ],
+   "links": [
+    {
+     "label": "STAC API v1",
+     "url": "https://earth-search.aws.element84.com/v1"
+    }
+   ],
+   "connector": "stac:earth-search",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "earth-timelapse",
+   "name": "Google Earth Timelapse",
+   "provider": "Google / CREATE Lab",
+   "agency": [
+    "Google"
+   ],
+   "kind": "tool",
+   "url": "https://earthengine.google.com/timelapse/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Pan-and-zoom time-lapse of Landsat/Sentinel-2 composites (1984-2022) for any location; browse-only video-tile interface.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "video",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "formats": [
+    "MP4"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1984-2022",
+   "tags": [
+    "timelapse"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ecostress",
+   "name": "ECOSTRESS (ISS thermal)",
+   "provider": "NASA JPL / LP DAAC",
+   "agency": [
+    "NASA",
+    "JPL"
+   ],
+   "kind": "mission-site",
+   "url": "https://ecostress.jpl.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "description": "ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station: 70 m land-surface temperature, evapotranspiration and water-use efficiency. Data from LP DAAC (HDF5/COG), free Earthdata login.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "ECOSTRESS"
+   ],
+   "data_types": [
+    "thermal"
+   ],
+   "spectral": [
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5",
+    "COG"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "70 m",
+   "temporal": "2018-present",
+   "tags": [
+    "ecostress",
+    "lst",
+    "iss"
+   ],
+   "links": [
+    {
+     "label": "ECOSTRESS at LP DAAC",
+     "url": "https://www.earthdata.nasa.gov/data/instruments/ecostress"
+    }
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "eo1-hyperion",
+   "name": "EO-1 Hyperion / ALI Archive",
+   "provider": "USGS EROS",
+   "agency": [
+    "USGS",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-earth-observing-one-eo-1-hyperion",
+   "targets": [
+    "earth"
+   ],
+   "description": "Archive of the Hyperion hyperspectral imager (30 m, 220 bands) and Advanced Land Imager from the EO-1 mission (2000-2017). Downloads through EarthExplorer with free login.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "EO-1"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "30 m",
+   "temporal": "2000-2017",
+   "tags": [
+    "hyperion",
+    "eo-1"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "eox-sentinel2-cloudless",
+   "name": "EOX Sentinel-2 Cloudless",
+   "provider": "EOX IT Services",
+   "agency": [
+    "EOX"
+   ],
+   "kind": "map-service",
+   "url": "https://s2maps.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global cloud-free Sentinel-2 mosaics (yearly, 2016 onward) and other layers (Sentinel-1, Blue Marble, terrain) served as WMS/WMTS, free for non-commercial use under CC BY-NC-SA. 10 m resolution.",
+   "country": [
+    "Austria"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "mosaic",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "JPEG",
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "wmts",
+    "wms",
+    "web-ui"
+   ],
+   "resolution": "10 m",
+   "temporal": "2016-2024",
+   "tags": [
+    "s2maps",
+    "eox",
+    "cloudless"
+   ],
+   "links": [
+    {
+     "label": "EOX maps / layers",
+     "url": "https://maps.eox.at/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esri-living-atlas",
+   "name": "Esri Living Atlas of the World",
+   "provider": "Esri",
+   "agency": [
+    "Esri"
+   ],
+   "kind": "catalog",
+   "url": "https://livingatlas.arcgis.com/en/browse/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Esri's curated collection of maps and imagery layers (Landsat, Sentinel-2, NAIP, elevation, land cover) served as ArcGIS tile/image services, many open for viewing and reuse with attribution. Some layers need an ArcGIS account for analysis or export.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "map",
+    "dem",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "derived",
+    "browse"
+   ],
+   "formats": [
+    "PNG",
+    "JPEG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "wmts",
+    "wms"
+   ],
+   "tags": [
+    "arcgis",
+    "living atlas",
+    "landsat explorer"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esri-wayback",
+   "name": "Esri World Imagery Wayback",
+   "provider": "Esri",
+   "agency": [
+    "Esri"
+   ],
+   "kind": "tool",
+   "url": "https://livingatlas.arcgis.com/wayback/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Archive of dated versions of World Imagery since 2014, allowing comparison of how an area looked at different release dates. Releases are also served as tiles.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "mosaic",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "xyz",
+    "wmts"
+   ],
+   "temporal": "2014-present",
+   "tags": [
+    "wayback",
+    "time machine",
+    "historical imagery"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esri-world-imagery",
+   "name": "Esri World Imagery",
+   "provider": "Esri",
+   "agency": [
+    "Esri"
+   ],
+   "kind": "map-service",
+   "url": "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global high-resolution satellite and aerial basemap (down to roughly 0.3 m in many areas) compiled from Maxar, Airbus and national sources. Free to view as a tile service with attribution; usage terms restrict bulk download.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "mosaic",
+    "aerial"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "xyz",
+    "wmts",
+    "rest"
+   ],
+   "resolution": "0.3 m - 1 km",
+   "tags": [
+    "world imagery",
+    "arcgis basemap"
+   ],
+   "links": [
+    {
+     "label": "Tile service",
+     "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "fabdem",
+   "name": "FABDEM (Forest And Buildings removed Copernicus DEM)",
+   "provider": "University of Bristol",
+   "agency": [
+    "Univ. Bristol"
+   ],
+   "kind": "dataset",
+   "url": "https://doi.org/10.5523/bris.s5hqmjcdj8yo2ibzi9b4ew3sn",
+   "targets": [
+    "earth"
+   ],
+   "description": "30 m bare-earth DEM built by machine-learning removal of building and tree heights from Copernicus GLO-30, between 60S and 80N. Free for noncommercial use, tiled GeoTIFF downloads.",
+   "country": [
+    "UK"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "dem"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https"
+   ],
+   "resolution": "30 m",
+   "tags": [
+    "fabdem",
+    "bare earth"
+   ],
+   "notes": "url did not load from automated fetch (403/502/TLS/DNS); site believed live, not confirmed URL moved 2026-11-05.",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "gcp-public-eo-datasets",
+   "name": "Google Cloud Public Datasets (Earth observation)",
+   "provider": "Google Cloud",
+   "agency": [
+    "Google"
+   ],
+   "kind": "catalog",
+   "url": "https://cloud.google.com/storage/docs/public-datasets",
+   "targets": [
+    "earth"
+   ],
+   "description": "Google Cloud Storage and BigQuery public datasets, including the Landsat and Sentinel-2 archives mirrored to GCS buckets and other geospatial collections. Some buckets are requester-pays; metadata indexes are queryable in BigQuery.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "JP2",
+    "GeoTIFF",
+    "SAFE"
+   ],
+   "access": "open",
+   "protocols": [
+    "gcs",
+    "https"
+   ],
+   "tags": [
+    "gcs",
+    "bigquery",
+    "landsat gcs",
+    "sentinel-2 gcs"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "gebco",
+   "name": "GEBCO Gridded Bathymetry",
+   "provider": "GEBCO / Nippon Foundation",
+   "agency": [
+    "GEBCO",
+    "IHO",
+    "IOC"
+   ],
+   "kind": "dataset",
+   "url": "https://www.gebco.net/data_and_products/gridded_bathymetry_data/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global ocean and land terrain model at 15 arc-second resolution, downloadable as NetCDF/GeoTIFF/ASCII, with WMS service and map viewer.",
+   "regions": [
+    "oceans"
+   ],
+   "data_types": [
+    "dem",
+    "ocean"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "wms"
+   ],
+   "resolution": "15 arc-second (~450 m)",
+   "tags": [
+    "bathymetry",
+    "gebco_2024"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "gee-community-catalog",
+   "name": "Awesome GEE Community Catalog",
+   "provider": "Samapriya Roy / community",
+   "agency": [
+    "Community"
+   ],
+   "kind": "catalog",
+   "url": "https://gee-community-catalog.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Community-maintained catalog of datasets shared as Earth Engine assets that are not in the official Earth Engine catalog. Complements the official catalog with regional and thematic products contributed by researchers.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "dem",
+    "mosaic",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "tags": [
+    "gee community",
+    "earth engine assets"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ghsl",
+   "name": "Global Human Settlement Layer (GHSL)",
+   "provider": "EC Joint Research Centre",
+   "agency": [
+    "JRC",
+    "EC"
+   ],
+   "kind": "dataset",
+   "url": "https://human-settlement.emergency.copernicus.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global built-up surface, population and settlement-model rasters (10 m - 1 km, 1975-2030 epochs) derived from Landsat, Sentinel-2 and census data. Downloadable GeoTIFF tiles, with a viewer.",
+   "country": [
+    "EU"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "10 m - 1 km",
+   "tags": [
+    "ghsl",
+    "built-up",
+    "jrc",
+    "urban"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "global-forest-watch",
+   "name": "Global Forest Watch",
+   "provider": "World Resources Institute",
+   "agency": [
+    "WRI"
+   ],
+   "kind": "portal",
+   "url": "https://www.globalforestwatch.org/map/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Web map and data API for derived forest-change layers (Hansen tree cover loss/gain, GLAD and RADD alerts, fires, land cover) based on Landsat, Sentinel and other imagery. Layer downloads need a free account.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "tags": [
+    "gfw",
+    "hansen",
+    "glad alerts",
+    "deforestation"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "global-mangrove-watch",
+   "name": "Global Mangrove Watch",
+   "provider": "Aberystwyth University / solo Earth Observation / Wetlands International",
+   "agency": [
+    "Aberystwyth",
+    "JAXA"
+   ],
+   "kind": "portal",
+   "url": "https://www.globalmangrovewatch.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Maps of mangrove extent and change from 1996 to 2020, derived from JAXA L-band SAR and Landsat, with web viewer and downloads.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map",
+    "sar"
+   ],
+   "spectral": [
+    "radar",
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "temporal": "1996-2020",
+   "tags": [
+    "gmw",
+    "mangroves"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "goes-on-aws",
+   "name": "NOAA GOES-R on AWS",
+   "provider": "NOAA / AWS",
+   "agency": [
+    "NOAA"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/noaa-goes/",
+   "targets": [
+    "earth"
+   ],
+   "description": "GOES-16/17/18/19 ABI full-disk, CONUS, mesoscale L1b and L2 products (0.5-2 km, 16 bands) updated within minutes, free via S3 buckets and Zarr mirrors. NetCDF format.",
+   "regions": [
+    "atlantic",
+    "pacific",
+    "north-america",
+    "south-america"
+   ],
+   "data_types": [
+    "weather",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "https"
+   ],
+   "resolution": "0.5-2 km",
+   "temporal": "2017-present",
+   "tags": [
+    "goes-16",
+    "goes-18",
+    "goes-19",
+    "abi",
+    "goes-east",
+    "goes-west"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "google-earth-engine-catalog",
+   "name": "Google Earth Engine Data Catalog",
+   "provider": "Google",
+   "agency": [
+    "Google"
+   ],
+   "kind": "catalog",
+   "url": "https://developers.google.com/earth-engine/datasets",
+   "targets": [
+    "earth"
+   ],
+   "description": "Browsable catalog of petabytes of public Earth-observation datasets (Landsat, Sentinel, MODIS, VIIRS, DEMs, climate, land cover) held in Earth Engine. Data are analysed through the Earth Engine code editor/API and exported; a Google account with Earth Engine registration is required (free for noncommercial use). Each dataset page links to the Earth Engine snippet, provider and licence.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem",
+    "thermal",
+    "atmosphere",
+    "ocean",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar",
+    "microwave"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "temporal": "1972-present",
+   "tags": [
+    "gee",
+    "earth engine",
+    "ee data catalog"
+   ],
+   "links": [
+    {
+     "label": "Earth Engine code editor",
+     "url": "https://code.earthengine.google.com/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "himawari-on-aws",
+   "name": "JMA Himawari-8/9 on AWS",
+   "provider": "NOAA / JMA",
+   "agency": [
+    "JMA",
+    "NOAA"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/noaa-himawari/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Himawari-8/9 AHI full-disk imagery (16 bands, 0.5-2 km, 10-min) archived on S3 from NOAA CLASS sharing in HSD and NetCDF format.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "pacific",
+    "asia",
+    "australia"
+   ],
+   "data_types": [
+    "weather",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "NetCDF",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3"
+   ],
+   "resolution": "0.5-2 km",
+   "temporal": "2015-present",
+   "tags": [
+    "himawari-8",
+    "himawari-9",
+    "ahi",
+    "hsd"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "historic-england-aerial",
+   "name": "Historic England Aerial Photography Collections",
+   "provider": "Historic England",
+   "agency": [
+    "Historic England"
+   ],
+   "kind": "archive",
+   "url": "https://historicengland.org.uk/images-books/archive/collections/aerial-photos/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Archive of oblique and vertical aerial photographs of England from the 1919 start onwards, catalogued online via the Historic England Archive search. Prints can be ordered.",
+   "country": [
+    "UK"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1919-present",
+   "tags": [
+    "britain from above",
+    "aerofilms",
+    "aerial photography"
+   ],
+   "notes": "url did not load from automated fetch (403/502/TLS/DNS); site believed live, not confirmed"
+  },
+  {
+   "id": "hisui-gportal",
+   "name": "HISUI Hyperspectral (Japan Space Systems)",
+   "provider": "Japan Space Systems",
+   "agency": [
+    "JSS",
+    "METI"
+   ],
+   "kind": "portal",
+   "url": "https://www.jspacesystems.or.jp/en/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Hyperspectral Imager SUIte on the ISS Kibo module (20-30 m, 185 bands 400-2500 nm). Data are distributed via Japanese portals such as Tellus and Japan Space Systems' hosted service.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "HISUI"
+   ],
+   "data_types": [
+    "hyperspectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "restricted",
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "20-30 m",
+   "temporal": "2019-present",
+   "tags": [
+    "hisui",
+    "iss"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "iceye-open-data",
+   "name": "ICEYE Open Data",
+   "provider": "ICEYE",
+   "agency": [
+    "ICEYE"
+   ],
+   "kind": "dataset",
+   "url": "https://www.iceye.com/open-data-initiative",
+   "targets": [
+    "earth"
+   ],
+   "description": "Free sample X-band SAR collections from ICEYE satellites covering emergencies, ships and example imaging modes, distributed as GeoTIFF/SLC/COG via AWS S3 and STAC.",
+   "country": [
+    "Finland"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac",
+    "web-ui"
+   ],
+   "resolution": "0.25-3 m",
+   "tags": [
+    "iceye",
+    "sar",
+    "open data"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ign-remonter-le-temps",
+   "name": "IGN Remonter le temps",
+   "provider": "IGN France",
+   "agency": [
+    "IGN"
+   ],
+   "kind": "portal",
+   "url": "https://remonterletemps.ign.fr/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Compare current and historical aerial photographs and maps of France from the 1920s, including post-war missions. Browse free, in French.",
+   "country": [
+    "France"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "wmts"
+   ],
+   "temporal": "1919-present",
+   "tags": [
+    "ign",
+    "remonter le temps",
+    "photographies aériennes"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "japan-gsi-aerial-photos",
+   "name": "GSI Japan Aerial Photograph Archive (Maps and Air Photos Reader)",
+   "provider": "Geospatial Information Authority of Japan",
+   "agency": [
+    "GSI"
+   ],
+   "kind": "portal",
+   "url": "https://service.gsi.go.jp/map-photos/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Search and view historic aerial photos, including 1940s US Army coverage, and orthophotos of Japan. Site in Japanese; browsing free.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "east-asia"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1936-present",
+   "tags": [
+    "地理院地図",
+    "空中写真",
+    "gsi"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "japan-gsi-dem",
+   "name": "GSI Japan Fundamental Geospatial Data (DEM)",
+   "provider": "Geospatial Information Authority of Japan",
+   "agency": [
+    "GSI"
+   ],
+   "kind": "portal",
+   "url": "https://service.gsi.go.jp/kiban/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Download service for Japan's basic geospatial data including 5 m and 10 m DEM tiles in XML. The site is in Japanese; registration is free.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "east-asia"
+   ],
+   "data_types": [
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "5-10 m",
+   "tags": [
+    "gsi",
+    "国土地理院",
+    "基盤地図情報"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jrc-global-surface-water",
+   "name": "JRC Global Surface Water Explorer",
+   "provider": "EC Joint Research Centre",
+   "agency": [
+    "JRC",
+    "EC"
+   ],
+   "kind": "portal",
+   "url": "https://global-surface-water.appspot.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Maps of surface water occurrence, change, seasonality and transitions from 1984 onward, derived from the Landsat archive at 30 m. Downloadable as tiled GeoTIFF; also in Earth Engine.",
+   "country": [
+    "EU"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "30 m",
+   "temporal": "1984-2021",
+   "tags": [
+    "gsw",
+    "water",
+    "surface water"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "landsat-c2-aws",
+   "name": "Landsat Collection 2 on AWS (USGS Landsat)",
+   "provider": "USGS / AWS",
+   "agency": [
+    "USGS"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/usgs-landsat/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Landsat 4-9 Collection 2 Level-1 and Level-2 (surface reflectance and surface temperature) as COGs on a requester-pays S3 bucket, with the USGS STAC. Includes thermal TIRS bands at 100 m.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "Landsat"
+   ],
+   "data_types": [
+    "multispectral",
+    "thermal"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac"
+   ],
+   "resolution": "30 m (TIR 100 m)",
+   "temporal": "1982-present",
+   "tags": [
+    "landsat 8",
+    "landsat 9",
+    "tirs",
+    "requester pays"
+   ],
+   "connector": "stac:usgs-landsat",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "landsat-mss-archive",
+   "name": "Landsat MSS Collection 2 (1972-1999)",
+   "provider": "USGS EROS",
+   "agency": [
+    "USGS"
+   ],
+   "kind": "archive",
+   "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2",
+   "targets": [
+    "earth"
+   ],
+   "description": "Landsat Collection 2 including Landsat 1-5 MSS Level-1 data (60-80 m), the earliest civil Earth multispectral archive. Downloads are COGs through EarthExplorer or LandsatLook.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "Landsat 1-5"
+   ],
+   "data_types": [
+    "multispectral",
+    "historical"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "s3",
+    "stac"
+   ],
+   "resolution": "60-80 m",
+   "temporal": "1972-1999",
+   "tags": [
+    "mss",
+    "landsat history"
+   ],
+   "connector": "stac:usgs-landsat",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "linz-retrolens",
+   "name": "Retrolens (LINZ historical aerial photos)",
+   "provider": "Land Information New Zealand",
+   "agency": [
+    "LINZ"
+   ],
+   "kind": "portal",
+   "url": "https://retrolens.co.nz/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Free download of scanned historical aerial photographs of New Zealand 1936-2005, searchable by place. Uses image access with a free account.",
+   "country": [
+    "New Zealand"
+   ],
+   "regions": [
+    "pacific"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "TIFF",
+    "JPEG"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1936-2005",
+   "tags": [
+    "retrolens",
+    "linz",
+    "nz aerial"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "lp-daac",
+   "name": "NASA LP DAAC (land processes)",
+   "provider": "USGS EROS / NASA",
+   "agency": [
+    "NASA",
+    "USGS"
+   ],
+   "kind": "archive",
+   "url": "https://lpdaac.usgs.gov/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Land products from MODIS, VIIRS, ASTER, ECOSTRESS, EMIT, HLS, NASADEM, SRTM, GEDI and more, free with Earthdata login through Earthdata Search, AppEEARS and cloud buckets.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "dem",
+    "thermal",
+    "hyperspectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF4",
+    "HDF5",
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "https",
+    "rest"
+   ],
+   "tags": [
+    "lp daac",
+    "hls",
+    "appeears",
+    "modis land"
+   ],
+   "links": [
+    {
+     "label": "AppEEARS",
+     "url": "https://appeears.earthdatacloud.nasa.gov/"
+    }
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "major-tom",
+   "name": "Major TOM (Hugging Face)",
+   "provider": "ESA Phi-lab / Hugging Face",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://huggingface.co/Major-TOM",
+   "targets": [
+    "earth"
+   ],
+   "description": "Large ML-ready tiled Sentinel-1 RTC and Sentinel-2 L1C/L2A collections on a standard global grid, openly hosted on Hugging Face. Easy to sample by grid cell; aimed at EO machine learning.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https"
+   ],
+   "tags": [
+    "majortom",
+    "ml",
+    "sentinel-2 tiles"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "maxar-open-data",
+   "name": "Maxar (Vantor) Open Data Program",
+   "provider": "Maxar Intelligence / Vantor",
+   "agency": [
+    "Maxar",
+    "Vantor"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/maxar-open-data/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Pre- and post-event high-resolution (30-50 cm) satellite imagery released openly under CC BY-NC 4.0 for major disasters, as COGs on AWS with a STAC catalog. Event listings are on the Maxar/Vantor open-data page.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "stereo"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac",
+    "web-ui"
+   ],
+   "resolution": "30-50 cm",
+   "tags": [
+    "digitalglobe",
+    "worldview-3",
+    "disaster",
+    "maxar",
+    "vantor"
+   ],
+   "links": [
+    {
+     "label": "Maxar Open Data page",
+     "url": "https://www.maxar.com/open-data"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "merit-dem",
+   "name": "MERIT DEM",
+   "provider": "University of Tokyo",
+   "agency": [
+    "Univ. Tokyo"
+   ],
+   "kind": "dataset",
+   "url": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_DEM/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Global 3 arc-second (90 m) multi-error-removed improved-terrain DEM built from SRTM and AW3D. Download after a brief request form.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "dem"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https"
+   ],
+   "resolution": "90 m",
+   "tags": [
+    "merit hydro"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "mpc-data-catalog",
+   "name": "Microsoft Planetary Computer Data Catalog",
+   "provider": "Microsoft",
+   "agency": [
+    "Microsoft"
+   ],
+   "kind": "catalog",
+   "url": "https://planetarycomputer.microsoft.com/catalog",
+   "targets": [
+    "earth"
+   ],
+   "description": "Catalog of open planetary-scale Earth datasets (Landsat, Sentinel-1/2/3/5P, NAIP, MODIS, Copernicus DEM, ALOS, ASTER, 3DEP lidar and more) stored as COG/Zarr in Azure Blob. Every collection is searchable through a public STAC API; anonymous access works but short-lived SAS tokens are fetched from the API for downloads.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem",
+    "lidar",
+    "thermal",
+    "atmosphere",
+    "aerial"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF",
+    "NetCDF",
+    "Zarr",
+    "LAS"
+   ],
+   "access": "open",
+   "protocols": [
+    "stac",
+    "azure",
+    "rest",
+    "web-ui"
+   ],
+   "tags": [
+    "mpc",
+    "planetary computer",
+    "azure",
+    "stac"
+   ],
+   "links": [
+    {
+     "label": "STAC API",
+     "url": "https://planetarycomputer.microsoft.com/api/stac/v1"
+    },
+    {
+     "label": "Data API docs",
+     "url": "https://planetarycomputer.microsoft.com/docs/reference/data/"
+    }
+   ],
+   "connector": "stac:planetary-computer",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "mpc-explorer",
+   "name": "Planetary Computer Explorer",
+   "provider": "Microsoft",
+   "agency": [
+    "Microsoft"
+   ],
+   "kind": "tool",
+   "url": "https://planetarycomputer.microsoft.com/explore",
+   "targets": [
+    "earth"
+   ],
+   "description": "Web map for previewing and querying Planetary Computer collections over any area and date range, with rendering presets for each dataset. Useful for quick visual inspection before pulling data through the STAC API.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "stac"
+   ],
+   "tags": [
+    "mpc explorer"
+   ],
+   "connector": "stac:planetary-computer",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-neo",
+   "name": "NASA Earth Observations (NEO)",
+   "provider": "NASA GSFC",
+   "agency": [
+    "NASA"
+   ],
+   "kind": "portal",
+   "url": "https://neo.gsfc.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Browse and download monthly or 8-day global rasters of ocean colour, sea-surface temperature, vegetation, cloud, fire and aerosol products as GeoTIFF, PNG or CSV at 0.1 degree. Lightweight and no login.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "ocean",
+    "atmosphere"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "PNG",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "0.1 degree",
+   "tags": [
+    "neo",
+    "nasa earth observations"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-pace-oci",
+   "name": "PACE Ocean Color Instrument data",
+   "provider": "NASA OB.DAAC",
+   "agency": [
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://oceancolor.gsfc.nasa.gov/data/pace/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Plankton, Aerosol, Cloud, ocean Ecosystem hyperspectral radiometer (OCI, 1 km, 340-890 nm plus SWIR) data from Feb 2024: L1B, L2 ocean/aerosol/land and L3 mapped products. NetCDF files; free Earthdata login for download.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "PACE"
+   ],
+   "data_types": [
+    "ocean",
+    "atmosphere",
+    "hyperspectral"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "1 km",
+   "temporal": "2024-present",
+   "tags": [
+    "pace",
+    "oci",
+    "ocean color"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-visible-earth",
+   "name": "NASA Visible Earth",
+   "provider": "NASA",
+   "agency": [
+    "NASA"
+   ],
+   "kind": "portal",
+   "url": "https://visibleearth.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Catalog of NASA Earth imagery and visualisations, including Blue Marble composites, Black Marble and global imagery at several resolutions.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "browse"
+   ],
+   "formats": [
+    "JPEG",
+    "PNG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "blue marble",
+    "visible earth"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ncap-uk",
+   "name": "NCAP - National Collection of Aerial Photography",
+   "provider": "Historic Environment Scotland",
+   "agency": [
+    "HES"
+   ],
+   "kind": "archive",
+   "url": "https://www.ncap.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Over 30 million aerial photographs of the world's cultural heritage taken since 1920, including RAF/Luftwaffe WWII and post-war coverage plus WWII captured imagery. Search free; downloads are purchased.",
+   "country": [
+    "UK"
+   ],
+   "regions": [
+    "europe",
+    "middle-east"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "TIFF",
+    "JPEG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1920-present",
+   "tags": [
+    "ncap",
+    "raf",
+    "luftwaffe",
+    "ww2 aerial"
+   ],
+   "notes": "url did not load from automated fetch (403/502/TLS/DNS); site believed live, not confirmed"
+  },
+  {
+   "id": "neon-aop",
+   "name": "NEON Airborne Observation Platform",
+   "provider": "NSF NEON",
+   "agency": [
+    "NSF",
+    "NEON"
+   ],
+   "kind": "dataset",
+   "url": "https://www.neonscience.org/data",
+   "targets": [
+    "earth"
+   ],
+   "description": "Annual airborne hyperspectral (1 m, 426 bands), lidar and RGB imagery over NEON sites in the US. Free downloads via the NEON data portal and API.",
+   "country": [
+    "USA"
+   ],
+   "regions": [
+    "usa"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "lidar",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5",
+    "GeoTIFF",
+    "LAS"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "0.1-1 m",
+   "tags": [
+    "neon",
+    "aop"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "netherlands-ahn",
+   "name": "Actueel Hoogtebestand Nederland (AHN)",
+   "provider": "Rijkswaterstaat / PDOK",
+   "agency": [
+    "Rijkswaterstaat"
+   ],
+   "kind": "dataset",
+   "url": "https://www.ahn.nl/",
+   "targets": [
+    "earth"
+   ],
+   "description": "National Dutch elevation dataset: airborne lidar point clouds and 0.5 m DTM/DSM rasters, openly available via PDOK, with a viewer and WCS/WMS services.",
+   "country": [
+    "Netherlands"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "dem",
+    "lidar"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "LAS"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "wcs",
+    "wms"
+   ],
+   "resolution": "0.5 m",
+   "tags": [
+    "ahn",
+    "pdok"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nict-himawari-monitor",
+   "name": "NICT Himawari Real-time Image",
+   "provider": "NICT",
+   "agency": [
+    "NICT"
+   ],
+   "kind": "portal",
+   "url": "https://himawari8.nict.go.jp/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Latest true-colour full-disk Himawari images with 10-minute updates and archive tiles, free to browse and download.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "pacific",
+    "asia"
+   ],
+   "data_types": [
+    "weather",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "formats": [
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "xyz"
+   ],
+   "tags": [
+    "himawari",
+    "nict",
+    "10-min"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "noaa-avhrr-polar-orbiter",
+   "name": "NOAA AVHRR Polar Orbiter archive",
+   "provider": "NASA / NOAA",
+   "agency": [
+    "NASA",
+    "NOAA"
+   ],
+   "kind": "archive",
+   "url": "https://www.class.noaa.gov/search/AVHRR",
+   "targets": [
+    "earth"
+   ],
+   "description": "NOAA NCEI holdings of AVHRR polar-orbiter data (1 km, 1978-present) used for long climate records.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "weather",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "binary",
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "1.1 km",
+   "temporal": "1978-present",
+   "tags": [
+    "avhrr",
+    "noaa polar orbiter"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nrcan-national-air-photo-library",
+   "name": "National Air Photo Library (Canada)",
+   "provider": "Natural Resources Canada",
+   "agency": [
+    "NRCan"
+   ],
+   "kind": "archive",
+   "url": "https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/air-photos-library/national-air-photo-library",
+   "targets": [
+    "earth"
+   ],
+   "description": "World's largest collection of Canadian aerial photographs, over 6 million frames since 1920; catalog online, many digitised and purchasable.",
+   "country": [
+    "Canada"
+   ],
+   "regions": [
+    "canada"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "TIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1920-present",
+   "tags": [
+    "napl",
+    "air photos"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "open-data-cube",
+   "name": "Open Data Cube",
+   "provider": "Open Data Cube community",
+   "agency": [
+    "Community"
+   ],
+   "kind": "tool",
+   "url": "https://www.opendatacube.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Open-source software and directory of national and regional data cubes (Australia, Africa, Colombia, Vietnam, Switzerland, Pacific and others). A good entry for finding additional ODC deployments with analysis-ready EO time series.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF",
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "odc",
+    "datacube"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "openaerialmap",
+   "name": "OpenAerialMap",
+   "provider": "Humanitarian OpenStreetMap Team",
+   "agency": [
+    "HOT"
+   ],
+   "kind": "portal",
+   "url": "https://openaerialmap.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Open repository of community-contributed drone, aircraft and satellite imagery under CC-BY, searchable by map with a REST API and STAC. Imagery is served as COG/TMS and directly downloadable.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "aerial"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "xyz",
+    "stac"
+   ],
+   "resolution": "cm - m",
+   "tags": [
+    "oam",
+    "drone imagery",
+    "hot"
+   ],
+   "links": [
+    {
+     "label": "API",
+     "url": "https://api.openaerialmap.org/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "openeo-platform",
+   "name": "openEO Platform / openEO CDSE",
+   "provider": "openEO consortium / VITO",
+   "agency": [
+    "VITO",
+    "ESA"
+   ],
+   "kind": "api",
+   "url": "https://openeo.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Open API and federated back ends for cloud processing of EO data (Sentinel, Landsat, DEMs) with Python, R and JavaScript clients and a web editor. The CDSE-hosted back end offers a free tier after login; results download as GeoTIFF/NetCDF.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "rest",
+    "web-ui"
+   ],
+   "tags": [
+    "openeo",
+    "process graphs"
+   ],
+   "links": [
+    {
+     "label": "openEO CDSE",
+     "url": "https://openeo.dataspace.copernicus.eu/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pixxel-open-data",
+   "name": "Pixxel Hyperspectral Data",
+   "provider": "Pixxel",
+   "agency": [
+    "Pixxel"
+   ],
+   "kind": "dataset",
+   "url": "https://www.pixxel.space/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Indian hyperspectral operator (Firefly/Honeybee constellation, 5 m, 135+ bands) that publishes sample open datasets and a data catalog; portal for samples and commercial orders.",
+   "country": [
+    "India"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "hyperspectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "5 m",
+   "tags": [
+    "pixxel",
+    "firefly",
+    "honeybee"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "planet-education-research",
+   "name": "Planet Education and Research Program",
+   "provider": "Planet Labs",
+   "agency": [
+    "Planet"
+   ],
+   "kind": "portal",
+   "url": "https://www.planet.com/markets/education-and-research/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Limited free access to PlanetScope/SkySat imagery quotas for qualifying academic and non-profit researchers via application. Data come through Planet Explorer and the APIs.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "restricted",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "0.5-3 m",
+   "tags": [
+    "planetscope",
+    "skysat",
+    "planet explorer"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "planet-nicfi",
+   "name": "Planet NICFI Tropical Basemaps",
+   "provider": "Planet Labs / Norway's International Climate & Forests Initiative",
+   "agency": [
+    "Planet"
+   ],
+   "kind": "dataset",
+   "url": "https://www.planet.com/nicfi/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Monthly/bi-monthly 4.77 m RGB+NIR basemaps of the tropics (2015-2024) previously free for noncommercial use under the NICFI program. Access via Planet account and Basemaps API; check current program status as terms have changed.",
+   "regions": [
+    "global",
+    "amazon",
+    "africa",
+    "southeast-asia"
+   ],
+   "data_types": [
+    "mosaic",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "wmts",
+    "rest"
+   ],
+   "resolution": "4.77 m",
+   "temporal": "2015-2024",
+   "tags": [
+    "nicfi",
+    "planet basemaps",
+    "tropics"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "planet-tanager-open-data",
+   "name": "Carbon Mapper Data Portal (Tanager / airborne plumes)",
+   "provider": "Carbon Mapper / Planet Labs",
+   "agency": [
+    "Carbon Mapper",
+    "Planet"
+   ],
+   "kind": "dataset",
+   "url": "https://data.carbonmapper.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Methane and CO2 plume detections and hyperspectral (VSWIR) imagery from Tanager-1 and airborne campaigns, released openly through the Carbon Mapper data portal. Includes plume imagery and scene-level data.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "atmosphere"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "resolution": "~30 m",
+   "temporal": "2024-present",
+   "tags": [
+    "tanager",
+    "carbon mapper",
+    "methane",
+    "hyperspectral"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "rammb-slider",
+   "name": "CIRA RAMMB SLIDER",
+   "provider": "CIRA / NOAA RAMMB",
+   "agency": [
+    "NOAA",
+    "CIRA"
+   ],
+   "kind": "tool",
+   "url": "https://rammb-slider.cira.colostate.edu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Zoomable full-resolution viewer for GOES-East/West, Himawari, GK-2A, Meteosat, JPSS and others with band combinations and loops, plus tile downloads.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "weather",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "formats": [
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "slider",
+    "goes",
+    "himawari",
+    "meteosat",
+    "geocolor"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "satellogic-open-data",
+   "name": "Satellogic Open Data (EarthView)",
+   "provider": "Satellogic",
+   "agency": [
+    "Satellogic"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/satellogic-earthview/",
+   "targets": [
+    "earth"
+   ],
+   "description": "EarthView open dataset of Satellogic multispectral imagery (about 1 m, RGB+NIR) for selected sites and research, hosted on AWS with a STAC catalog.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac",
+    "web-ui"
+   ],
+   "resolution": "~1 m",
+   "tags": [
+    "satellogic",
+    "earthview",
+    "neosat"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "sentinel-1-aws",
+   "name": "Sentinel-1 on AWS / Earth Search",
+   "provider": "Element 84 / ESA",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/sentinel-1/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Sentinel-1 GRD and SLC archive mirrored to AWS (C-band, 10 m), searchable via the Earth Search STAC API.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "Sentinel-1"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "SAFE",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac"
+   ],
+   "resolution": "10 m",
+   "temporal": "2014-present",
+   "tags": [
+    "sentinel-1 grd"
+   ],
+   "connector": "stac:earth-search",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "sentinel-5p-pal",
+   "name": "Sentinel-5P Pre-Operations Data Hub / TROPOMI",
+   "provider": "ESA / S5P-PAL",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "archive",
+   "url": "https://data-portal.s5p-pal.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Reprocessed and operational Sentinel-5 Precursor TROPOMI atmospheric products (NO2, O3, CH4, CO, SO2, HCHO, aerosol; about 5.5x3.5 km) in NetCDF. Operational data are on CDSE; this portal hosts the PAL reprocessed record.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "Sentinel-5P"
+   ],
+   "instruments": [
+    "TROPOMI"
+   ],
+   "data_types": [
+    "atmosphere"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "5.5x3.5 km",
+   "temporal": "2018-present",
+   "tags": [
+    "s5p",
+    "tropomi",
+    "nitrogen dioxide",
+    "ozone",
+    "methane"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "sentinel-asia",
+   "name": "Sentinel Asia",
+   "provider": "JAXA / APRSAF",
+   "agency": [
+    "JAXA",
+    "APRSAF"
+   ],
+   "kind": "portal",
+   "url": "https://sentinel-asia.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Disaster-response imagery sharing network for Asia-Pacific with emergency observation requests and image archives from ALOS-2, Sentinel, Planet and others, available to members and via public event pages.",
+   "country": [
+    "Japan"
+   ],
+   "regions": [
+    "asia",
+    "southeast-asia"
+   ],
+   "data_types": [
+    "imagery",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "disaster",
+    "apsrsaf",
+    "emergency"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "skywatch-earthcache",
+   "name": "SkyWatch EarthCache",
+   "provider": "SkyWatch",
+   "agency": [
+    "SkyWatch"
+   ],
+   "kind": "api",
+   "url": "https://www.skywatch.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Single API to search and order imagery across commercial and public satellites. Paid, account needed.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "commercial",
+   "protocols": [
+    "rest",
+    "web-ui"
+   ],
+   "tags": [
+    "skywatch",
+    "earthcache",
+    "aggregator"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "source-cooperative",
+   "name": "Source Cooperative",
+   "provider": "Radiant Earth",
+   "agency": [
+    "Radiant Earth"
+   ],
+   "kind": "catalog",
+   "url": "https://source.coop/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Neutral data-publishing hub from Radiant Earth hosting large geospatial datasets (cloud-native COGs, GeoParquet, Zarr, PMTiles) from many organisations; successor for Radiant MLHub ML training sets. Repositories are browsable and mostly anonymously readable over HTTPS/S3.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "dem",
+    "map",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "derived",
+    "calibrated"
+   ],
+   "formats": [
+    "COG",
+    "Zarr",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "s3",
+    "web-ui"
+   ],
+   "tags": [
+    "radiant earth",
+    "mlhub",
+    "source coop"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "spacenet",
+   "name": "SpaceNet",
+   "provider": "SpaceNet LLC / Maxar / Planet / Capella",
+   "agency": [
+    "SpaceNet"
+   ],
+   "kind": "dataset",
+   "url": "https://spacenet.ai/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Open labelled EO imagery datasets (WorldView, Planet, Capella SAR) for building, road and flood segmentation challenges, hosted free on AWS S3.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3"
+   ],
+   "tags": [
+    "spacenet",
+    "labels",
+    "machine learning"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "spain-pnoa",
+   "name": "PNOA Spain (aerial orthophotos and lidar)",
+   "provider": "Instituto Geográfico Nacional / CNIG",
+   "agency": [
+    "IGN Spain",
+    "CNIG"
+   ],
+   "kind": "portal",
+   "url": "https://pnoa.ign.es/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Plan Nacional de Ortofotografía Aérea: national aerial orthophotos (25-50 cm), historic flights and PNOA-LiDAR point clouds for Spain, downloadable free from the CNIG centro de descargas. Site in Spanish.",
+   "country": [
+    "Spain"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "lidar",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "mosaic",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "LAS"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "wms"
+   ],
+   "resolution": "25-50 cm",
+   "tags": [
+    "pnoa",
+    "cnig",
+    "ortofoto",
+    "lidar españa"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "srtm-gl1",
+   "name": "SRTM Global 1 arc-second",
+   "provider": "NASA / USGS",
+   "agency": [
+    "NASA",
+    "USGS"
+   ],
+   "kind": "dataset",
+   "url": "https://lpdaac.usgs.gov/products/srtmgl1v003/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Shuttle Radar Topography Mission 30 m elevation tiles from the Feb 2000 flight. Distributed through LP DAAC with Earthdata login (HGT format).",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "dem"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "resolution": "30 m",
+   "temporal": "2000",
+   "tags": [
+    "srtm",
+    "shuttle radar"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "stac-index",
+   "name": "STAC Index",
+   "provider": "STAC community",
+   "agency": [
+    "Community"
+   ],
+   "kind": "catalog",
+   "url": "https://stacindex.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Directory of public STAC catalogs and APIs worldwide, with links to compatible clients and tools. Handy for discovering regional or mission STAC endpoints not listed individually here.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "stac",
+    "web-ui"
+   ],
+   "tags": [
+    "stac catalogs",
+    "spatiotemporal asset catalog"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "swiss-data-cube",
+   "name": "Swiss Data Cube",
+   "provider": "UNEP/GRID-Geneva, UNIGE, Swiss Federal Offices",
+   "agency": [
+    "UNEP",
+    "UNIGE"
+   ],
+   "kind": "portal",
+   "url": "https://www.swissdatacube.org/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Open Data Cube for Switzerland with analysis-ready Landsat and Sentinel-2 data, accessed through notebooks and a viewer.",
+   "country": [
+    "Switzerland"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "sdc",
+    "odc"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "swisstopo-swissimage",
+   "name": "swisstopo SWISSIMAGE / swissALTI3D",
+   "provider": "swisstopo",
+   "agency": [
+    "swisstopo"
+   ],
+   "kind": "dataset",
+   "url": "https://www.swisstopo.admin.ch/en/orthoimages",
+   "targets": [
+    "earth"
+   ],
+   "description": "Swiss national 10 cm orthoimage mosaics (SWISSIMAGE) and elevation models (swissALTI3D, swissSURFACE3D lidar), all open data downloadable as COG and via STAC.",
+   "country": [
+    "Switzerland"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "dem",
+    "lidar",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "mosaic",
+    "derived"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF",
+    "LAS"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "stac"
+   ],
+   "resolution": "10 cm",
+   "tags": [
+    "swissimage",
+    "swissalti3d",
+    "swisssurface3d"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "swisstopo-swissimage-journey",
+   "name": "swisstopo Time Travel (historical aerial images)",
+   "provider": "swisstopo",
+   "agency": [
+    "swisstopo"
+   ],
+   "kind": "portal",
+   "url": "https://www.swisstopo.admin.ch/en/timetravel-aerial-images",
+   "targets": [
+    "earth"
+   ],
+   "description": "Interactive viewer of Swiss orthophoto mosaics from 1946 to present and historical maps, with free download of SWISSIMAGE (10 cm) tiles.",
+   "country": [
+    "Switzerland"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "historical",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "resolution": "10 cm - 25 cm",
+   "temporal": "1946-present",
+   "tags": [
+    "swissimage",
+    "swisstopo"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "terrascope-vito",
+   "name": "Terrascope (VITO)",
+   "provider": "VITO Remote Sensing",
+   "agency": [
+    "VITO"
+   ],
+   "kind": "portal",
+   "url": "https://terrascope.be/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Belgian EO platform offering Sentinel-1/2/3, PROBA-V and Copernicus Global Land Service products, with a viewer, catalogue, OGC services and virtual machines. Many products are open; some services need registration.",
+   "country": [
+    "Belgium"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "COG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "wms",
+    "wmts",
+    "opensearch"
+   ],
+   "tags": [
+    "proba-v",
+    "vito",
+    "terrascope"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "umbra-open-data",
+   "name": "Umbra SAR Open Data",
+   "provider": "Umbra",
+   "agency": [
+    "Umbra"
+   ],
+   "kind": "dataset",
+   "url": "https://umbra.space/open-data/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Free high-resolution (sub-meter) X-band SAR imagery (GEC, SICD, SIDD, CPHD) of selected locations, hosted on an open S3 bucket and listed in a STAC catalog. CC BY 4.0.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NITF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac",
+    "web-ui"
+   ],
+   "resolution": "16 cm - 1 m",
+   "tags": [
+    "umbra",
+    "sar open data",
+    "x-band",
+    "sicd"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "unosat-copernicus-ems",
+   "name": "Copernicus Emergency Management Service (Rapid Mapping)",
+   "provider": "European Commission JRC",
+   "agency": [
+    "EC",
+    "JRC"
+   ],
+   "kind": "portal",
+   "url": "https://emergency.copernicus.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Catalog of activations with satellite-derived delineation and grading maps for floods, fires and earthquakes, with downloadable vector and map products and links to source imagery.",
+   "country": [
+    "EU"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "cems",
+    "rapid mapping",
+    "disasters",
+    "emsr"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "up42-marketplace",
+   "name": "UP42 Data Marketplace",
+   "provider": "UP42",
+   "agency": [
+    "UP42"
+   ],
+   "kind": "portal",
+   "url": "https://up42.com/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Marketplace and API aggregating commercial and open EO data from many providers for search, tasking and processing. Registration needed; data are paid.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "sar",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "commercial",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "stac"
+   ],
+   "tags": [
+    "up42",
+    "marketplace",
+    "tasking"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-aerial-single-frames",
+   "name": "USGS EROS Aerial Photography Single Frames",
+   "provider": "USGS EROS",
+   "agency": [
+    "USGS"
+   ],
+   "kind": "archive",
+   "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-aerial-photo-single-frames",
+   "targets": [
+    "earth"
+   ],
+   "description": "Scans of aerial photographs for the US and territories from the 1930s onward (NAPP, NHAP, etc.) accessible via EarthExplorer, free; scanned frames as TIFF.",
+   "country": [
+    "USA"
+   ],
+   "regions": [
+    "usa"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "TIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "1937-present",
+   "tags": [
+    "aerial photos",
+    "napp",
+    "nhap",
+    "earthexplorer"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-gambit-hexagon",
+   "name": "USGS Declassified Satellite Imagery 2 and 3 (KH-7 Gambit, KH-9 Hexagon)",
+   "provider": "USGS EROS",
+   "agency": [
+    "USGS",
+    "NRO"
+   ],
+   "kind": "archive",
+   "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-declassified-data-declassified-satellite-imagery-2",
+   "targets": [
+    "earth"
+   ],
+   "description": "Declassified KH-7 Gambit and KH-9 Hexagon mapping camera imagery (1963-1984), covering the globe at roughly 0.6-9 m. Access through EarthExplorer; scans as TIFF.",
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "KH-7",
+    "KH-9"
+   ],
+   "data_types": [
+    "imagery",
+    "historical",
+    "stereo"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "TIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "0.6-9 m",
+   "temporal": "1963-1984",
+   "tags": [
+    "gambit",
+    "hexagon",
+    "kh-9",
+    "declassified"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "wekeo",
+   "name": "WEkEO",
+   "provider": "EUMETSAT / ESA / Mercator Ocean / ECMWF",
+   "agency": [
+    "EUMETSAT",
+    "ESA",
+    "ECMWF"
+   ],
+   "kind": "portal",
+   "url": "https://www.wekeo.eu/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Copernicus DIAS with unified access to Sentinel, Copernicus Marine, Atmosphere, Land and Climate data, offering the Harmonised Data Access API (HDA) and a Jupyter environment. A free account is required.",
+   "country": [
+    "EU"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "multispectral",
+    "sar",
+    "ocean",
+    "atmosphere"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "SAFE",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "rest",
+    "web-ui"
+   ],
+   "tags": [
+    "dias",
+    "hda",
+    "copernicus dias"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "zoom-earth",
+   "name": "Zoom Earth",
+   "provider": "Zoom Earth",
+   "agency": [
+    "Zoom Earth"
+   ],
+   "kind": "portal",
+   "url": "https://zoom.earth/",
+   "targets": [
+    "earth"
+   ],
+   "description": "Near-real-time viewer of geostationary and polar imagery (GOES, Himawari, Meteosat, GK-2A, VIIRS, MODIS) with hurricane/fire tracks and high-resolution archived satellite basemaps. Browse-only, no data download.",
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "weather",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "formats": [
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "satellite weather",
+    "near real time"
+   ],
+   "verified": "2026-11-05"
+  }
+ ]
+}

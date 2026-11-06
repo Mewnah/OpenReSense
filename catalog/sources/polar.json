@@ -1,0 +1,5225 @@
+{
+ "domain": "polar",
+ "sources": [
+  {
+   "id": "aadc",
+   "name": "AADC - Australian Antarctic Data Centre",
+   "provider": "Australian Antarctic Division",
+   "agency": [
+    "AAD"
+   ],
+   "kind": "archive",
+   "url": "https://data.aad.gov.au/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "imagery",
+    "map",
+    "aerial",
+    "dem",
+    "ice",
+    "historical"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "wms",
+    "rest"
+   ],
+   "description": "Australia's national Antarctic data repository, with metadata and data on aerial photography, satellite imagery, maps and remote-sensing products for Australian Antarctic Territory. The Australian Antarctic Data Centre also runs a Map Catalogue and the ADD service. Open access.",
+   "country": [
+    "Australia"
+   ],
+   "links": [
+    {
+     "label": "Metadata search",
+     "url": "https://data.aad.gov.au/metadata/records/"
+    },
+    {
+     "label": "Maps catalogue search",
+     "url": "https://data.aad.gov.au/find-data/search?search=maps"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "1940s-present",
+   "tags": [
+    "aadc",
+    "aad",
+    "australian antarctic"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "aadc-aerial-photography",
+   "name": "AADC Antarctic aerial photography and satellite image catalogue",
+   "provider": "Australian Antarctic Division",
+   "agency": [
+    "AAD"
+   ],
+   "kind": "catalog",
+   "url": "https://data.aad.gov.au/find-data/search?search=maps",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "aerial",
+    "historical",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "mosaic"
+   ],
+   "formats": [
+    "TIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Catalogue of map and imagery holdings of the Australian Antarctic Division, including digitised historic air photography and orthoimagery for Australian stations. Some products are only listed, not downloadable.",
+   "country": [
+    "Australia"
+   ],
+   "resolution": "varies",
+   "temporal": "1930s-present",
+   "tags": [
+    "mapcat",
+    "aerial photos",
+    "air photos"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "aari-data",
+   "name": "AARI - Arctic and Antarctic Research Institute (Russia) ice services",
+   "provider": "Arctic and Antarctic Research Institute",
+   "agency": [
+    "AARI",
+    "Roshydromet"
+   ],
+   "kind": "portal",
+   "url": "https://aari.ru/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "imagery"
+   ],
+   "spectral": [
+    "radar",
+    "visible",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Russian polar institute providing sea ice charts, forecasts and satellite imagery for the Arctic and Southern oceans, and the Russian Antarctic Expedition. The sea ice chart service is at the Russian-language site.",
+   "country": [
+    "Russia"
+   ],
+   "resolution": "Vector charts",
+   "temporal": "1930s-present",
+   "tags": [
+    "aari",
+    "sea ice charts",
+    "ААНИИ"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "amrc-satellite-composites",
+   "name": "AMRC Antarctic Satellite Composite Imagery",
+   "provider": "Antarctic Meteorological Research and Data Center, UW-Madison SSEC",
+   "agency": [
+    "AMRDC",
+    "NSF"
+   ],
+   "kind": "archive",
+   "url": "https://amrdcdata.ssec.wisc.edu/group/antarctic-satellite-composite-imagery",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "imagery",
+    "weather",
+    "thermal"
+   ],
+   "spectral": [
+    "tir",
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "browse"
+   ],
+   "formats": [
+    "PNG",
+    "JPEG",
+    "MP4"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Continent-wide composites of geostationary and polar-orbiting infrared, water vapour and visible imagery of Antarctica, produced every three hours since 1992, in the AMRDC data repository. Free CC-BY downloads.",
+   "country": [
+    "USA"
+   ],
+   "resolution": "~5 km, 3-hourly",
+   "temporal": "1992-present",
+   "tags": [
+    "amrc",
+    "amrdc",
+    "composite",
+    "ssec"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "amrdc-data-repository",
+   "name": "AMRDC Data Repository (Antarctic meteorology and remote sensing)",
+   "provider": "Antarctic Meteorological Research and Data Center, UW-Madison",
+   "agency": [
+    "AMRDC",
+    "NSF"
+   ],
+   "kind": "archive",
+   "url": "https://amrdcdata.ssec.wisc.edu/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "imagery",
+    "weather",
+    "map"
+   ],
+   "spectral": [
+    "tir",
+    "visible",
+    "microwave"
+   ],
+   "levels": [
+    "derived",
+    "browse"
+   ],
+   "formats": [
+    "NetCDF",
+    "PNG",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Open data repository of the US Antarctic meteorology centre, with satellite composites, automatic weather station data and model output for Antarctica.",
+   "resolution": "varies",
+   "temporal": "1980s-present",
+   "tags": [
+    "amrdc",
+    "amrc",
+    "aws",
+    "ssec"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "arctic-data-center",
+   "name": "NSF Arctic Data Center",
+   "provider": "National Center for Ecological Analysis and Synthesis",
+   "agency": [
+    "NSF",
+    "NCEAS"
+   ],
+   "kind": "archive",
+   "url": "https://arcticdata.io/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "greenland",
+    "alaska"
+   ],
+   "data_types": [
+    "imagery",
+    "map",
+    "dem",
+    "ice",
+    "aerial",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "radar",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "NSF Arctic Section's primary repository for Arctic research data, including high-resolution imagery, UAV and satellite derived products, permafrost and sea ice maps. Open download; DOI assigned for each dataset.",
+   "country": [
+    "USA"
+   ],
+   "links": [
+    {
+     "label": "Search",
+     "url": "https://arcticdata.io/catalog/data"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "arcticdata.io",
+    "nsf arctic",
+    "permafrost"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "arctic-sdi-geoportal",
+   "name": "Arctic SDI Geoportal",
+   "provider": "Arctic Spatial Data Infrastructure",
+   "agency": [
+    "Arctic SDI"
+   ],
+   "kind": "catalog",
+   "url": "https://arctic-sdi.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "greenland",
+    "alaska",
+    "canada",
+    "siberia",
+    "europe"
+   ],
+   "data_types": [
+    "map",
+    "imagery",
+    "dem",
+    "aerial"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "wms",
+    "wmts",
+    "https"
+   ],
+   "description": "Arctic Council-linked spatial data infrastructure that federates mapping agencies' basemap, imagery and elevation services for the eight Arctic states, including a pan-Arctic reference map and geoportal.",
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "arctic sdi",
+    "arctic council",
+    "arctic spatial data infrastructure"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "arktisk-institut-photos",
+   "name": "Arktisk Institut photo collections (Greenland and the Arctic)",
+   "provider": "Arktisk Institut (Danish Arctic Institute)",
+   "agency": [
+    "Arktisk Institut"
+   ],
+   "kind": "archive",
+   "url": "https://arktiskinstitut.dk/en/the-archives/photo-collections",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland",
+    "arctic"
+   ],
+   "data_types": [
+    "historical",
+    "aerial",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "JPEG",
+    "TIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "description": "Large digitised archive of historical photographs of Greenland and the Arctic, including expedition and aerial photos, with an online photo search. Many images are viewable online; high-resolution use may need permission.",
+   "country": [
+    "Denmark"
+   ],
+   "resolution": "scanned photo",
+   "temporal": "1800s-present",
+   "tags": [
+    "arktisk institut",
+    "greenland historical photos",
+    "arktiske billeder"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "asf-daac-arctic",
+   "name": "Alaska Satellite Facility DAAC (SAR in polar regions)",
+   "provider": "Alaska Satellite Facility DAAC, UAF",
+   "agency": [
+    "ASF",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://asf.alaska.edu/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "alaska",
+    "global"
+   ],
+   "data_types": [
+    "sar",
+    "radar",
+    "dem"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "SAFE",
+    "binary",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "https",
+    "s3"
+   ],
+   "description": "ASF DAAC archives Sentinel-1, ALOS PALSAR, RADARSAT-1 (including the Antarctic Mapping Mission), ERS, JERS and UAVSAR data, with extensive Arctic and Antarctic coverage. Search with Vertex or the API; downloads need Earthdata Login.",
+   "country": [
+    "USA"
+   ],
+   "links": [
+    {
+     "label": "Vertex",
+     "url": "https://search.asf.alaska.edu/"
+    },
+    {
+     "label": "ASF API",
+     "url": "https://docs.asf.alaska.edu/api/basics/"
+    }
+   ],
+   "resolution": "5-30 m (Sentinel-1, ALOS, RADARSAT-1 etc.)",
+   "temporal": "1991-present",
+   "tags": [
+    "asf",
+    "vertex",
+    "sentinel-1",
+    "alos palsar",
+    "radarsat-1"
+   ],
+   "connector": "asf",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "awi-meereisportal",
+   "name": "Meereisportal - sea ice portal (AWI)",
+   "provider": "Alfred Wegener Institute",
+   "agency": [
+    "AWI"
+   ],
+   "kind": "portal",
+   "url": "https://data.meereisportal.de/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "microwave",
+    "radar",
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "PNG",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "AWI portal for sea ice concentration, thickness (CryoSat-2/SMOS), drift and snow depth products with a map viewer and downloads. Open access.",
+   "country": [
+    "Germany"
+   ],
+   "links": [
+    {
+     "label": "Data",
+     "url": "https://data.meereisportal.de/data/"
+    }
+   ],
+   "resolution": "6.25-25 km",
+   "temporal": "1979-present",
+   "tags": [
+    "meereisportal",
+    "sea ice thickness",
+    "smos",
+    "cryosat"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "awi-o2a",
+   "name": "AWI O2A data portal (Observation to Archive)",
+   "provider": "Alfred Wegener Institute",
+   "agency": [
+    "AWI"
+   ],
+   "kind": "portal",
+   "url": "https://dashboard.awi.de/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "imagery",
+    "ocean",
+    "ice",
+    "aerial"
+   ],
+   "spectral": [
+    "visible",
+    "radar",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "CSV",
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "AWI's platform for near-real-time and archived polar observations from Polarstern, aircraft, stations and satellites, including sea ice cameras and airborne imaging. Some feeds are open, others need registration.",
+   "country": [
+    "Germany"
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "awi",
+    "o2a",
+    "polarstern",
+    "neumayer"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "bedmap",
+   "name": "Bedmap1, Bedmap2 and Bedmap3 Antarctic ice thickness and bed topography",
+   "provider": "British Antarctic Survey",
+   "agency": [
+    "BAS"
+   ],
+   "kind": "dataset",
+   "url": "https://www.bas.ac.uk/project/bedmap/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Compilations of Antarctic ice thickness, surface and bed elevation: Bedmap1/2 rasters plus Bedmap3 grids and the radar point data behind them. Downloadable from the UK Polar Data Centre.",
+   "links": [
+    {
+     "label": "Bedmap3 dataset record",
+     "url": "https://doi.org/10.5285/2d0e4791-8e20-46a3-80e4-f5f6716025d2"
+    }
+   ],
+   "resolution": "500 m (Bedmap3)",
+   "temporal": "Compilation",
+   "tags": [
+    "bedmap2",
+    "bedmap3",
+    "ice thickness",
+    "bed elevation"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "byu-scp",
+   "name": "BYU Scatterometer Climate Record Pathfinder (SCP) - polar and iceberg products",
+   "provider": "Brigham Young University Microwave Earth Remote Sensing Lab",
+   "agency": [
+    "BYU",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://www.scp.byu.edu/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "global"
+   ],
+   "data_types": [
+    "ice",
+    "radar",
+    "map"
+   ],
+   "spectral": [
+    "microwave",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "NetCDF",
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "ftp",
+    "web-ui"
+   ],
+   "description": "Enhanced-resolution scatterometer image products (QuikSCAT, ASCAT, ERS and others), Antarctic and Arctic iceberg database and sea ice and ice sheet melt maps. Open download.",
+   "country": [
+    "USA"
+   ],
+   "resolution": "4.45-25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "scp",
+    "scatterometer",
+    "qscat",
+    "antarctic icebergs",
+    "bgrs"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "canada-ice-service",
+   "name": "Canadian Ice Service sea ice charts and imagery archive",
+   "provider": "Environment and Climate Change Canada",
+   "agency": [
+    "ECCC"
+   ],
+   "kind": "archive",
+   "url": "https://iceweb1.cis.ec.gc.ca/Archive/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "canada"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "sar"
+   ],
+   "spectral": [
+    "radar",
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Archive of Canadian Ice Service weekly and daily ice charts for Canadian waters and the Arctic, as shapefiles and e00 vector files. No login.",
+   "country": [
+    "Canada"
+   ],
+   "links": [
+    {
+     "label": "CIS home",
+     "url": "https://www.canada.ca/en/environment-climate-change/services/ice-forecasts-observations.html"
+    }
+   ],
+   "resolution": "Vector charts",
+   "temporal": "1960s-present",
+   "tags": [
+    "cis",
+    "ice charts",
+    "egg codes"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "canada-pdc",
+   "name": "Polar Data Catalogue (Canada)",
+   "provider": "Canadian Polar Data Network / CCIN",
+   "agency": [
+    "CCIN",
+    "Polar Knowledge Canada"
+   ],
+   "kind": "catalog",
+   "url": "https://www.polardata.ca/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "antarctica",
+    "canada"
+   ],
+   "data_types": [
+    "imagery",
+    "aerial",
+    "map",
+    "ice",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "CSV",
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "rest"
+   ],
+   "description": "Canada's repository and metadata catalogue for Arctic and Antarctic research datasets, including satellite imagery and sea ice products. Includes a CCIN map search.",
+   "country": [
+    "Canada"
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "polardata",
+    "ccin",
+    "canadian arctic"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "chinare-nadc",
+   "name": "National Arctic and Antarctic Data Center (China)",
+   "provider": "Polar Research Institute of China",
+   "agency": [
+    "PRIC",
+    "CAA"
+   ],
+   "kind": "archive",
+   "url": "https://www.chinare.org.cn/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "antarctica"
+   ],
+   "data_types": [
+    "imagery",
+    "map",
+    "ice",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "National Arctic and Antarctic data portal of China (CHINARE), hosting Chinese expedition and remote-sensing data. Interface mostly in Chinese; many datasets need registration.",
+   "country": [
+    "China"
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "chinare",
+    "pric",
+    "nadc",
+    "极地"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "copernicus-land-snow-ice",
+   "name": "Copernicus Land Monitoring Service snow and ice (High Resolution Snow and Ice Monitoring)",
+   "provider": "European Environment Agency / Copernicus Land",
+   "agency": [
+    "Copernicus",
+    "EEA"
+   ],
+   "kind": "portal",
+   "url": "https://land.copernicus.eu/en/products/snow",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "europe",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "https",
+    "wms"
+   ],
+   "description": "Pan-European 20 m snow cover, wet snow, ice and glacier layers from Sentinel-1 and Sentinel-2, including Svalbard and Iceland. Download needs a free Copernicus Land account.",
+   "missions": [
+    "Sentinel-1",
+    "Sentinel-2"
+   ],
+   "resolution": "20-60 m",
+   "temporal": "2016-present",
+   "tags": [
+    "hr-s&i",
+    "snow cover",
+    "sentinel-2"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "copernicus-marine-seaice",
+   "name": "Copernicus Marine sea ice products (Arctic and Antarctic)",
+   "provider": "Copernicus Marine Service (Mercator Ocean)",
+   "agency": [
+    "Copernicus",
+    "CMEMS"
+   ],
+   "kind": "api",
+   "url": "https://data.marine.copernicus.eu/products?facets=areas%7EArctic+Ocean",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "ice",
+    "ocean",
+    "map"
+   ],
+   "spectral": [
+    "microwave",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "Zarr"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "opendap",
+    "rest"
+   ],
+   "description": "Sea ice concentration, thickness, drift and analysis/forecast products for polar oceans from the Copernicus Marine Service. Free account needed; use the toolbox or web subset.",
+   "links": [
+    {
+     "label": "Marine Data Store",
+     "url": "https://data.marine.copernicus.eu/"
+    }
+   ],
+   "resolution": "1-25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "cmems",
+    "copernicus marine",
+    "sea ice thickness"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "copernicus-polar-services",
+   "name": "Copernicus Climate Data Store sea ice and polar ERA5 products",
+   "provider": "ECMWF / Copernicus Climate Change Service",
+   "agency": [
+    "Copernicus",
+    "ECMWF"
+   ],
+   "kind": "api",
+   "url": "https://cds.climate.copernicus.eu/datasets?q=sea+ice",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "atmosphere",
+    "map"
+   ],
+   "spectral": [
+    "microwave",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "GRIB"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "rest",
+    "web-ui",
+    "https"
+   ],
+   "description": "Sea ice concentration, thickness and edge datasets and ERA5 polar reanalysis in the C3S Climate Data Store; requires a free account with API key.",
+   "resolution": "0.25 deg",
+   "temporal": "1979-present",
+   "tags": [
+    "c3s",
+    "cds",
+    "era5"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "cpom-cryosat",
+   "name": "CPOM CryoSat-2 sea ice thickness, volume and mass portal",
+   "provider": "Centre for Polar Observation and Modelling, UCL",
+   "agency": [
+    "CPOM",
+    "UCL"
+   ],
+   "kind": "portal",
+   "url": "https://www.cpom.ucl.ac.uk/seaice/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "greenland"
+   ],
+   "data_types": [
+    "altimetry",
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "CPOM portal with monthly CryoSat-2 sea ice thickness, volume and mass for the Arctic and Antarctic, as 5 km polar stereographic NetCDF grids in near-real-time and consolidated versions. Open download; the Leeds archive hosts further CPOM products.",
+   "country": [
+    "UK"
+   ],
+   "links": [
+    {
+     "label": "CPOM data archive (Leeds)",
+     "url": "https://cpom.org.uk/leeds_data/"
+    }
+   ],
+   "missions": [
+    "CryoSat-2"
+   ],
+   "resolution": "Gridded, 5-25 km",
+   "temporal": "2010-present",
+   "tags": [
+    "cpom",
+    "csopr",
+    "cryosat"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "cryotempo-eolis",
+   "name": "CryoTEMPO-EOLIS (ESA CryoSat land ice elevation)",
+   "provider": "ESA / CPOM / DTU / ENVEO",
+   "agency": [
+    "ESA",
+    "CPOM"
+   ],
+   "kind": "dataset",
+   "url": "https://cryotempo-eolis.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "greenland"
+   ],
+   "data_types": [
+    "altimetry",
+    "ice",
+    "dem"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "ESA CryoSat Thematic Product with swath-processed elevation point clouds and monthly gridded surface elevation of the Greenland and Antarctic ice sheets and ice caps, from CryoSat-2 SARIn mode. NetCDF; check site for access.",
+   "missions": [
+    "CryoSat-2"
+   ],
+   "resolution": "2 km gridded, monthly",
+   "temporal": "2010-present",
+   "tags": [
+    "cryotempo",
+    "eolis",
+    "cryosat"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "dmi-ice-charts",
+   "name": "DMI sea ice charts and Sentinel-1 ice service (Greenland waters)",
+   "provider": "Danish Meteorological Institute",
+   "agency": [
+    "DMI"
+   ],
+   "kind": "portal",
+   "url": "https://www.dmi.dk/hav-og-is/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "PNG",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "DMI Greenland Ice Service charts of sea ice in Greenland waters, produced mainly from Sentinel-1 SAR and published on the DMI PolarView pages, with chart archives. Also contributed to Copernicus Marine.",
+   "country": [
+    "Denmark"
+   ],
+   "resolution": "Vector charts",
+   "temporal": "1960s-present",
+   "tags": [
+    "dmi",
+    "ice service",
+    "greenland ice charts"
+   ],
+   "notes": "Host ocean.dmi.dk timed out from the build machine; URL taken from search results, not loaded. URL moved 2026-11-05.",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "dmi-polarportal",
+   "name": "DMI Polar Portal (Greenland)",
+   "provider": "Danish Meteorological Institute / GEUS",
+   "agency": [
+    "DMI",
+    "GEUS"
+   ],
+   "kind": "portal",
+   "url": "https://polarportal.dk/en/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "imagery"
+   ],
+   "spectral": [
+    "microwave",
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "PNG",
+    "NetCDF",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Danish portal for state of the Greenland ice sheet and Arctic sea ice, with daily maps of surface melt, albedo, snow depth and mass balance. Open images and downloadable data.",
+   "country": [
+    "Denmark"
+   ],
+   "links": [
+    {
+     "label": "Sea ice maps",
+     "url": "https://polarportal.dk/en/sea-ice-and-icebergs/"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "1950s-present",
+   "tags": [
+    "polarportal",
+    "greenland ice sheet",
+    "melt"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "enveo-cryoportal",
+   "name": "ENVEO Cryoportal",
+   "provider": "ENVEO",
+   "agency": [
+    "ENVEO",
+    "ESA"
+   ],
+   "kind": "portal",
+   "url": "https://cryoportal.enveo.at/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland",
+    "antarctica",
+    "arctic",
+    "global"
+   ],
+   "data_types": [
+    "ice",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "radar",
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "PNG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "wms"
+   ],
+   "description": "Austrian portal with Sentinel-1 and Landsat derived ice velocity for Greenland and Antarctica, glacier outlines and other cryosphere products from ESA projects, with a map viewer and WMS. Many products are freely downloadable.",
+   "country": [
+    "Austria"
+   ],
+   "resolution": "~200-500 m",
+   "temporal": "2014-present",
+   "tags": [
+    "enveo",
+    "cryoportal",
+    "ice velocity",
+    "sentinel-1"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-cci-glaciers",
+   "name": "ESA CCI Glaciers",
+   "provider": "ESA Climate Change Initiative",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://climate.esa.int/en/projects/glaciers/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "high-mountain-asia",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "KML",
+    "NetCDF",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Glacier outlines (RGI-compatible), elevation change and velocity of the world's glaciers derived from optical and SAR imagery. Distributed through the CCI portal.",
+   "resolution": "Vector, 100 m-1 km grids",
+   "temporal": "2000s-present",
+   "tags": [
+    "rgi",
+    "glacier outlines",
+    "glaciers_cci"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-cci-ice-sheets",
+   "name": "ESA CCI Ice Sheets (Greenland and Antarctica)",
+   "provider": "ESA Climate Change Initiative",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://climate.esa.int/en/projects/ice-sheets-antarctic/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "greenland"
+   ],
+   "data_types": [
+    "ice",
+    "altimetry",
+    "sar",
+    "dem"
+   ],
+   "spectral": [
+    "radar",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "ftp"
+   ],
+   "description": "Surface elevation change, ice velocity, grounding line location and calving front datasets for the Antarctic and Greenland ice sheets from altimetry and SAR. NetCDF via CEDA.",
+   "links": [
+    {
+     "label": "Greenland CCI",
+     "url": "https://climate.esa.int/en/projects/ice-sheets-greenland/"
+    }
+   ],
+   "resolution": "1-5 km",
+   "temporal": "1992-present",
+   "tags": [
+    "cci ice sheets",
+    "ice_cci",
+    "ice velocity",
+    "elevation change"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-cci-permafrost",
+   "name": "ESA CCI Permafrost",
+   "provider": "ESA Climate Change Initiative",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://climate.esa.int/en/projects/permafrost/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "greenland",
+    "alaska",
+    "siberia",
+    "canada"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "thermal"
+   ],
+   "spectral": [
+    "tir",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Northern Hemisphere permafrost extent, ground temperature and active layer thickness maps from satellite land-surface temperature and modelling. Open download via CEDA.",
+   "resolution": "1 km",
+   "temporal": "1997-2019",
+   "tags": [
+    "permafrost",
+    "active layer",
+    "ground temperature"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-cci-sea-ice",
+   "name": "ESA CCI Sea Ice",
+   "provider": "ESA Climate Change Initiative",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://climate.esa.int/en/projects/sea-ice/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "altimetry"
+   ],
+   "spectral": [
+    "microwave",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "ftp"
+   ],
+   "description": "Sea ice concentration from passive microwave and sea ice thickness from Envisat and CryoSat-2 radar altimetry for both poles. NetCDF; open.",
+   "missions": [
+    "Envisat",
+    "CryoSat-2"
+   ],
+   "resolution": "12.5-25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "cci sea ice",
+    "sea ice thickness",
+    "sea ice concentration"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-cci-snow",
+   "name": "ESA CCI Snow",
+   "provider": "ESA Climate Change Initiative",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://climate.esa.int/en/projects/snow/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Daily snow cover fraction and snow water equivalent from optical and microwave sensors, global. NetCDF; open.",
+   "resolution": "0.005-0.05 deg",
+   "temporal": "1979-present",
+   "tags": [
+    "snow",
+    "swe",
+    "snow cover"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "eumetsat-osi-saf",
+   "name": "EUMETSAT OSI SAF sea ice and sea ice products",
+   "provider": "EUMETSAT Ocean and Sea Ice SAF",
+   "agency": [
+    "EUMETSAT",
+    "DMI",
+    "MET Norway"
+   ],
+   "kind": "dataset",
+   "url": "https://osi-saf.eumetsat.int/products/sea-ice-products",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "microwave",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "GRIB"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "ftp",
+    "opendap",
+    "thredds"
+   ],
+   "description": "Operational sea ice concentration, edge, type, drift and emissivity products from passive microwave and scatterometers. Open NetCDF via FTP, THREDDS and a viewer.",
+   "links": [
+    {
+     "label": "Archive FTP",
+     "url": "https://osi-saf.eumetsat.int/lml/"
+    }
+   ],
+   "resolution": "10-25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "osi saf",
+    "osisaf",
+    "ice drift",
+    "ice concentration"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "geus-greenland-historical-aerial",
+   "name": "GEUS Greenland vertical and oblique aerial photographs (1930s-1980s)",
+   "provider": "Geological Survey of Denmark and Greenland (GEUS)",
+   "agency": [
+    "GEUS",
+    "SDFI"
+   ],
+   "kind": "catalog",
+   "url": "https://metadata.geus.dk/geonetwork/srv/eng/catalog.search",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "aerial",
+    "historical",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "TIFF",
+    "JPEG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "GEUS metadata catalogue listing the historical Greenland vertical (1:150 000) and oblique air photo collections (including the Lauge Koch expeditions) with search by location. Some scans are downloadable; others are by request.",
+   "country": [
+    "Denmark"
+   ],
+   "resolution": "1:150,000 vertical photos",
+   "temporal": "1930s-1980s",
+   "tags": [
+    "geus",
+    "historical aerial",
+    "vertical photos",
+    "oblique photos"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "gina-alaska",
+   "name": "GINA - Geographic Information Network of Alaska",
+   "provider": "University of Alaska Fairbanks",
+   "agency": [
+    "UAF"
+   ],
+   "kind": "portal",
+   "url": "https://gina.alaska.edu/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "alaska",
+    "arctic"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral",
+    "aerial",
+    "dem",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "wms",
+    "wmts",
+    "https"
+   ],
+   "description": "Alaska geospatial gateway offering imagery, DEMs and basemaps for the state, including real-time VIIRS/MODIS direct-broadcast imagery and tiled map services. Open WMS/WMTS.",
+   "country": [
+    "USA"
+   ],
+   "resolution": "varies",
+   "temporal": "1990s-present",
+   "tags": [
+    "gina",
+    "alaska",
+    "uaf",
+    "geographic information network of alaska"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "glims",
+   "name": "GLIMS - Global Land Ice Measurements from Space",
+   "provider": "GLIMS / NSIDC",
+   "agency": [
+    "GLIMS",
+    "NSIDC"
+   ],
+   "kind": "dataset",
+   "url": "https://www.glims.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "high-mountain-asia",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "wms",
+    "https"
+   ],
+   "description": "International project cataloguing the world's glaciers as outlines delineated from satellite imagery, with a Glacier Viewer and WMS/WFS services. Data are hosted at NSIDC; free to download.",
+   "links": [
+    {
+     "label": "GLIMS Glacier Viewer",
+     "url": "https://www.glims.org/maps/glims"
+    }
+   ],
+   "resolution": "Vector outlines",
+   "temporal": "1850s-present",
+   "tags": [
+    "glims",
+    "glacier outlines",
+    "glacier inventory"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "its-live",
+   "name": "ITS_LIVE - Inter-mission Time Series of Land Ice Velocity and Elevation",
+   "provider": "NASA MEaSUREs / JPL / University of Washington",
+   "agency": [
+    "NASA",
+    "JPL"
+   ],
+   "kind": "dataset",
+   "url": "https://its-live.jpl.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "greenland",
+    "alaska",
+    "high-mountain-asia"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "Zarr",
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "s3",
+    "web-ui",
+    "stac"
+   ],
+   "description": "Global glacier and ice sheet surface velocity from automated feature tracking on Landsat, Sentinel-1/2 and other image pairs, with per-pair cubes (Zarr) and annual mosaics (COG) on AWS. No login.",
+   "links": [
+    {
+     "label": "ITS_LIVE data on S3",
+     "url": "https://its-live-data.s3.amazonaws.com/index.html"
+    }
+   ],
+   "missions": [
+    "Landsat",
+    "Sentinel-1",
+    "Sentinel-2"
+   ],
+   "resolution": "120 m image-pair velocity",
+   "temporal": "1985-present",
+   "tags": [
+    "itslive",
+    "its_live",
+    "velocity",
+    "glacier velocity"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "kopri-polar-data",
+   "name": "KOPRI Polar Data Center (KPDC)",
+   "provider": "Korea Polar Research Institute",
+   "agency": [
+    "KOPRI"
+   ],
+   "kind": "archive",
+   "url": "https://kpdc.kopri.re.kr/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "antarctica"
+   ],
+   "data_types": [
+    "imagery",
+    "map",
+    "ice",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "South Korea's polar data centre with satellite imagery, DEMs and observations around King Sejong and Jang Bogo stations and the Arctic. Some datasets require signing in.",
+   "country": [
+    "South Korea"
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "kopri",
+    "kpdc",
+    "jang bogo",
+    "king sejong",
+    "극지"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "met-no-cryo",
+   "name": "Norwegian Meteorological Institute cryo services (ice charts, Sentinel-1 ice)",
+   "provider": "MET Norway",
+   "agency": [
+    "MET Norway"
+   ],
+   "kind": "portal",
+   "url": "https://cryo.met.no/en",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "europe"
+   ],
+   "data_types": [
+    "ice",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "radar",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "PNG",
+    "GeoTIFF",
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "opendap",
+    "thredds"
+   ],
+   "description": "Ice charts for Svalbard and the Barents Sea, Sentinel-1 imagery and sea ice drift and concentration products from MET Norway, with THREDDS and WMS access. Open.",
+   "country": [
+    "Norway"
+   ],
+   "resolution": "varies",
+   "temporal": "Operational",
+   "tags": [
+    "cryo.met.no",
+    "ice charts",
+    "svalbard ice",
+    "ice drift"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-worldview-gibs-polar",
+   "name": "NASA Worldview and GIBS (Arctic and Antarctic polar projections)",
+   "provider": "NASA EOSDIS / GIBS",
+   "agency": [
+    "NASA"
+   ],
+   "kind": "map-service",
+   "url": "https://worldview.earthdata.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral",
+    "thermal",
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "microwave"
+   ],
+   "levels": [
+    "browse",
+    "derived"
+   ],
+   "formats": [
+    "PNG",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "wmts",
+    "wms",
+    "rest"
+   ],
+   "description": "Worldview is NASA's browser viewer for daily satellite imagery, with dedicated Arctic (EPSG:3413) and Antarctic (EPSG:3031) projections and layers such as MODIS, VIIRS, AMSR2 sea ice and snow cover. The underlying GIBS tile services are open WMTS/WMS with no login, and are browse-quality visualisations rather than science data.",
+   "country": [
+    "USA"
+   ],
+   "links": [
+    {
+     "label": "GIBS API docs",
+     "url": "https://nasa-gibs.github.io/gibs-api-docs/"
+    }
+   ],
+   "resolution": "250 m-2 km daily",
+   "temporal": "2000-present",
+   "tags": [
+    "worldview",
+    "gibs",
+    "modis",
+    "viirs",
+    "polar stereographic"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nipr-ads",
+   "name": "NIPR Arctic Data archive System (ADS) and Antarctic data",
+   "provider": "National Institute of Polar Research, Japan",
+   "agency": [
+    "NIPR"
+   ],
+   "kind": "archive",
+   "url": "https://ads.nipr.ac.jp/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "antarctica"
+   ],
+   "data_types": [
+    "imagery",
+    "map",
+    "ice",
+    "aerial"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "CSV",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "rest"
+   ],
+   "description": "Japan's polar data archive with metadata and data for Arctic and Antarctic research, including satellite and ground-based imagery and Antarctic Syowa Station data. Interface in English and Japanese.",
+   "country": [
+    "Japan"
+   ],
+   "links": [
+    {
+     "label": "ADS Antarctic",
+     "url": "https://ads.nipr.ac.jp/dataset/"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "nipr",
+    "ads",
+    "arctic data archive system",
+    "jare",
+    "極域"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nisar-asf",
+   "name": "NISAR (NASA-ISRO SAR) data at ASF DAAC",
+   "provider": "ASF DAAC / NASA / ISRO",
+   "agency": [
+    "NASA",
+    "ISRO",
+    "ASF"
+   ],
+   "kind": "archive",
+   "url": "https://nisar.asf.alaska.edu/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "sar",
+    "radar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "web-ui",
+    "https",
+    "rest"
+   ],
+   "description": "L-band and S-band SAR from the NISAR mission, with systematic repeat coverage of polar ice sheets and sea ice, distributed by ASF DAAC as HDF5. Earthdata Login required; product maturity levels vary.",
+   "country": [
+    "USA",
+    "India"
+   ],
+   "missions": [
+    "NISAR"
+   ],
+   "resolution": "~3-10 m",
+   "temporal": "2025-present",
+   "tags": [
+    "nisar",
+    "l-band",
+    "gslc",
+    "gcov"
+   ],
+   "connector": "asf",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "noaa-ncei-seaice-cdr",
+   "name": "NOAA NCEI Sea Ice Concentration Climate Data Record",
+   "provider": "NOAA National Centers for Environmental Information",
+   "agency": [
+    "NOAA",
+    "NCEI"
+   ],
+   "kind": "dataset",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/sea-ice-concentration",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "NOAA/NSIDC passive microwave sea ice concentration CDR at the NCEI product page, with access to NetCDF files by day or month. Open download.",
+   "resolution": "25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "cdr",
+    "sea ice cdr"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "npi-data-portal",
+   "name": "Norwegian Polar Institute data centre",
+   "provider": "Norwegian Polar Institute",
+   "agency": [
+    "NPI"
+   ],
+   "kind": "archive",
+   "url": "https://data.npolar.no/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "antarctica",
+    "europe"
+   ],
+   "data_types": [
+    "imagery",
+    "aerial",
+    "map",
+    "ice",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived",
+    "mosaic",
+    "raw"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "CSV",
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Metadata and data catalogue of the Norwegian Polar Institute for Svalbard, Jan Mayen, Bouvet and Norwegian Antarctic territories, including aerial images, maps, glacier and sea ice datasets.",
+   "country": [
+    "Norway"
+   ],
+   "resolution": "varies",
+   "temporal": "1900s-present",
+   "tags": [
+    "npolar",
+    "data.npolar.no"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "npi-svalbard-maps",
+   "name": "Norwegian Polar Institute Svalbard map viewer and orthophotos (TopoSvalbard)",
+   "provider": "Norwegian Polar Institute",
+   "agency": [
+    "NPI"
+   ],
+   "kind": "map-service",
+   "url": "https://svalbardkartet.npolar.no/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "imagery",
+    "map",
+    "dem"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "NPI web mapping for Svalbard, including the TopoSvalbard viewer with historical (1936/38 and later) and recent orthophotos, topographic maps and terrain models. Viewing is free; datasets are downloadable via the NPI geodata and data centre pages.",
+   "country": [
+    "Norway"
+   ],
+   "links": [
+    {
+     "label": "NPI Geodata",
+     "url": "https://geodata.npolar.no/"
+    },
+    {
+     "label": "NPI data centre",
+     "url": "https://data.npolar.no/"
+    }
+   ],
+   "resolution": "0.2-5 m orthophotos",
+   "temporal": "1936-present",
+   "tags": [
+    "toposvalbard",
+    "svalbard",
+    "orthophoto",
+    "npolar"
+   ],
+   "notes": "toposvalbard.npolar.no returned HTTP 502 on 2026-11-05; viewer entry uses svalbardkartet.npolar.no.",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0051-nasa-team-sea-ice",
+   "name": "Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS (NASA Team, NSIDC-0051)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0051",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "The long-running NASA Team passive microwave sea ice concentration record on polar stereographic grids. Earthdata Login required.",
+   "resolution": "25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "nasa team",
+    "smmr",
+    "nsidc-0051"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0094-avhrr-polar-pathfinder",
+   "name": "AVHRR Polar Pathfinder (APP) twice-daily 25 km EASE-Grid composites (NSIDC-0094)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0094",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "imagery",
+    "thermal",
+    "ice"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Cloud-masked, gridded AVHRR channel data and surface temperature, albedo and cloud products for both polar regions on EASE-Grid. Earthdata Login required.",
+   "instruments": [
+    "AVHRR"
+   ],
+   "resolution": "5 and 25 km",
+   "temporal": "1981-2005",
+   "tags": [
+    "app",
+    "avhrr",
+    "pathfinder"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0478-greenland-velocity",
+   "name": "MEaSUREs Greenland Ice Sheet Velocity Map from InSAR (NSIDC-0478)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0478",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "ice",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Annual and winter mosaics of Greenland Ice Sheet surface velocity from InSAR and feature tracking. GeoTIFF in EPSG:3413; Earthdata Login required.",
+   "resolution": "200 m",
+   "temporal": "2000-present",
+   "tags": [
+    "nsidc-0478",
+    "ice velocity"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0484-antarctic-velocity",
+   "name": "MEaSUREs InSAR-Based Antarctica Ice Velocity Map (NSIDC-0484)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0484",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Continent-wide Antarctic ice flow velocity mosaic from multi-sensor InSAR and speckle tracking. Polar Stereographic (EPSG:3031); Earthdata Login required.",
+   "resolution": "450 m",
+   "temporal": "1996-2016",
+   "tags": [
+    "nsidc-0484",
+    "ice velocity",
+    "rignot"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0498-grounding-line",
+   "name": "MEaSUREs Antarctic Grounding Line from Differential InSAR (NSIDC-0498)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0498",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Grounding line and ice-shelf hinge-zone vector products for Antarctica derived from differential InSAR. Earthdata Login required.",
+   "resolution": "Vector",
+   "temporal": "1994-2016",
+   "tags": [
+    "grounding line",
+    "dinsar"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0630-cetb",
+   "name": "Calibrated Enhanced-Resolution Passive Microwave Brightness Temperatures (CETB, NSIDC-0630)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0630",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "imagery"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Reprocessed daily SMMR, SSM/I, SSMIS, AMSR-E and AMSR2 brightness temperature images on EASE-Grid 2.0 with enhanced resolution, useful for polar ice, snow and melt mapping. Earthdata Login required.",
+   "resolution": "3.125-25 km EASE-Grid 2.0",
+   "temporal": "1978-present",
+   "tags": [
+    "cetb",
+    "ease-grid 2.0",
+    "brightness temperature"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0709-antarctic-boundaries",
+   "name": "MEaSUREs Antarctic Boundaries for IPY 2007-2009 from Satellite Radar (NSIDC-0709)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0709",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "sar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Antarctic coastline, grounding line and basin boundaries and a MODIS-derived reference mosaic from IPY-era radar data. Earthdata Login required.",
+   "resolution": "Vector, 125 m",
+   "temporal": "2007-2009",
+   "tags": [
+    "ipy",
+    "antarctic coastline",
+    "drainage basins"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0720-annual-antarctic-velocity",
+   "name": "MEaSUREs Annual Antarctic Ice Velocity Maps (NSIDC-0720)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0720",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "radar",
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Year-by-year Antarctic ice velocity mosaics from Landsat 8, Sentinel-1 and other sensors. Earthdata Login required.",
+   "resolution": "450 m",
+   "temporal": "2005-2017 annual",
+   "tags": [
+    "nsidc-0720",
+    "ice velocity"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0723-greenland-sentinel1-mosaics",
+   "name": "MEaSUREs Greenland Image Mosaics from Sentinel-1A/B (NSIDC-0723)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0723",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "sar",
+    "mosaic",
+    "imagery"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Mosaics of Sentinel-1 SAR backscatter for the Greenland ice sheet and margins. Earthdata Login required.",
+   "missions": [
+    "Sentinel-1"
+   ],
+   "resolution": "40 m",
+   "temporal": "2015-present",
+   "tags": [
+    "sentinel-1",
+    "greenland mosaic"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-0792-antarctic-ice-shelf-height",
+   "name": "MEaSUREs ITS_LIVE Antarctic ice shelf height change (NSIDC-0792)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0792",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "altimetry",
+    "map"
+   ],
+   "spectral": [
+    "radar",
+    "nir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Quarterly Antarctic ice shelf height change and basal melt derived from multi-mission radar and laser altimetry. NetCDF; Earthdata Login required.",
+   "resolution": "1.9 km",
+   "temporal": "1992-2017",
+   "tags": [
+    "ice shelf",
+    "height change"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-amsr2",
+   "name": "AMSR-E and AMSR2 products at NSIDC",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA",
+    "JAXA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/au_si12",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "greenland"
+   ],
+   "data_types": [
+    "ice"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5",
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "AMSR-E and AMSR2 brightness temperature and sea ice concentration products distributed by NSIDC. Earthdata Login required.",
+   "missions": [
+    "Aqua",
+    "GCOM-W1"
+   ],
+   "instruments": [
+    "AMSR-E",
+    "AMSR2"
+   ],
+   "resolution": "3.125-25 km",
+   "temporal": "2002-present",
+   "tags": [
+    "amsr-e",
+    "amsr2",
+    "amsre"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-atl06-land-ice-height",
+   "name": "ICESat-2 ATL06 Land Ice Height",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/atl06",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "greenland",
+    "arctic"
+   ],
+   "data_types": [
+    "altimetry",
+    "lidar",
+    "ice"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Surface height along ICESat-2 tracks for ice sheets, glaciers and ice caps in 40 m segments. HDF5 granules; Earthdata Login required.",
+   "missions": [
+    "ICESat-2"
+   ],
+   "instruments": [
+    "ATLAS"
+   ],
+   "resolution": "40 m segments",
+   "temporal": "2018-present",
+   "tags": [
+    "atl06",
+    "icesat-2",
+    "land ice height"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-atl07-sea-ice-height",
+   "name": "ICESat-2 ATL07 Sea Ice Height and ATL10 Freeboard",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/atl07",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "altimetry",
+    "lidar",
+    "ice"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Sea ice surface height (ATL07) and freeboard (ATL10) for the Arctic and Southern oceans from photon-counting lidar. Earthdata Login required.",
+   "missions": [
+    "ICESat-2"
+   ],
+   "instruments": [
+    "ATLAS"
+   ],
+   "resolution": "Along-track, 2 m-10 km",
+   "temporal": "2018-present",
+   "tags": [
+    "atl07",
+    "atl10",
+    "freeboard",
+    "icesat-2"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-bedmachine-antarctica",
+   "name": "MEaSUREs BedMachine Antarctica (NSIDC-0756)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0756",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "ice",
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Gridded Antarctic bed topography, ice thickness, surface elevation, ice mask and bathymetry derived by mass conservation from radar and other data. NetCDF; Earthdata Login required.",
+   "resolution": "500 m",
+   "temporal": "Composite",
+   "tags": [
+    "bedmachine",
+    "bed topography",
+    "ice thickness"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-bedmachine-greenland",
+   "name": "IceBridge BedMachine Greenland (IDBMG4)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/idbmg4",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "ice",
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Greenland bed topography, ice thickness and bathymetry grids from mass-conservation modelling with IceBridge radar. NetCDF; Earthdata Login required.",
+   "resolution": "150 m",
+   "temporal": "Composite",
+   "tags": [
+    "bedmachine",
+    "idbmg4",
+    "ice thickness"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-glacier-photograph-collection",
+   "name": "Glacier Photograph Collection (NSIDC G00472)",
+   "provider": "National Snow and Ice Data Center, CU Boulder",
+   "agency": [
+    "NSIDC",
+    "NOAA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/g00472",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "alaska",
+    "high-mountain-asia",
+    "global"
+   ],
+   "data_types": [
+    "aerial",
+    "historical",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "JPEG",
+    "TIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Scanned historical and repeat photographs of glaciers worldwide, mostly in Alaska, the western US and Arctic regions, with metadata and positions. Open download.",
+   "country": [
+    "USA"
+   ],
+   "resolution": "scanned photo",
+   "temporal": "1860s-present",
+   "tags": [
+    "glacier photographs",
+    "repeat photography",
+    "g00472"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-grimp",
+   "name": "GrIMP - Greenland Ice Mapping Project (GIMP DEM, masks, SAR mosaics)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA",
+    "OSU"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0645",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "dem",
+    "sar",
+    "ice",
+    "mosaic"
+   ],
+   "spectral": [
+    "radar",
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Greenland Ice Mapping Project products: 30 m DEM, ice and ocean masks and Radarsat/Sentinel-1 SAR image mosaics. Earthdata Login required.",
+   "resolution": "30 m DEM; 25 m SAR mosaic",
+   "temporal": "1990s-present",
+   "tags": [
+    "gimp",
+    "grimp",
+    "greenland dem"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-icebridge",
+   "name": "Operation IceBridge data at NSIDC (ATM, DMS, radars, LVIS)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://nsidc.org/data/icebridge",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "greenland"
+   ],
+   "data_types": [
+    "lidar",
+    "altimetry",
+    "aerial",
+    "imagery",
+    "ice",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5",
+    "CSV",
+    "JPEG",
+    "binary"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Airborne campaign data from NASA Operation IceBridge over Antarctica, Greenland and the Arctic: ATM and LVIS lidar, MCoRDS/snow/Ku-band radars and DMS digital imagery. Earthdata Login required.",
+   "missions": [
+    "Operation IceBridge"
+   ],
+   "instruments": [
+    "ATM",
+    "DMS",
+    "LVIS",
+    "MCoRDS"
+   ],
+   "resolution": "varies; DMS ~0.1 m",
+   "temporal": "2009-2019",
+   "tags": [
+    "icebridge",
+    "atm",
+    "dms",
+    "lvis",
+    "mcords"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-icebridge-dms",
+   "name": "IceBridge DMS L1B Geolocated and Orthorectified Images (IODMS1B/IODMS3)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/iodms1b",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "greenland"
+   ],
+   "data_types": [
+    "aerial",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "JPEG",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Aerial Digital Mapping System photographs from IceBridge flights over polar ice and sea ice, as geotagged JPEG and orthorectified products. Earthdata Login required.",
+   "missions": [
+    "Operation IceBridge"
+   ],
+   "instruments": [
+    "DMS"
+   ],
+   "resolution": "~0.1 m",
+   "temporal": "2009-2019",
+   "tags": [
+    "dms",
+    "iodms1b",
+    "icebridge"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-icesat-glas",
+   "name": "ICESat/GLAS data at NSIDC (GLA01-GLA15)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://nsidc.org/data/icesat",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "altimetry",
+    "lidar",
+    "ice"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5",
+    "binary"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Original ICESat laser altimetry (GLAS) elevation and waveform products over ice sheets, sea ice and land. Earthdata Login required.",
+   "missions": [
+    "ICESat"
+   ],
+   "instruments": [
+    "GLAS"
+   ],
+   "resolution": "170 m footprints",
+   "temporal": "2003-2009",
+   "tags": [
+    "icesat",
+    "glas",
+    "gla12"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-icesat2",
+   "name": "ICESat-2 data at NSIDC (ATL03-ATL21)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://nsidc.org/data/icesat-2",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "altimetry",
+    "lidar",
+    "ice"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "ICESat-2 ATLAS photon-counting lidar products: geolocated photons, land ice, sea ice freeboard, ocean and vegetation heights. HDF5 granules; Earthdata Login required.",
+   "missions": [
+    "ICESat-2"
+   ],
+   "instruments": [
+    "ATLAS"
+   ],
+   "resolution": "0.7 m along-track spacing",
+   "temporal": "2018-present",
+   "tags": [
+    "icesat-2",
+    "atlas",
+    "atl06",
+    "atl03"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-ims-snow-ice",
+   "name": "IMS Daily Northern Hemisphere Snow and Ice Analysis (G02156)",
+   "provider": "National Snow and Ice Data Center / NOAA NIC",
+   "agency": [
+    "NSIDC",
+    "NOAA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/g02156",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Daily Northern Hemisphere snow and ice cover charts from the NOAA/NIC Interactive Multisensor Snow and Ice Mapping System. ASCII and GeoTIFF; no login.",
+   "resolution": "1, 4, 24 km",
+   "temporal": "1997-present",
+   "tags": [
+    "ims",
+    "snow cover"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-moa",
+   "name": "MODIS Mosaic of Antarctica (MOA)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0593",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "mosaic",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Image mosaics of Antarctica from MODIS at 125 m and 750 m as GeoTIFF for several austral summers. Earthdata Login required.",
+   "missions": [
+    "Terra",
+    "Aqua"
+   ],
+   "instruments": [
+    "MODIS"
+   ],
+   "resolution": "125 m, 750 m",
+   "temporal": "2003-2004, 2008-2009, 2013-2014",
+   "tags": [
+    "moa",
+    "modis"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-mod10a1-snow",
+   "name": "MODIS/Terra Snow Cover Daily L3 Global 500 m (MOD10A1, MYD10A1)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/mod10a1",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "imagery",
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "swir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "HDF4",
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Daily snow cover and snow albedo from Terra and Aqua MODIS on a sinusoidal grid, in HDF-EOS. Earthdata Login required; also in CMR.",
+   "missions": [
+    "Terra",
+    "Aqua"
+   ],
+   "instruments": [
+    "MODIS"
+   ],
+   "resolution": "500 m daily",
+   "temporal": "2000-present",
+   "tags": [
+    "mod10a1",
+    "myd10a1",
+    "snow cover"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-mog",
+   "name": "MODIS Mosaic of Greenland (MOG)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0547",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "mosaic",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Greenland image mosaics from MODIS in several resolutions and years. Earthdata Login required.",
+   "missions": [
+    "Terra",
+    "Aqua"
+   ],
+   "instruments": [
+    "MODIS"
+   ],
+   "resolution": "100 m, 500 m, 1 km",
+   "temporal": "2005-2006, 2009-2010, 2012-2013",
+   "tags": [
+    "mog",
+    "modis"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-sea-ice-charts-nic",
+   "name": "National Ice Center sea ice chart archive (G10013)",
+   "provider": "National Ice Center / NSIDC",
+   "agency": [
+    "NIC",
+    "NSIDC"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/g10013",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "radar",
+    "visible",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Archive of US National Ice Center weekly ice-edge and ice-concentration charts as vector files. Open download.",
+   "links": [
+    {
+     "label": "US National Ice Center",
+     "url": "https://usicecenter.gov/"
+    }
+   ],
+   "resolution": "Vector",
+   "temporal": "1972-present",
+   "tags": [
+    "national ice center",
+    "sea ice charts",
+    "g10013"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-sea-ice-index",
+   "name": "Sea Ice Index (G02135)",
+   "provider": "National Snow and Ice Data Center, CU Boulder",
+   "agency": [
+    "NSIDC",
+    "NOAA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/g02135",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Daily and monthly sea ice extent and concentration images and GeoTIFFs for both poles from passive microwave data, plus extent time series. No login for downloads.",
+   "links": [
+    {
+     "label": "Sea Ice Today",
+     "url": "https://nsidc.org/sea-ice-today"
+    }
+   ],
+   "resolution": "25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "sea ice index",
+    "g02135",
+    "extent"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-ssmis-sea-ice-concentration",
+   "name": "DMSP SSM/I-SSMIS polar sea ice concentrations (NSIDC-0081, G02202)",
+   "provider": "NASA NSIDC DAAC (CU Boulder)",
+   "agency": [
+    "NSIDC",
+    "NOAA"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0081",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Gridded polar sea ice concentration from SSM/I and SSMIS passive microwave, in near-real-time and climate data record versions. NetCDF in polar stereographic. Earthdata Login required.",
+   "resolution": "25 km",
+   "temporal": "1978-present",
+   "tags": [
+    "nsidc-0081",
+    "g02202",
+    "ssmis",
+    "ssmi",
+    "concentration"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nunagis",
+   "name": "NunaGIS - Greenland geodata portal",
+   "provider": "Government of Greenland / Asiaq",
+   "agency": [
+    "Asiaq",
+    "Government of Greenland"
+   ],
+   "kind": "portal",
+   "url": "https://nunagis.gl/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "map",
+    "imagery",
+    "aerial",
+    "dem"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "wms",
+    "https"
+   ],
+   "description": "Greenland's national geoportal with maps, orthophotos and elevation layers for settlements and the coast. Public viewer; some data need an account or request.",
+   "country": [
+    "Greenland"
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "nunagis",
+    "asiaq",
+    "greenland maps"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "openaltimetry",
+   "name": "OpenAltimetry (ICESat and ICESat-2)",
+   "provider": "NSIDC / UCSD / NASA",
+   "agency": [
+    "NASA",
+    "NSIDC"
+   ],
+   "kind": "portal",
+   "url": "https://openaltimetry.earthdatacloud.nasa.gov/data/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "altimetry",
+    "lidar",
+    "ice"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "CSV",
+    "HDF5"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest"
+   ],
+   "description": "Web tool for browsing and subsetting ICESat and ICESat-2 laser altimetry tracks over ice sheets, sea ice and land, with elevation profiles shown in the browser. Selected data can be downloaded as CSV/HDF5; no login for browsing.",
+   "missions": [
+    "ICESat",
+    "ICESat-2"
+   ],
+   "resolution": "0.7 m along-track",
+   "temporal": "2003-present",
+   "tags": [
+    "openaltimetry",
+    "icesat-2",
+    "profile viewer"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ornl-above",
+   "name": "ABoVE - Arctic-Boreal Vulnerability Experiment data (ORNL DAAC)",
+   "provider": "ORNL DAAC / NASA",
+   "agency": [
+    "NASA",
+    "ORNL"
+   ],
+   "kind": "archive",
+   "url": "https://daac.ornl.gov/ABOVE/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "alaska",
+    "canada"
+   ],
+   "data_types": [
+    "imagery",
+    "lidar",
+    "sar",
+    "hyperspectral",
+    "map",
+    "ice"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "HDF5",
+    "CSV"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Airborne and satellite campaign data from NASA's ABoVE in Alaska and western Canada, including AVIRIS-NG hyperspectral, UAVSAR, G-LiHT lidar and permafrost and vegetation maps. Search at ORNL DAAC; downloads need an Earthdata Login.",
+   "missions": [
+    "ABoVE"
+   ],
+   "instruments": [
+    "AVIRIS-NG",
+    "UAVSAR",
+    "G-LiHT"
+   ],
+   "resolution": "varies",
+   "temporal": "2015-2022",
+   "tags": [
+    "above",
+    "avirisng",
+    "uavsar",
+    "permafrost",
+    "ornl daac"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pangaea",
+   "name": "PANGAEA data publisher for Earth and Environmental Science",
+   "provider": "AWI / MARUM",
+   "agency": [
+    "AWI",
+    "MARUM"
+   ],
+   "kind": "archive",
+   "url": "https://www.pangaea.de/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "antarctica",
+    "arctic",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "imagery",
+    "map",
+    "dem",
+    "ice",
+    "ocean"
+   ],
+   "spectral": [
+    "visible",
+    "radar",
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "CSV",
+    "NetCDF",
+    "GeoTIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Open-access repository with a very large number of polar datasets, from sea ice thickness and airborne imagery to DEMs and gridded satellite products, each with a DOI. Search supports a map bounding box; most data download without login.",
+   "country": [
+    "Germany"
+   ],
+   "links": [
+    {
+     "label": "Search",
+     "url": "https://www.pangaea.de/?q="
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "pangaea",
+    "doi",
+    "polarstern"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pgc-arcticdem",
+   "name": "ArcticDEM",
+   "provider": "Polar Geospatial Center, University of Minnesota",
+   "agency": [
+    "PGC",
+    "NSF"
+   ],
+   "kind": "dataset",
+   "url": "https://www.pgc.umn.edu/data/arcticdem/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "greenland",
+    "alaska",
+    "canada",
+    "siberia"
+   ],
+   "data_types": [
+    "dem",
+    "stereo"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "s3",
+    "web-ui"
+   ],
+   "description": "Submeter-to-2 m DEM strips and mosaics of all land north of 60N, derived from commercial stereo imagery. Distributed as GeoTIFF tiles and strips, with an AWS open data copy and a STAC index.",
+   "links": [
+    {
+     "label": "Data on AWS",
+     "url": "https://registry.opendata.aws/pgc-arcticdem/"
+    }
+   ],
+   "missions": [
+    "WorldView",
+    "GeoEye"
+   ],
+   "resolution": "2 m (mosaics at 2-1000 m)",
+   "temporal": "2007-present",
+   "tags": [
+    "arcticdem",
+    "dem",
+    "elevation"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pgc-aws-open-data",
+   "name": "PGC open data on AWS (ArcticDEM, REMA)",
+   "provider": "AWS Open Data Registry / Polar Geospatial Center",
+   "agency": [
+    "PGC",
+    "AWS"
+   ],
+   "kind": "dataset",
+   "url": "https://registry.opendata.aws/pgc-arcticdem/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "dem"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "s3",
+    "stac"
+   ],
+   "description": "S3 bucket (pgc-opendata-dems) holding ArcticDEM, REMA and EarthDEM strips and mosaics as COGs, with STAC items. No credentials required.",
+   "resolution": "2-32 m",
+   "temporal": "2007-present",
+   "tags": [
+    "s3",
+    "cog",
+    "stac"
+   ],
+   "links": [
+    {
+     "label": "REMA on AWS",
+     "url": "https://registry.opendata.aws/pgc-rema/"
+    }
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pgc-data",
+   "name": "PGC data portal and map viewers",
+   "provider": "Polar Geospatial Center, University of Minnesota",
+   "agency": [
+    "PGC",
+    "NSF"
+   ],
+   "kind": "portal",
+   "url": "https://data.pgc.umn.edu/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "dem",
+    "stereo",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Landing page for PGC's open elevation data and web viewers, including ArcticDEM, REMA, EarthDEM and mosaics, with a STAC catalog. Commercial satellite imagery held by PGC is restricted to US federally funded researchers.",
+   "links": [
+    {
+     "label": "ArcticDEM explorer",
+     "url": "https://livingatlas2.arcgis.com/arcticdemexplorer/"
+    },
+    {
+     "label": "PGC DEM products guide",
+     "url": "https://www.pgc.umn.edu/guides/stereo-derived-elevation-models/pgc-dem-products-arcticdem-rema-and-earthdem/"
+    }
+   ],
+   "tags": [
+    "pgc",
+    "stac",
+    "viewer"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pgc-earthdem",
+   "name": "EarthDEM",
+   "provider": "Polar Geospatial Center, University of Minnesota",
+   "agency": [
+    "PGC",
+    "NSF"
+   ],
+   "kind": "dataset",
+   "url": "https://www.pgc.umn.edu/data/earthdem/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "dem",
+    "stereo"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Extends the ArcticDEM/REMA stereo-photogrammetric DEM workflow to the rest of the world's land surface, as 2 m strip DEMs. Coverage is by request-driven production and is not complete.",
+   "missions": [
+    "WorldView",
+    "GeoEye"
+   ],
+   "resolution": "2 m strips",
+   "temporal": "2007-present",
+   "tags": [
+    "earthdem",
+    "dem"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pgc-imagery-commercial",
+   "name": "PGC commercial satellite imagery archive (restricted)",
+   "provider": "Polar Geospatial Center, University of Minnesota",
+   "agency": [
+    "PGC",
+    "NSF"
+   ],
+   "kind": "archive",
+   "url": "https://www.pgc.umn.edu/data/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NITF"
+   ],
+   "access": "restricted",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Archive of Maxar (WorldView, GeoEye, QuickBird, IKONOS) and other commercial high-resolution imagery acquired under NextView license. Access is limited to US federally funded polar researchers and requires an approved request.",
+   "missions": [
+    "WorldView",
+    "GeoEye",
+    "QuickBird",
+    "IKONOS"
+   ],
+   "resolution": "0.3-2 m",
+   "temporal": "2000s-present",
+   "tags": [
+    "worldview",
+    "maxar",
+    "nextview",
+    "pgc"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pgc-rema",
+   "name": "REMA - Reference Elevation Model of Antarctica",
+   "provider": "Polar Geospatial Center, University of Minnesota",
+   "agency": [
+    "PGC",
+    "NSF"
+   ],
+   "kind": "dataset",
+   "url": "https://www.pgc.umn.edu/data/rema/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "dem",
+    "stereo"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "s3",
+    "web-ui"
+   ],
+   "description": "Continent-wide DEM of Antarctica built from stereo WorldView and GeoEye imagery, released as 2 m strips and mosaics. Strip DEMs carry acquisition dates; the mosaic is a composite. Downloadable as GeoTIFF tiles and via AWS open data; no login.",
+   "links": [
+    {
+     "label": "Data on AWS",
+     "url": "https://registry.opendata.aws/pgc-rema/"
+    }
+   ],
+   "missions": [
+    "WorldView",
+    "GeoEye"
+   ],
+   "resolution": "2 m (also 8, 10, 100, 200, 500, 1000 m)",
+   "temporal": "2009-2022 strips; mosaic v2",
+   "tags": [
+    "rema",
+    "dem",
+    "elevation",
+    "worldview"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "polarview",
+   "name": "Polar View / Copernicus Polar Services",
+   "provider": "Polar View / Norwegian Meteorological Institute",
+   "agency": [
+    "MET Norway",
+    "Polar View"
+   ],
+   "kind": "portal",
+   "url": "https://www.polarview.aq/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "sar",
+    "map"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "PNG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Satellite-based sea ice and iceberg information services for polar shipping, including Antarctic and Arctic SAR mosaics. Access varies by region.",
+   "resolution": "varies",
+   "temporal": "Operational",
+   "tags": [
+    "polar view",
+    "polarview",
+    "iceberg"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "promice-geus",
+   "name": "PROMICE and GEUS Greenland Ice Sheet monitoring",
+   "provider": "Geological Survey of Denmark and Greenland (GEUS)",
+   "agency": [
+    "GEUS"
+   ],
+   "kind": "portal",
+   "url": "https://promice.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland"
+   ],
+   "data_types": [
+    "ice",
+    "map",
+    "imagery",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "radar",
+    "tir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "GeoTIFF",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Programme for monitoring the Greenland ice sheet with automatic weather stations and satellite products such as ice velocity, ice-sheet mass loss and surface mass balance. Datasets and ice-front and velocity maps are downloadable from GEUS Dataverse.",
+   "country": [
+    "Denmark"
+   ],
+   "links": [
+    {
+     "label": "PROMICE data",
+     "url": "https://dataverse.geus.dk/dataverse/PROMICE"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "2007-present",
+   "tags": [
+    "promice",
+    "geus",
+    "dataverse",
+    "greenland"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "qgreenland",
+   "name": "QGreenland",
+   "provider": "NSIDC / NSF",
+   "agency": [
+    "NSIDC",
+    "NSF"
+   ],
+   "kind": "tool",
+   "url": "https://qgreenland.readthedocs.io/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland",
+    "arctic"
+   ],
+   "data_types": [
+    "map",
+    "imagery",
+    "dem",
+    "ice"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "bulk"
+   ],
+   "description": "Free QGIS data package for Greenland bundling dozens of curated basemaps and datasets (bed topography, ice velocity, imagery, glaciers) in one project. Download from the project documentation.",
+   "resolution": "varies",
+   "temporal": "Composite",
+   "tags": [
+    "qgreenland",
+    "qgis"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "quantarctica",
+   "name": "Quantarctica",
+   "provider": "Norwegian Polar Institute / SCAR",
+   "agency": [
+    "NPI",
+    "SCAR"
+   ],
+   "kind": "tool",
+   "url": "https://www.npolar.no/quantarctica/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "map",
+    "imagery",
+    "dem",
+    "ice",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "bulk"
+   ],
+   "description": "Free QGIS-based Antarctic data package with a curated collection of basemaps, imagery (LIMA, MOA), elevation, ice velocity, geology and ADD layers. Distributed as a large download for QGIS.",
+   "country": [
+    "Norway"
+   ],
+   "links": [
+    {
+     "label": "Download mirror (NPI)",
+     "url": "https://public.data.npolar.no/quantarctica/"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "Composite",
+   "tags": [
+    "quantarctica",
+    "qgis",
+    "npolar"
+   ],
+   "notes": "npolar.no is behind a Cloudflare challenge for scripts; URL confirmed via web search, public.data.npolar.no mirror loads.",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "rgi-glacier-inventory",
+   "name": "Randolph Glacier Inventory (RGI 7.0)",
+   "provider": "GLIMS / NSIDC",
+   "agency": [
+    "GLIMS",
+    "NSIDC"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0770",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "high-mountain-asia",
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Global inventory of glacier outlines outside the ice sheets, RGI 7.0, with regional files and attributes. Earthdata Login may be required.",
+   "links": [
+    {
+     "label": "RGI consortium",
+     "url": "https://rgidata.org"
+    }
+   ],
+   "resolution": "Vector outlines",
+   "temporal": "2000-2020",
+   "tags": [
+    "rgi",
+    "glacier inventory"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "scar-add",
+   "name": "SCAR Antarctic Digital Database (ADD)",
+   "provider": "SCAR / British Antarctic Survey",
+   "agency": [
+    "SCAR",
+    "BAS"
+   ],
+   "kind": "dataset",
+   "url": "https://add.scar.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "wms",
+    "rest"
+   ],
+   "description": "Authoritative seamless topographic vector map database of Antarctica (coastline, rock outcrop, glaciers, contours, stations) with a web map and WMS/WFS. Open data under a Creative Commons licence.",
+   "country": [
+    "UK"
+   ],
+   "resolution": "1:250,000 to 1:1,000,000 vector",
+   "temporal": "Updated continuously",
+   "tags": [
+    "add",
+    "antarctic digital database",
+    "coastline"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "scar-data-portals",
+   "name": "SCAR data portals (SCADM, Biodiversity, Composite Gazetteer, READER)",
+   "provider": "Scientific Committee on Antarctic Research",
+   "agency": [
+    "SCAR"
+   ],
+   "kind": "catalog",
+   "url": "https://scar.org/library-data/data",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "map",
+    "imagery",
+    "ice"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "CSV",
+    "NetCDF",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "SCAR's index to its data products and portals, including the Composite Gazetteer of Antarctica, biodiversity portal and links to ADD and Quantarctica. Starting point for SCAR-endorsed datasets.",
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "scar",
+    "scadm"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "sios-data",
+   "name": "SIOS - Svalbard Integrated Arctic Earth Observing System data portal",
+   "provider": "SIOS Svalbard",
+   "agency": [
+    "SIOS"
+   ],
+   "kind": "portal",
+   "url": "https://sios-svalbard.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic",
+    "europe"
+   ],
+   "data_types": [
+    "imagery",
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "radar"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "CSV",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "rest"
+   ],
+   "description": "Gateway to Svalbard research data and the SIOS Earth observation Data Management System, including satellite-derived glacier, snow and sea ice products. Open access.",
+   "country": [
+    "Norway"
+   ],
+   "links": [
+    {
+     "label": "SIOS Data Management System",
+     "url": "https://sios-svalbard.org/data"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "varies",
+   "tags": [
+    "sios",
+    "svalbard",
+    "svalbard integrated arctic earth observing system"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "uk-pdc",
+   "name": "UK Polar Data Centre (BAS)",
+   "provider": "British Antarctic Survey / NERC EDS",
+   "agency": [
+    "BAS",
+    "NERC"
+   ],
+   "kind": "archive",
+   "url": "https://www.bas.ac.uk/data/polar-data-centre/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "imagery",
+    "aerial",
+    "dem",
+    "ice",
+    "map",
+    "historical",
+    "sar"
+   ],
+   "spectral": [
+    "visible",
+    "radar",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest",
+    "wms"
+   ],
+   "description": "NERC's polar data centre holding British Antarctic Survey data including aerial photography archives, airborne radar and gravity, satellite-derived products and maps, searchable via the Discovery metadata portal and the BAS Data Catalogue.",
+   "country": [
+    "UK"
+   ],
+   "links": [
+    {
+     "label": "Discovery Metadata System",
+     "url": "https://data.bas.ac.uk/"
+    },
+    {
+     "label": "BAS Map Catalogue",
+     "url": "https://maps.bas.ac.uk/"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "1940s-present",
+   "tags": [
+    "bas",
+    "ukpdc",
+    "british antarctic survey",
+    "discovery metadata"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "uni-bremen-seaice",
+   "name": "University of Bremen sea ice maps (AMSR2 3.125 km concentration)",
+   "provider": "University of Bremen Institute of Environmental Physics",
+   "agency": [
+    "Uni Bremen"
+   ],
+   "kind": "portal",
+   "url": "https://seaice.uni-bremen.de/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "microwave"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF",
+    "PNG",
+    "GeoTIFF",
+    "HDF5"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https",
+    "ftp"
+   ],
+   "description": "Daily AMSR-E/AMSR2 sea ice concentration maps and ASI algorithm products, thin ice thickness from SMOS and a data portal with downloads. Open.",
+   "country": [
+    "Germany"
+   ],
+   "links": [
+    {
+     "label": "Data",
+     "url": "https://data.seaice.uni-bremen.de/"
+    }
+   ],
+   "resolution": "3.125-6.25 km",
+   "temporal": "2002-present",
+   "tags": [
+    "asi",
+    "amsr2",
+    "bremen",
+    "smos ice thickness"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usap-dc",
+   "name": "USAP-DC - US Antarctic Program Data Center",
+   "provider": "USAP-DC / Columbia University LDEO",
+   "agency": [
+    "NSF",
+    "USAP-DC"
+   ],
+   "kind": "archive",
+   "url": "https://www.usap-dc.org/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "southern-ocean"
+   ],
+   "data_types": [
+    "imagery",
+    "sar",
+    "dem",
+    "ice",
+    "map"
+   ],
+   "spectral": [
+    "visible",
+    "radar",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "NetCDF",
+    "CSV",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "NSF's repository for Antarctic and Southern Ocean research data, including aerial and satellite imagery, radar surveys, DEMs and gridded products, with map-based search. Open download without login.",
+   "country": [
+    "USA"
+   ],
+   "links": [
+    {
+     "label": "Map search",
+     "url": "https://www.usap-dc.org/search"
+    }
+   ],
+   "resolution": "varies",
+   "temporal": "1950s-present",
+   "tags": [
+    "usap-dc",
+    "usadc",
+    "antarctic data"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-antarctic-aerial",
+   "name": "USGS Antarctic aerial photography (TMA, Operation Highjump, historic)",
+   "provider": "USGS EROS Center",
+   "agency": [
+    "USGS",
+    "US Navy"
+   ],
+   "kind": "archive",
+   "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-aerial-photo-single-frames",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "aerial",
+    "historical",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "TIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Scanned US Navy and USGS aerial photographs of Antarctica including Trimetrogon (TMA) coverage from 1946-47 and later flights. Searchable and downloadable via Earth Explorer's aerial photo collections, and via the USGS Antarctic Resource Center.",
+   "links": [
+    {
+     "label": "Earth Explorer",
+     "url": "https://earthexplorer.usgs.gov/"
+    }
+   ],
+   "resolution": "scanned photo",
+   "temporal": "1946-2000",
+   "tags": [
+    "tma",
+    "trimetrogon",
+    "highjump",
+    "aerial photos"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-antarctic-landsat",
+   "name": "USGS Earth Explorer / Landsat Antarctic coverage",
+   "provider": "USGS EROS",
+   "agency": [
+    "USGS"
+   ],
+   "kind": "portal",
+   "url": "https://earthexplorer.usgs.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica",
+    "arctic"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral",
+    "thermal"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "COG"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest",
+    "s3",
+    "stac"
+   ],
+   "description": "USGS archive for the full Landsat record including Antarctic scenes (Landsat 8/9 acquire to about 82.7S). Search by polar coordinates in Earth Explorer; downloads need a free USGS ERS login. Landsat Collection 2 is also on a STAC API.",
+   "country": [
+    "USA"
+   ],
+   "links": [
+    {
+     "label": "Landsat STAC",
+     "url": "https://landsatlook.usgs.gov/stac-server"
+    }
+   ],
+   "missions": [
+    "Landsat"
+   ],
+   "resolution": "15-100 m",
+   "temporal": "1972-present",
+   "tags": [
+    "earth explorer",
+    "landsat",
+    "landsat 8",
+    "landsat 9"
+   ],
+   "connector": "stac:usgs-landsat",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-antarctic-ramp",
+   "name": "RAMP - Radarsat Antarctic Mapping Project",
+   "provider": "NASA / Ohio State University / NSIDC",
+   "agency": [
+    "NASA",
+    "NSIDC"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/nsidc-0103",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "sar",
+    "mosaic",
+    "dem"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "mosaic",
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "GeoTIFF"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "RADARSAT-1 SAR mosaic of Antarctica from the 1997 Antarctic Mapping Mission, with the RAMP DEM and ancillary products at NSIDC. Earthdata Login required.",
+   "missions": [
+    "RADARSAT-1"
+   ],
+   "resolution": "25 m, 100 m, 200 m SAR; 200 m DEM",
+   "temporal": "1997 and 2000 acquisitions",
+   "tags": [
+    "ramp",
+    "radarsat",
+    "amm"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-global-fiducials-library",
+   "name": "USGS Global Fiducials Library (declassified MEDEA Arctic sea ice imagery)",
+   "provider": "USGS EROS",
+   "agency": [
+    "USGS",
+    "MEDEA"
+   ],
+   "kind": "archive",
+   "url": "https://www.usgs.gov/global-fiducials-library-data-access-portal",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "arctic"
+   ],
+   "data_types": [
+    "imagery",
+    "historical",
+    "ice"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "NITF",
+    "GeoTIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Declassified high-resolution (about 1 m) national technical means imagery of fixed Arctic Ocean sea ice sites and other fiducial locations, released from the MEDEA programme. Images are searchable by site through the USGS portal and Earth Explorer.",
+   "country": [
+    "USA"
+   ],
+   "resolution": "~1 m",
+   "temporal": "1999-2014",
+   "tags": [
+    "gfl",
+    "medea",
+    "declassified",
+    "fiducials"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-lima",
+   "name": "LIMA - Landsat Image Mosaic of Antarctica",
+   "provider": "USGS / British Antarctic Survey / NSF / NASA",
+   "agency": [
+    "USGS",
+    "BAS",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://lima.usgs.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "antarctica"
+   ],
+   "data_types": [
+    "mosaic",
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "wms"
+   ],
+   "description": "Virtually cloud-free Landsat 7 ETM+ mosaic of Antarctica at 15 m, the standard base image for the continent. Available as full-resolution GeoTIFF tiles, a pan-sharpened mosaic, WMS and a web viewer; no login.",
+   "country": [
+    "USA"
+   ],
+   "links": [
+    {
+     "label": "LIMA viewer",
+     "url": "https://lima.usgs.gov/"
+    }
+   ],
+   "missions": [
+    "Landsat 7"
+   ],
+   "instruments": [
+    "ETM+"
+   ],
+   "resolution": "15 m pan, 240 m multi",
+   "temporal": "1999-2001",
+   "tags": [
+    "lima",
+    "landsat",
+    "antarctic mosaic"
+   ],
+   "verified": "2026-11-05"
+  }
+ ]
+}

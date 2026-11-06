@@ -1,0 +1,2849 @@
+{
+  "domain": "national-eo",
+  "sources": [
+    {
+      "id": "ph-philsa",
+      "name": "Philippine Space Agency (PhilSA) - EO data and Space+ products",
+      "provider": "Philippine Space Agency",
+      "agency": [
+        "PhilSA"
+      ],
+      "country": [
+        "Philippines"
+      ],
+      "kind": "portal",
+      "url": "https://philsa.gov.ph",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "southeast-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "browse"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "KML"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Central Philippine government space agency. Its website points to national Earth-observation data and analytics (Space+ data dashboard, Diwata-series microsatellite imagery, hazard and agriculture maps). Some products can be browsed openly while raw imagery may need a request.",
+      "tags": [
+        "philsa",
+        "diwata",
+        "space+",
+        "philippines"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Landing page verified; individual dashboard URLs not independently verified."
+    },
+    {
+      "id": "vn-vnsc",
+      "name": "Vietnam National Space Center (VNSC)",
+      "provider": "Vietnam Academy of Science and Technology",
+      "agency": [
+        "VNSC"
+      ],
+      "country": [
+        "Vietnam"
+      ],
+      "kind": "mission-site",
+      "url": "https://vnsc.org.vn/vi/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "southeast-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "sar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "National space centre behind the Vietnamese EO programme (VNREDSat-1, LOTUSat) and the Hoa Lac ground station. The site is Vietnamese-language; imagery and products are supplied on request rather than through a public self-service archive.",
+      "tags": [
+        "vnsc",
+        "vnredsat-1",
+        "lotusat",
+        "vietnam"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pk-suparco",
+      "name": "SUPARCO (Pakistan Space and Upper Atmosphere Research Commission)",
+      "provider": "SUPARCO",
+      "agency": [
+        "SUPARCO"
+      ],
+      "country": [
+        "Pakistan"
+      ],
+      "kind": "mission-site",
+      "url": "https://suparco.gov.pk",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Pakistan's national space agency with remote-sensing satellites, ground stations and an applications centre. The site describes programmes and applications; imagery is provided to government and registered users on request.",
+      "tags": [
+        "suparco",
+        "prss-1",
+        "pakistan"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "bd-sparrso",
+      "name": "SPARRSO (Bangladesh Space Research and Remote Sensing Organization)",
+      "provider": "SPARRSO",
+      "agency": [
+        "SPARRSO"
+      ],
+      "country": [
+        "Bangladesh"
+      ],
+      "kind": "mission-site",
+      "url": "https://sparrso.gov.bd",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "weather",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "tir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived",
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Bangladesh's national remote-sensing agency, operating satellite reception and publishing weather-satellite imagery and derived products (cyclone, flood, agriculture monitoring). Mostly Bengali; some imagery is viewable without login, other data is by request.",
+      "tags": [
+        "sparrso",
+        "bangladesh",
+        "flood",
+        "cyclone"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "my-mysa",
+      "name": "Malaysian Space Agency (MYSA)",
+      "provider": "Malaysian Space Agency",
+      "agency": [
+        "MYSA"
+      ],
+      "country": [
+        "Malaysia"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.mysa.gov.my",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "southeast-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Official portal of the Malaysian Space Agency under MOSTI (formerly ANGKASA), coordinating national EO programmes and remote-sensing ground facilities. Data access for government and approved users is arranged through the agency.",
+      "tags": [
+        "mysa",
+        "angkasa",
+        "malaysia"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sg-crisp",
+      "name": "CRISP (Centre for Remote Imaging, Sensing and Processing), NUS",
+      "provider": "National University of Singapore",
+      "agency": [
+        "NUS"
+      ],
+      "country": [
+        "Singapore"
+      ],
+      "kind": "portal",
+      "url": "https://crisp.nus.edu.sg",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "southeast-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "sar",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Singapore's satellite receiving station and research centre covering South-East Asia, associated with regional imagery and haze/fire monitoring products. Parts of the site are viewable openly; archive use is via request.",
+      "tags": [
+        "crisp",
+        "nus",
+        "singapore",
+        "haze"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "kz-gharysh",
+      "name": "Kazakhstan Gharysh Sapary - Earth observation",
+      "provider": "Kazakhstan Gharysh Sapary",
+      "agency": [
+        "Gharysh Sapary"
+      ],
+      "country": [
+        "Kazakhstan"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.gharysh.kz/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "asia"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "National space agency (Kazcosmos successor) operating KazEOSat-1/-2 and the national EO ground segment. The site is Kazakh/Russian; imagery is supplied commercially or to government users, not as an open archive.",
+      "tags": [
+        "kazeosat",
+        "kazcosmos",
+        "gharysh",
+        "kazakhstan"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "eg-narss",
+      "name": "NARSS (Egypt National Authority for Remote Sensing and Space Sciences)",
+      "provider": "NARSS",
+      "agency": [
+        "NARSS"
+      ],
+      "country": [
+        "Egypt"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.narss.sci.eg/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "africa",
+        "middle-east"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Egypt's national remote-sensing authority and EgyptSat ground segment, producing land-cover, agriculture and water-resource products. Imagery and maps are mostly provided on request to institutions.",
+      "tags": [
+        "narss",
+        "egyptsat",
+        "egypt"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ng-nasrda",
+      "name": "NASRDA (Nigerian National Space Research and Development Agency)",
+      "provider": "NASRDA",
+      "agency": [
+        "NASRDA"
+      ],
+      "country": [
+        "Nigeria"
+      ],
+      "kind": "mission-site",
+      "url": "https://central.nasrda.gov.ng/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "africa"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Nigeria's national space agency, home of the NigeriaSat programme and geodesy centre. Satellite imagery and geospatial products are typically provided by request or purchase.",
+      "tags": [
+        "nasrda",
+        "nigeriasat",
+        "nigeria"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ar-conae",
+      "name": "CONAE (Argentine space agency) - Earth observation",
+      "provider": "CONAE",
+      "agency": [
+        "CONAE"
+      ],
+      "country": [
+        "Argentina"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.argentina.gob.ar/ciencia/conae",
+      "links": [
+        {
+          "label": "SAOCOM catalogue",
+          "url": "https://saocom.veng.com.ar/"
+        }
+      ],
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america"
+      ],
+      "data_types": [
+        "imagery",
+        "sar",
+        "multispectral",
+        "ocean"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "HDF5"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Argentine space agency running SAOCOM (L-band SAR), SAC-D heritage and the Cordoba ground station. The agency pages lead to its data catalogues; SAOCOM downloads need registration (see the separate SAOCOM catalogue entry).",
+      "tags": [
+        "conae",
+        "saocom",
+        "sac-d",
+        "argentina"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mx-aem",
+      "name": "Agencia Espacial Mexicana (AEM)",
+      "provider": "Agencia Espacial Mexicana",
+      "agency": [
+        "AEM"
+      ],
+      "country": [
+        "Mexico"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.gob.mx/aem",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "north-america"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Mexico's space agency, coordinating national EO activities including satellite ground-station imagery reception. The Spanish-language site is mainly informational; imagery is distributed through partner institutions.",
+      "tags": [
+        "aem",
+        "mexico",
+        "agencia espacial"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "co-igac",
+      "name": "IGAC (Instituto Geografico Agustin Codazzi) - Colombia",
+      "provider": "IGAC",
+      "agency": [
+        "IGAC"
+      ],
+      "country": [
+        "Colombia"
+      ],
+      "kind": "portal",
+      "url": "https://www.igac.gov.co",
+      "links": [
+        {
+          "label": "Colombia en Mapas",
+          "url": "https://www.colombiaenmapas.gov.co"
+        }
+      ],
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "JPEG"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Colombia's national mapping agency with aerial photography, orthoimages, DEMs and cartography. Many products are accessed through its geoportal and the Colombia en Mapas atlas; some require formal request or fee.",
+      "tags": [
+        "igac",
+        "colombia",
+        "ortofoto"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pe-conida",
+      "name": "CONIDA (Peruvian aerospace agency)",
+      "provider": "CONIDA",
+      "agency": [
+        "CONIDA"
+      ],
+      "country": [
+        "Peru"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.gob.pe/conida",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "restricted",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Peru's aerospace research agency operating national satellite imagery (PeruSAT-1) reception and processing facilities, including the CNOIS centre. Imagery goes to government users and on request; the page is the gov.pe agency platform.",
+      "tags": [
+        "conida",
+        "perusat-1",
+        "cnois",
+        "peru"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "cl-ide-chile",
+      "name": "IDE Chile (Infraestructura de Datos Espaciales)",
+      "provider": "SNIT, Chile",
+      "agency": [
+        "SNIT"
+      ],
+      "country": [
+        "Chile"
+      ],
+      "kind": "catalog",
+      "url": "https://www.ide.cl",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america"
+      ],
+      "data_types": [
+        "map",
+        "imagery",
+        "aerial",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "KML"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "wms",
+        "wmts"
+      ],
+      "description": "National spatial data infrastructure of Chile: governance and catalogue pages pointing to OGC services and downloads from national institutions, including orthophotos, DEMs and satellite-derived layers. A directory rather than a single archive.",
+      "tags": [
+        "ide",
+        "snit",
+        "chile",
+        "geoportal"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "hkh-icimod-rds",
+      "name": "ICIMOD Regional Database System (RDS)",
+      "provider": "ICIMOD",
+      "agency": [
+        "ICIMOD"
+      ],
+      "country": [
+        "Nepal"
+      ],
+      "kind": "portal",
+      "url": "https://rds.icimod.org",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "high-mountain-asia",
+        "south-asia"
+      ],
+      "data_types": [
+        "map",
+        "imagery",
+        "ice",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible",
+        "swir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "NetCDF",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Open geospatial datasets for the Hindu Kush Himalaya: land cover, glacier and snow cover, flood and fire products and elevation derivatives from ICIMOD and SERVIR-HKH. Datasets are downloadable under open licences.",
+      "tags": [
+        "icimod",
+        "hkh",
+        "himalaya",
+        "servir-hkh",
+        "nepal"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sahel-agrhymet",
+      "name": "AGRHYMET Regional Centre (CILSS)",
+      "provider": "AGRHYMET Regional Centre",
+      "agency": [
+        "CILSS"
+      ],
+      "country": [
+        "Niger"
+      ],
+      "kind": "mission-site",
+      "url": "https://agrhymet.cilss.int",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "africa",
+        "sahara"
+      ],
+      "data_types": [
+        "weather",
+        "map",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "NetCDF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "West Africa and Sahel climate and agrometeorology centre producing vegetation, rainfall and drought-monitoring products from satellite data for CILSS member states. French-language site; products and bulletins are shared with partners.",
+      "tags": [
+        "agrhymet",
+        "cilss",
+        "sahel",
+        "niger"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ke-rcmrd",
+      "name": "RCMRD (Regional Centre for Mapping of Resources for Development)",
+      "provider": "RCMRD",
+      "agency": [
+        "RCMRD"
+      ],
+      "country": [
+        "Kenya"
+      ],
+      "kind": "portal",
+      "url": "https://rcmrd.org/en/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "africa"
+      ],
+      "data_types": [
+        "imagery",
+        "map",
+        "dem",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Intergovernmental centre in Nairobi serving African member states, hosting the SERVIR Eastern and Southern Africa hub with geoportal products (land cover, flood, drought, crop). Some datasets download freely, others by request.",
+      "tags": [
+        "rcmrd",
+        "servir",
+        "kenya",
+        "nairobi"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "servir-global",
+      "name": "SERVIR Global (NASA-USAID) hub network",
+      "provider": "NASA / USAID",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://servir.net",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "africa",
+        "south-america",
+        "southeast-asia",
+        "high-mountain-asia"
+      ],
+      "data_types": [
+        "map",
+        "multispectral",
+        "sar",
+        "weather"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "NetCDF"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Global SERVIR portal linking regional hubs (RCMRD, AGRHYMET, ICIMOD, Mekong, Amazonia) and their EO-based decision tools such as flood, drought, land-cover and fire services. Each hub hosts its own downloads; page content is partly Spanish.",
+      "tags": [
+        "servir",
+        "nasa",
+        "usaid",
+        "hubs",
+        "mekong",
+        "amazonia"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ae-mbrsc",
+      "name": "Mohammed bin Rashid Space Centre (MBRSC) - DubaiSat",
+      "provider": "MBRSC",
+      "agency": [
+        "MBRSC"
+      ],
+      "country": [
+        "UAE"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.mbrsc.ae",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "middle-east"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "commercial",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Dubai space centre operating the DubaiSat and KhalifaSat Earth-observation satellites. Imagery is sold or provided on request through MBRSC; the site is the entry point.",
+      "tags": [
+        "mbrsc",
+        "dubaisat",
+        "khalifasat",
+        "uae"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "tw-tasa",
+      "name": "TASA (Taiwan Space Agency)",
+      "provider": "Taiwan Space Agency",
+      "agency": [
+        "TASA"
+      ],
+      "country": [
+        "Taiwan"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.tasa.org.tw/zh-TW",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "east-asia"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "atmosphere"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "HDF5",
+        "NetCDF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "National space agency (formerly NSPO) for the FORMOSAT satellites including FORMOSAT-5 and FORMOSAT-7/COSMIC-2 radio occultation. Mission data portals are linked from the Chinese-language site.",
+      "tags": [
+        "tasa",
+        "nspo",
+        "formosat",
+        "cosmic-2",
+        "taiwan"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "de-dwd-opendata",
+      "name": "DWD Open Data server - satellite and weather products",
+      "provider": "Deutscher Wetterdienst",
+      "agency": [
+        "DWD"
+      ],
+      "country": [
+        "Germany"
+      ],
+      "kind": "archive",
+      "url": "https://opendata.dwd.de",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe",
+        "global"
+      ],
+      "data_types": [
+        "weather",
+        "atmosphere",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "browse"
+      ],
+      "formats": [
+        "GRIB",
+        "NetCDF",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Open file server of the German weather service with radar, model output and satellite-derived products. Plain HTTPS directory listings, no login.",
+      "tags": [
+        "dwd",
+        "germany",
+        "meteosat",
+        "grib"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "tw-cwa-satellite",
+      "name": "Taiwan Central Weather Administration - satellite imagery",
+      "provider": "Central Weather Administration",
+      "agency": [
+        "CWA"
+      ],
+      "country": [
+        "Taiwan"
+      ],
+      "kind": "portal",
+      "url": "https://www.cwa.gov.tw",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "east-asia",
+        "pacific"
+      ],
+      "data_types": [
+        "weather",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "browse",
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Taiwan's weather service site publishing satellite cloud imagery, radar, lightning and rainfall products for Taiwan and the western Pacific. Imagery is viewable without login; programmatic access uses a separate open-data API requiring registration.",
+      "tags": [
+        "cwa",
+        "taiwan",
+        "himawari",
+        "radar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "hk-hko",
+      "name": "Hong Kong Observatory - satellite and radar imagery",
+      "provider": "Hong Kong Observatory",
+      "agency": [
+        "HKO"
+      ],
+      "country": [
+        "Hong Kong"
+      ],
+      "kind": "portal",
+      "url": "https://www.hko.gov.hk",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "east-asia"
+      ],
+      "data_types": [
+        "weather",
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Hong Kong weather service with regularly updated satellite imagery and radar for southern China and the South China Sea. Imagery is for viewing; some products are also on the data.gov.hk open-data platform.",
+      "tags": [
+        "hko",
+        "hong kong",
+        "typhoon"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "br-cptec-satellite",
+      "name": "INPE CPTEC/DISSM satellite imagery",
+      "provider": "INPE - CPTEC DISSM",
+      "agency": [
+        "INPE"
+      ],
+      "country": [
+        "Brazil"
+      ],
+      "kind": "portal",
+      "url": "https://satelite.cptec.inpe.br/home/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america",
+        "atlantic"
+      ],
+      "data_types": [
+        "weather",
+        "imagery",
+        "atmosphere"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "browse",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "NetCDF",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Brazil's operational satellite division publishing GOES and Meteosat-based image galleries, animations and derived products (precipitation estimates, fire, fog) for South America. Viewable without login.",
+      "tags": [
+        "cptec",
+        "dissm",
+        "inpe",
+        "goes"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "br-inpe-queimadas",
+      "name": "INPE BDQueimadas fire hotspot database",
+      "provider": "INPE Programa Queimadas",
+      "agency": [
+        "INPE"
+      ],
+      "country": [
+        "Brazil"
+      ],
+      "kind": "portal",
+      "url": "https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america",
+        "amazon"
+      ],
+      "data_types": [
+        "thermal",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "CSV",
+        "KML"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "INPE's national active-fire detection database derived from multiple polar and geostationary satellites. Downloadable hotspot tables and shapefiles by date, biome and state, no login needed.",
+      "tags": [
+        "queimadas",
+        "hotspots",
+        "fire",
+        "bdqueimadas"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "br-ibge-geoftp",
+      "name": "IBGE GeoFTP - Brazilian national geospatial downloads",
+      "provider": "IBGE",
+      "agency": [
+        "IBGE"
+      ],
+      "country": [
+        "Brazil"
+      ],
+      "kind": "archive",
+      "url": "https://geoftp.ibge.gov.br",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "south-america"
+      ],
+      "data_types": [
+        "map",
+        "imagery",
+        "dem"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "ftp",
+        "bulk"
+      ],
+      "description": "IBGE's open file server for cartographic bases, land-use/cover grids, census geometries and some imagery products of Brazil. Plain directory listing with no login.",
+      "tags": [
+        "ibge",
+        "brazil",
+        "geoftp",
+        "cartas"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "tw-nlsc",
+      "name": "NLSC (Taiwan National Land Surveying and Mapping Center)",
+      "provider": "NLSC, Ministry of the Interior",
+      "agency": [
+        "NLSC"
+      ],
+      "country": [
+        "Taiwan"
+      ],
+      "kind": "portal",
+      "url": "https://www.nlsc.gov.tw",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "east-asia"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wmts",
+        "wms"
+      ],
+      "description": "Taiwan's national mapping agency, providing orthophotos, aerial photographs, DEMs and WMTS base maps via a Chinese-language portal. Base layers are open; some downloads require registration.",
+      "tags": [
+        "nlsc",
+        "taiwan",
+        "orthophoto",
+        "emap"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "il-govmap",
+      "name": "GovMap (Survey of Israel)",
+      "provider": "Survey of Israel",
+      "agency": [
+        "Survey of Israel"
+      ],
+      "country": [
+        "Israel"
+      ],
+      "kind": "portal",
+      "url": "https://www.govmap.gov.il",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "middle-east"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Official Israeli government map viewer with multi-date orthophotos, historical aerial imagery and cadastral/thematic layers. Hebrew-first interface used for viewing rather than bulk download.",
+      "tags": [
+        "govmap",
+        "survey of israel",
+        "orthophoto"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "hr-dgu-geoportal",
+      "name": "DGU Geoportal Croatia",
+      "provider": "State Geodetic Administration",
+      "agency": [
+        "DGU"
+      ],
+      "country": [
+        "Croatia"
+      ],
+      "kind": "portal",
+      "url": "https://geoportal.dgu.hr",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms"
+      ],
+      "description": "Central access point to Croatian national spatial data: digital orthophotos, elevation models and topographic maps via view and download services. Viewing is open; some high-resolution downloads need registration.",
+      "tags": [
+        "dgu",
+        "croatia",
+        "dof"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "si-arso-lidar",
+      "name": "Slovenia ARSO GIS portal (eVode) - lidar",
+      "provider": "Slovenian Environment Agency (ARSO)",
+      "agency": [
+        "ARSO"
+      ],
+      "country": [
+        "Slovenia"
+      ],
+      "kind": "portal",
+      "url": "https://gis.arso.gov.si/evode",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "lidar",
+        "dem",
+        "aerial"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "ARSO GIS portal hosting downloadable national lidar point clouds and derived elevation models for Slovenia alongside hydrology layers, distributed as open tiles.",
+      "tags": [
+        "arso",
+        "slovenia",
+        "lidar"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Landing page verified; the lidar download profile sits inside this application."
+    },
+    {
+      "id": "lv-lgia",
+      "name": "LGIA (Latvian Geospatial Information Agency)",
+      "provider": "LGIA",
+      "agency": [
+        "LGIA"
+      ],
+      "country": [
+        "Latvia"
+      ],
+      "kind": "portal",
+      "url": "https://www.lgia.gov.lv/en",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms"
+      ],
+      "description": "Latvian national mapping agency offering orthophoto maps, lidar-derived elevation data and topographic maps. Web services are open; full-resolution downloads are via e-service.",
+      "tags": [
+        "lgia",
+        "latvia",
+        "ortofoto"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lt-geoportal",
+      "name": "Geoportal.lt (Lithuania)",
+      "provider": "National Land Service, Lithuania",
+      "agency": [
+        "NZT"
+      ],
+      "country": [
+        "Lithuania"
+      ],
+      "kind": "portal",
+      "url": "https://www.geoportal.lt/geoportal/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms",
+        "wmts"
+      ],
+      "description": "Lithuania's national spatial-information portal with orthophotos, elevation models and reference maps. Viewers and OGC services are open; bulk downloads may need licensing or registration.",
+      "tags": [
+        "geoportal.lt",
+        "lithuania",
+        "nzt"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sk-skgeodesy",
+      "name": "GKU/UGKK SR - Slovak geodesy, cartography and cadastre",
+      "provider": "Geodetic and Cartographic Institute Bratislava",
+      "agency": [
+        "GKU"
+      ],
+      "country": [
+        "Slovakia"
+      ],
+      "kind": "portal",
+      "url": "https://www.skgeodesy.sk/sk/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms"
+      ],
+      "description": "Slovak national mapping and cadastre authority: orthophoto mosaics, airborne laser scanning derived elevation and topographic data via its geoportal. Slovak-language; several datasets are open, others licensed.",
+      "tags": [
+        "skgeodesy",
+        "slovakia",
+        "dmr",
+        "ortofoto"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lu-data-public",
+      "name": "Luxembourg Open Data portal - orthophotos and lidar",
+      "provider": "Administration du cadastre et de la topographie",
+      "agency": [
+        "ACT"
+      ],
+      "country": [
+        "Luxembourg"
+      ],
+      "kind": "catalog",
+      "url": "https://data.public.lu/fr/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "National open data catalogue of Luxembourg that lists geospatial datasets from the national mapping authority such as orthophotos and elevation models. Datasets are freely downloadable.",
+      "tags": [
+        "luxembourg",
+        "act",
+        "orthophoto"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Portal verified; specific ACT dataset pages not individually verified."
+    },
+    {
+      "id": "be-wallonie-geoportail",
+      "name": "Geoportail de la Wallonie",
+      "provider": "Service public de Wallonie",
+      "agency": [
+        "SPW"
+      ],
+      "country": [
+        "Belgium"
+      ],
+      "kind": "portal",
+      "url": "https://geoportail.wallonie.be/home.html",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "wms",
+        "wmts",
+        "https"
+      ],
+      "description": "Walloon regional geoportal with orthophotos from several flight campaigns, lidar-derived DTM/DSM and the regional data catalogue. French-language; data download tools are available free of charge.",
+      "tags": [
+        "wallonia",
+        "geoportail",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "be-brussels-datastore",
+      "name": "Datastore.brussels",
+      "provider": "Paradigm (Brussels Region)",
+      "agency": [
+        "Paradigm"
+      ],
+      "country": [
+        "Belgium"
+      ],
+      "kind": "catalog",
+      "url": "https://datastore.brussels",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Open data platform of the Brussels-Capital Region listing regional geodata including orthophotos, terrain/surface models and base maps, offered as downloads and services.",
+      "tags": [
+        "brussels",
+        "paradigm",
+        "orthophoto"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "de-nrw-opengeodata",
+      "name": "Open.NRW geodata (North Rhine-Westphalia)",
+      "provider": "Geobasis NRW",
+      "agency": [
+        "Geobasis NRW"
+      ],
+      "country": [
+        "Germany"
+      ],
+      "kind": "archive",
+      "url": "https://www.opengeodata.nrw.de/produkte/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS",
+        "JP2"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk",
+        "web-ui"
+      ],
+      "description": "Open download server of Geobasis NRW with digital orthophotos, elevation models, laser-scan point clouds and other state geodata. Plain HTTPS directory downloads, no login.",
+      "tags": [
+        "nrw",
+        "geobasis",
+        "dop",
+        "dgm"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "de-bavaria-geodaten",
+      "name": "Geodaten Bayern (Bavarian Surveying Administration)",
+      "provider": "Bayerische Vermessungsverwaltung",
+      "agency": [
+        "LDBV"
+      ],
+      "country": [
+        "Germany"
+      ],
+      "kind": "portal",
+      "url": "https://geodaten.bayern.de",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Bavarian state survey open geodata portal covering orthophotos, digital terrain models and laser-scan point clouds. German-language; open-data downloads are free.",
+      "tags": [
+        "bayern",
+        "ldbv",
+        "dop",
+        "dgm"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pt-dgt",
+      "name": "DGT (Direcao-Geral do Territorio) - Portugal",
+      "provider": "Direcao-Geral do Territorio",
+      "agency": [
+        "DGT"
+      ],
+      "country": [
+        "Portugal"
+      ],
+      "kind": "portal",
+      "url": "https://point.dgterritorio.gov.pt",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms"
+      ],
+      "description": "Portuguese national mapping and cadastre authority; the gateway to its platforms including orthophotos, elevation models and land-cover (COS) data. Portuguese-language; many datasets are open, others licensed.",
+      "tags": [
+        "dgt",
+        "portugal",
+        "cos"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ie-tailte",
+      "name": "Tailte Eireann (Ireland national mapping)",
+      "provider": "Tailte Eireann",
+      "agency": [
+        "Tailte Eireann"
+      ],
+      "country": [
+        "Ireland"
+      ],
+      "kind": "portal",
+      "url": "https://tailte.ie/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "europe"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "map",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms"
+      ],
+      "description": "Ireland's national mapping, valuation and property-registration authority (formed from OSi and others). Provides aerial orthophotography and base maps; some is open via Irish geospatial portals, other data is licensed.",
+      "tags": [
+        "tailte",
+        "osi",
+        "ireland"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "au-nsw-spatial",
+      "name": "NSW Spatial Services portal",
+      "provider": "NSW Spatial Services",
+      "agency": [
+        "NSW Spatial Services"
+      ],
+      "country": [
+        "Australia"
+      ],
+      "kind": "portal",
+      "url": "https://portal.spatial.nsw.gov.au/portal/apps/sites/#/homepage",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "australia"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "New South Wales mapping agency portal with state aerial imagery, historical aerial photos, elevation models and lidar. Open web services are available and large downloads can be requested.",
+      "tags": [
+        "nsw",
+        "spatial services",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "au-qld-spatial",
+      "name": "QSpatial (Queensland spatial catalogue)",
+      "provider": "Queensland Government",
+      "agency": [
+        "Queensland Government"
+      ],
+      "country": [
+        "Australia"
+      ],
+      "kind": "catalog",
+      "url": "https://qldspatial.information.qld.gov.au/catalogue/custom/index.page",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "australia"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Queensland's spatial data catalogue with state imagery, DEMs, lidar surveys and historical aerial photography. Mostly open licences; some downloads require a free account.",
+      "tags": [
+        "qld",
+        "queensland",
+        "qspatial"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "au-tas-list",
+      "name": "LISTmap (Tasmania)",
+      "provider": "Tasmanian Government",
+      "agency": [
+        "Tasmanian Government"
+      ],
+      "country": [
+        "Australia"
+      ],
+      "kind": "portal",
+      "url": "https://www.thelist.tas.gov.au/app/content/home",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "australia"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui",
+        "wms"
+      ],
+      "description": "Tasmania's state spatial viewer and data service with orthophotos, historical aerials, DEM and lidar layers. Viewing is open; some downloads need a free account.",
+      "tags": [
+        "tasmania",
+        "thelist",
+        "listmap"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "au-vic-datavic",
+      "name": "DataVic (Victoria open data)",
+      "provider": "Victorian Government",
+      "agency": [
+        "Victorian Government"
+      ],
+      "country": [
+        "Australia"
+      ],
+      "kind": "catalog",
+      "url": "https://www.data.vic.gov.au/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "australia"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Victoria's open-data catalogue listing statewide imagery, elevation and lidar datasets with download or service links. Large tiles usually come from linked spatial portals.",
+      "tags": [
+        "victoria",
+        "datavic",
+        "vicmap"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ca-ontario-geohub",
+      "name": "Ontario GeoHub (Land Information Ontario)",
+      "provider": "Ontario Ministry of Natural Resources and Forestry",
+      "agency": [
+        "LIO"
+      ],
+      "country": [
+        "Canada"
+      ],
+      "kind": "portal",
+      "url": "https://geohub.lio.gov.on.ca",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "canada"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS",
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "rest"
+      ],
+      "description": "Ontario's provincial open-data hub with orthophotos, lidar-derived DEM/DSM and provincial basemaps, downloadable and served via ArcGIS REST/WMS without login.",
+      "tags": [
+        "ontario",
+        "lio",
+        "swoop",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ca-qc-foret-ouverte",
+      "name": "Foret ouverte (Quebec)",
+      "provider": "Ministere des Ressources naturelles et des Forets",
+      "agency": [
+        "MRNF"
+      ],
+      "country": [
+        "Canada"
+      ],
+      "kind": "portal",
+      "url": "https://www.foretouverte.gouv.qc.ca",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "canada"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Quebec's open forest-data portal publishing lidar-derived terrain and canopy models, aerial photographs and ortho-mosaics. French-language, free download.",
+      "tags": [
+        "quebec",
+        "foret ouverte",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ca-ns-plv",
+      "name": "Nova Scotia Property Online viewer",
+      "provider": "Nova Scotia Geomatics Centre",
+      "agency": [
+        "NSGI"
+      ],
+      "country": [
+        "Canada"
+      ],
+      "kind": "portal",
+      "url": "https://nsgi.novascotia.ca/plv/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "canada"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Nova Scotia's provincial geographic information viewer providing orthophotos, elevation layers and parcel data. Elevation downloads are linked from the Geomatics Centre.",
+      "tags": [
+        "nova scotia",
+        "nsgi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Viewer verified; lidar downloads reached via linked Elevation Explorer."
+    },
+    {
+      "id": "ca-nb-geonb",
+      "name": "GeoNB (New Brunswick)",
+      "provider": "Service New Brunswick",
+      "agency": [
+        "SNB"
+      ],
+      "country": [
+        "Canada"
+      ],
+      "kind": "portal",
+      "url": "https://geonb.snb.ca/geonb/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "canada"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "New Brunswick's geospatial data catalogue with orthophotos, lidar and DEMs of the province under an open licence.",
+      "tags": [
+        "new brunswick",
+        "geonb",
+        "snb"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-wa-dnr-lidar",
+      "name": "Washington DNR Lidar Portal",
+      "provider": "Washington State DNR",
+      "agency": [
+        "WA DNR"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://lidarportal.dnr.wa.gov",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "lidar",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Washington state lidar clearinghouse of airborne surveys with downloadable point clouds, DTM/DSM and hillshades, with metadata and a viewer. Free, no login.",
+      "tags": [
+        "washington",
+        "dnr",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-or-dogami-lidar",
+      "name": "Oregon DOGAMI lidar",
+      "provider": "Oregon Dept. of Geology and Mineral Industries",
+      "agency": [
+        "DOGAMI"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.oregon.gov/dogami/pages/default.aspx/lidar",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "lidar",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Oregon state lidar programme with an interactive viewer and downloads of point clouds and bare-earth rasters. The page redirects within the Oregon.gov DOGAMI site.",
+      "tags": [
+        "oregon",
+        "dogami",
+        "lidar"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Landing page loads after redirect; exact lidar sub-path not independently confirmed."
+    },
+    {
+      "id": "us-ny-orthos",
+      "name": "New York State orthoimagery (NYS GIS Program Office)",
+      "provider": "NYS ITS GIS Program Office",
+      "agency": [
+        "NYS ITS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://orthos.dhses.ny.gov",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "JP2",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "wms",
+        "wmts",
+        "https"
+      ],
+      "description": "Statewide NY orthoimagery from regional flight cycles, free as downloads and OGC services, including historical orthophotos.",
+      "tags": [
+        "new york",
+        "orthoimagery",
+        "nys gis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-nc-onemap",
+      "name": "NC OneMap",
+      "provider": "NC Center for Geographic Information and Analysis",
+      "agency": [
+        "NC CGIA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.nconemap.gov",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "North Carolina geospatial clearinghouse with orthoimagery, lidar-derived elevation and base maps. Open downloads and services.",
+      "tags": [
+        "north carolina",
+        "nc onemap",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-pa-pasda",
+      "name": "PASDA (Pennsylvania Spatial Data Access)",
+      "provider": "Penn State Institutes of Energy and the Environment",
+      "agency": [
+        "PASDA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.pasda.psu.edu",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Pennsylvania's geospatial data clearinghouse hosting PAMAP orthoimagery and lidar-derived elevation datasets as free downloads and services.",
+      "tags": [
+        "pennsylvania",
+        "pasda",
+        "pamap"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-mn-geospatial",
+      "name": "MN Geospatial Commons",
+      "provider": "Minnesota IT Services / MnGeo",
+      "agency": [
+        "MnGeo"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://gis.data.mn.gov/",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Minnesota's open geospatial catalogue with statewide lidar, orthophotos and derived elevation datasets for free download.",
+      "tags": [
+        "minnesota",
+        "mngeo",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-in-indianamap",
+      "name": "IndianaMap",
+      "provider": "Indiana Geographic Information Office",
+      "agency": [
+        "Indiana GIO"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.indianamap.org",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Indiana statewide geospatial framework with orthoimagery, statewide lidar elevation and boundary datasets. Free downloads and services.",
+      "tags": [
+        "indiana",
+        "indianamap",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-ia-geodata",
+      "name": "Iowa Geospatial Data Portal",
+      "provider": "Iowa DNR",
+      "agency": [
+        "Iowa DNR"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://geodata.iowa.gov",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "Iowa's open geospatial portal covering lidar-derived elevation, aerial imagery (including historic) and thematic data. Open downloads.",
+      "tags": [
+        "iowa",
+        "lidar",
+        "dnr"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-ut-agrc",
+      "name": "Utah AGRC (Geospatial Resource Center)",
+      "provider": "Utah Geospatial Resource Center",
+      "agency": [
+        "AGRC"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://gis.utah.gov",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "wms"
+      ],
+      "description": "Utah state geospatial resource center with statewide orthoimagery, lidar and elevation data and historic aerials, free to download.",
+      "tags": [
+        "utah",
+        "agrc",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "us-nj-njgin",
+      "name": "NJGIN (New Jersey Geographic Information Network)",
+      "provider": "NJ Office of GIS",
+      "agency": [
+        "NJOGIS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://njgin.nj.gov",
+      "targets": [
+        "earth"
+      ],
+      "regions": [
+        "usa"
+      ],
+      "data_types": [
+        "aerial",
+        "imagery",
+        "dem",
+        "lidar",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "LAS"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https",
+        "rest"
+      ],
+      "description": "New Jersey GIS clearinghouse with orthoimagery, lidar-derived elevation models and thematic layers. Open downloads and ArcGIS REST services.",
+      "tags": [
+        "new jersey",
+        "njgin",
+        "lidar"
+      ],
+      "verified": "2026-11-05"
+    }
+  ]
+}

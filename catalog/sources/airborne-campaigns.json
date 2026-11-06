@@ -1,0 +1,1336 @@
+{
+ "domain": "airborne-campaigns",
+ "sources": [
+  {
+   "id": "nasa-gliht",
+   "name": "G-LiHT (Goddard's LiDAR, Hyperspectral and Thermal Imager)",
+   "provider": "NASA Goddard Space Flight Center",
+   "agency": [
+    "NASA",
+    "GSFC"
+   ],
+   "kind": "portal",
+   "url": "https://gliht.gsfc.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "north-america"
+   ],
+   "instruments": [
+    "G-LiHT"
+   ],
+   "data_types": [
+    "lidar",
+    "hyperspectral",
+    "thermal",
+    "aerial",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "LAS",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "resolution": "<1 m",
+   "description": "Portable airborne system that flies lidar, imaging spectroscopy and thermal imaging simultaneously over terrestrial ecosystems, with fine-scale (<1 m) coincident data. Data can be browsed and downloaded from the G-LiHT interactive webmap (stated as under active development). Also hosts aerial photography and 2017 hurricane response imagery.",
+   "tags": [
+    "gliht",
+    "goddard",
+    "canopy",
+    "airborne lidar"
+   ],
+   "verified": "2026-11-05",
+   "notes": "File formats inferred from typical G-LiHT products; not itemised on landing page."
+  },
+  {
+   "id": "nasa-master",
+   "name": "MASTER (MODIS/ASTER Airborne Simulator)",
+   "provider": "NASA JPL / Ames Airborne Sensor Facility",
+   "agency": [
+    "NASA",
+    "JPL"
+   ],
+   "kind": "mission-site",
+   "url": "https://masterprojects.jpl.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global"
+   ],
+   "instruments": [
+    "MASTER"
+   ],
+   "data_types": [
+    "multispectral",
+    "thermal"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "mwir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF4"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Airborne multispectral scanner spanning visible to thermal infrared, built to simulate and calibrate/validate MODIS and ASTER. The site lists instrument specs, platforms, flight planning, projects and an Order Data page; L1B data are also available from the Ames Airborne Sensor Facility. The old masterweb.jpl.nasa.gov host redirects here.",
+   "tags": [
+    "master",
+    "modis aster simulator",
+    "airborne"
+   ],
+   "verified": "2026-11-05",
+   "notes": "Formats not confirmed on site; HDF4 is the usual MASTER L1B packaging."
+  },
+  {
+   "id": "nasa-hytes",
+   "name": "HyTES (Hyperspectral Thermal Emission Spectrometer)",
+   "provider": "NASA JPL",
+   "agency": [
+    "NASA",
+    "JPL"
+   ],
+   "kind": "mission-site",
+   "url": "https://hytes.jpl.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "usa"
+   ],
+   "instruments": [
+    "HyTES"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "thermal"
+   ],
+   "spectral": [
+    "tir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Airborne thermal-infrared imaging spectrometer with 256 channels between 7.5 and 12 micrometres and 512 cross-track pixels, developed in support of HyspIRI. The site provides instrument specifications, platforms, snapshots, flight planning and an Order Data page for campaign data.",
+   "tags": [
+    "hytes",
+    "thermal hyperspectral",
+    "hyspiri"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-lvis",
+   "name": "LVIS (Land, Vegetation and Ice Sensor) airborne lidar",
+   "provider": "NASA GSFC / NSIDC DAAC",
+   "agency": [
+    "NASA",
+    "GSFC",
+    "NSIDC"
+   ],
+   "kind": "mission-site",
+   "url": "https://lvis.gsfc.nasa.gov/",
+   "links": [
+    {
+     "label": "MAAP guide to LVIS data via CMR",
+     "url": "https://docs.maap-project.org/en/latest/science/LVIS/accessing_LVIS_data.html"
+    },
+    {
+     "label": "LVIS Facility L2 (NSIDC)",
+     "url": "https://nsidc.org/data/lvisf2"
+    }
+   ],
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "greenland",
+    "antarctica",
+    "alaska",
+    "africa",
+    "usa"
+   ],
+   "instruments": [
+    "LVIS"
+   ],
+   "data_types": [
+    "lidar",
+    "altimetry",
+    "dem",
+    "ice"
+   ],
+   "spectral": [
+    "nir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "HDF5"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Wide-swath airborne imaging laser altimeter (typically ~2 km swath, 7-10 m footprints from ~10 km altitude) operating as a NASA facility since 2017. Products (L1B waveforms, L2 surface elevation and canopy height; Classic, ABoVE, AfriSAR and IceBridge sets) are distributed by the NSIDC DAAC over HTTPS and need a free Earthdata Login.",
+   "tags": [
+    "lvis",
+    "lvisf1b",
+    "lvisf2",
+    "waveform lidar"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nsidc-snowex",
+   "name": "NASA SnowEx campaigns (NSIDC DAAC)",
+   "provider": "NSIDC DAAC",
+   "agency": [
+    "NASA",
+    "NSIDC"
+   ],
+   "kind": "dataset",
+   "url": "https://nsidc.org/data/snowex",
+   "links": [
+    {
+     "label": "SnowEx data (snow.nasa.gov)",
+     "url": "https://snow.nasa.gov/snowex/data"
+    }
+   ],
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "usa",
+    "alaska"
+   ],
+   "data_types": [
+    "sar",
+    "lidar",
+    "ice",
+    "video",
+    "radar"
+   ],
+   "spectral": [
+    "radar",
+    "nir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "GeoTIFF",
+    "HDF5",
+    "CSV"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "web-ui",
+    "rest"
+   ],
+   "description": "Collection of airborne and ground snow data from the SnowEx 2017, 2020, 2021 and 2023 campaigns (Grand Mesa and Senator Beck Basin in Colorado, later Alaska), including UAVSAR, SnowSAR, lidar and airborne video. Data are free; products such as SnowSAR require a free NASA Earthdata Login. The programme page at snow.nasa.gov lists campaigns and the data pledge.",
+   "tags": [
+    "snowex",
+    "snow",
+    "snowsar",
+    "uavsar",
+    "grand mesa"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-prism",
+   "name": "PRISM (Portable Remote Imaging Spectrometer)",
+   "provider": "NASA JPL",
+   "agency": [
+    "NASA",
+    "JPL"
+   ],
+   "kind": "mission-site",
+   "url": "https://science.nasa.gov/mission/portable-remote-imaging-spectrometer-prism/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "pacific",
+    "oceans"
+   ],
+   "instruments": [
+    "PRISM"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "ocean"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "description": "NASA mission page for the PRISM airborne imaging spectrometer used for coastal ocean, coral reef and aquatic ecosystem science. Use it to identify campaigns and instrument details; campaign data are released through the respective project archives rather than from this page.",
+   "tags": [
+    "prism",
+    "coral",
+    "ocean color airborne"
+   ],
+   "verified": "2026-11-05",
+   "notes": "Overview page only; old prism.jpl.nasa.gov redirects here."
+  },
+  {
+   "id": "nasa-oco3-sams",
+   "name": "OCO-3 Snapshot Area Maps (SAMs)",
+   "provider": "NASA JPL",
+   "agency": [
+    "NASA",
+    "JPL"
+   ],
+   "kind": "portal",
+   "url": "https://ocov3.jpl.nasa.gov/sams/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global"
+   ],
+   "missions": [
+    "OCO-3",
+    "ISS"
+   ],
+   "instruments": [
+    "OCO-3"
+   ],
+   "data_types": [
+    "atmosphere",
+    "imagery"
+   ],
+   "spectral": [
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "NetCDF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Web portal for OCO-3 (ISS) Snapshot Area Maps: roughly 80 x 80 km XCO2 and solar-induced fluorescence maps acquired in about two minutes over cities, power plants, volcanoes, vegetation and validation sites. Provides a site search, favourites, SAM requests and subsetted data downloads.",
+   "tags": [
+    "oco-3",
+    "sam",
+    "xco2",
+    "sif",
+    "iss"
+   ],
+   "verified": "2026-11-05",
+   "notes": "Format assumed NetCDF (OCO-3 standard); not stated on landing page."
+  },
+  {
+   "id": "esa-eo-campaigns",
+   "name": "ESA Earth Online campaign datasets",
+   "provider": "ESA",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "catalog",
+   "url": "https://earth.esa.int/eogateway/campaigns",
+   "links": [
+    {
+     "label": "TropiSAR 2009 campaign",
+     "url": "https://earth.esa.int/eogateway/campaigns/tropisar"
+    }
+   ],
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global",
+    "europe",
+    "africa",
+    "amazon"
+   ],
+   "data_types": [
+    "sar",
+    "hyperspectral",
+    "lidar",
+    "radar",
+    "atmosphere"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "NetCDF",
+    "GeoTIFF"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Index of ESA ground-based, ship-borne, balloon-borne and airborne campaigns (116 listed) with descriptions, instrument details and links to campaign datasets, e.g. TropiSAR 2009 in French Guiana. Some datasets are open, others require registration or proposal approval on Earth Online.",
+   "tags": [
+    "esa campaigns",
+    "airborne campaign",
+    "afrisar",
+    "tropisar",
+    "sar campaign"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ornl-airmoss",
+   "name": "AirMOSS P-band SAR (ORNL DAAC)",
+   "provider": "ORNL DAAC",
+   "agency": [
+    "NASA",
+    "ORNL"
+   ],
+   "kind": "dataset",
+   "url": "https://daac.ornl.gov/AIRMOSS/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "north-america",
+    "usa",
+    "canada",
+    "alaska",
+    "central-america"
+   ],
+   "instruments": [
+    "AirMOSS P-band SAR"
+   ],
+   "data_types": [
+    "sar",
+    "radar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "free-registration",
+   "protocols": [
+    "https",
+    "thredds",
+    "opendap",
+    "web-ui"
+   ],
+   "temporal": "2012-2015",
+   "description": "Level 1 polarimetric P-band (420-440 MHz) SAR backscatter from the AirMOSS Gulfstream-III radar for root-zone soil moisture, flown at ten North American sites 2012-2015, plus a pre-ABoVE Alaska set for 2014-2015. Data need a free Earthdata Login and are also offered through THREDDS/OPeNDAP.",
+   "tags": [
+    "airmoss",
+    "p-band",
+    "soil moisture",
+    "root zone"
+   ],
+   "connector": "cmr",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "asf-uavsar-archive",
+   "name": "UAVSAR data directory at ASF",
+   "provider": "Alaska Satellite Facility",
+   "agency": [
+    "NASA",
+    "ASF",
+    "JPL"
+   ],
+   "kind": "archive",
+   "url": "https://uavsar.asf.alaska.edu/",
+   "links": [
+    {
+     "label": "ASF Search UAVSAR",
+     "url": "https://search.asf.alaska.edu/#/?dataset=UAVSAR"
+    }
+   ],
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "usa",
+    "alaska",
+    "global"
+   ],
+   "instruments": [
+    "UAVSAR"
+   ],
+   "data_types": [
+    "sar",
+    "radar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui",
+    "bulk"
+   ],
+   "description": "Open HTTPS directory listing of UAVSAR flight-line products (UA_..._L090_CX_01 style folders) hosted by the ASF DAAC, also searchable in ASF Search under the UAVSAR dataset. Complements the JPL UAVSAR site with direct file access.",
+   "tags": [
+    "uavsar",
+    "l-band",
+    "airborne sar"
+   ],
+   "connector": "asf",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-ames-asf-epic",
+   "name": "NASA Ames EPIC Lab (Airborne Sensor Facility)",
+   "provider": "NASA Ames Research Center",
+   "agency": [
+    "NASA",
+    "Ames"
+   ],
+   "kind": "mission-site",
+   "url": "https://asapdata.arc.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "usa"
+   ],
+   "data_types": [
+    "multispectral",
+    "hyperspectral",
+    "aerial"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "description": "Earth Planetary Instrumentation and Calibration (EPIC) Lab, which maintains NASA facility airborne instruments and payload communications for approved projects. Resulting data are stated to be made available free through public archives; the site is a gateway to instrument and campaign information.",
+   "tags": [
+    "asf",
+    "ames",
+    "airborne sensor facility",
+    "asapdata"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "nasa-airborne-science-program",
+   "name": "NASA Airborne Science Program",
+   "provider": "NASA",
+   "agency": [
+    "NASA"
+   ],
+   "kind": "portal",
+   "url": "https://airbornescience.nasa.gov/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "imagery",
+    "sar",
+    "lidar",
+    "hyperspectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui"
+   ],
+   "description": "Program site for NASA's research aircraft, with platform descriptions, schedules, aircraft tracker and mission tools. Useful to identify which flight campaigns and instruments exist before searching DAAC archives for the data.",
+   "tags": [
+    "asp",
+    "aircraft",
+    "er-2",
+    "dc-8",
+    "g-iii",
+    "flight campaigns"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "neodaas-airborne-dan",
+   "name": "NEODAAS Airborne Data Analysis Node (NERC ARF)",
+   "provider": "NCEO / Plymouth Marine Laboratory",
+   "agency": [
+    "NERC",
+    "NEODAAS",
+    "NCEO"
+   ],
+   "country": [
+    "UK"
+   ],
+   "kind": "portal",
+   "url": "https://nerc-arf-dan.pml.ac.uk/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "europe",
+    "africa",
+    "arctic"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "lidar",
+    "aerial",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "ENVI",
+    "LAS"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Processing and archive node for the UK NERC Airborne Research Facility suite: Eagle, Hawk, Fenix and Owl hyperspectral sensors, CASI, Leica cameras and lidar. Provides data acquisition, processing, archive and sensor pages; the site has a login for data retrieval.",
+   "tags": [
+    "arsf",
+    "nerc-arf",
+    "eagle",
+    "hawk",
+    "fenix",
+    "owl",
+    "casi"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "tern-airborne-hyperspectral-lidar",
+   "name": "TERN Airborne Hyperspectral and LiDAR Data - Australian Field Sites",
+   "provider": "TERN (Terrestrial Ecosystem Research Network)",
+   "agency": [
+    "TERN",
+    "CSIRO"
+   ],
+   "country": [
+    "Australia"
+   ],
+   "kind": "dataset",
+   "url": "https://portal.tern.org.au/metadata/4ff0b4c9-cfa0-4d09-9520-b5402adc583f",
+   "links": [
+    {
+     "label": "TERN Data Discovery Portal",
+     "url": "https://portal.tern.org.au/"
+    }
+   ],
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "australia"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "lidar"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "binary",
+    "LAS"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "2012-2013",
+   "description": "Airborne hyperspectral (Specim) and Riegl Q560 lidar data for Australian field sites (former AusCover supersites) acquired about 2012-2013 from Airborne Research Australia aircraft. The TERN record links hyperspectral and lidar file resources; rights are held by ARA, so check the licence.",
+   "tags": [
+    "auscover",
+    "tern",
+    "ara",
+    "supersites"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "odm-community-datasets",
+   "name": "OpenDroneMap example datasets",
+   "provider": "OpenDroneMap community",
+   "agency": [
+    "OpenDroneMap"
+   ],
+   "kind": "dataset",
+   "url": "https://opendronemap.org/odm/datasets/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "aerial",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Table of community drone image sets (e.g. aukerman, bellus, banana) with image counts, sizes, EXIF/GCP/RTK flags and download links, used to test ODM photogrammetry. Many are browsable on DroneDB Hub; new sets are contributed via the community forum.",
+   "tags": [
+    "odm",
+    "uav",
+    "drone",
+    "photogrammetry",
+    "dronedb"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "dk-kb-aerial-view",
+   "name": "An Aerial View of Denmark (Royal Danish Library)",
+   "provider": "Royal Danish Library (Det Kgl. Bibliotek)",
+   "agency": [
+    "KB"
+   ],
+   "country": [
+    "Denmark"
+   ],
+   "kind": "archive",
+   "url": "https://www.kb.dk/en/find-materials/systems/aerial-view-denmark/about-denmark-seen-air",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1890-2010",
+   "description": "Service for the Royal Library's Aerial Photography Collection, about three million exposures of Denmark from 1890 to 2010, searchable by map. An API is listed among the library's search services. Use terms are given on the service pages.",
+   "tags": [
+    "luftfoto",
+    "danmark set fra luften",
+    "denmark seen from the air",
+    "kb.dk"
+   ],
+   "verified": "2026-11-05",
+   "notes": "About page used as landing; the bare service URL returned 404."
+  },
+  {
+   "id": "dk-skraafoto",
+   "name": "Skraafoto (Danish oblique aerial photos)",
+   "provider": "Danish Agency for Data Supply and Infrastructure (SDFI)",
+   "agency": [
+    "SDFI"
+   ],
+   "country": [
+    "Denmark"
+   ],
+   "kind": "portal",
+   "url": "https://skraafoto.dataforsyningen.dk/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Viewer for Denmark's oblique aerial photographs opened as free data in 2018 (about 1.3 million images at launch), taken from several directions to show buildings and landscape. Part of Dataforsyningen.",
+   "tags": [
+    "skråfoto",
+    "skraafoto",
+    "oblique",
+    "sdfi",
+    "dataforsyningen"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "uk-britain-from-above",
+   "name": "Britain from Above (Aerofilms collection)",
+   "provider": "Historic England, HES, RCAHMW",
+   "agency": [
+    "Historic England",
+    "HES",
+    "RCAHMW"
+   ],
+   "country": [
+    "UK"
+   ],
+   "kind": "archive",
+   "url": "https://britainfromabove.org.uk/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Online archive of the Aerofilms collection of early aerial photographs of Britain, with map search, galleries and community contributions; over 96,000 images are listed (England, Scotland, Wales, Ireland and elsewhere). Registration is offered for comments and pins; copies of images are supplied via the partner archives.",
+   "tags": [
+    "aerofilms",
+    "historic aerial",
+    "britain from above"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ch-eth-e-pics-aerial",
+   "name": "ETH Library Image Archive e-pics (Swiss aerial photographs)",
+   "provider": "ETH-Bibliothek",
+   "agency": [
+    "ETH"
+   ],
+   "country": [
+    "Switzerland"
+   ],
+   "kind": "archive",
+   "url": "https://ba.e-pics.ethz.ch/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "europe"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "description": "Image archive of the ETH Library whose holdings include large historical aerial photograph collections of Switzerland (e.g. Swissair Photo AG), searchable with a map filter. The archive's terms of use apply to downloads.",
+   "tags": [
+    "e-pics",
+    "swissair",
+    "luftbilder",
+    "eth-bibliothek"
+   ],
+   "verified": "2026-11-05",
+   "notes": "JS app; collection contents beyond aerial photography not enumerated."
+  },
+  {
+   "id": "au-ga-historical-aerial-photography",
+   "name": "Geoscience Australia Historical Aerial Photography",
+   "provider": "Geoscience Australia / National Archives of Australia",
+   "agency": [
+    "GA",
+    "NAA"
+   ],
+   "country": [
+    "Australia"
+   ],
+   "kind": "archive",
+   "url": "https://www.ga.gov.au/scientific-topics/national-location-information/historical-aerial-photography",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "australia"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG",
+    "TIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "temporal": "1928-1996",
+   "description": "More than 1.3 million digitised vertical and oblique aerial photographs of Australia captured 1928-1996, searchable and downloadable free through the Digital Atlas of Australia. The page includes user guides and FAQs.",
+   "tags": [
+    "hap",
+    "digital atlas of australia",
+    "historical aerial"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "au-qld-qimagery",
+   "name": "QImagery (Queensland historical and current aerial imagery)",
+   "provider": "Queensland Government",
+   "agency": [
+    "Queensland Government"
+   ],
+   "country": [
+    "Australia"
+   ],
+   "kind": "portal",
+   "url": "https://qimagery.information.qld.gov.au/",
+   "links": [
+    {
+     "label": "QImagery Help",
+     "url": "https://qimagery.information.qld.gov.au/help"
+    }
+   ],
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "australia"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "temporal": "1930s-2009",
+   "description": "Queensland's aerial image library with 900,000+ scanned film-era frames from the 1930s onwards; frames can be downloaded as JPEG (downsampled for open licensing) in small batches. Search by address, lot on plan, locality or coordinates; higher-resolution copies are sold.",
+   "tags": [
+    "qimagery",
+    "queensland",
+    "historical aerial"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "us-historicaerials-netr",
+   "name": "Historic Aerials (NETR Online)",
+   "provider": "NETR Online",
+   "agency": [
+    "NETR"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "portal",
+   "url": "https://historicaerials.com/",
+   "targets": [
+    "earth"
+   ],
+   "regions": [
+    "usa"
+   ],
+   "data_types": [
+    "aerial",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "mixed",
+   "protocols": [
+    "web-ui"
+   ],
+   "description": "Viewer for historic aerial photographs and topographic maps across the United States, with side-by-side comparison of dates. Viewing is free; high-resolution downloads are a paid service.",
+   "tags": [
+    "historicaerials",
+    "netr",
+    "time series"
+   ],
+   "verified": "2026-11-05",
+   "notes": "Commercial viewer; imagery largely from public sources."
+  },
+  {
+   "id": "usgs-tadp-paad",
+   "name": "USGS Planetary Aeolian Analog Database (PAAD) / Terrestrial Analogs Data Portal",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "kind": "dataset",
+   "url": "https://www.usgs.gov/data/paad-planetary-aeolian-analog-database",
+   "targets": [
+    "earth",
+    "mars",
+    "titan",
+    "venus"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "First release of the USGS Terrestrial Analogs Data Portal (built on ScienceBase): a database of 45 Earth dune-field analog sites with bedform type, climate class and sand composition, for comparison with Mars and other planetary dunes.",
+   "tags": [
+    "paad",
+    "tadp",
+    "dunes",
+    "analog",
+    "sciencebase"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-known-terrestrial-analog-sites",
+   "name": "Known Terrestrial Analog Sites for Planetary Science (USGS)",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "kind": "dataset",
+   "url": "https://www.usgs.gov/data/known-terrestrial-analog-sites-planetary-science",
+   "links": [
+    {
+     "label": "data.gov record",
+     "url": "https://catalog.data.gov/dataset/known-terrestrial-analog-sites-for-planetary-science"
+    }
+   ],
+   "targets": [
+    "earth",
+    "mars",
+    "moon"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "CSV",
+    "KML"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Point dataset of Earth sites useful as planetary analogs (impact craters, dunes, volcanoes, etc.) for locating field and remote-sensing studies. Published as a USGS data release and mirrored on data.gov.",
+   "tags": [
+    "analog sites",
+    "tadp"
+   ],
+   "verified": "2026-11-05",
+   "notes": "File formats not confirmed on the page."
+  },
+  {
+   "id": "umd-geodes-analog-geophysics",
+   "name": "GEODES analog-site geophysical datasets",
+   "provider": "University of Maryland (GEODES)",
+   "agency": [
+    "UMD",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://geodes.umd.edu/data.php",
+   "targets": [
+    "earth",
+    "moon",
+    "mars"
+   ],
+   "regions": [
+    "global"
+   ],
+   "data_types": [
+    "radar"
+   ],
+   "spectral": [
+    "radar"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "CSV",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "temporal": "2016-2024",
+   "description": "Geophysical surveys (ground-penetrating radar, seismic) from 2016-2024 field expeditions to lunar and Mars analog sites such as Kilbourne Hole and Lanzarote. GPR goes to the USGS Terrestrial Analogs Data Portal, seismic data to EarthScope DMC, other data to UMD DRUM or journal supplements.",
+   "tags": [
+    "geodes",
+    "gpr",
+    "lava tubes",
+    "analog"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-geo-grsfe",
+   "name": "Geologic Remote Sensing Field Experiment (GRSFE) - PDS Geosciences",
+   "provider": "PDS Geosciences Node (WUSTL)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "kind": "dataset",
+   "url": "https://pds-geosciences.wustl.edu/missions/grsfe/index.htm",
+   "targets": [
+    "earth",
+    "mars",
+    "moon"
+   ],
+   "regions": [
+    "usa"
+   ],
+   "data_types": [
+    "multispectral",
+    "hyperspectral",
+    "sar",
+    "thermal"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1990",
+   "description": "1990 campaign that used NASA aircraft to acquire visible through microwave data over southwestern US targets, intended to test models for estimating planetary surface properties. Archived at the PDS Geosciences Node with lab and ancillary data.",
+   "tags": [
+    "grsfe",
+    "aviris",
+    "tims",
+    "airsar",
+    "analog"
+   ],
+   "verified": "2026-11-05",
+   "notes": "Format assumed PDS3 (CD-ROM era archive)."
+  }
+ ]
+}

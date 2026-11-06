@@ -1,0 +1,82 @@
+# Builds the Windows release (installer, portable zip, SHA256SUMS.txt) and publishes it as a GitHub Release when a
+# version tag is pushed:  git tag v0.1.0  then  git push origin v0.1.0
+# "Run workflow" on the Actions tab builds the same files as a downloadable artifact without publishing anything.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write  # create the release and attach its files
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.10"  # the last 3.12 with an official Windows embeddable package, which the build bundles
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Python packages
+        run: |
+          python -m venv .venv
+          .venv\Scripts\python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Web libraries
+        run: npm ci --no-audit --no-fund
+
+      - name: Sample files for the format tests
+        continue-on-error: true  # an archive being down skips those tests instead of blocking the release
+        run: .venv\Scripts\python scripts\fetch_samples.py
+
+      - name: Tests
+        run: .venv\Scripts\python -m pytest -q -m "not network"
+
+      - name: Inno Setup 6.7.4  # the version the installer script is tested with (Chocolatey's lags behind)
+        run: |
+          $f = "$env:RUNNER_TEMP\innosetup-6.7.4.exe"
+          Invoke-WebRequest https://github.com/jrsoftware/issrc/releases/download/is-6_7_4/innosetup-6.7.4.exe -OutFile $f
+          if ((Get-AuthenticodeSignature $f).Status -ne 'Valid') { throw 'Inno Setup download is not validly signed' }
+          $p = Start-Process $f -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-', '/CURRENTUSER' -Wait -PassThru
+          if ($p.ExitCode -ne 0) { throw "Inno Setup install failed ($($p.ExitCode))" }
+
+      - name: Build
+        shell: powershell  # Windows PowerShell 5.1, as on users' PCs
+        run: |
+          $v = if ($env:GITHUB_REF_TYPE -eq 'tag') { $env:GITHUB_REF_NAME } else { '' }
+          scripts\build_release.ps1 -Version $v -Installer
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpenReSense-windows
+          path: |
+            dist/OpenReSense-*-setup.exe
+            dist/OpenReSense-*-portable.zip
+            dist/SHA256SUMS.txt
+
+      - name: Publish the release
+        if: github.ref_type == 'tag'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          files=(dist/OpenReSense-*-setup.exe dist/OpenReSense-*-portable.zip dist/SHA256SUMS.txt)
+          pre=()
+          if [[ "$GITHUB_REF_NAME" == *-* ]]; then pre=(--prerelease); fi  # v1.2.0-rc.1: not the "latest" download
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "${files[@]}" --clobber  # a re-run replaces the files
+          else
+            gh release create "$GITHUB_REF_NAME" "${files[@]}" "${pre[@]}" --title "OpenReSense $GITHUB_REF_NAME" --generate-notes
+          fi

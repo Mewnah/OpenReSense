@@ -1,0 +1,5949 @@
+{
+  "domain": "nasa-pds-astro",
+  "sources": [
+    {
+      "id": "ames-stereo-pipeline",
+      "name": "Ames Stereo Pipeline (ASP)",
+      "provider": "NASA Ames Intelligent Robotics Group",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://stereopipeline.readthedocs.io/en/latest/",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/NeoGeographyToolkit/StereoPipeline"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "ISIS3",
+        "GeoTIFF",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Open-source stereo photogrammetry suite that builds DEMs and orthoimages from planetary orbital stereo pairs (LRO NAC, HiRISE, CTX, Kaguya and others). Works with ISIS camera models.",
+      "tags": [
+        "asp",
+        "stereo",
+        "dem generation"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "astropedia-ceres-fc-hamo",
+      "name": "Ceres Dawn FC HAMO global color shaded mosaic (60 ppd)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Ceres/Dawn/Ceres_Dawn_FC_HAMO_ClrShade_DLR_Global_60ppd_Oct2016",
+      "targets": [
+        "ceres"
+      ],
+      "missions": [
+        "Dawn"
+      ],
+      "data_types": [
+        "mosaic",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "60 pixels/degree",
+      "description": "DLR-produced Dawn Framing Camera HAMO color-shaded global map of Ceres at 60 pixels per degree.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-mars-mdim21",
+      "name": "Mars Viking MDIM 2.1 color mosaic (232 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Mars/Viking/MDIM21/Mars_Viking_MDIM21_ClrMosaic_global_232m",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Viking"
+      ],
+      "data_types": [
+        "mosaic",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "232 m/px",
+      "description": "Global color mosaic of Mars from Viking Orbiter images, with MOLA control. Classic base map for Mars.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-mars-mola-dem",
+      "name": "Mars MGS MOLA DEM mosaic (463 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Mars/GlobalSurveyor/MOLA/Mars_MGS_MOLA_DEM_mosaic_global_463m",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mars Global Surveyor"
+      ],
+      "data_types": [
+        "dem",
+        "altimetry"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "463 m/px",
+      "description": "Global Mars elevation model from MOLA, resampled to 463 m/px in a simple cylindrical projection as GeoTIFF.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-mars-themis-day-ir",
+      "name": "Mars THEMIS daytime IR mosaic v12 (100 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Mars/Odyssey/THEMIS-IR-Mosaic-ASU/Mars_MO_THEMIS-IR-Day_mosaic_global_100m_v12",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "2001 Mars Odyssey"
+      ],
+      "data_types": [
+        "mosaic",
+        "thermal"
+      ],
+      "spectral": [
+        "tir"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "100 m/px",
+      "description": "ASU global THEMIS daytime infrared mosaic of Mars, widely used as a basemap for geologic mapping.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-mercury-mdis-basemap",
+      "name": "Mercury MESSENGER MDIS basemap (166 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Mercury/Messenger/Mercury_MESSENGER_MDIS_Basemap_BDR_Mosaic_Global_166m",
+      "targets": [
+        "mercury"
+      ],
+      "missions": [
+        "MESSENGER"
+      ],
+      "data_types": [
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "166 m/px",
+      "description": "Global monochrome basemap reduced data record mosaic of Mercury from MESSENGER's MDIS.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-moon-kaguya-lalt",
+      "name": "Moon Kaguya LALT shaded relief (512 ppd)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Moon/Kaguya/LAlt/Lunar_Kaguya_LALT_ShadeRelief_Mosaic_global_512ppd",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SELENE (Kaguya)"
+      ],
+      "data_types": [
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "about 59 m/px",
+      "description": "Global lunar shaded relief from Kaguya laser altimeter data at 512 pixels per degree.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-moon-lola-ldem",
+      "name": "Moon LRO LOLA global DEM (118 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Moon/LRO/LOLA/Lunar_LRO_LOLA_Global_LDEM_118m_Mar2014",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LRO"
+      ],
+      "data_types": [
+        "dem",
+        "altimetry"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "118 m/px",
+      "description": "Global lunar elevation model from LOLA at 256 pixels per degree (about 118 m/px).",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-moon-lroc-wac",
+      "name": "Moon LRO LROC WAC global mosaic (100 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Moon/LRO/LROC_WAC/Lunar_LRO_LROC-WAC_Mosaic_global_100m_June2013",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LRO"
+      ],
+      "data_types": [
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "100 m/px",
+      "description": "Global 100 m/px normalized reflectance mosaic of the Moon from the LRO Wide Angle Camera (June 2013 release).",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-titan-iss-mosaic",
+      "name": "Titan Cassini ISS global mosaic (4 km)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Titan/Cassini/Titan_ISS_P19658_Mosaic_Global_4km",
+      "targets": [
+        "titan"
+      ],
+      "missions": [
+        "Cassini-Huygens"
+      ],
+      "data_types": [
+        "mosaic"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "4 km/px",
+      "description": "Global near-infrared Cassini ISS mosaic of Titan's surface at 4 km/px, a standard Titan basemap.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-venus-magellan-mdir",
+      "name": "Venus Magellan C3-MDIR global mosaic (4641 m)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Venus/Magellan/RadarProperties/Venus_Magellan_C3-MDIR_Global_Mosaic_4641m",
+      "targets": [
+        "venus"
+      ],
+      "missions": [
+        "Magellan"
+      ],
+      "data_types": [
+        "mosaic",
+        "radar"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "4.6 km/px",
+      "description": "Global Magellan radar image mosaic of Venus at 4641 m/px.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "astropedia-vesta-fc-hamo",
+      "name": "Vesta Dawn FC HAMO global mosaic (74 ppd)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://astrogeology.usgs.gov/search/map/Vesta/Dawn/Vesta_Dawn_FC_HAMO_Mosaic_Global_74ppd",
+      "targets": [
+        "vesta"
+      ],
+      "missions": [
+        "Dawn"
+      ],
+      "data_types": [
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "resolution": "74 pixels/degree",
+      "description": "Dawn Framing Camera HAMO global mosaic of Vesta at 74 pixels per degree.",
+      "tags": [
+        "astropedia",
+        "global mosaic"
+      ],
+      "notes": "Astropedia is a single-page app that returns HTTP 200 for any path, so the record URL could not be machine-verified."
+    },
+    {
+      "id": "asu-mars-image-explorer",
+      "name": "Mars Orbital Data / Image Explorer (THEMIS, CTX...)",
+      "provider": "Arizona State University Mars Space Flight Facility",
+      "agency": [
+        "NASA",
+        "ASU"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://viewer.mars.asu.edu/viewer/themis",
+      "links": [
+        {
+          "label": "THEMIS mission site",
+          "url": "https://themis.asu.edu/"
+        }
+      ],
+      "targets": [
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "thermal"
+      ],
+      "spectral": [
+        "visible",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "ISIS3",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "web-ui",
+        "https"
+      ],
+      "description": "ASU web search interface for THEMIS (and other) Mars image products with filters for location, local time, resolution, solar longitude and processing stage. Download links per product.",
+      "tags": [
+        "themis",
+        "image explorer"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-europa-dtms",
+      "name": "Europa Galileo stereo DTMs (AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-europa-dtms/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/jupiter/europa/europa_controlled_usgs_dtms/"
+        }
+      ],
+      "targets": [
+        "europa"
+      ],
+      "missions": [
+        "Galileo"
+      ],
+      "instruments": [
+        "SSI"
+      ],
+      "data_types": [
+        "dem",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "resolution": "1-2 km horizontal",
+      "temporal": "1995-2000",
+      "description": "Stereo-derived digital terrain models of five Europa sites (Agenor Linea, Cilix, Pwyll, Rhadamanthys Linea, Yelland Linea) tied to the controlled Galileo image set.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-europa-galileo-observations",
+      "name": "Europa Galileo and Voyager controlled observations (AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-europa-observations/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/jupiter/europa/galileo_individual_images/"
+        }
+      ],
+      "targets": [
+        "europa"
+      ],
+      "missions": [
+        "Galileo",
+        "Voyager 1",
+        "Voyager 2"
+      ],
+      "instruments": [
+        "SSI",
+        "ISS"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "temporal": "1979-2000",
+      "description": "Globally controlled Galileo SSI and Voyager images of Europa as COGs with improved pointing, ready for GIS use.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-europa-mosaics",
+      "name": "Europa Galileo sequence mosaics (AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-europa-mosaics/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/jupiter/europa/galileo_sequence_mosaics/"
+        }
+      ],
+      "targets": [
+        "europa"
+      ],
+      "missions": [
+        "Galileo"
+      ],
+      "instruments": [
+        "SSI"
+      ],
+      "data_types": [
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "temporal": "1995-2000",
+      "description": "Controlled mosaics of Galileo SSI sequences of Europa as COGs.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-kaguya-tc",
+      "name": "Kaguya Terrain Camera observations (COG on AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/jaxa-usgs-nasa-kaguya-tc/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/moon/kaguyatc/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SELENE (Kaguya)"
+      ],
+      "instruments": [
+        "Terrain Camera"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "resolution": "10 m/px",
+      "temporal": "2007-2009",
+      "description": "JAXA SELENE/Kaguya Terrain Camera stereo and mono images processed by USGS into COGs with STAC metadata. Global lunar coverage at about 10 m/px.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-kaguya-tc-dtms",
+      "name": "Kaguya TC USGS DTMs (COG on AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/jaxa-usgs-nasa-kaguya-tc-dtms/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/moon/kaguyatc_dtms/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "SELENE (Kaguya)"
+      ],
+      "instruments": [
+        "Terrain Camera"
+      ],
+      "data_types": [
+        "dem",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "resolution": "up to 10 m/px",
+      "temporal": "2007-2009",
+      "description": "Stereo digital terrain models and orthoimages from Kaguya Terrain Camera data produced with the Ames Stereo Pipeline, in equatorial and both polar projections.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-lola-shots",
+      "name": "LOLA shot-level data (COG/Parquet on AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-lunar-orbiter-laser-altimeter/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/moon/lola/"
+        }
+      ],
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LRO"
+      ],
+      "instruments": [
+        "LOLA"
+      ],
+      "data_types": [
+        "altimetry",
+        "lidar"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "CSV",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "temporal": "2009-2022",
+      "description": "Lunar Orbiter Laser Altimeter individual laser shot data in cloud-friendly form with STAC index. For custom DEM building and profile extraction.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "aws-usgs-themis-mosaics",
+      "name": "THEMIS IR controlled mosaics (COG on AWS)",
+      "provider": "USGS Astrogeology Science Center (on AWS Open Data)",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://registry.opendata.aws/nasa-usgs-themis-mosaics/",
+      "links": [
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/data/mars/themis_controlled_mosaics/"
+        }
+      ],
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "2001 Mars Odyssey"
+      ],
+      "instruments": [
+        "THEMIS"
+      ],
+      "data_types": [
+        "mosaic",
+        "thermal"
+      ],
+      "spectral": [
+        "tir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "s3",
+        "stac",
+        "https"
+      ],
+      "resolution": "100 m/px",
+      "temporal": "2021",
+      "description": "Controlled THEMIS infrared (daytime and night) mosaics of Mars as COGs. Regional and global tiles tied to MOLA control.",
+      "tags": [
+        "aws",
+        "cog",
+        "stac"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "gdal-pds-driver",
+      "name": "GDAL PDS3 raster driver",
+      "provider": "GDAL / OSGeo",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://gdal.org/en/stable/drivers/raster/pds.html",
+      "links": [
+        {
+          "label": "PDS4 driver",
+          "url": "https://gdal.org/en/stable/drivers/raster/pds4.html"
+        },
+        {
+          "label": "ISIS3 driver",
+          "url": "https://gdal.org/en/stable/drivers/raster/isis3.html"
+        },
+        {
+          "label": "VICAR driver",
+          "url": "https://gdal.org/en/stable/drivers/raster/vicar.html"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "GDAL driver that reads PDS3 image files as georeferenced rasters; sibling drivers read PDS4, ISIS2, ISIS3 and VICAR. Lets QGIS and GDAL tools open many planetary images.",
+      "tags": [
+        "gdal",
+        "pds driver",
+        "qgis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lpi-apollo-panoramas",
+      "name": "Apollo Surface Panoramas",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.lpi.usra.edu/resources/apollopanoramas/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Apollo 11-17"
+      ],
+      "data_types": [
+        "imagery",
+        "historical",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1969-1972",
+      "description": "Stitched panoramas from Apollo 11-17 surface Hasselblad photographs, with large image downloads.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-arecibo-radar",
+      "name": "Arecibo Radar Observations of Asteroids (LPI)",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://www.lpi.usra.edu/resources/asteroids/",
+      "targets": [
+        "asteroids"
+      ],
+      "data_types": [
+        "radar",
+        "imagery"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "LPI page listing Arecibo planetary radar observations and results for near-Earth asteroids, with images and links. Reference to radar imagery of small bodies.",
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-consolidated-lunar-atlas",
+      "name": "Consolidated Lunar Atlas",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://www.lpi.usra.edu/resources/cla/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Digitized Consolidated Lunar Atlas of Earth-based photographs by the Lunar and Planetary Laboratory, with images from Lick, Mt. Wilson and other observatories.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-lunar-flyovers",
+      "name": "Lunar Surface Flyovers",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.lpi.usra.edu/lunar/lunar_flyovers/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LRO"
+      ],
+      "data_types": [
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Video flyovers of lunar landing sites and features built from LRO and Apollo-era data.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-lunar-images-maps",
+      "name": "LPI Lunar Images and Maps hub",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.lpi.usra.edu/lunar/lunar_images/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "map",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Index to LPI's lunar image atlases and maps: Lunar Orbiter, Apollo, Ranger, Consolidated Lunar Atlas, lunar map catalog, south pole atlas, rilles atlas and surface flyovers.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-lunar-map-catalog",
+      "name": "Lunar Map Catalog",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.lpi.usra.edu/resources/mapcatalog/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "map",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Catalog of lunar maps (geologic, topographic and photomosaic) published by USGS, NASA and others, with links to scans.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-lunar-orbiter-photo-gallery",
+      "name": "Lunar Orbiter Photo Gallery",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://www.lpi.usra.edu/resources/lunarorbiter/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Lunar Orbiter 1-5"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1966-1967",
+      "description": "Scanned Lunar Orbiter I-V photographs (1966-1967) with index maps and per-frame viewers. Film scans, not the recovered tape data.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-lunar-sample-atlas",
+      "name": "Lunar Sample Atlas (Apollo sample photographs)",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://www.lpi.usra.edu/lunar/samples/atlas/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Apollo",
+        "Luna"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Photographs and descriptions of Apollo and Luna returned lunar samples, including thin-section images. Sample images rather than orbital remote sensing.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-lunar-south-pole-atlas",
+      "name": "Lunar South Pole Atlas",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://www.lpi.usra.edu/lunar/lunar-south-pole-atlas/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "LRO"
+      ],
+      "data_types": [
+        "map",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "LPI atlas of south polar region maps and imagery (LOLA topography, LROC, illumination) for landing site studies.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-ranger-photographs",
+      "name": "Ranger Photographs of the Moon",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.lpi.usra.edu/resources/ranger/",
+      "targets": [
+        "moon"
+      ],
+      "missions": [
+        "Ranger 7",
+        "Ranger 8",
+        "Ranger 9"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1964-1965",
+      "description": "Digitized Ranger 7, 8 and 9 lunar impact approach photographs, including the final frames before impact.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "lpi-spa-landing-site-database",
+      "name": "South Pole-Aitken Basin Landing Site Database",
+      "provider": "Lunar and Planetary Institute (USRA)",
+      "agency": [
+        "LPI",
+        "USRA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.lpi.usra.edu/nlsi/SPA_Basin_Landing_Site_DB/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Interactive database of candidate landing sites in the South Pole-Aitken Basin with linked maps and imagery.",
+      "tags": [
+        "lpi"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Server blocks non-browser scripts with HTTP 403; verified with a browser-style request via curl."
+    },
+    {
+      "id": "nasa-eyes-solar-system",
+      "name": "NASA Eyes on the Solar System",
+      "provider": "NASA JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://eyes.nasa.gov/apps/solar-system/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [],
+      "access": "open",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Browser-based 3D solar system viewer with spacecraft models, trajectories and body textures. Visualization and orientation only, not raw data.",
+      "tags": [
+        "eyes",
+        "3d",
+        "visualization"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-open-apis",
+      "name": "NASA Open APIs (api.nasa.gov)",
+      "provider": "NASA",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "api",
+      "url": "https://api.nasa.gov/",
+      "targets": [
+        "mars",
+        "earth",
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "rest",
+        "https"
+      ],
+      "description": "Free keyed REST APIs for NASA data including APOD, Mars Rover Photos, EPIC Earth images and the Image and Video Library. A free API key from the site is required (DEMO_KEY is rate-limited).",
+      "tags": [
+        "api key",
+        "mars rover photos",
+        "epic"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-data-releases",
+      "name": "PDS Data Release Announcements",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://pds.nasa.gov/datasearch/subscription-service/SS-Release.shtml",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Chronological list of new and updated PDS data releases across all nodes, announced via the PDS subscription service. Use it to spot recent deliveries (2024-2026 missions and reprocessed products).",
+      "tags": [
+        "new data",
+        "releases",
+        "subscription"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-data-search",
+      "name": "PDS Data Search (beta 2.0, incl. ESA PSA holdings)",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://pds.mcp.nasa.gov/search",
+      "links": [
+        {
+          "label": "Data Search landing (node-specific searches)",
+          "url": "https://pds.nasa.gov/datasearch/data-search/"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "New cross-node PDS data search that also includes mission data from ESA's Planetary Science Archive alongside PDS holdings. Search PDS4 bundles and collections by target, mission and instrument. Backed by the PDS Registry search API.",
+      "tags": [
+        "pds search",
+        "pds4 registry",
+        "psa"
+      ],
+      "connector": "pds",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-doi-search",
+      "name": "PDS DOI Search",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://pds.nasa.gov/tools/doi/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Search service for Digital Object Identifiers assigned to PDS data products and bundles. Resolves a citation DOI to the archived data set.",
+      "tags": [
+        "doi",
+        "citation"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-home",
+      "name": "NASA Planetary Data System (PDS)",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://pds.nasa.gov/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "dem",
+        "map",
+        "radar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir",
+        "radar",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Home of the NASA PDS, the official archive of NASA planetary mission data, run by seven discipline nodes. Links to data search, the tool registry, data standards (PDS3/PDS4) and every node. Entry point to everything below.",
+      "tags": [
+        "pds",
+        "planetary data system",
+        "pds4",
+        "pds3"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-keyword-search",
+      "name": "PDS Data Set / Bundle Keyword Search",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://pds.nasa.gov/datasearch/keyword-search/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Keyword search for PDS3 data sets and PDS4 bundles and collections across all nodes. Returns links to the owning node's landing page and download location. Good for finding a data set by mission, instrument or target name.",
+      "tags": [
+        "dataset search",
+        "pds"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-peppi",
+      "name": "Peppi - PDS Search API Python client",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://nasa-pds.github.io/peppi/",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/NASA-PDS/peppi"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "rest"
+      ],
+      "description": "Python library giving pythonic query syntax for exploring PDS4 data through the PDS Search API. Useful for scripting discovery of imagery products by target and mission.",
+      "tags": [
+        "python",
+        "api client"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-registry-api",
+      "name": "PDS Registry Search API (PDS4)",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "api",
+      "url": "https://nasa-pds.github.io/pds-api/",
+      "links": [
+        {
+          "label": "Live API endpoint",
+          "url": "https://pds.mcp.nasa.gov/api/search/1/products?limit=1"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "rest"
+      ],
+      "description": "REST search API over the PDS4 registry: query products, collections and bundles by target, mission, instrument and time. Documentation lives on GitHub Pages; the live endpoint is /api/search/1/ on pds.mcp.nasa.gov. Returns JSON labels with direct file URLs.",
+      "tags": [
+        "pds api",
+        "registry",
+        "search api"
+      ],
+      "connector": "pds",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-tool-registry",
+      "name": "PDS Tool Registry",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://pds.nasa.gov/tools/tool-registry/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Registry of software for searching, accessing and using PDS3 and PDS4 data, including community-contributed packages. Starting point for readers, viewers and converters.",
+      "tags": [
+        "tools",
+        "software",
+        "readers"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-pds-transform",
+      "name": "PDS Transform Tool",
+      "provider": "NASA Planetary Data System",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://nasa-pds.github.io/transform/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "PNG",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Command-line tool that converts PDS3 and PDS4 product labels and data into common formats such as PNG, FITS and CSV. Handy when a viewer cannot open a PDS image directly.",
+      "tags": [
+        "converter",
+        "pds4 to png",
+        "pds4 to fits"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-trek-bennu",
+      "name": "Bennu Trek",
+      "provider": "NASA Solar System Treks Project (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/bennu/",
+      "targets": [
+        "bennu"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "wmts",
+        "xyz",
+        "web-ui"
+      ],
+      "description": "Bennu Trek serves OSIRIS-REx image mosaics, shape model and DEM layers. Free, no login; tiles are also reachable through WMTS.",
+      "tags": [
+        "trek",
+        "bennu"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-trek-icymoons",
+      "name": "Icy Moons Trek",
+      "provider": "NASA Solar System Treks Project (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/icymoons/",
+      "targets": [
+        "europa",
+        "io",
+        "ganymede",
+        "callisto"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "wmts",
+        "xyz",
+        "web-ui"
+      ],
+      "description": "Icy Moons Trek covers the Galilean moons with Voyager and Galileo mosaics and maps. Free, no login; tiles are also reachable through WMTS.",
+      "tags": [
+        "trek",
+        "icymoons"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-trek-moondiff",
+      "name": "MoonDiff - lunar change detection portal",
+      "provider": "NASA Solar System Treks Project (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/moondiff/",
+      "targets": [
+        "moon"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PNG"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "web-ui"
+      ],
+      "description": "Citizen-science portal for comparing old and new orbital lunar images to find new craters and missing spacecraft hardware. Requires sign-up to participate, but browsing examples is open.",
+      "tags": [
+        "change detection",
+        "citizen science"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-trek-phobos",
+      "name": "Phobos Trek",
+      "provider": "NASA Solar System Treks Project (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/phobos/",
+      "targets": [
+        "phobos"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "wmts",
+        "xyz",
+        "web-ui"
+      ],
+      "description": "Phobos Trek serves Mars Express and MRO-derived mosaics and shape-model layers. Free, no login; tiles are also reachable through WMTS.",
+      "tags": [
+        "trek",
+        "phobos"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-trek-portal",
+      "name": "NASA Solar System Treks (Trek portal)",
+      "provider": "NASA Solar System Treks Project (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/",
+      "links": [
+        {
+          "label": "Trek WMTS tile API",
+          "url": "https://trek.nasa.gov/tiles/apidoc/trekAPI.html"
+        },
+        {
+          "label": "Trek tiles",
+          "url": "https://trek.nasa.gov/tiles/"
+        }
+      ],
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "venus",
+        "vesta",
+        "ceres",
+        "titan",
+        "europa",
+        "io",
+        "ganymede",
+        "callisto",
+        "phobos",
+        "bennu",
+        "ryugu"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "wmts",
+        "xyz",
+        "web-ui"
+      ],
+      "description": "Family of browser-based 2D and 3D web portals for planetary mapping, each with layered global basemaps, DEMs, measurement and slope tools, exports and a WMTS tile service. Covers the bodies listed on the portal; each is a separate entry below.",
+      "tags": [
+        "trek",
+        "solar system treks",
+        "wmts"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-trek-ryugu",
+      "name": "Ryugu Trek",
+      "provider": "NASA Solar System Treks Project (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://trek.nasa.gov/ryugu/",
+      "targets": [
+        "ryugu"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "wmts",
+        "xyz",
+        "web-ui"
+      ],
+      "description": "Ryugu Trek serves Hayabusa2 image mosaics and shape-model derived layers. Free, no login; tiles are also reachable through WMTS.",
+      "tags": [
+        "trek",
+        "ryugu"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nssdca-master-catalog",
+      "name": "NSSDCA Master Catalog",
+      "provider": "NASA Space Science Data Coordinated Archive (GSFC)",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://nssdc.gsfc.nasa.gov/nmc/",
+      "links": [
+        {
+          "label": "Spacecraft query",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/query"
+        },
+        {
+          "label": "Experiment query",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/experiment/query"
+        },
+        {
+          "label": "Dataset query",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/dataset/query"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "sun",
+        "earth"
+      ],
+      "data_types": [
+        "historical",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "browse"
+      ],
+      "formats": [
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NASA's catalog of spacecraft, experiments and data sets from 1957 onward, with links to archived data. Key for pre-PDS and heritage missions (Mariner, Lunar Orbiter, Ranger, Apollo, Pioneer) and for finding archive locations.",
+      "tags": [
+        "nssdc",
+        "nssdca",
+        "master catalog",
+        "heritage"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nssdca-photo-gallery",
+      "name": "NSSDCA Photo Gallery",
+      "provider": "NASA Space Science Data Coordinated Archive (GSFC)",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://nssdc.gsfc.nasa.gov/photo_gallery/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "sun",
+        "earth"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "TIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Curated collection of spacecraft and planetary images, including Apollo, Voyager, Mariner, Pioneer and Viking, organised by target and mission. Browse-quality images, not science archives.",
+      "tags": [
+        "photo gallery",
+        "nssdc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nssdca-planetary",
+      "name": "NSSDCA Planetary Science pages",
+      "provider": "NASA Space Science Data Coordinated Archive (GSFC)",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NSSDCA planetary hub with fact sheets, mission summaries and links to archived image and data collections for solar system bodies.",
+      "tags": [
+        "planetary fact sheet",
+        "nssdc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "openplanetary",
+      "name": "OpenPlanetary community",
+      "provider": "OpenPlanetary",
+      "agency": [
+        "OpenPlanetary"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://openplanetary.org/",
+      "links": [
+        {
+          "label": "OpenPlanetary website source",
+          "url": "https://github.com/openplanetary/opm-website"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Community hub for open-source planetary science software, data and events, including tools for reading and mapping planetary data.",
+      "tags": [
+        "opm",
+        "open source",
+        "community"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pdr-planetary-data-reader",
+      "name": "pdr - Planetary Data Reader (Python)",
+      "provider": "Million Concepts / NASA PDS",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://github.com/MillionConcepts/pdr",
+      "links": [
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/pdr/"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "VICAR",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Python library that opens PDS3 and PDS4 data products (images, tables, cubes) as numpy arrays and pandas objects from a label, with support for many mission-specific formats. Install from PyPI as pdr.",
+      "tags": [
+        "pdr",
+        "python",
+        "reader"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-imaging-atlas",
+      "name": "PDS Planetary Image Atlas",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://pds-imaging.jpl.nasa.gov/tools/atlas/search",
+      "links": [
+        {
+          "label": "Legacy Image Atlas",
+          "url": "https://pds-imaging.jpl.nasa.gov/search/"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "VICAR"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Search interface for image products across the Imaging Node holdings by target, mission, instrument, time and footprint. Results link to downloadable PDS files and labels. Supersedes the older Image Atlas at pds-imaging.jpl.nasa.gov/search/.",
+      "tags": [
+        "image atlas",
+        "footprint search"
+      ],
+      "verified": "2026-11-05",
+      "connector": "pds-atlas"
+    },
+    {
+      "id": "pds-imaging-node",
+      "name": "PDS Cartography and Imaging Sciences Node (IMG)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL",
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/",
+      "links": [
+        {
+          "label": "Data volumes index",
+          "url": "https://pds-imaging.jpl.nasa.gov/volumes/"
+        },
+        {
+          "label": "Tools",
+          "url": "https://pds-imaging.jpl.nasa.gov/tools/"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic",
+        "stereo",
+        "dem",
+        "radar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "VICAR",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "The PDS discipline node for planetary images and cartographic products, hosted by JPL with USGS Astrogeology. Holds data from Mariner, Viking, Voyager, Galileo, Cassini, Magellan, Clementine, MGS, MRO, MER, MSL, Mars 2020, Juno and more.",
+      "tags": [
+        "img node",
+        "imaging node",
+        "pds imaging"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-cassini-maps",
+      "name": "Cassini cartographic maps (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/carto.html",
+      "targets": [
+        "saturn",
+        "titan",
+        "enceladus",
+        "mimas",
+        "tethys",
+        "dione",
+        "rhea",
+        "iapetus"
+      ],
+      "missions": [
+        "Cassini-Huygens"
+      ],
+      "instruments": [
+        "ISS"
+      ],
+      "data_types": [
+        "map",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2004-2017",
+      "description": "Cartographic map products and global mosaics of Saturnian moons derived from Cassini ISS. Map-projected image files with PDS labels.",
+      "tags": [
+        "carto"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-galileo",
+      "name": "Galileo SSI and NIMS (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/galileo.html",
+      "targets": [
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "amalthea",
+        "asteroids",
+        "ida",
+        "gaspra",
+        "moon",
+        "venus"
+      ],
+      "missions": [
+        "Galileo"
+      ],
+      "instruments": [
+        "SSI",
+        "NIMS"
+      ],
+      "data_types": [
+        "imagery",
+        "hyperspectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "VICAR",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1989-2003",
+      "description": "Galileo Solid State Imager REDRs and NIMS EDRs and cubes of the Jovian system, Gaspra, Ida, the Moon and Venus.",
+      "tags": [
+        "galileo"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-juno",
+      "name": "Juno JunoCam and SRU (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/juno.html",
+      "targets": [
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "rings"
+      ],
+      "missions": [
+        "Juno"
+      ],
+      "instruments": [
+        "JunoCam",
+        "SRU"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2016-present",
+      "description": "JunoCam EDR and RDR images of Jupiter and its moons, plus stellar reference unit data. Includes Ganymede, Europa and Io flyby images.",
+      "tags": [
+        "juno"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-mariner69",
+      "name": "Mariner 6 and 7 (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mariner69.html",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mariner 6",
+        "Mariner 7"
+      ],
+      "instruments": [
+        "TV"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1969",
+      "description": "Reduced data records of the Mariner 6 and 7 Mars flyby television images.",
+      "tags": [
+        "mariner69"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-mariner9",
+      "name": "Mariner 9 (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mariner9.html",
+      "targets": [
+        "mars",
+        "phobos",
+        "deimos"
+      ],
+      "missions": [
+        "Mariner 9"
+      ],
+      "instruments": [
+        "TV"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [
+        "PDS3",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1971-1972",
+      "description": "Mariner 9 television EDRs, the first images from Mars orbit and of Phobos and Deimos.",
+      "tags": [
+        "mariner9"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-mex-hrsc",
+      "name": "Mars Express HRSC (PDS Imaging copy)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/mex.html",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "Mars Express"
+      ],
+      "instruments": [
+        "HRSC"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "stereo",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2004-present",
+      "description": "PDS-hosted copy of ESA Mars Express HRSC RDRs, map-projected images and orthophoto/DTM products. ESA PSA remains the primary source.",
+      "tags": [
+        "mex"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-odyssey-themis",
+      "name": "Mars Odyssey THEMIS (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/ody.html",
+      "targets": [
+        "mars"
+      ],
+      "missions": [
+        "2001 Mars Odyssey"
+      ],
+      "instruments": [
+        "THEMIS"
+      ],
+      "data_types": [
+        "imagery",
+        "thermal"
+      ],
+      "spectral": [
+        "visible",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "2001-present",
+      "description": "THEMIS visible and infrared EDRs and RDRs of Mars. The IR day and night mosaics are built from these.",
+      "tags": [
+        "ody"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-img-voyager",
+      "name": "Voyager ISS (PDS Imaging)",
+      "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL / USGS)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-imaging.jpl.nasa.gov/volumes/voyager.html",
+      "targets": [
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "titan",
+        "uranus",
+        "neptune",
+        "triton",
+        "miranda",
+        "rings",
+        "ariel",
+        "umbriel",
+        "titania",
+        "oberon",
+        "proteus",
+        "nereid"
+      ],
+      "missions": [
+        "Voyager 1",
+        "Voyager 2"
+      ],
+      "instruments": [
+        "ISS"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "VICAR",
+        "IMQ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1977-1989",
+      "description": "Voyager 1 and 2 imaging EDRs for Jupiter, Saturn, Uranus and Neptune systems, plus calibrated Saturn products. The only close-up imagery of Uranus, Neptune and Triton.",
+      "tags": [
+        "voyager"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-naif",
+      "name": "NAIF - SPICE Navigation and Ancillary Information",
+      "provider": "NASA PDS Navigation and Ancillary Information Facility (JPL)",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://naif.jpl.nasa.gov/naif/",
+      "links": [
+        {
+          "label": "SPICE kernel archive",
+          "url": "https://naif.jpl.nasa.gov/pub/naif/"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Home of SPICE kernels (spacecraft and planet ephemerides, pointing, instrument geometry) needed to geometrically process raw planetary images in ISIS. Supporting data only; contains no imagery itself.",
+      "tags": [
+        "spice",
+        "kernels",
+        "ephemeris",
+        "geometry"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-ode-mercury",
+      "name": "Orbital Data Explorer - Mercury",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://ode.rsl.wustl.edu/mercury/",
+      "links": [
+        {
+          "label": "Product search",
+          "url": "https://ode.rsl.wustl.edu/mercury/productsearch"
+        },
+        {
+          "label": "ODE REST service",
+          "url": "https://oderest.rsl.wustl.edu/livegds/"
+        }
+      ],
+      "targets": [
+        "mercury"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "hyperspectral",
+        "dem",
+        "altimetry",
+        "radar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "tir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "PDS Geosciences Orbital Data Explorer (ODE) for Mercury: footprint-based search and map interface over orbital instrument products (imagery, spectrometer cubes, altimetry, radar) with direct PDS download links. Has a documented REST API (oderest.rsl.wustl.edu).",
+      "tags": [
+        "ode",
+        "orbital data explorer",
+        "mercury"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-ode-rest",
+      "name": "ODE REST web service (oderest)",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "api",
+      "url": "https://oderest.rsl.wustl.edu/livegds/",
+      "targets": [
+        "mars",
+        "moon",
+        "mercury",
+        "venus",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "dem",
+        "altimetry"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "rest"
+      ],
+      "description": "Programmatic REST interface to ODE product and footprint queries for Mars, the Moon, Mercury and Venus. Returns XML or JSON listings with download URLs. Used by the OpenReSense ODE connector.",
+      "tags": [
+        "ode api",
+        "rest"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-ode-venus",
+      "name": "Orbital Data Explorer - Venus",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://ode.rsl.wustl.edu/venus/",
+      "links": [
+        {
+          "label": "Product search",
+          "url": "https://ode.rsl.wustl.edu/venus/productsearch"
+        },
+        {
+          "label": "ODE REST service",
+          "url": "https://oderest.rsl.wustl.edu/livegds/"
+        }
+      ],
+      "targets": [
+        "venus"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "hyperspectral",
+        "dem",
+        "altimetry",
+        "radar"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "tir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "PDS Geosciences Orbital Data Explorer (ODE) for Venus: footprint-based search and map interface over orbital instrument products (imagery, spectrometer cubes, altimetry, radar) with direct PDS download links. Has a documented REST API (oderest.rsl.wustl.edu).",
+      "tags": [
+        "ode",
+        "orbital data explorer",
+        "venus"
+      ],
+      "connector": "ode",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-ppi-node",
+      "name": "PDS Planetary Plasma Interactions Node (PPI)",
+      "provider": "NASA PDS Planetary Plasma Interactions Node (UCLA)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-ppi.igpp.ucla.edu/",
+      "links": [
+        {
+          "label": "Mission index",
+          "url": "https://pds-ppi.igpp.ucla.edu/mission/"
+        },
+        {
+          "label": "Search",
+          "url": "https://pds-ppi.igpp.ucla.edu/search/"
+        }
+      ],
+      "targets": [
+        "jupiter",
+        "saturn",
+        "mars",
+        "venus",
+        "mercury",
+        "moon",
+        "uranus",
+        "neptune"
+      ],
+      "data_types": [
+        "atmosphere"
+      ],
+      "spectral": [
+        "radio",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "PDS node for particles-and-fields data (magnetometer, plasma, radio). Mostly not imagery, but it holds Juno, Cassini and Voyager aurora and radio data useful alongside images; included as a supporting archive.",
+      "tags": [
+        "ppi",
+        "plasma",
+        "magnetosphere"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-rms-voyager",
+      "name": "Voyager (RMS)",
+      "provider": "NASA PDS Ring-Moon Systems Node (SETI Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pds-rings.seti.org/voyager/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "rings",
+        "triton",
+        "miranda",
+        "ariel",
+        "umbriel",
+        "titania",
+        "oberon",
+        "proteus",
+        "nereid"
+      ],
+      "missions": [
+        "Voyager 1, Voyager 2"
+      ],
+      "instruments": [
+        "ISS",
+        "PPS",
+        "UVS"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "VICAR",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "temporal": "1977-1989",
+      "description": "Voyager imaging and photopolarimeter/UVS ring occultation volumes with geometry indexes.",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-archive-dir",
+      "name": "SBN archive bulk directories (PDS3 and PDS4)",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://sbnarchive.psi.edu/pds4/",
+      "links": [
+        {
+          "label": "PDS3 archive",
+          "url": "https://sbnarchive.psi.edu/pds3/"
+        }
+      ],
+      "targets": [
+        "asteroids",
+        "comets",
+        "ceres",
+        "vesta",
+        "eros",
+        "bennu",
+        "ryugu",
+        "itokawa",
+        "67p",
+        "wild-2",
+        "tempel-1",
+        "hartley-2",
+        "halley",
+        "didymos",
+        "dimorphos",
+        "ida",
+        "gaspra",
+        "mathilde",
+        "steins",
+        "lutetia",
+        "arrokoth"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4",
+        "PDS3",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "Direct HTTPS directory listings for SBN PDS4 bundles, with a sibling PDS3 tree. Use for bulk downloads of small-body image collections.",
+      "tags": [
+        "bulk",
+        "directory"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-dawn-fc-ceres",
+      "name": "Dawn Framing Camera - Ceres raw and calibrated images",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://sbn.psi.edu/pds/resource/dawn/dwncfcL1.html",
+      "targets": [
+        "ceres"
+      ],
+      "missions": [
+        "Dawn"
+      ],
+      "instruments": [
+        "FC"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk",
+        "web-ui"
+      ],
+      "resolution": "up to 35 m/px",
+      "temporal": "2015-2018",
+      "description": "Dawn Framing Camera Level 1 raw and calibrated images of Ceres in PDS4 format, from approach through LAMO orbit.",
+      "tags": [
+        "dawn",
+        "fc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-dawn-fc-vesta",
+      "name": "Dawn Framing Camera - Vesta raw and calibrated images",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://sbn.psi.edu/pds/resource/dawn/dwnvfcL1.html",
+      "targets": [
+        "vesta"
+      ],
+      "missions": [
+        "Dawn"
+      ],
+      "instruments": [
+        "FC"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk",
+        "web-ui"
+      ],
+      "resolution": "up to 20 m/px",
+      "temporal": "2011-2012",
+      "description": "Dawn Framing Camera Level 1 raw and calibrated images of Vesta from approach through HAMO and LAMO orbits.",
+      "tags": [
+        "dawn",
+        "fc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-dawn-mosaics-ceres",
+      "name": "Dawn global image mosaics of Ceres",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://sbn.psi.edu/pds/resource/dawn/dwncfcmosaics.html",
+      "targets": [
+        "ceres"
+      ],
+      "missions": [
+        "Dawn"
+      ],
+      "instruments": [
+        "FC"
+      ],
+      "data_types": [
+        "mosaic",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2015-2018",
+      "description": "Dawn Framing Camera global image mosaics of Ceres, map-projected with PDS4 labels.",
+      "tags": [
+        "dawn",
+        "global mosaic"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-dawn-mosaics-vesta",
+      "name": "Dawn global image mosaics of Vesta",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://sbn.psi.edu/pds/resource/dawn/dwnvfcmosaics.html",
+      "targets": [
+        "vesta"
+      ],
+      "missions": [
+        "Dawn"
+      ],
+      "instruments": [
+        "FC"
+      ],
+      "data_types": [
+        "mosaic",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2011-2012",
+      "description": "Dawn Framing Camera global image mosaics of Vesta, map-projected with PDS4 labels.",
+      "tags": [
+        "dawn",
+        "global mosaic"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-europa-clipper",
+      "name": "Europa Clipper data (SBN)",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://sbn.psi.edu/pds/resource/clipper/",
+      "targets": [
+        "europa",
+        "mars",
+        "earth"
+      ],
+      "missions": [
+        "Europa Clipper"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "2024-present",
+      "description": "SBN landing page for data from the Europa Clipper mission, launched October 2024, including cruise and flyby calibration observations. Science-phase Europa data are expected from 2030.",
+      "tags": [
+        "clipper",
+        "emfis",
+        "eis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-image-data",
+      "name": "SBN image data sets (browse by data type)",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://sbn.psi.edu/pds/archive/image.html",
+      "targets": [
+        "asteroids",
+        "comets",
+        "ceres",
+        "vesta",
+        "eros",
+        "bennu",
+        "ryugu",
+        "itokawa",
+        "67p",
+        "wild-2",
+        "tempel-1",
+        "hartley-2",
+        "halley",
+        "didymos",
+        "dimorphos",
+        "ida",
+        "gaspra",
+        "mathilde",
+        "steins",
+        "lutetia",
+        "arrokoth"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "SBN list of every archived image data set (spacecraft and ground-based) of small bodies. Useful to find individual imagery sets such as NEAR MSI, Dawn FC and Hayabusa AMICA.",
+      "tags": [
+        "images"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-maps",
+      "name": "SBN map and mosaic data sets",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://sbn.psi.edu/pds/archive/maps.html",
+      "targets": [
+        "asteroids",
+        "comets",
+        "ceres",
+        "vesta",
+        "eros",
+        "bennu",
+        "ryugu",
+        "itokawa",
+        "67p",
+        "wild-2",
+        "tempel-1",
+        "hartley-2",
+        "halley",
+        "didymos",
+        "dimorphos",
+        "ida",
+        "gaspra",
+        "mathilde",
+        "steins",
+        "lutetia",
+        "arrokoth"
+      ],
+      "data_types": [
+        "map",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "SBN list of map and mosaic products: Dawn global mosaics and spectral maps of Vesta and Ceres, NEAR Eros image maps and Stooke small-body maps.",
+      "tags": [
+        "maps",
+        "mosaics"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-near-msi",
+      "name": "NEAR Shoemaker MSI (Eros) at SBN",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://sbn.psi.edu/pds/resource/near/msiinst.html",
+      "targets": [
+        "eros",
+        "mathilde"
+      ],
+      "missions": [
+        "NEAR Shoemaker"
+      ],
+      "instruments": [
+        "MSI"
+      ],
+      "data_types": [
+        "imagery",
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "temporal": "1997-2001",
+      "description": "NEAR Multispectral Imager images of 433 Eros and 253 Mathilde, plus Eros image maps. Eros images with geometry backplanes are also provided.",
+      "tags": [
+        "near",
+        "eros"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-psi",
+      "name": "PDS Small Bodies Node - PSI (asteroid/dust subnode)",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://sbn.psi.edu/pds/",
+      "links": [
+        {
+          "label": "Archive (browse)",
+          "url": "https://sbn.psi.edu/pds/archive/"
+        },
+        {
+          "label": "Resources",
+          "url": "https://sbn.psi.edu/pds/resource/"
+        }
+      ],
+      "targets": [
+        "asteroids",
+        "comets",
+        "ceres",
+        "vesta",
+        "eros",
+        "bennu",
+        "ryugu",
+        "itokawa",
+        "67p",
+        "wild-2",
+        "tempel-1",
+        "hartley-2",
+        "halley",
+        "didymos",
+        "dimorphos",
+        "ida",
+        "gaspra",
+        "mathilde",
+        "steins",
+        "lutetia",
+        "arrokoth"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "radar",
+        "dem",
+        "map"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "radar"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "bulk"
+      ],
+      "description": "Planetary Science Institute site of the PDS Small Bodies Node with browse-by-mission, data-type and target-type views of the SBN archive. Contains per-dataset pages for Dawn, OSIRIS-REx, Hayabusa2, NEAR, Galileo asteroid flybys and ground-based surveys.",
+      "tags": [
+        "sbn",
+        "asteroid dust subnode"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-sbib",
+      "name": "Small Bodies Image Browser (SBIB)",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://sbn.psi.edu/pds/sbib/",
+      "targets": [
+        "asteroids",
+        "comets",
+        "ceres",
+        "vesta",
+        "eros",
+        "bennu",
+        "ryugu",
+        "itokawa",
+        "67p",
+        "wild-2",
+        "tempel-1",
+        "hartley-2",
+        "halley",
+        "didymos",
+        "dimorphos",
+        "ida",
+        "gaspra",
+        "mathilde",
+        "steins",
+        "lutetia",
+        "arrokoth"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Browser for image products in the SBN archive, searchable by target and mission, with thumbnails and links to the underlying PDS files.",
+      "tags": [
+        "sbib",
+        "image browser"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-sbn-stooke-maps",
+      "name": "Stooke small-body maps and shape models",
+      "provider": "NASA PDS Small Bodies Node (University of Maryland / Planetary Science Institute)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://sbn.psi.edu/pds/resource/stookemaps.html",
+      "targets": [
+        "asteroids",
+        "phobos",
+        "deimos",
+        "comets"
+      ],
+      "data_types": [
+        "map",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "PDS3",
+        "OBJ"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Philip Stooke's maps and shape models of irregular satellites, asteroids and comet nuclei, derived from spacecraft images and archived at SBN.",
+      "tags": [
+        "stooke",
+        "maps",
+        "irregular bodies"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds-spectral-library",
+      "name": "PDS Geosciences Spectral Library",
+      "provider": "NASA PDS Geosciences Node (Washington University in St. Louis)",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "dataset",
+      "url": "https://speclib.rsl.wustl.edu/",
+      "targets": [
+        "mars",
+        "moon"
+      ],
+      "data_types": [
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "swir",
+        "tir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "CSV",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Laboratory reflectance and emission spectra of minerals, meteorites and analogs from RELAB, USGS and ASU, used to interpret CRISM, OMEGA, M3 and TES data. Point spectra, not imagery, but essential for mineral mapping.",
+      "tags": [
+        "spectra",
+        "relab",
+        "lab"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pds4-viewer-sbn",
+      "name": "PDS4 Viewer and pds4-tools",
+      "provider": "NASA PDS Small Bodies Node",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://newpds-smallbodies.astro.umd.edu/tools/pds4_tools_info/pds4_viewer.html",
+      "links": [
+        {
+          "label": "pds4-tools on PyPI",
+          "url": "https://pypi.org/project/pds4-tools/"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Standalone desktop viewer for PDS4 images, tables and headers (Windows, macOS, Linux) and the pds4-tools Python package behind it. Best for quick inspection of PDS4 products.",
+      "tags": [
+        "pds4 viewer",
+        "pds4-tools"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "planetarypy",
+      "name": "planetarypy (Python)",
+      "provider": "PlanetaryPy community",
+      "agency": [
+        "NASA",
+        "PlanetaryPy"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://planetarypy.org/",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/planetarypy/planetarypy"
+        },
+        {
+          "label": "PyPI",
+          "url": "https://pypi.org/project/planetarypy/"
+        },
+        {
+          "label": "GitHub organization",
+          "url": "https://github.com/planetarypy"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived",
+        "raw"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Community effort to develop a core Python package ecosystem for planetary science, with a list of affiliated packages for working with planetary data. Documentation content is CC BY-SA 4.0. Complements the separately catalogued pdr reader.",
+      "tags": [
+        "planetarypy",
+        "python",
+        "planetary data",
+        "affiliated packages"
+      ],
+      "verified": "2026-11-05",
+      "notes": "Which packages read which formats was not verified."
+    },
+    {
+      "id": "psi-home",
+      "name": "Planetary Science Institute (PSI)",
+      "provider": "Planetary Science Institute",
+      "agency": [
+        "PSI"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.psi.edu/",
+      "links": [
+        {
+          "label": "PDS Small Bodies Node (PSI)",
+          "url": "https://sbn.psi.edu/pds/"
+        }
+      ],
+      "targets": [
+        "asteroids",
+        "comets",
+        "mars",
+        "moon"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Home of PSI, which runs the Small Bodies Node asteroid/dust subnode and the SBIB image browser. Use the SBN entries for data; this page is the institutional entry.",
+      "tags": [
+        "psi"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "qgis-isis3-plugins",
+      "name": "QGIS planetary plugins (ISIS3 tag)",
+      "provider": "QGIS plugin repository",
+      "agency": [
+        "NASA"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://plugins.qgis.org/plugins/tags/isis3/",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "QGIS plugin repository listing for ISIS3 and planetary tools such as the USGS Astrogeology POW plugin, helping load planetary cubes and web services in QGIS.",
+      "tags": [
+        "qgis",
+        "plugin"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-ale",
+      "name": "ALE - Abstraction Library for Ephemerides",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://github.com/DOI-USGS/ale",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "ISIS3",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "USGS library that builds camera models from PDS labels and SPICE kernels, used by ISIS and CSM to georeference raw planetary images.",
+      "tags": [
+        "ale",
+        "camera model",
+        "csm"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-astro-stac-api",
+      "name": "USGS Astrogeology STAC API",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "api",
+      "url": "https://stac.astrogeology.usgs.gov/api",
+      "links": [
+        {
+          "label": "Collections",
+          "url": "https://stac.astrogeology.usgs.gov/api/collections"
+        },
+        {
+          "label": "Item search",
+          "url": "https://stac.astrogeology.usgs.gov/api/search"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://stac.astrogeology.usgs.gov/docs/"
+        }
+      ],
+      "targets": [
+        "moon",
+        "mars",
+        "europa",
+        "io",
+        "jupiter"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "mosaic",
+        "altimetry"
+      ],
+      "spectral": [
+        "visible",
+        "tir",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "COG",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "stac",
+        "rest",
+        "https",
+        "s3"
+      ],
+      "description": "STAC 1.1 API over analysis-ready planetary data in the cloud: Galileo and Voyager controlled observations, HiRISE, CTX and Kaguya TC DTMs, THEMIS mosaics and LOLA shots. Items link to Cloud-Optimized GeoTIFFs and cumulative index parquet files on AWS.",
+      "tags": [
+        "stac",
+        "cog",
+        "planetary ard"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-astro-stac-browser",
+      "name": "USGS Astrogeology STAC Browser",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://stac.astrogeology.usgs.gov/browser-dev/",
+      "targets": [
+        "moon",
+        "mars",
+        "europa",
+        "io"
+      ],
+      "data_types": [
+        "imagery",
+        "dem",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "stac",
+        "web-ui"
+      ],
+      "description": "Web browser for the USGS Astrogeology STAC catalog with map previews and asset links for planetary COG and DEM collections.",
+      "tags": [
+        "stac browser"
+      ],
+      "connector": "stac:usgs-astro",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-astrogeology",
+      "name": "USGS Astrogeology Science Center",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://www.usgs.gov/centers/astrogeology-science-center",
+      "links": [
+        {
+          "label": "Tools",
+          "url": "https://www.usgs.gov/centers/astrogeology-science-center/tools"
+        },
+        {
+          "label": "Maps",
+          "url": "https://www.usgs.gov/centers/astrogeology-science-center/maps"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "COG",
+        "ISIS3",
+        "PDS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Home of USGS planetary cartography, geologic mapping, ISIS software and the Cartography and Imaging Sciences Node of the PDS. Entry page for Astropedia, PILOT, Map-a-Planet, POW, STAC and web map services.",
+      "tags": [
+        "astrogeology",
+        "flagstaff",
+        "usgs astro"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-astrolink",
+      "name": "Astrolink - USGS Astrogeology archive facility",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://www.usgs.gov/centers/astrogeology-science-center/science/astrolink",
+      "links": [
+        {
+          "label": "AstroCloud",
+          "url": "https://astrocloud.wr.usgs.gov/index.php"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "historical",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw"
+      ],
+      "formats": [],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "USGS Astrogeology's archival facility for planetary mission data and products. The linked AstroCloud site is the USGS online front end for Astro tools such as Map-A-Planet 2 and POW.",
+      "tags": [
+        "archive",
+        "film",
+        "astrolink"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-astropedia",
+      "name": "Astropedia - Lunar and Planetary Cartographic Catalog",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://astrogeology.usgs.gov/search",
+      "links": [
+        {
+          "label": "About",
+          "url": "https://astrogeology.usgs.gov/search/about"
+        },
+        {
+          "label": "Map catalog",
+          "url": "https://astrogeology.usgs.gov/search/map"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3",
+        "PDS3",
+        "KML"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Searchable catalog of USGS and community-contributed planetary maps, global mosaics, DEMs, geologic maps and GIS layers for the Moon, Mars, Mercury, Venus, asteroids and outer-planet moons. Each record has download links (GeoTIFF, ISIS cube, shapefile) and metadata.",
+      "tags": [
+        "astropedia",
+        "map catalog",
+        "gis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-autocnet",
+      "name": "AutoCNet - planetary image control networks",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://github.com/DOI-USGS/autocnet",
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "USGS Python tool for tie-point matching and bundle adjustment of planetary images, used to produce controlled mosaics.",
+      "tags": [
+        "autocnet",
+        "control network",
+        "photogrammetry"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-isis",
+      "name": "ISIS - Integrated Software for Imagers and Spectrometers",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://isis.astrogeology.usgs.gov/",
+      "links": [
+        {
+          "label": "Source",
+          "url": "https://github.com/DOI-USGS/ISIS3"
+        },
+        {
+          "label": "Tool page",
+          "url": "https://www.usgs.gov/tools/integrated-software-imagers-and-spectrometers"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "ISIS3",
+        "PDS3",
+        "GeoTIFF"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "USGS software to ingest, radiometrically calibrate, geometrically process and map-project raw planetary images from dozens of missions into ISIS3 cubes and GeoTIFFs. Needs SPICE kernels and the ISIS data area; Linux/macOS or WSL.",
+      "tags": [
+        "isis",
+        "isis3",
+        "cube",
+        "calibration"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-map-a-planet-2",
+      "name": "Map-A-Planet 2 (MAP2)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://astrocloud.wr.usgs.gov/index.php?view=map2",
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "venus",
+        "vesta",
+        "ceres",
+        "titan",
+        "iapetus",
+        "rhea",
+        "dione",
+        "enceladus",
+        "mimas",
+        "tethys",
+        "europa",
+        "ganymede",
+        "callisto",
+        "io",
+        "phobos",
+        "deimos"
+      ],
+      "data_types": [
+        "map",
+        "mosaic",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "mosaic",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Web service that cuts, reprojects and downloads user-chosen subsets of USGS global mosaics and DEMs as GeoTIFF/ISIS cubes in a selectable map projection. Fast way to get a georeferenced clip of a mosaic without desktop software.",
+      "tags": [
+        "map2",
+        "mosaic subsetting",
+        "map a planet"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-pds-annex",
+      "name": "USGS Astrogeology PDS archive (pdsimage2.wr.usgs.gov)",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "archive",
+      "url": "https://pdsimage2.wr.usgs.gov/",
+      "links": [
+        {
+          "label": "PDS Imaging node at USGS",
+          "url": "https://www.usgs.gov/centers/astrogeology-science-center/science/pds-cartography-and-imaging-sciences-node-usgs"
+        }
+      ],
+      "targets": [
+        "mercury",
+        "venus",
+        "moon",
+        "mars",
+        "phobos",
+        "deimos",
+        "ceres",
+        "vesta",
+        "jupiter",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "mimas",
+        "enceladus",
+        "tethys",
+        "dione",
+        "rhea",
+        "titan",
+        "iapetus",
+        "uranus",
+        "neptune",
+        "triton",
+        "pluto",
+        "charon",
+        "asteroids",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "map",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "mosaic"
+      ],
+      "formats": [
+        "PDS3",
+        "PDS4",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "bulk"
+      ],
+      "description": "USGS-hosted PDS mission data volumes (Cartography node mirror) with per-mission directories for Mars, Moon and outer-planet cartographic products.",
+      "tags": [
+        "pds annex",
+        "usgs pds"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-pilot",
+      "name": "PILOT - Planetary Image Locator Tool",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "portal",
+      "url": "https://pilot.wr.usgs.gov/",
+      "links": [
+        {
+          "label": "Tool page",
+          "url": "https://www.usgs.gov/tools/planetary-image-locator-tool-pilot"
+        }
+      ],
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "venus",
+        "vesta",
+        "ceres",
+        "phobos",
+        "deimos",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "saturn",
+        "titan",
+        "enceladus",
+        "mimas",
+        "dione",
+        "rhea",
+        "tethys",
+        "iapetus",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "stereo"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "PDS3",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Footprint-based image search across the PDS Imaging holdings for the Moon, Mars, Mercury and outer-planet moons, with filters for resolution, phase, time and geometry. Produces download lists and feeds POW for projection.",
+      "tags": [
+        "pilot",
+        "footprint search",
+        "image locator"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-planetary-ard-docs",
+      "name": "USGS Planetary Analysis Ready Data (ARD) documentation",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://stac.astrogeology.usgs.gov/docs/data/",
+      "targets": [
+        "moon",
+        "mars",
+        "europa",
+        "io"
+      ],
+      "data_types": [
+        "imagery",
+        "dem"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "COG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "stac"
+      ],
+      "description": "Documentation pages per planetary cloud dataset (Mars HiRISE, CTX DTMs, THEMIS mosaics; Moon Kaguya TC, LOLA; Europa Galileo and Voyager), with tutorials and code examples for reading COGs.",
+      "tags": [
+        "ard",
+        "docs",
+        "tutorial"
+      ],
+      "verified": "2026-11-05",
+      "connector": "stac:usgs-astro"
+    },
+    {
+      "id": "usgs-planetary-geologic-mapping",
+      "name": "USGS Planetary Geologic Mapping Program",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "catalog",
+      "url": "https://www.usgs.gov/tools/planetary-geologic-mapping-program",
+      "links": [
+        {
+          "label": "Program site",
+          "url": "https://www.usgs.gov/special-topics/planetary-geologic-mapping"
+        },
+        {
+          "label": "Unified Geologic Map of the Moon (SIM 3316)",
+          "url": "https://pubs.usgs.gov/sim/3316/"
+        },
+        {
+          "label": "Geologic map of Mars (SIM 3292)",
+          "url": "https://pubs.usgs.gov/sim/3292/"
+        }
+      ],
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "venus",
+        "vesta",
+        "ceres",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto"
+      ],
+      "data_types": [
+        "map"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "KML"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Program page cataloguing NASA-funded planetary geologic maps (USGS SIM series) with PDFs and GIS data. Maps of the Moon, Mars, Mercury, Venus, Vesta and Jovian moons are available as GIS downloads.",
+      "tags": [
+        "geologic map",
+        "sim",
+        "gis"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "usgs-pow",
+      "name": "POW - Projection on the Web",
+      "provider": "USGS Astrogeology Science Center",
+      "agency": [
+        "USGS"
+      ],
+      "country": [
+        "USA"
+      ],
+      "kind": "tool",
+      "url": "https://astrocloud.wr.usgs.gov/?view=pow",
+      "links": [
+        {
+          "label": "Tool page",
+          "url": "https://www.usgs.gov/tools/map-projection-web"
+        }
+      ],
+      "targets": [
+        "moon",
+        "mars",
+        "mercury",
+        "venus",
+        "vesta",
+        "ceres",
+        "saturn",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "GeoTIFF",
+        "ISIS3"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Cloud service that calibrates, geometrically processes and map-projects raw PDS images chosen in PILOT using ISIS, delivering GeoTIFF/ISIS cubes by email link. No local ISIS install needed, with selectable output resolution, bands and projection.",
+      "tags": [
+        "pow",
+        "map projection on the web",
+        "projection"
+      ],
+      "verified": "2026-11-05"
+    }
+  ]
+}

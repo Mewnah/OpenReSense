@@ -1,0 +1,12 @@
+{
+  "name": "openresense",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Federated search + faithful viewer for Earth and planetary remote-sensing imagery",
+  "type": "module",
+  "dependencies": {
+    "cesium": "1.147.0",
+    "ol": "10.11.0",
+    "proj4": "2.22.0"
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>globe dev harness</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/globe.css">
+  <style>html, body, #g { height: 100%; margin: 0; }</style>
+  <script>window.CESIUM_BASE_URL = '/vendor/cesium/';</script>
+</head>
+<body>
+  <div id="g"></div>
+  <script type="module">
+    // ?body=<id> (default moon)  ?ds=<dataset id>  ?bm=<xyz url template>&tiling=geographic-2x1|geographic-1x1|webmercator
+    // (bm injects a test basemap when catalog/bodies.json has none for the body)
+    import { createGlobe } from '/js/globe.js';
+    import { bodyById } from '/js/bodies.js';
+    import { getJSON } from '/js/api.js';
+    import { defaultSettings } from '/js/render.js';
+
+    // dev hook: expose the live Cesium viewer as window.__viewer (rebuilt viewers replace it).
+    // Cesium's exports are non-configurable, so wrap the namespace in a Proxy as it is assigned.
+    let realCesium;
+    Object.defineProperty(window, 'Cesium', { configurable: true, get: () => realCesium, set(C) {
+      const V = C.Viewer;
+      const W = class extends V { constructor(...a) { super(...a); window.__viewer = this; } };
+      realCesium = new Proxy(C, { get: (t, k) => (k === 'Viewer' ? W : t[k]) });
+    } });
+
+    const q = new URLSearchParams(location.search);
+    const body = await bodyById(q.get('body') || 'moon');
+    if (q.get('bm')) {
+      body.basemaps = [{ id: 'test', name: 'Test basemap', type: 'xyz', url: q.get('bm'),
+        tiling: q.get('tiling') || 'geographic-2x1', max_zoom: +(q.get('maxz') || 5), attribution: 'test' }];
+    }
+    const globe = await createGlobe(document.getElementById('g'), { body });
+    window.globe = globe;
+    window.bodyById = bodyById;
+    if (q.get('ds')) {
+      const status = await getJSON(`/api/datasets/${q.get('ds')}`);
+      const stats = await getJSON(`/api/datasets/${status.id}/stats`, { bands: [1, 2, 3].slice(0, status.info.count).join(',') });
+      window.settings = defaultSettings(status.info, stats);
+      window.dsStatus = status;
+      globe.setDataset(status, window.settings);
+      globe.flyToDataset();
+    }
+    addEventListener('resize', () => globe.resize());
+  </script>
+</body>
+</html>

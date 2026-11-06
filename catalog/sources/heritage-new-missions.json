@@ -1,0 +1,1271 @@
+{
+ "domain": "heritage-new-missions",
+ "sources": [
+  {
+   "id": "mentallandscape-soviet-moon-images",
+   "name": "Soviet Moon images (Luna, Lunokhod, Zond) - Don Mitchell reprocessing",
+   "provider": "Don P. Mitchell (mentallandscape.com)",
+   "agency": [
+    "Independent"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "http://mentallandscape.com/C_CatalogMoon.htm",
+   "targets": [
+    "moon"
+   ],
+   "missions": [
+    "Luna 3",
+    "Luna 9",
+    "Luna 13",
+    "Luna 16-24",
+    "Lunokhod 1",
+    "Lunokhod 2",
+    "Zond 3",
+    "Zond 5-8"
+   ],
+   "data_types": [
+    "imagery",
+    "historical",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1959-1976",
+   "description": "Hand-reprocessed scans of Soviet lunar imagery: the first far-side photographs (Luna-3, Zond-3), Luna-9 and Luna-13 surface panoramas, Luna-12/19 orbital pictures, Zond-5 to Zond-8 circumlunar photographs and Lunokhod-1/2 panoramas. Images are inverse-halftoned or digitised from film and archival publications and shown as JPEG web pages with processing notes; some frames are marked missing. Copyright held by the author, so use it as a viewing reference rather than a raw-data archive.",
+   "tags": [
+    "luna",
+    "lunokhod",
+    "zond",
+    "soviet",
+    "russian",
+    "ussr",
+    "historical",
+    "luna-9",
+    "luna-3",
+    "Луна",
+    "Луноход"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "mentallandscape-soviet-mars-images",
+   "name": "Soviet Mars and Phobos images (Mars 2-5, Phobos 2 Termoskan/VSK) - Don Mitchell reprocessing",
+   "provider": "Don P. Mitchell (mentallandscape.com)",
+   "agency": [
+    "Independent"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "http://mentallandscape.com/C_CatalogMars.htm",
+   "targets": [
+    "mars",
+    "phobos",
+    "jupiter"
+   ],
+   "missions": [
+    "Mars 3",
+    "Mars 4",
+    "Mars 5",
+    "Phobos 2"
+   ],
+   "instruments": [
+    "Termoskan",
+    "VSK-Fregat"
+   ],
+   "data_types": [
+    "imagery",
+    "thermal",
+    "historical"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "JPEG"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1971-1989",
+   "description": "Reprocessed Soviet Mars-orbiter and lander images (Mars-2/3 from 1971, the Mars-3 lander signal, Mars-4/5 from 1974) together with Phobos-2 Termoskan and VSK camera frames from 1989, including the channel frames in which an electronics fault was misidentified as an object near Phobos. Mars-4/5 images are inverse-halftoned from published sources; Phobos-2 raw data came via NSSDC. Web pages with JPEGs and processing notes only, copyright held by the author.",
+   "tags": [
+    "mars-3",
+    "mars-5",
+    "phobos-2",
+    "fobos",
+    "termoskan",
+    "soviet",
+    "russian",
+    "historical",
+    "Марс",
+    "Фобос"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-atm-pvo-ocpp",
+   "name": "Pioneer Venus Orbiter Cloud Photopolarimeter (OCPP) archive",
+   "provider": "NASA PDS Atmospheres Node (NMSU)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "archive",
+   "url": "https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/PIONEER_Venus/venus_ocpp.html",
+   "links": [
+    {
+     "label": "Pioneer Venus archive overview",
+     "url": "https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/PIONEER_Venus/"
+    }
+   ],
+   "targets": [
+    "venus"
+   ],
+   "missions": [
+    "Pioneer Venus Orbiter"
+   ],
+   "instruments": [
+    "OCPP"
+   ],
+   "data_types": [
+    "imagery",
+    "polarimetry",
+    "atmosphere",
+    "historical"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "PDS4",
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1978-1992",
+   "resolution": "~30 km/px (365 nm imaging at sub-spacecraft point); 250-500 km polarimetry",
+   "description": "Restored PDS4 archive of the Pioneer Venus Orbiter cloud photopolarimeter: 365 nm spin-scan cloud images, four-colour (270, 365, 550, 935 nm) photopolarimetry and 690 nm limb scans. Records are packed 8-bit/11-bit binary frames (56 status bits plus 8136 data bits) and need the bundle documentation to decode. One of the few Venus UV cloud-image sets from the 1970s-80s.",
+   "tags": [
+    "pvo",
+    "pioneer venus",
+    "ocpp",
+    "venus clouds",
+    "polarimeter",
+    "pdart"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-img-vgr-rav1ciun",
+   "name": "RAV1CIUN - restored Voyager 1 cruise images of Uranus and Neptune (PDART)",
+   "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://pds-imaging.jpl.nasa.gov/volumes/voyager.html",
+   "links": [
+    {
+     "label": "Archive explorer (beta) - wenkert_pdart16_vgr_rav1ciun",
+     "url": "https://pds-imaging.jpl.nasa.gov/beta/archive-explorer?mission=vgr&bundle=wenkert_pdart16_vgr_rav1ciun"
+    }
+   ],
+   "targets": [
+    "uranus",
+    "neptune"
+   ],
+   "missions": [
+    "Voyager 1"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "imagery",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "PDS4"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "PDART-funded PDS4 bundle (urn:nasa:pds:wenkert_pdart16_vgr_rav1ciun) that reprocesses all Voyager 1 cruise images of Uranus and Neptune with improved calibration to give reflectance per phase angle and filter. It also carries PDS4 versions of the Voyager QEDRs for the whole mission (the legacy QEDR volumes are not PDS-compliant tape copies). Currently reachable online only through the JPL beta archive explorer.",
+   "tags": [
+    "voyager",
+    "rav1ciun",
+    "wenkert",
+    "pdart",
+    "restoration",
+    "cruise images"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-img-voyager2-uranus-iss",
+   "name": "Voyager 2 Uranus ISS EDR volumes (vg2-u-iss-2-edr)",
+   "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "archive",
+   "url": "https://pds-imaging.jpl.nasa.gov/data/vg2-u-iss-2-edr-v1.0/",
+   "links": [
+    {
+     "label": "Voyager volumes index",
+     "url": "https://pds-imaging.jpl.nasa.gov/volumes/voyager.html"
+    }
+   ],
+   "targets": [
+    "uranus",
+    "miranda",
+    "ariel",
+    "umbriel",
+    "titania",
+    "oberon",
+    "rings"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "imagery",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1986",
+   "description": "Three Voyager 2 imaging EDR volumes (vg_0001 to vg_0003) holding the Uranus-encounter images, including the only close-ups of Miranda, Ariel, Umbriel, Titania, Oberon and the Uranian rings, plus calibration frames. This is the source for the Uranian satellite maps and control networks. Volumes are mirrored at JPL and USGS.",
+   "tags": [
+    "voyager 2",
+    "uranus",
+    "uranian satellites",
+    "vg2-u-iss"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-img-voyager2-neptune-iss",
+   "name": "Voyager 2 Neptune ISS EDR volumes (vg2-n-iss-2-edr)",
+   "provider": "NASA PDS Cartography and Imaging Sciences Node (JPL)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "archive",
+   "url": "https://pds-imaging.jpl.nasa.gov/data/vg2-n-iss-2-edr-v1.0/",
+   "links": [
+    {
+     "label": "Voyager volumes index",
+     "url": "https://pds-imaging.jpl.nasa.gov/volumes/voyager.html"
+    }
+   ],
+   "targets": [
+    "neptune",
+    "triton",
+    "proteus",
+    "nereid",
+    "rings"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "imagery",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1989",
+   "description": "Four Voyager 2 imaging EDR volumes (vg_0009 to vg_0012) covering the Neptune encounter: Neptune, Triton, Proteus, Nereid and the ring arcs. Proteus and Nereid are only resolved by these frames; OPUS lists 42 and 206 observations of them. Volumes are mirrored at JPL and USGS.",
+   "tags": [
+    "voyager 2",
+    "neptune",
+    "triton",
+    "proteus",
+    "nereid",
+    "vg2-n-iss"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-triton-voyager2-highres-images",
+   "name": "USGS High Resolution Voyager 2 Images of Triton (2026 data release)",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://www.usgs.gov/data/high-resolution-voyager-2-images-neptunes-moon-triton",
+   "links": [
+    {
+     "label": "DOI 10.5066/P9MGH7FB",
+     "url": "https://doi.org/10.5066/P9MGH7FB"
+    }
+   ],
+   "targets": [
+    "triton"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "imagery",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated",
+    "mosaic"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https"
+   ],
+   "resolution": "<2 km/px images; 600 m/px mosaic",
+   "temporal": "1989 (published 2026-05)",
+   "description": "41 georeferenced Voyager 2 ISS images of Triton with pixel scale under 2 km (orthographic projection centred 15W, 18N) as cloud-optimized GeoTIFFs, plus a 600 m/px mosaic in fully processed, partially processed (reseaux kept) and sharpened versions. Authored by M. T. Bland, CC0, published 7 May 2026.",
+   "tags": [
+    "triton",
+    "voyager 2",
+    "bland",
+    "cog"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-umbriel-voyager-control-network",
+   "name": "USGS Astropedia: Umbriel Voyager Image Control Network",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://astrogeology.usgs.gov/search/map/umbriel_voyager_image_control_network",
+   "targets": [
+    "umbriel"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Control network for Voyager 2 ISS images of Umbriel, originating from the RAND Corporation solutions (Davies and Colvin) given to Brent Archinal at USGS in 2000 and republished in 2025. Converted to ISIS3 .net format in 2020; it is geodetic control-point data, not an image mosaic, meant for registering Voyager 2 frames (e.g. in ISIS) before mosaicking. Free download, no login.",
+   "tags": [
+    "umbriel",
+    "control network",
+    "isis",
+    "voyager 2"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-titania-voyager-control-network",
+   "name": "USGS Astropedia: Titania Voyager Image Control Network",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://astrogeology.usgs.gov/search/map/titania_voyager_image_control_network",
+   "targets": [
+    "titania"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Control network for Voyager 2 ISS images of Titania, originating from the RAND Corporation solutions (Davies and Colvin) given to Brent Archinal at USGS in 2000 and republished in 2025. Converted to ISIS3 .net format in 2020; it is geodetic control-point data, not an image mosaic, meant for registering Voyager 2 frames (e.g. in ISIS) before mosaicking. Free download, no login.",
+   "tags": [
+    "titania",
+    "control network",
+    "isis",
+    "voyager 2"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-miranda-voyager-control-network",
+   "name": "USGS Astropedia: Miranda Voyager Image Control Network",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://astrogeology.usgs.gov/search/map/miranda_voyager_image_control_network",
+   "targets": [
+    "miranda"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Control network for Voyager 2 ISS images of Miranda, originating from the RAND Corporation solutions (Davies and Colvin) given to Brent Archinal at USGS in 2000 and republished in 2025. Converted to ISIS3 .net format in 2020; it is geodetic control-point data, not an image mosaic, meant for registering Voyager 2 frames (e.g. in ISIS) before mosaicking. Free download, no login.",
+   "tags": [
+    "miranda",
+    "control network",
+    "isis",
+    "voyager 2"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-triton-voyager-control-network",
+   "name": "USGS Astropedia: Triton Voyager Image Control Network",
+   "provider": "USGS Astrogeology Science Center",
+   "agency": [
+    "USGS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://astrogeology.usgs.gov/search/map/triton_voyager_image_control_network",
+   "targets": [
+    "triton"
+   ],
+   "missions": [
+    "Voyager 2"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "dem",
+    "map"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "binary"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Control network for Voyager 2 ISS images of Triton, originating from the RAND Corporation solutions (Davies and Colvin) given to Brent Archinal at USGS in 2000 and republished in 2025. Converted to ISIS3 .net format in 2020; it is geodetic control-point data, not an image mosaic, meant for registering Voyager 2 frames (e.g. in ISIS) before mosaicking. Free download, no login.",
+   "tags": [
+    "triton",
+    "control network",
+    "isis",
+    "voyager 2"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-sbn-saturn-small-moon-shapes",
+   "name": "Saturn Small Moon Shape Models (Thomas et al., PDS SBN)",
+   "provider": "NASA PDS Small Bodies Node (PSI)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://sbn.psi.edu/pds/resource/saturnsatshapes.html",
+   "links": [
+    {
+     "label": "PDS4 bundle (arcnav)",
+     "url": "https://arcnav.psi.edu/urn:nasa:pds:saturn_satellite_shape_models"
+    },
+    {
+     "label": "DOI landing page",
+     "url": "https://sbn.psi.edu/pds/resource/doi/saturnsatshape_1.0.html"
+    }
+   ],
+   "targets": [
+    "janus",
+    "epimetheus",
+    "prometheus",
+    "pandora",
+    "pan",
+    "hyperion"
+   ],
+   "missions": [
+    "Cassini-Huygens"
+   ],
+   "instruments": [
+    "ISS"
+   ],
+   "data_types": [
+    "dem"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "PDS4",
+    "OBJ"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "description": "Shape models of eleven small Saturnian satellites (Pan, Daphnis, Atlas, Prometheus, Pandora, Epimetheus, Janus, Telesto, Calypso, Helene, Hyperion) derived from Cassini ISS images, typically with uncertainties under 0.5 km. Suitable for global geometry, geology and slope studies, but only the largest craters are resolved. Distributed as a PDS4 bundle.",
+   "tags": [
+    "thomas",
+    "shape model",
+    "small moons",
+    "saturn",
+    "atlas",
+    "daphnis",
+    "telesto",
+    "calypso",
+    "helene"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-opus-janus-epimetheus",
+   "name": "OPUS filtered: Janus and Epimetheus observations (Cassini, Voyager)",
+   "provider": "NASA PDS Ring-Moon Systems Node (SETI Institute)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "api",
+   "url": "https://opus.pds-rings.seti.org/",
+   "links": [
+    {
+     "label": "OPUS search API (target-filtered example)",
+     "url": "https://opus.pds-rings.seti.org/opus/api/data.json?target=Janus&limit=10"
+    },
+    {
+     "label": "PDS Rings Node",
+     "url": "https://pds-rings.seti.org/"
+    }
+   ],
+   "targets": [
+    "janus",
+    "epimetheus"
+   ],
+   "instruments": [
+    "Cassini ISS",
+    "Cassini VIMS",
+    "Cassini CIRS",
+    "Cassini UVIS",
+    "Voyager ISS"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "https"
+   ],
+   "description": "OPUS holds 3055 Janus and 2265 Epimetheus observations: Cassini ISS (2026 / 1834), VIMS (830 / 322), CIRS, UVIS and a handful of Voyager ISS frames. Use the target filter in OPUS (or the API example) to list and download calibrated images and spectra for the co-orbital moons. No login; results link to PDS3 products at the Rings Node.",
+   "tags": [
+    "janus",
+    "epimetheus",
+    "co-orbital",
+    "cassini",
+    "opus"
+   ],
+   "connector": "opus",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-opus-prometheus-pandora-pan",
+   "name": "OPUS filtered: Prometheus, Pandora and Pan observations (Cassini, HST, Voyager)",
+   "provider": "NASA PDS Ring-Moon Systems Node (SETI Institute)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "api",
+   "url": "https://opus.pds-rings.seti.org/",
+   "links": [
+    {
+     "label": "OPUS search API (target-filtered example)",
+     "url": "https://opus.pds-rings.seti.org/opus/api/data.json?target=Pandora&limit=10"
+    },
+    {
+     "label": "PDS Rings Node",
+     "url": "https://pds-rings.seti.org/"
+    }
+   ],
+   "targets": [
+    "prometheus",
+    "pandora",
+    "pan"
+   ],
+   "instruments": [
+    "Cassini ISS",
+    "Cassini VIMS",
+    "Cassini UVIS",
+    "Cassini CIRS",
+    "Hubble WFPC2",
+    "Hubble STIS",
+    "Voyager ISS"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "https"
+   ],
+   "description": "OPUS lists 4185 Prometheus, 1844 Pandora and 1636 Pan observations, mostly Cassini ISS (3774 / 1523 / 1376) and VIMS, with Hubble WFPC2/STIS for Prometheus and Pandora. These ring-shepherd and Encke-gap moons are best found via the target filter. No login; PDS3 products.",
+   "tags": [
+    "prometheus",
+    "pandora",
+    "pan",
+    "shepherd moons",
+    "encke gap",
+    "cassini",
+    "opus"
+   ],
+   "connector": "opus",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-opus-uranian-moons",
+   "name": "OPUS filtered: Uranian moons (Ariel, Umbriel, Titania, Oberon, Miranda) Voyager 2 observations",
+   "provider": "NASA PDS Ring-Moon Systems Node (SETI Institute)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "api",
+   "url": "https://opus.pds-rings.seti.org/",
+   "links": [
+    {
+     "label": "OPUS search API (target-filtered example)",
+     "url": "https://opus.pds-rings.seti.org/opus/api/data.json?target=Titania&limit=10"
+    },
+    {
+     "label": "PDS Rings Node",
+     "url": "https://pds-rings.seti.org/"
+    }
+   ],
+   "targets": [
+    "ariel",
+    "umbriel",
+    "titania",
+    "oberon",
+    "miranda"
+   ],
+   "instruments": [
+    "Voyager ISS",
+    "Hubble STIS"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "https"
+   ],
+   "description": "OPUS indexes the Voyager 2 ISS observations of the major Uranian satellites: Ariel 101, Umbriel 100, Titania 102, Oberon 74, Miranda 90, plus one Hubble STIS Titania observation. This is the quickest way to list every frame of a given moon from the 1986 flyby. No login.",
+   "tags": [
+    "ariel",
+    "umbriel",
+    "titania",
+    "oberon",
+    "miranda",
+    "uranus",
+    "voyager 2",
+    "opus"
+   ],
+   "connector": "opus",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-opus-neptune-small-moons",
+   "name": "OPUS filtered: Proteus and Nereid observations (Voyager 2, HST)",
+   "provider": "NASA PDS Ring-Moon Systems Node (SETI Institute)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "api",
+   "url": "https://opus.pds-rings.seti.org/",
+   "links": [
+    {
+     "label": "OPUS search API (target-filtered example)",
+     "url": "https://opus.pds-rings.seti.org/opus/api/data.json?target=Proteus&limit=10"
+    },
+    {
+     "label": "PDS Rings Node",
+     "url": "https://pds-rings.seti.org/"
+    }
+   ],
+   "targets": [
+    "proteus",
+    "nereid"
+   ],
+   "instruments": [
+    "Voyager ISS",
+    "Hubble NICMOS"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "https"
+   ],
+   "description": "OPUS lists 42 Voyager 2 ISS and 26 Hubble NICMOS observations of Proteus, and 206 observations of Nereid. These are the only spacecraft views of the two Neptunian moons. No login.",
+   "tags": [
+    "proteus",
+    "nereid",
+    "neptune",
+    "voyager 2",
+    "opus"
+   ],
+   "connector": "opus",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "pds-opus-himalia",
+   "name": "OPUS filtered: Himalia observations (Cassini, New Horizons)",
+   "provider": "NASA PDS Ring-Moon Systems Node (SETI Institute)",
+   "agency": [
+    "NASA",
+    "PDS"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "api",
+   "url": "https://opus.pds-rings.seti.org/",
+   "links": [
+    {
+     "label": "OPUS search API (target-filtered example)",
+     "url": "https://opus.pds-rings.seti.org/opus/api/data.json?target=Himalia&limit=10"
+    },
+    {
+     "label": "PDS Rings Node",
+     "url": "https://pds-rings.seti.org/"
+    }
+   ],
+   "targets": [
+    "himalia"
+   ],
+   "instruments": [
+    "Cassini ISS",
+    "Cassini VIMS",
+    "New Horizons LORRI"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "VICAR"
+   ],
+   "access": "open",
+   "protocols": [
+    "web-ui",
+    "rest",
+    "https"
+   ],
+   "description": "OPUS lists 419 Himalia observations: 93 Cassini ISS and 300 VIMS from the 2000 Jupiter flyby and 26 New Horizons LORRI frames from 2007. Himalia is the largest irregular Jovian moon, and these are among the few spacecraft views of it. No login.",
+   "tags": [
+    "himalia",
+    "jupiter",
+    "irregular moon",
+    "opus"
+   ],
+   "connector": "opus",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "hirise-3i-atlas-release",
+   "name": "HiRISE image of interstellar comet 3I/ATLAS (MRO, Oct 2025)",
+   "provider": "University of Arizona HiRISE team",
+   "agency": [
+    "NASA",
+    "University of Arizona"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://hirise.lpl.arizona.edu/releases/3i-atlas",
+   "targets": [
+    "3i-atlas"
+   ],
+   "missions": [
+    "Mars Reconnaissance Orbiter"
+   ],
+   "instruments": [
+    "HiRISE"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "raw",
+    "browse"
+   ],
+   "formats": [
+    "JPEG",
+    "PDS3"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "2025-10-02",
+   "resolution": "~30 km/px",
+   "description": "Release page for the 2 October 2025 HiRISE exposure of 3I/ATLAS (3.2 s, ~30 million km range): annotated and cutout JPEGs plus links to the four PDS EDR product directories (ESP_089922_9080/9081, ESP_089923_9080/9081). The nucleus is unresolved and jitter smeared the comet by several pixels; only the inner coma is detected.",
+   "tags": [
+    "3i/atlas",
+    "interstellar comet",
+    "hirise",
+    "mro",
+    "james wray"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "lroc-lunokhod2-nac-mosaic",
+   "name": "LROC Lunokhod 2 low-Sun controlled NAC mosaic (Luna 21 site, 1.3 m/px)",
+   "provider": "LROC Science Operations Center (Arizona State University)",
+   "agency": [
+    "NASA",
+    "ASU"
+   ],
+   "country": [
+    "USA"
+   ],
+   "kind": "dataset",
+   "url": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_ROI_LUNA_21_LOA_E261N0305",
+   "targets": [
+    "moon"
+   ],
+   "missions": [
+    "LRO",
+    "Luna 21",
+    "Lunokhod 2"
+   ],
+   "instruments": [
+    "LROC NAC"
+   ],
+   "data_types": [
+    "mosaic",
+    "imagery",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "mosaic"
+   ],
+   "formats": [
+    "PDS3",
+    "GeoTIFF"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "resolution": "1.30 m/px",
+   "description": "Controlled NAC mosaic (product NAC_ROI_LUNA_21_LOA_E261N0305) over the Luna 21 landing site and Lunokhod 2 traverse, spanning roughly 29.9-31.2 E and 25.0-27.3 N. Downloads: PDS .IMG (5.6 GB), GeoTIFF (1.4 GB) and pyramidal GeoTIFF (1.9 GB). Useful for georeferencing Soviet rover panoramas and traverse stops.",
+   "tags": [
+    "lunokhod",
+    "luna 21",
+    "lroc",
+    "le monnier",
+    "traverse"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jaxa-darts-suisei-sakigake",
+   "name": "Suisei and Sakigake Halley mission data (DARTS)",
+   "provider": "JAXA ISAS DARTS",
+   "agency": [
+    "JAXA",
+    "ISAS"
+   ],
+   "country": [
+    "Japan"
+   ],
+   "kind": "archive",
+   "url": "https://darts.isas.jaxa.jp/en/missions/suisei",
+   "links": [
+    {
+     "label": "Sakigake at DARTS",
+     "url": "https://darts.isas.jaxa.jp/en/missions/sakigake"
+    }
+   ],
+   "targets": [
+    "halley",
+    "comets"
+   ],
+   "missions": [
+    "Suisei (PLANET-A)",
+    "Sakigake (MS-T5)"
+   ],
+   "instruments": [
+    "UVI",
+    "ESP"
+   ],
+   "data_types": [
+    "uv",
+    "spectra",
+    "historical"
+   ],
+   "spectral": [
+    "uv"
+   ],
+   "levels": [
+    "raw"
+   ],
+   "formats": [
+    "binary",
+    "CSV"
+   ],
+   "access": "open",
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "1985-1999",
+   "description": "DARTS holds Suisei raw telemetry, orbit data (CCSDS TDM) and the Halley energy-spectrum particle dataset, plus Sakigake raw telemetry (1985-1999), interplanetary magnetic field and orbit data. Suisei carried a 122x153-pixel ultraviolet imager of the Halley hydrogen coma, but no separate UVI image dataset is listed on the DARTS page; the PDS Halley volumes at SBN may hold processed UVI images. Mainly of heritage interest.",
+   "tags": [
+    "suisei",
+    "sakigake",
+    "planet-a",
+    "ms-t5",
+    "halley armada",
+    "uvi",
+    "isas"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "rubin-dp2-dp1-previews",
+   "name": "Rubin Observatory Data Preview 2 and Data Preview 1 (documentation and solar-system tutorials)",
+   "provider": "Vera C. Rubin Observatory",
+   "agency": [
+    "NSF",
+    "DOE",
+    "Rubin Observatory"
+   ],
+   "country": [
+    "USA",
+    "Chile"
+   ],
+   "kind": "portal",
+   "url": "https://dp2.lsst.io/",
+   "links": [
+    {
+     "label": "DP1 documentation",
+     "url": "https://dp1.lsst.io/"
+    },
+    {
+     "label": "DP2 tutorial: Solar System object observations",
+     "url": "https://dp2.lsst.io/tutorials/notebook/308/notebook-308-02.html"
+    }
+   ],
+   "targets": [
+    "asteroids",
+    "comets",
+    "kbos"
+   ],
+   "missions": [
+    "Rubin LSST"
+   ],
+   "instruments": [
+    "LSSTCam"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "access": "restricted",
+   "protocols": [
+    "web-ui",
+    "tap"
+   ],
+   "temporal": "2025-04 to 2026-01 (DP2 observations)",
+   "description": "Documentation hub for Rubin Data Preview 2 (early DP2 released 27 July 2026, full DP2 expected December 2026; coadds over ~3000 sq deg, single-epoch over ~15000 sq deg) and DP1, with Solar System object tutorials. The data are served through the Rubin Science Platform and limited to Rubin data-rights holders (US and Chilean scientists, named in-kind teams); the documentation is public.",
+   "tags": [
+    "lsst",
+    "rubin",
+    "dp2",
+    "dp1",
+    "lsstcam",
+    "solar system",
+    "sso"
+   ],
+   "verified": "2026-11-05"
+  }
+ ]
+}

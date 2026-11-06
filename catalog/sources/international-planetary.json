@@ -1,0 +1,2524 @@
+{
+ "domain": "international-planetary",
+ "sources": [
+  {
+   "id": "brown-relab",
+   "name": "RELAB - Brown University Reflectance Experiment Laboratory",
+   "provider": "Brown University / NASA RELAB",
+   "agency": [
+    "Brown University",
+    "NASA"
+   ],
+   "kind": "archive",
+   "url": "https://sites.brown.edu/relab/",
+   "targets": [
+    "moon",
+    "mars",
+    "asteroids",
+    "mercury"
+   ],
+   "description": "Laboratory reflectance spectral database (UV to mid-IR) of minerals, meteorites, lunar samples and analogues used to interpret remote-sensing spectra. Spectra are searchable and downloadable via the RELAB database page and are mirrored at the PDS Geosciences Node.",
+   "links": [
+    {
+     "label": "RELAB Spectral Database",
+     "url": "https://sites.brown.edu/relab/relab-spectral-database/"
+    }
+   ],
+   "access": "open",
+   "country": [
+    "USA"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "CSV"
+   ],
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "tags": [
+    "relab",
+    "reflectance spectra",
+    "lab spectra"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ce1-global-dom",
+   "name": "Chang'e-1 / Chang'e-2 global lunar DOM and DEM",
+   "provider": "NAOC / CNSA",
+   "agency": [
+    "CNSA",
+    "NAOC"
+   ],
+   "kind": "dataset",
+   "url": "https://moon.bao.ac.cn/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Global image mosaics (digital orthophoto maps) and DEMs of the Moon from Chang'e-1 (120 m) and Chang'e-2 (7 m CCD stereo camera, partial) data, among the first Chinese lunar products released.",
+   "access": "free-registration",
+   "country": [
+    "China"
+   ],
+   "missions": [
+    "Chang'e-1",
+    "Chang'e-2"
+   ],
+   "instruments": [
+    "CCD stereo camera",
+    "LAM"
+   ],
+   "data_types": [
+    "mosaic",
+    "dem",
+    "stereo",
+    "altimetry"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "PDS3"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "120 m (CE-1), 7 m (CE-2)",
+   "tags": [
+    "ce-1",
+    "ce-2",
+    "dom",
+    "dem"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ce4-clpds",
+   "name": "Chang'e-4 / Yutu-2 data (CLPDS)",
+   "provider": "NAOC / CNSA",
+   "agency": [
+    "CNSA",
+    "NAOC"
+   ],
+   "kind": "dataset",
+   "url": "https://moon.bao.ac.cn/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Far-side Chang'e-4 lander and Yutu-2 rover data (terrain and panoramic cameras, VNIS spectra, lunar penetrating radar) at Von Karman crater, released via CLPDS. Registration is needed to download.",
+   "access": "free-registration",
+   "country": [
+    "China"
+   ],
+   "missions": [
+    "Chang'e-4"
+   ],
+   "instruments": [
+    "TCAM",
+    "PCAM",
+    "VNIS",
+    "LPR"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra",
+    "radar"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS4"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2019-present",
+   "tags": [
+    "chang'e-4",
+    "yutu-2",
+    "far side"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ce5-ce6-clpds",
+   "name": "Chang'e-5 and Chang'e-6 data (CLPDS)",
+   "provider": "NAOC / CNSA",
+   "agency": [
+    "CNSA",
+    "NAOC"
+   ],
+   "kind": "dataset",
+   "url": "https://moon.bao.ac.cn/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Chang'e-5 (2020, Oceanus Procellarum) and Chang'e-6 (2024, far-side South Pole-Aitken basin sample return) landing-site imagery, spectra and mineral analyser data released through CLPDS. Released in stages; check the portal for current availability.",
+   "access": "free-registration",
+   "country": [
+    "China"
+   ],
+   "missions": [
+    "Chang'e-5",
+    "Chang'e-6"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2020, 2024",
+   "tags": [
+    "chang'e-5",
+    "chang'e-6",
+    "sample return"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "clpds",
+   "name": "China Lunar and Planetary Data Release System (CLPDS)",
+   "provider": "National Astronomical Observatories, Chinese Academy of Sciences (NAOC) / Lunar and Deep Space Exploration Science Applications Center",
+   "agency": [
+    "CNSA",
+    "NAOC"
+   ],
+   "kind": "portal",
+   "url": "https://moon.bao.ac.cn/",
+   "targets": [
+    "moon",
+    "mars"
+   ],
+   "description": "Official release system of the Chinese Lunar Exploration Program: Chang'e-1 to Chang'e-6 and Tianwen-1 data at levels 0-2, with orbital imagery, DEM, spectra and lander/rover products. The interface is Chinese and English; downloads generally require free registration.",
+   "access": "free-registration",
+   "country": [
+    "China"
+   ],
+   "missions": [
+    "Chang'e-1",
+    "Chang'e-2",
+    "Chang'e-3",
+    "Chang'e-4",
+    "Chang'e-5",
+    "Chang'e-6",
+    "Tianwen-1"
+   ],
+   "data_types": [
+    "imagery",
+    "dem",
+    "stereo",
+    "spectra",
+    "altimetry",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "xray",
+    "gamma",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "PDS4",
+    "PDS3",
+    "FITS"
+   ],
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "tags": [
+    "clpds",
+    "chang'e",
+    "change",
+    "chang e",
+    "tianwen",
+    "naoc",
+    "cnsa",
+    "lunar data release"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "cnsa-tianwen-2",
+   "name": "Tianwen-2 asteroid sample-return mission (CNSA)",
+   "provider": "China National Space Administration",
+   "agency": [
+    "CNSA"
+   ],
+   "kind": "mission-site",
+   "url": "https://www.cnsa.gov.cn/english/",
+   "targets": [
+    "asteroids",
+    "comets"
+   ],
+   "description": "Chinese mission launched in 2025 to near-Earth asteroid Kamo'oalewa (469219) and later main-belt comet 311P. Imagery will appear on CNSA news pages and eventually in NAOC's release system; no public data archive yet.",
+   "access": "open",
+   "country": [
+    "China"
+   ],
+   "missions": [
+    "Tianwen-2"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2025-2027",
+   "tags": [
+    "tianwen-2",
+    "kamo'oalewa",
+    "cnsa"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "elte-planetary-map-catalog",
+   "name": "Catalog of Planetary Maps (ELTE)",
+   "provider": "Eotvos Lorand University (ELTE) Planetary Mapping Digital Museum",
+   "agency": [
+    "ELTE"
+   ],
+   "kind": "catalog",
+   "url": "https://planetarymapping.elte.hu/map-catalog/",
+   "targets": [
+    "moon",
+    "mars",
+    "venus",
+    "mercury",
+    "phobos"
+   ],
+   "description": "Searchable catalogue of printed planetary maps and atlases from many countries and eras (including Soviet and Russian MIIGAiK maps), with scans and metadata for many entries. Historical cartography rather than raw sensor data.",
+   "access": "open",
+   "country": [
+    "Hungary"
+   ],
+   "data_types": [
+    "map",
+    "historical"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "JPEG",
+    "PNG"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "historical maps",
+    "atlas",
+    "elte",
+    "planetary mapping"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-esasky",
+   "name": "ESASky (solar system objects)",
+   "provider": "ESA Datalabs / ESAC",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "tool",
+   "url": "https://sky.esa.int/esasky/",
+   "targets": [
+    "mars",
+    "jupiter",
+    "saturn",
+    "asteroids",
+    "comets"
+   ],
+   "description": "Browser sky viewer with a solar-system-objects mode to find observations of planets, asteroids and comets by space observatories, overlaying many mission archives. Most useful for telescope observations of solar-system bodies.",
+   "access": "open",
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir",
+    "xray"
+   ],
+   "levels": [
+    "calibrated",
+    "browse"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "protocols": [
+    "web-ui",
+    "tap"
+   ],
+   "tags": [
+    "esasky",
+    "sso",
+    "solar system objects"
+   ]
+  },
+  {
+   "id": "esa-mex-image-releases",
+   "name": "ESA Mars Express image releases",
+   "provider": "ESA",
+   "agency": [
+    "ESA",
+    "DLR"
+   ],
+   "kind": "raw-feed",
+   "url": "https://www.esa.int/missions/about-us/directorates/science/mars-express",
+   "targets": [
+    "mars",
+    "phobos"
+   ],
+   "description": "ESA Mars Express mission page, linking to the processed Mars Express images and videos published by ESA, mostly HRSC colour mosaics, anaglyphs and perspective views of named Martian features. Outreach quality; the scientific data are in the PSA.",
+   "access": "open",
+   "missions": [
+    "Mars Express"
+   ],
+   "instruments": [
+    "HRSC"
+   ],
+   "data_types": [
+    "imagery",
+    "stereo",
+    "dem"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "formats": [
+    "JPEG",
+    "PNG"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "mars express",
+    "hrsc",
+    "esa multimedia"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-psa-exomars-tgo",
+   "name": "ExoMars TGO: CaSSIS, NOMAD, ACS, FREND (PSA)",
+   "provider": "ESA Planetary Science Archive (ESAC)",
+   "agency": [
+    "ESA",
+    "Roscosmos"
+   ],
+   "kind": "dataset",
+   "url": "https://psa.esa.int/psa/",
+   "targets": [
+    "mars",
+    "phobos"
+   ],
+   "description": "ExoMars Trace Gas Orbiter science data in the PSA, including CaSSIS colour/stereo images at ~4.5 m/px, NOMAD and ACS atmospheric spectrometers, and FREND neutron data. CaSSIS images are PDS4.",
+   "links": [
+    {
+     "label": "ExoMars (Cosmos)",
+     "url": "https://www.cosmos.esa.int/web/exomars"
+    }
+   ],
+   "access": "open",
+   "missions": [
+    "ExoMars TGO"
+   ],
+   "instruments": [
+    "CaSSIS",
+    "NOMAD",
+    "ACS",
+    "FREND"
+   ],
+   "data_types": [
+    "imagery",
+    "stereo",
+    "spectra",
+    "atmosphere"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS4"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "resolution": "CaSSIS ~4.5 m/px",
+   "temporal": "2016-present",
+   "tags": [
+    "tgo",
+    "cassis",
+    "exomars"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-psa-giotto-huygens",
+   "name": "Giotto and Huygens data (PSA)",
+   "provider": "ESA Planetary Science Archive (ESAC)",
+   "agency": [
+    "ESA",
+    "NASA"
+   ],
+   "kind": "dataset",
+   "url": "https://psa.esa.int/psa/",
+   "targets": [
+    "halley",
+    "titan",
+    "comets"
+   ],
+   "description": "Legacy ESA data in the PSA: Giotto Halley Multicolour Camera images of comet 1P/Halley (1986) and the Huygens probe DISR images and spectra from Titan's surface (2005).",
+   "links": [
+    {
+     "label": "Huygens (Cosmos)",
+     "url": "https://www.cosmos.esa.int/web/huygens"
+    }
+   ],
+   "access": "open",
+   "missions": [
+    "Giotto",
+    "Huygens"
+   ],
+   "instruments": [
+    "HMC",
+    "DISR"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "PDS4"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "tags": [
+    "giotto",
+    "huygens",
+    "disr",
+    "halley"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-psa-juice",
+   "name": "JUICE data (PSA)",
+   "provider": "ESA Planetary Science Archive (ESAC)",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://psa.esa.int/psa/",
+   "targets": [
+    "jupiter",
+    "ganymede",
+    "europa",
+    "callisto",
+    "moon",
+    "earth",
+    "venus"
+   ],
+   "description": "Archive area for ESA's Jupiter Icy Moons Explorer. Holds cruise and calibration data such as the Lunar-Earth flyby (August 2024); Jupiter arrival is planned for 2031.",
+   "links": [
+    {
+     "label": "JUICE (Cosmos)",
+     "url": "https://www.cosmos.esa.int/web/juice"
+    }
+   ],
+   "access": "open",
+   "missions": [
+    "JUICE"
+   ],
+   "instruments": [
+    "JANUS",
+    "MAJIS",
+    "GALA",
+    "RIME",
+    "UVS"
+   ],
+   "data_types": [
+    "imagery",
+    "hyperspectral",
+    "altimetry",
+    "radar"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "uv"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS4"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "2023-present",
+   "tags": [
+    "juice",
+    "jupiter icy moons explorer",
+    "janus",
+    "majis"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-psa-mex-other",
+   "name": "Mars Express MARSIS, SPICAM, PFS, VMC (PSA)",
+   "provider": "ESA Planetary Science Archive (ESAC)",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://psa.esa.int/psa/",
+   "targets": [
+    "mars",
+    "phobos"
+   ],
+   "description": "Other Mars Express instrument data in the PSA: MARSIS subsurface radar sounder, SPICAM UV spectrometer, PFS Fourier spectrometer and the VMC visual monitoring camera. Select the instrument in the PSA interface.",
+   "access": "open",
+   "missions": [
+    "Mars Express"
+   ],
+   "instruments": [
+    "MARSIS",
+    "SPICAM",
+    "PFS",
+    "VMC",
+    "ASPERA-3"
+   ],
+   "data_types": [
+    "radar",
+    "spectra",
+    "imagery",
+    "atmosphere"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "tir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "PDS4"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "tags": [
+    "marsis",
+    "spicam",
+    "vmc",
+    "pfs"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-psa-tap",
+   "name": "ESA PSA TAP / EPN-TAP service",
+   "provider": "ESA Planetary Science Archive (ESAC)",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "api",
+   "url": "https://psa.esa.int/psa-tap/tap/",
+   "targets": [
+    "mars",
+    "venus",
+    "moon",
+    "67p",
+    "mercury"
+   ],
+   "description": "TAP / EPN-TAP endpoint for the Planetary Science Archive, queryable with ADQL from VESPA, TOPCAT or scripts. Returns granule metadata with access URLs for PSA data files.",
+   "access": "open",
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS4",
+    "CSV"
+   ],
+   "protocols": [
+    "tap"
+   ],
+   "tags": [
+    "epn-tap",
+    "adql",
+    "psa",
+    "vo"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-psa-vex",
+   "name": "Venus Express data (PSA)",
+   "provider": "ESA Planetary Science Archive (ESAC)",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "dataset",
+   "url": "https://psa.esa.int/psa/",
+   "targets": [
+    "venus"
+   ],
+   "description": "Venus Express VIRTIS, VMC and SPICAV data of the Venusian atmosphere in the PSA, including VIRTIS-M/H cubes and VMC UV/visible/NIR images. PDS3/PDS4, open access.",
+   "links": [
+    {
+     "label": "Venus Express (Cosmos)",
+     "url": "https://www.cosmos.esa.int/web/venus-express"
+    }
+   ],
+   "access": "open",
+   "missions": [
+    "Venus Express"
+   ],
+   "instruments": [
+    "VIRTIS",
+    "VMC",
+    "SPICAV",
+    "VeRa"
+   ],
+   "data_types": [
+    "imagery",
+    "hyperspectral",
+    "atmosphere"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "formats": [
+    "PDS3",
+    "PDS4"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "temporal": "2006-2014",
+   "tags": [
+    "vex",
+    "virtis",
+    "vmc"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "esa-rosetta-image-archive",
+   "name": "ESA Image Archives: Rosetta NAVCAM and OSIRIS browser",
+   "provider": "ESA Rosetta Science Ground Segment (ESAC)",
+   "agency": [
+    "ESA"
+   ],
+   "kind": "portal",
+   "url": "https://imagearchives.esac.esa.int/",
+   "targets": [
+    "67p",
+    "steins",
+    "lutetia"
+   ],
+   "description": "Browsable gallery of Rosetta NAVCAM and OSIRIS images organised by mission phase and date, with image download. Easier to browse than the PSA directory tree.",
+   "access": "open",
+   "missions": [
+    "Rosetta"
+   ],
+   "instruments": [
+    "NAVCAM",
+    "OSIRIS"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "browse",
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG",
+    "FITS"
+   ],
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "tags": [
+    "rosetta",
+    "image archive",
+    "navcam",
+    "osiris"
+   ]
+  },
+  {
+   "id": "europlanet-gmap",
+   "name": "Europlanet GMAP - Geological Mapping of planetary surfaces",
+   "provider": "Europlanet RI",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "portal",
+   "url": "https://www.europlanet-gmap.eu/",
+   "targets": [
+    "mars",
+    "moon",
+    "mercury",
+    "venus"
+   ],
+   "description": "Europlanet geological mapping pages: guidance for mapping planetary surfaces plus a repository of published geological and geomorphological maps and GIS templates.",
+   "access": "open",
+   "data_types": [
+    "map"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "KML"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "gmap",
+    "geologic mapping"
+   ],
+   "country": [
+    "Europe"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "europlanet-vespa",
+   "name": "VESPA - Virtual European Solar and Planetary Access",
+   "provider": "Europlanet / Observatoire de Paris (PADC)",
+   "agency": [
+    "Europlanet",
+    "Observatoire de Paris"
+   ],
+   "kind": "portal",
+   "url": "https://vespa.obspm.fr/planetary/data/",
+   "targets": [
+    "mercury",
+    "venus",
+    "moon",
+    "mars",
+    "phobos",
+    "jupiter",
+    "saturn",
+    "titan",
+    "67p",
+    "halley",
+    "asteroids",
+    "comets",
+    "sun",
+    "earth"
+   ],
+   "description": "Europlanet's VO-based portal federating dozens of EPN-TAP data services (images, spectra, maps, profiles, simulations) for planetary science and heliophysics, with ADQL and form queries across all services. Also offers PDAP and a NASA PDS keyword search; no login needed.",
+   "links": [
+    {
+     "label": "Data services list",
+     "url": "https://vespa.obspm.fr/planetary/data/"
+    },
+    {
+     "label": "Help",
+     "url": "https://vespa.obspm.fr/planetary/data/epn/help"
+    },
+    {
+     "label": "Tutorials",
+     "url": "http://www.europlanet-vespa.eu/tutos.shtml"
+    }
+   ],
+   "access": "open",
+   "data_types": [
+    "imagery",
+    "spectra",
+    "map",
+    "hyperspectral",
+    "atmosphere"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir",
+    "radio",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "FITS",
+    "CSV",
+    "PDS4"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "tags": [
+    "vespa",
+    "epn-tap",
+    "europlanet",
+    "virtual observatory",
+    "vo"
+   ],
+   "connector": "epntap",
+   "country": [
+    "France",
+    "Europe"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "intuitive-machines-im",
+   "name": "Intuitive Machines lunar lander image releases (IM-1, IM-2)",
+   "provider": "Intuitive Machines",
+   "agency": [
+    "Intuitive Machines"
+   ],
+   "kind": "raw-feed",
+   "url": "https://www.intuitivemachines.com/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Odysseus (IM-1, February 2024) and Athena (IM-2, March 2025) lunar-landing missions under NASA's CLPS programme; the company publishes descent and surface images and a news feed. Instrument data from NASA payloads are archived separately in the PDS.",
+   "access": "open",
+   "country": [
+    "USA"
+   ],
+   "missions": [
+    "IM-1",
+    "IM-2"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2024-2025",
+   "tags": [
+    "intuitive machines",
+    "odysseus",
+    "athena",
+    "clps"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "ipda",
+   "name": "IPDA - International Planetary Data Alliance",
+   "provider": "International Planetary Data Alliance",
+   "agency": [
+    "IPDA"
+   ],
+   "kind": "catalog",
+   "url": "https://planetarydata.org/",
+   "targets": [
+    "mars",
+    "moon",
+    "venus",
+    "mercury",
+    "67p",
+    "phobos",
+    "deimos",
+    "ceres",
+    "vesta",
+    "jupiter",
+    "io",
+    "europa",
+    "ganymede",
+    "callisto",
+    "saturn",
+    "mimas",
+    "enceladus",
+    "tethys",
+    "dione",
+    "rhea",
+    "titan",
+    "iapetus",
+    "uranus",
+    "neptune",
+    "triton",
+    "pluto",
+    "charon",
+    "asteroids",
+    "comets"
+   ],
+   "description": "Coordination body of the world's planetary data archives (NASA PDS, ESA PSA, JAXA DARTS, ISRO ISSDC, CNSA, Roscosmos and others) maintaining the PDS4 standard for international use, with pointers to member archives and the IPDA PDS4 registry. Not an imagery source itself.",
+   "access": "open",
+   "data_types": [
+    "imagery"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "PDS4"
+   ],
+   "protocols": [
+    "web-ui",
+    "https"
+   ],
+   "tags": [
+    "ipda",
+    "pds4",
+    "data alliance",
+    "epn-tap",
+    "federation"
+   ],
+   "verified": "2026-11-05",
+   "country": [
+    "USA",
+    "France",
+    "Japan",
+    "India",
+    "China"
+   ],
+   "spectral": [
+    "visible"
+   ]
+  },
+  {
+   "id": "isro-mom-archive",
+   "name": "Mars Orbiter Mission long-term archive (MCC, TIS, MSM)",
+   "provider": "ISRO ISSDC",
+   "agency": [
+    "ISRO"
+   ],
+   "kind": "archive",
+   "url": "https://mrbrowse.issdc.gov.in/MOMLTA/Homepage.xhtml",
+   "targets": [
+    "mars",
+    "phobos",
+    "deimos"
+   ],
+   "description": "Browser for the ISRO Mars Orbiter Mission archive: Mars Colour Camera (MCC) images, Thermal Infrared Imaging Spectrometer (TIS), methane sensor and others, with data for 2014-2020 for registered users.",
+   "access": "free-registration",
+   "country": [
+    "India"
+   ],
+   "missions": [
+    "Mars Orbiter Mission"
+   ],
+   "instruments": [
+    "MCC",
+    "TIS",
+    "MSM",
+    "LAP",
+    "MENCA"
+   ],
+   "data_types": [
+    "imagery",
+    "thermal",
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "tir"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2014-2022",
+   "tags": [
+    "mom",
+    "mangalyaan",
+    "mcc"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jaxa-darts",
+   "name": "JAXA DARTS - Data ARchives and Transmission System",
+   "provider": "JAXA Institute of Space and Astronautical Science (ISAS)",
+   "agency": [
+    "JAXA"
+   ],
+   "kind": "portal",
+   "url": "https://darts.isas.jaxa.jp/",
+   "targets": [
+    "moon",
+    "venus",
+    "mercury",
+    "mars",
+    "itokawa",
+    "ryugu",
+    "sun",
+    "earth"
+   ],
+   "description": "ISAS/JAXA's public archive of mission science data in astrophysics, solar physics, planetary science and engineering. The planetary section holds SELENE/Kaguya, Hayabusa, Hayabusa2, Akatsuki and Nozomi data; browsing is free and needs no login.",
+   "links": [
+    {
+     "label": "Planetary sciences section",
+     "url": "https://darts.isas.jaxa.jp/planet/"
+    }
+   ],
+   "access": "open",
+   "country": [
+    "Japan"
+   ],
+   "missions": [
+    "SELENE/Kaguya",
+    "Hayabusa",
+    "Hayabusa2",
+    "Akatsuki",
+    "Nozomi"
+   ],
+   "data_types": [
+    "imagery",
+    "dem",
+    "spectra",
+    "altimetry"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "tir",
+    "uv",
+    "xray"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "PDS3",
+    "PDS4",
+    "FITS",
+    "GeoTIFF"
+   ],
+   "protocols": [
+    "https",
+    "web-ui",
+    "ftp"
+   ],
+   "tags": [
+    "darts",
+    "isas",
+    "jaxa",
+    "japanese planetary archive"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jaxa-darts-nozomi-mio",
+   "name": "Nozomi and BepiColombo Mio data (DARTS)",
+   "provider": "JAXA ISAS",
+   "agency": [
+    "JAXA"
+   ],
+   "kind": "archive",
+   "url": "https://darts.isas.jaxa.jp/planet/project/nozomi/",
+   "targets": [
+    "mars",
+    "mercury"
+   ],
+   "description": "Planetary mission pages at DARTS for Nozomi (Mars, imaging and plasma) and BepiColombo Mio (MMO) data. Mostly field-and-particle science; imagery content is limited.",
+   "access": "open",
+   "country": [
+    "Japan"
+   ],
+   "missions": [
+    "Nozomi",
+    "BepiColombo"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "uv",
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "tags": [
+    "nozomi",
+    "mio",
+    "mmo"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jaxa-hayabusa2-curation",
+   "name": "Hayabusa2 sample catalogue (JAXA Curation)",
+   "provider": "JAXA Extraterrestrial Sample Curation Center",
+   "agency": [
+    "JAXA"
+   ],
+   "kind": "catalog",
+   "url": "https://curation.isas.jaxa.jp/",
+   "targets": [
+    "ryugu"
+   ],
+   "description": "JAXA curation site for the Hayabusa and Hayabusa2 returned samples with sample catalogues and photographic/analytical data of the grains, and information for sample requests.",
+   "access": "open",
+   "country": [
+    "Japan"
+   ],
+   "missions": [
+    "Hayabusa2",
+    "Hayabusa"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "ryugu sample",
+    "curation"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jaxa-kaguya-dtm",
+   "name": "Kaguya TC DTM and ortho-mosaic (SLDEM / TC mosaic)",
+   "provider": "JAXA / Kaguya team",
+   "agency": [
+    "JAXA"
+   ],
+   "kind": "dataset",
+   "url": "https://darts.isas.jaxa.jp/planet/pdap/selene/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Global digital terrain model and ortho-mosaic derived from Kaguya Terrain Camera stereo imaging; also the SLDEM2015 merge with LOLA is distributed through PDS Geosciences. Find the TC map products in the SELENE archive tool.",
+   "access": "open",
+   "country": [
+    "Japan"
+   ],
+   "missions": [
+    "SELENE/Kaguya"
+   ],
+   "instruments": [
+    "TC",
+    "LALT"
+   ],
+   "data_types": [
+    "dem",
+    "mosaic",
+    "stereo",
+    "altimetry"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "PDS3",
+    "GeoTIFF"
+   ],
+   "protocols": [
+    "https",
+    "web-ui"
+   ],
+   "resolution": "~10 m/px TC ortho; DTM ~60 m",
+   "tags": [
+    "sldem",
+    "kaguya dtm",
+    "tc"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "jaxa-slim",
+   "name": "SLIM lunar lander (JAXA)",
+   "provider": "JAXA ISAS",
+   "agency": [
+    "JAXA"
+   ],
+   "kind": "mission-site",
+   "url": "https://www.isas.jaxa.jp/en/missions/spacecraft/current/slim.html",
+   "targets": [
+    "moon"
+   ],
+   "description": "Smart Lander for Investigating Moon: January 2024 pinpoint landing near Shioli crater, with multiband camera (MBC) images of nearby rocks and descent imagery published on the mission pages. Raw data are not in a public archive.",
+   "access": "open",
+   "country": [
+    "Japan"
+   ],
+   "missions": [
+    "SLIM"
+   ],
+   "instruments": [
+    "MBC"
+   ],
+   "data_types": [
+    "imagery",
+    "multispectral"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2024",
+   "tags": [
+    "slim",
+    "moon sniper"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "mexlab-planetmaps",
+   "name": "PlanetMaps.ru - MIIGAiK planetary atlas and maps",
+   "provider": "Moscow State University of Geodesy and Cartography (MIIGAiK), MExLab",
+   "agency": [
+    "MIIGAiK"
+   ],
+   "kind": "portal",
+   "url": "https://planetmaps.ru/",
+   "targets": [
+    "moon",
+    "mars",
+    "venus",
+    "mercury",
+    "phobos"
+   ],
+   "description": "Russian-language site of the MIIGAiK Extraterrestrial Laboratory (MExLab) presenting online versions of its planetary atlases and map products (Moon, Mars, Phobos, Venus, Mercury). Some products derive from Soviet and Russian missions.",
+   "access": "open",
+   "country": [
+    "Russia"
+   ],
+   "data_types": [
+    "map",
+    "mosaic"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "miigaik",
+    "mexlab",
+    "atlas",
+    "russian",
+    "planetary cartography"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "planmap",
+   "name": "PLANMAP - Planetary Mapping project",
+   "provider": "Europlanet / H2020 PLANMAP",
+   "agency": [
+    "Europlanet",
+    "Univ. Padova"
+   ],
+   "kind": "portal",
+   "url": "https://planmap.eu/",
+   "targets": [
+    "mars",
+    "moon",
+    "mercury",
+    "ceres",
+    "vesta"
+   ],
+   "description": "Horizon 2020 project producing geologic maps and mapping tools for Mars, Moon, Mercury and others; the site lists the maps, a catalogue and publications. Map data are open.",
+   "access": "open",
+   "data_types": [
+    "map",
+    "mosaic"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "tags": [
+    "planmap",
+    "geologic maps"
+   ],
+   "country": [
+    "Italy",
+    "Europe"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "spaceil-beresheet",
+   "name": "SpaceIL Beresheet lunar lander (Israel)",
+   "provider": "SpaceIL",
+   "agency": [
+    "SpaceIL"
+   ],
+   "kind": "raw-feed",
+   "url": "https://www.spaceil.com/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Israel's Beresheet lander reached lunar orbit and attempted landing in April 2019; the site shows mission images including a Moon selfie and the final descent frames. Hebrew/English; no raw archive.",
+   "access": "open",
+   "country": [
+    "Israel"
+   ],
+   "missions": [
+    "Beresheet"
+   ],
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "browse"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "temporal": "2019",
+   "tags": [
+    "beresheet",
+    "spaceil"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "sshade",
+   "name": "SSHADE - Solid Spectroscopy Hosting Architecture of Databases and Expertise",
+   "provider": "OSUG / Universite Grenoble Alpes (CNRS)",
+   "agency": [
+    "CNRS",
+    "OSUG",
+    "Europlanet"
+   ],
+   "kind": "archive",
+   "url": "https://www.sshade.eu/",
+   "targets": [
+    "mars",
+    "titan",
+    "moon",
+    "comets",
+    "asteroids",
+    "mercury",
+    "enceladus"
+   ],
+   "description": "European database infrastructure of laboratory spectra (UV to far-IR) of solids relevant to planetary and astrophysical science: ices, minerals, meteorites, organics. Includes tools for searching by material, spectrum type and wavelength; downloads are free.",
+   "access": "open",
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir",
+    "far-ir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "CSV"
+   ],
+   "protocols": [
+    "web-ui",
+    "https",
+    "tap"
+   ],
+   "tags": [
+    "sshade",
+    "ices",
+    "minerals",
+    "grenoble"
+   ],
+   "country": [
+    "France"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "tianwen1-data",
+   "name": "Tianwen-1 / Zhurong data release",
+   "provider": "NAOC / CNSA",
+   "agency": [
+    "CNSA",
+    "NAOC"
+   ],
+   "kind": "dataset",
+   "url": "https://moon.bao.ac.cn/",
+   "targets": [
+    "mars"
+   ],
+   "description": "Tianwen-1 orbiter (HiRIC, MoRIC cameras, spectrometers, radar) and Zhurong rover data (navigation, terrain, multispectral cameras, subsurface radar) of Utopia Planitia, released through the CLPDS Mars section. Public availability of the full data set is only partly documented, so check the portal.",
+   "access": "free-registration",
+   "country": [
+    "China"
+   ],
+   "missions": [
+    "Tianwen-1",
+    "Zhurong"
+   ],
+   "instruments": [
+    "HiRIC",
+    "MoRIC",
+    "MarSCI",
+    "MSCam"
+   ],
+   "data_types": [
+    "imagery",
+    "spectra",
+    "radar",
+    "dem"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "radar"
+   ],
+   "levels": [
+    "raw",
+    "calibrated",
+    "derived"
+   ],
+   "formats": [
+    "PDS4"
+   ],
+   "protocols": [
+    "web-ui"
+   ],
+   "resolution": "HiRIC 0.5 m/px (best)",
+   "temporal": "2021-present",
+   "tags": [
+    "tianwen-1",
+    "zhurong",
+    "hiric"
+   ],
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "usgs-ard-kaguya-tc",
+   "name": "Kaguya Terrain Camera analysis-ready data (USGS STAC)",
+   "provider": "USGS Astrogeology Science Center (Kaguya TC data from JAXA)",
+   "agency": [
+    "USGS",
+    "JAXA"
+   ],
+   "kind": "dataset",
+   "url": "https://stac.astrogeology.usgs.gov/arddocs/data/moon/kaguyatc/",
+   "targets": [
+    "moon"
+   ],
+   "description": "Kaguya (SELENE) Terrain Camera map-projected mosaics and DTM-based products repackaged as cloud-optimised GeoTIFFs and served from the USGS Astrogeology STAC catalog. Easier to view and stream than the PDS3 originals.",
+   "access": "open",
+   "country": [
+    "Japan",
+    "USA"
+   ],
+   "missions": [
+    "SELENE/Kaguya"
+   ],
+   "instruments": [
+    "TC"
+   ],
+   "data_types": [
+    "mosaic",
+    "dem",
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "COG",
+    "GeoTIFF"
+   ],
+   "protocols": [
+    "stac",
+    "https"
+   ],
+   "resolution": "~10 m/px",
+   "tags": [
+    "kaguya",
+    "stac",
+    "cog",
+    "tc"
+   ],
+   "connector": "stac:usgs-astro",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-apis",
+   "name": "APIS - Auroral Planetary Imaging and Spectroscopy",
+   "provider": "Observatoire de Paris (LESIA) / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/apis/q/epn_core",
+   "targets": [
+    "jupiter",
+    "saturn",
+    "io",
+    "ganymede",
+    "europa"
+   ],
+   "description": "Database of HST (and some other) UV and visible auroral images and spectra of Jupiter, Saturn and the Galilean-moon footprints, accessed via EPN-TAP. Mostly calibrated FITS from the MAST archive with added metadata.",
+   "access": "open",
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "missions": [
+    "HST"
+   ],
+   "tags": [
+    "apis",
+    "aurora",
+    "hst",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-bdip",
+   "name": "BDIP - historical planetary images (Pic du Midi)",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/bdip/q/epn_core",
+   "targets": [
+    "mars",
+    "jupiter",
+    "saturn",
+    "moon",
+    "venus",
+    "mercury"
+   ],
+   "description": "Digitised historical observations and drawings of planets from the Pic du Midi and Meudon observatories, searchable via EPN-TAP. Of interest for long-timescale planetary monitoring.",
+   "access": "open",
+   "data_types": [
+    "imagery",
+    "historical"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG",
+    "FITS"
+   ],
+   "temporal": "early 20th century",
+   "tags": [
+    "bdip",
+    "pic du midi",
+    "historical",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-csa",
+   "name": "CSA - Comet Simulation/Image Archive (VESPA)",
+   "provider": "Europlanet VESPA",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://ivo.vespa.eu/csa/q/epn_core",
+   "targets": [
+    "comets",
+    "67p",
+    "halley"
+   ],
+   "description": "EPN-TAP service listing comet image data in the VESPA infrastructure. See the service page for exact content and coverage.",
+   "access": "open",
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "tags": [
+    "comet",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-gmap",
+   "name": "GMAP - geological maps (VESPA)",
+   "provider": "Europlanet / PlanMap",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/gmap/q/epn_core",
+   "targets": [
+    "mars",
+    "moon",
+    "mercury",
+    "venus"
+   ],
+   "description": "EPN-TAP index of planetary geological and geomorphological maps (GMAP/PlanMap) with footprints and links to GIS-ready map files.",
+   "links": [
+    {
+     "label": "GMAP project site",
+     "url": "https://www.europlanet-gmap.eu/"
+    }
+   ],
+   "access": "open",
+   "data_types": [
+    "map"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "KML"
+   ],
+   "tags": [
+    "gmap",
+    "geologic map",
+    "planmap",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-hrsc3nd",
+   "name": "HRSC level-3 / nadir images (VESPA, FU Berlin)",
+   "provider": "Freie Universitaet Berlin",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "api",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://fu-berlin.planet.hrsc/hrsc3nd/epn",
+   "targets": [
+    "mars"
+   ],
+   "description": "EPN-TAP service exposing the HRSC (Mars Express) level 3 map-projected nadir images produced at FU Berlin, with footprints and download links.",
+   "access": "open",
+   "missions": [
+    "Mars Express"
+   ],
+   "instruments": [
+    "HRSC"
+   ],
+   "data_types": [
+    "imagery",
+    "mosaic"
+   ],
+   "spectral": [
+    "visible"
+   ],
+   "levels": [
+    "derived",
+    "mosaic"
+   ],
+   "formats": [
+    "PDS3",
+    "GeoTIFF"
+   ],
+   "tags": [
+    "hrsc",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-hst-planeto",
+   "name": "HST planetary observations (VESPA)",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/hst_planeto/q/epn_core",
+   "targets": [
+    "jupiter",
+    "saturn",
+    "uranus",
+    "neptune",
+    "mars",
+    "pluto",
+    "io",
+    "europa",
+    "ganymede",
+    "callisto",
+    "titan"
+   ],
+   "description": "EPN-TAP index of Hubble Space Telescope observations of solar-system bodies, linking to the data in MAST. Useful to find HST imaging and spectroscopy by target.",
+   "access": "open",
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "FITS"
+   ],
+   "missions": [
+    "HST"
+   ],
+   "tags": [
+    "hst",
+    "hubble",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-juno-cassini-radio",
+   "name": "Planetary radio (Cassini RPWS, Juno Waves, NDA) via VESPA",
+   "provider": "Observatoire de Paris (MASER)",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.maser/juno_waves/epn/epn_core",
+   "targets": [
+    "jupiter",
+    "saturn",
+    "sun"
+   ],
+   "description": "EPN-TAP services for radio dynamic spectra of Jupiter and Saturn: Juno/Waves, Cassini RPWS/HFR and Nancay Decameter Array.",
+   "links": [
+    {
+     "label": "Cassini Jupiter RPWS",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.maser/cassini_jupiter/epn/epn_core"
+    },
+    {
+     "label": "Nancay NDA",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.nancay/nda/q/epn_core"
+    }
+   ],
+   "access": "open",
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "radio"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "CSV",
+    "FITS"
+   ],
+   "tags": [
+    "maser",
+    "radio astronomy",
+    "juno waves",
+    "vespa",
+    "epn-tap"
+   ],
+   "missions": [
+    "Juno",
+    "Cassini-Huygens"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-lunar-craters",
+   "name": "Lunar, Mars and Mercury crater catalogues (VESPA)",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/lunar_craters/q/epn_core",
+   "targets": [
+    "moon",
+    "mars",
+    "mercury"
+   ],
+   "description": "EPN-TAP crater catalogues for the Moon, Mars (Robbins/Lagain databases) and Mercury, returning crater locations and sizes.",
+   "links": [
+    {
+     "label": "Mars craters",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/mars_craters/q/epn_core"
+    },
+    {
+     "label": "Mercury craters",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/mercury_craters/q/epn_core"
+    }
+   ],
+   "access": "open",
+   "data_types": [
+    "map"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "formats": [
+    "CSV"
+   ],
+   "tags": [
+    "craters",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-mascs",
+   "name": "MESSENGER MASCS VNIR spectra (VESPA, DLR)",
+   "provider": "DLR Institute of Planetary Research",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://dlr.de/mascs_vnir/q/epn_core",
+   "targets": [
+    "mercury"
+   ],
+   "description": "EPN-TAP service for MESSENGER MASCS visible-near-infrared spectra of Mercury's surface, with calibrated reflectance and geometry.",
+   "access": "open",
+   "missions": [
+    "MESSENGER"
+   ],
+   "instruments": [
+    "MASCS"
+   ],
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "tags": [
+    "mascs",
+    "messenger",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-nomad-vex",
+   "name": "NOMAD (Mars) and SOIR (Venus) atmospheric profiles (VESPA)",
+   "provider": "BIRA-IASB",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://bira-iasb/nomad/q/epn_core",
+   "targets": [
+    "mars",
+    "venus"
+   ],
+   "description": "EPN-TAP services from BIRA-IASB: NOMAD (ExoMars TGO) vertical profiles of Mars and SOIR (Venus Express) profiles of Venus's atmosphere.",
+   "links": [
+    {
+     "label": "SOIR Venus profiles",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://bira-iasb/soir/soir_q/epn_core"
+    }
+   ],
+   "access": "open",
+   "missions": [
+    "ExoMars TGO",
+    "Venus Express"
+   ],
+   "data_types": [
+    "atmosphere",
+    "spectra"
+   ],
+   "spectral": [
+    "nir",
+    "uv"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "tags": [
+    "nomad",
+    "soir",
+    "vespa",
+    "epn-tap"
+   ],
+   "country": [
+    "Belgium"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-omega-cubes",
+   "name": "OMEGA cubes and maps (VESPA, IAS)",
+   "provider": "Institut d'Astrophysique Spatiale (IDOC)",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "api",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://idoc/omegacube",
+   "targets": [
+    "mars"
+   ],
+   "description": "EPN-TAP access to Mars Express OMEGA hyperspectral cubes, with companion service for map-projected products. Provided by IAS (IDOC).",
+   "links": [
+    {
+     "label": "OMEGA maps service",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://idoc/omegamap"
+    }
+   ],
+   "access": "open",
+   "missions": [
+    "Mars Express"
+   ],
+   "instruments": [
+    "OMEGA"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "spectra"
+   ],
+   "spectral": [
+    "visible",
+    "nir",
+    "swir"
+   ],
+   "levels": [
+    "calibrated",
+    "derived"
+   ],
+   "tags": [
+    "omega",
+    "ias",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-planets",
+   "name": "VESPA 'planets' ephemeris-based service",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/planets/q/epn_core",
+   "targets": [
+    "mercury",
+    "venus",
+    "mars",
+    "jupiter",
+    "saturn",
+    "uranus",
+    "neptune"
+   ],
+   "description": "EPN-TAP service for planetary observations/catalogue of planetary properties in the PADC. See the service page for description.",
+   "access": "open",
+   "data_types": [
+    "imagery"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "tags": [
+    "planets",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-psa",
+   "name": "ESA PSA through VESPA",
+   "provider": "ESA / VESPA",
+   "agency": [
+    "ESA",
+    "Europlanet"
+   ],
+   "kind": "api",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://esavo/psa/epntap",
+   "targets": [
+    "mars",
+    "venus",
+    "moon",
+    "67p"
+   ],
+   "description": "VESPA registration of the ESA Planetary Science Archive EPN-TAP service, letting PSA holdings be searched together with other Europlanet services.",
+   "access": "open",
+   "data_types": [
+    "imagery",
+    "spectra"
+   ],
+   "levels": [
+    "raw",
+    "calibrated"
+   ],
+   "tags": [
+    "psa",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-pvol",
+   "name": "PVOL - Planetary Virtual Observatory & Laboratory",
+   "provider": "Universidad del Pais Vasco (UPV/EHU)",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "archive",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://pvol/pvol/q/collection",
+   "targets": [
+    "jupiter",
+    "saturn",
+    "mars",
+    "uranus",
+    "neptune",
+    "venus"
+   ],
+   "description": "Archive of amateur and professional ground-based images of planetary atmospheres (Jupiter and Saturn in particular), with EPN-TAP access. Images are contributed with calibration metadata.",
+   "access": "open",
+   "data_types": [
+    "imagery"
+   ],
+   "spectral": [
+    "visible",
+    "nir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "formats": [
+    "JPEG",
+    "FITS",
+    "PNG"
+   ],
+   "tags": [
+    "pvol",
+    "amateur",
+    "ground-based",
+    "vespa",
+    "epn-tap"
+   ],
+   "country": [
+    "Spain"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-relab",
+   "name": "RELAB spectral library (VESPA)",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/relab/q/epn_core",
+   "targets": [
+    "moon",
+    "mars",
+    "asteroids",
+    "mercury"
+   ],
+   "description": "EPN-TAP access to the Brown University RELAB reflectance spectral library of meteorites, minerals and soils.",
+   "access": "open",
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "tags": [
+    "relab",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-sshade-spectra",
+   "name": "SSHADE spectra (VESPA EPN-TAP)",
+   "provider": "OSUG / CNRS (SSHADE)",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://osug-vo.osug/sshade_spectra/q/epn_core",
+   "targets": [
+    "mars",
+    "titan",
+    "comets",
+    "asteroids",
+    "moon"
+   ],
+   "description": "EPN-TAP view of the SSHADE laboratory spectral database of solids relevant to planetary science and astrophysics (ices, minerals, organics).",
+   "links": [
+    {
+     "label": "SSHADE band list",
+     "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://osug-vo.osug/sshade_bandlist/q/epn_core"
+    }
+   ],
+   "access": "open",
+   "data_types": [
+    "spectra"
+   ],
+   "spectral": [
+    "uv",
+    "visible",
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "tags": [
+    "sshade",
+    "laboratory spectra",
+    "vespa",
+    "epn-tap"
+   ],
+   "country": [
+    "France"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-titan-profiles",
+   "name": "Titan CIRS profiles (VESPA)",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/titan_profiles/q/epn_core",
+   "targets": [
+    "titan"
+   ],
+   "description": "EPN-TAP service for Cassini CIRS-derived atmospheric profiles of Titan.",
+   "access": "open",
+   "missions": [
+    "Cassini-Huygens"
+   ],
+   "instruments": [
+    "CIRS"
+   ],
+   "data_types": [
+    "atmosphere",
+    "spectra"
+   ],
+   "spectral": [
+    "tir"
+   ],
+   "levels": [
+    "derived"
+   ],
+   "tags": [
+    "cirs",
+    "titan",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  },
+  {
+   "id": "vespa-vros-geocor",
+   "name": "VIRTIS-Rosetta geometry on 67P (VESPA)",
+   "provider": "Observatoire de Paris / PADC",
+   "agency": [
+    "Europlanet"
+   ],
+   "kind": "catalog",
+   "url": "https://vespa.obspm.fr/planetary/data/display/?&service_id=ivo://padc.obspm.planeto/vros_geocor/q/epn_core",
+   "targets": [
+    "67p"
+   ],
+   "description": "EPN-TAP service giving geolocated footprints of VIRTIS (Rosetta) observations on the shape model of comet 67P/Churyumov-Gerasimenko.",
+   "access": "open",
+   "missions": [
+    "Rosetta"
+   ],
+   "instruments": [
+    "VIRTIS"
+   ],
+   "data_types": [
+    "hyperspectral",
+    "spectra"
+   ],
+   "spectral": [
+    "nir",
+    "tir"
+   ],
+   "levels": [
+    "calibrated"
+   ],
+   "tags": [
+    "virtis",
+    "67p",
+    "vespa",
+    "epn-tap"
+   ],
+   "protocols": [
+    "tap",
+    "web-ui"
+   ],
+   "connector": "epntap",
+   "verified": "2026-11-05"
+  }
+ ]
+}

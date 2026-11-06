@@ -1,0 +1,4628 @@
+{
+  "domain": "sun-telescopes",
+  "sources": [
+    {
+      "id": "alma-sci-archive",
+      "name": "ALMA Science Archive",
+      "provider": "ESO / NRAO / NAOJ - Joint ALMA Observatory",
+      "agency": [
+        "ESO",
+        "NRAO",
+        "NAOJ"
+      ],
+      "kind": "archive",
+      "url": "https://almascience.org/aq/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "titan",
+        "uranus",
+        "neptune",
+        "pluto",
+        "io",
+        "ceres",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "submm",
+        "microwave"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "binary"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Archive of ALMA submillimeter/millimeter interferometric data, including observations of planets, moons (Io, Titan), comets and asteroids. Searchable with solar-system target tools; calibrated measurement sets and image products after the proprietary period.",
+      "tags": [
+        "alma",
+        "interferometer",
+        "millimeter"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "alpo",
+      "name": "ALPO - Association of Lunar and Planetary Observers",
+      "provider": "ALPO",
+      "agency": [
+        "ALPO"
+      ],
+      "kind": "portal",
+      "url": "https://alpo-astronomy.org/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "mars",
+        "moon",
+        "venus",
+        "mercury",
+        "sun",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "US-based amateur association with observing sections and image galleries for planets, the Moon, the Sun and comets, with long-running observation series and publications. Browse images open; some sections members-only.",
+      "country": [
+        "USA"
+      ],
+      "tags": [
+        "alpo",
+        "amateur",
+        "sections",
+        "jupiter",
+        "saturn",
+        "mars"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "alpo-japan",
+      "name": "ALPO Japan (Association of Lunar and Planetary Observers of Japan)",
+      "provider": "ALPO Japan",
+      "agency": [
+        "ALPO Japan"
+      ],
+      "kind": "archive",
+      "url": "http://alpo-j.sakura.ne.jp/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "moon",
+        "venus"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Japanese amateur association publishing planetary image archives (Mars, Jupiter, Saturn) and observation reports in Japanese and English, with image galleries by apparition.",
+      "country": [
+        "Japan"
+      ],
+      "tags": [
+        "alpo-j",
+        "amateur",
+        "mars",
+        "jupiter",
+        "saturn",
+        "jupiter observing"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "baa",
+      "name": "British Astronomical Association (BAA) Sections",
+      "provider": "British Astronomical Association",
+      "agency": [
+        "BAA"
+      ],
+      "kind": "portal",
+      "url": "https://britastro.org/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "mars",
+        "moon",
+        "venus",
+        "sun",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "UK society with observing sections (Jupiter, Saturn, Mars, Lunar, Mercury and Venus, Solar, Comet) publishing observation archives, drawings and amateur images, and quarterly reports. Some content is members only.",
+      "country": [
+        "UK"
+      ],
+      "tags": [
+        "baa",
+        "amateur",
+        "sections",
+        "jupiter",
+        "mars"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "bass2000",
+      "name": "BASS2000 Solar Archive (Meudon / Tarbes)",
+      "provider": "Observatoire de Paris",
+      "agency": [
+        "Observatoire de Paris",
+        "CNRS"
+      ],
+      "kind": "archive",
+      "url": "https://bass2000.obspm.fr/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "French solar data base of ground-based spectroheliograph and coronal observations including Meudon H-alpha and Ca II K spectroheliograms, and Pic du Midi data. Browse and FITS downloads, with historic digitized series.",
+      "country": [
+        "France"
+      ],
+      "tags": [
+        "bass2000",
+        "meudon",
+        "spectroheliograph",
+        "halpha",
+        "pic du midi"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "bbso",
+      "name": "Big Bear Solar Observatory Data Archive",
+      "provider": "New Jersey Institute of Technology",
+      "agency": [
+        "NJIT",
+        "NSF"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.bbso.njit.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Site of BBSO and the 1.6 m Goode Solar Telescope, with an open archive of H-alpha full-disk images, TiO and NIRIS data. Browse and FITS downloads via the data archive pages.",
+      "tags": [
+        "bbso",
+        "gst",
+        "goode",
+        "big bear",
+        "halpha"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "cadc",
+      "name": "CADC - Canadian Astronomy Data Centre",
+      "provider": "National Research Council Canada",
+      "agency": [
+        "NRC",
+        "CSA"
+      ],
+      "kind": "archive",
+      "url": "https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "submm"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Archive of CFHT (MegaCam, WIRCam), JCMT, Gemini mirror, HST and other data, plus the Solar System Object Information Search and the OSSOS outer-solar-system survey products. Search via web and TAP; proprietary data need login.",
+      "country": [
+        "Canada"
+      ],
+      "tags": [
+        "cadc",
+        "cfht",
+        "megacam",
+        "jcmt",
+        "ossos",
+        "ssois"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "cadc-ssois",
+      "name": "Solar System Object Image Search (CADC SSOIS)",
+      "provider": "Canadian Astronomy Data Centre",
+      "agency": [
+        "NRC",
+        "CSA"
+      ],
+      "kind": "portal",
+      "url": "https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/ssois/",
+      "targets": [
+        "asteroids",
+        "comets",
+        "kbos",
+        "pluto"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Finds archival images that contain a moving solar-system object by ephemeris (from MPC/JPL orbits) across CFHT, HST, Gemini, NOIRLab and other archives.",
+      "country": [
+        "Canada"
+      ],
+      "tags": [
+        "ssois",
+        "moving object",
+        "ephemeris",
+        "small bodies"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "cfa-xrt",
+      "name": "Hinode XRT (X-Ray Telescope) Site",
+      "provider": "Smithsonian Astrophysical Observatory (CfA)",
+      "agency": [
+        "SAO",
+        "NASA",
+        "JAXA"
+      ],
+      "kind": "mission-site",
+      "url": "https://xrt.cfa.harvard.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "XRT team site with the data archive, quicklook, synoptic composites and movies from 2006, plus calibration tools. Level-0 and level-1 FITS can be retrieved.",
+      "missions": [
+        "Hinode"
+      ],
+      "instruments": [
+        "XRT"
+      ],
+      "temporal": "2006-present",
+      "tags": [
+        "xrt",
+        "hinode",
+        "x-ray",
+        "coronal holes"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "chandra-cda",
+      "name": "Chandra Data Archive",
+      "provider": "Chandra X-ray Center, Smithsonian Astrophysical Observatory",
+      "agency": [
+        "NASA",
+        "SAO"
+      ],
+      "kind": "archive",
+      "url": "https://cxc.harvard.edu/cda/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "mars",
+        "venus",
+        "moon",
+        "comets",
+        "sun",
+        "earth"
+      ],
+      "data_types": [
+        "imagery",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Archive of Chandra X-ray Observatory data, including X-ray imaging of Jupiter's aurora, Mars, Venus, comets and the Moon. Search by target with solar-system ephemeris support; FITS event files and images.",
+      "missions": [
+        "Chandra"
+      ],
+      "temporal": "1999-present",
+      "tags": [
+        "chandra",
+        "cxc",
+        "x-ray",
+        "jupiter aurora"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "e-callisto",
+      "name": "e-CALLISTO Solar Radio Spectrometer Network",
+      "provider": "FHNW / ETH Zurich - ESA Space Weather collaboration",
+      "agency": [
+        "FHNW",
+        "ETH"
+      ],
+      "kind": "archive",
+      "url": "https://www.e-callisto.org/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "spectra"
+      ],
+      "spectral": [
+        "radio"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Global network of low-cost solar radio spectrometers with open, freely downloadable daily FITS spectrograms (not images) used for detecting solar radio bursts.",
+      "country": [
+        "Switzerland"
+      ],
+      "tags": [
+        "callisto",
+        "radio bursts",
+        "spectrograms"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-ehst",
+      "name": "eHST - ESA Hubble Science Archive",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://hst.esac.esa.int/ehst/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "ESA's mirror of the Hubble archive with its own search interface, including target-name and solar-system-object searches, TAP/ADQL, and an interactive sky preview.",
+      "missions": [
+        "HST"
+      ],
+      "temporal": "1990-present",
+      "tags": [
+        "ehst",
+        "hubble",
+        "esac",
+        "esdc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-ejwst",
+      "name": "eJWST - ESA JWST Science Archive",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://jwst.esac.esa.int/archive/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "nir",
+        "mwir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "ESA mirror of the JWST archive with web search, moving-target queries and TAP/ADQL access to NIRCam, NIRSpec, MIRI and NIRISS observations.",
+      "missions": [
+        "JWST"
+      ],
+      "temporal": "2022-present",
+      "tags": [
+        "ejwst",
+        "webb",
+        "esac"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-iso",
+      "name": "ISO - Infrared Space Observatory Data Archive",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://www.cosmos.esa.int/web/iso",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "mars",
+        "titan",
+        "comets"
+      ],
+      "data_types": [
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "mwir",
+        "tir",
+        "far-ir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive of ESA's Infrared Space Observatory (1995-1998) with spectra and images including observations of the giant planets, Titan and comets.",
+      "missions": [
+        "ISO"
+      ],
+      "temporal": "1995-1998",
+      "tags": [
+        "iso",
+        "infrared",
+        "legacy"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-proba3",
+      "name": "Proba-3 (ASPIICS Coronagraph)",
+      "provider": "ESA / Centre Spatial de Liege",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.cosmos.esa.int/web/proba-3",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "ESA formation-flying mission launched December 2024 creating an artificial solar eclipse; its ASPIICS coronagraph observes the inner corona. The page links to mission and science data information.",
+      "missions": [
+        "Proba-3"
+      ],
+      "instruments": [
+        "ASPIICS"
+      ],
+      "temporal": "2025-present",
+      "tags": [
+        "proba-3",
+        "aspiics",
+        "coronagraph",
+        "formation flying"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-soar",
+      "name": "Solar Orbiter Archive (SOAR)",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://soar.esac.esa.int/soar/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Official archive of Solar Orbiter science data: EUI, Metis, PHI, SoloHI, SPICE, STIX and in-situ instruments, in FITS and CDF. Web search plus an ADQL TAP service; includes data from the mission's out-of-ecliptic views of the solar poles.",
+      "links": [
+        {
+          "label": "TAP service",
+          "url": "https://soar.esac.esa.int/soar-sl-tap/tap"
+        }
+      ],
+      "missions": [
+        "Solar Orbiter"
+      ],
+      "instruments": [
+        "EUI",
+        "Metis",
+        "PHI",
+        "SoloHI",
+        "SPICE",
+        "STIX"
+      ],
+      "temporal": "2020-present",
+      "tags": [
+        "solar orbiter",
+        "soar",
+        "eui",
+        "phi",
+        "metis",
+        "solohi",
+        "spice",
+        "stix"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esa-soho-archive",
+      "name": "SOHO Science Archive (ESA)",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://www.cosmos.esa.int/web/soho",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "ESA's SOHO site hosting mission data products and documentation for the instruments EIT, LASCO, MDI, CDS, SUMER, UVCS and SWAN.",
+      "missions": [
+        "SOHO"
+      ],
+      "instruments": [
+        "EIT",
+        "LASCO",
+        "MDI",
+        "CDS",
+        "SUMER",
+        "UVCS",
+        "SWAN"
+      ],
+      "temporal": "1995-present",
+      "tags": [
+        "soho",
+        "esac"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "esac-archives",
+      "name": "ESA Archives at ESAC (Astronomy)",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "portal",
+      "url": "https://archives.esac.esa.int/",
+      "targets": [
+        "sun",
+        "jupiter",
+        "saturn",
+        "mars",
+        "comets",
+        "asteroids"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Gateway to ESA's astronomy and heliophysics science archives (HST, JWST, XMM, Herschel, Gaia, SOHO, Solar Orbiter and others) with unified TAP and ADQL services.",
+      "tags": [
+        "esac",
+        "esa archives",
+        "tap"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "eso-archive",
+      "name": "ESO Science Archive Facility",
+      "provider": "European Southern Observatory",
+      "agency": [
+        "ESO"
+      ],
+      "kind": "archive",
+      "url": "https://archive.eso.org/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres",
+        "venus",
+        "mercury"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Archive of VLT/VLTI, VISTA, VST and La Silla data (SPHERE, MUSE, NACO, VISIR, etc.), including solar-system observations such as SPHERE images of Io, Titan and Ceres. Programmatic access through TAP and astroquery; proprietary periods apply.",
+      "country": [
+        "Germany"
+      ],
+      "instruments": [
+        "SPHERE",
+        "MUSE",
+        "NACO",
+        "VISIR",
+        "FORS2"
+      ],
+      "temporal": "1998-present",
+      "tags": [
+        "eso",
+        "vlt",
+        "sphere",
+        "muse",
+        "naco",
+        "archive.eso.org"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "gemini-goa",
+      "name": "Gemini Observatory Archive (GOA)",
+      "provider": "NSF NOIRLab / Gemini Observatory",
+      "agency": [
+        "NSF",
+        "NOIRLab",
+        "Gemini"
+      ],
+      "kind": "archive",
+      "url": "https://archive.gemini.edu/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Archive for Gemini North/South (GMOS, NIRI, GNIRS, GSAOI, GPI, FLAMINGOS-2) with search by object including solar-system targets. Public data free; proprietary data require an account.",
+      "instruments": [
+        "GMOS",
+        "NIRI",
+        "GNIRS",
+        "GSAOI",
+        "GPI",
+        "FLAMINGOS-2"
+      ],
+      "tags": [
+        "gemini",
+        "goa",
+        "cadc",
+        "noirlab"
+      ]
+    },
+    {
+      "id": "hdrl",
+      "name": "NASA Heliophysics Digital Resource Library (HDRL)",
+      "provider": "NASA Goddard Space Flight Center",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "catalog",
+      "url": "https://hdrl.gsfc.nasa.gov/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray",
+        "radio"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "NASA's directory of heliophysics data sets, services and software. A starting point to find datasets of solar and heliospheric imagers across the Heliophysics Data Environment, including SDAC and SPDF holdings.",
+      "tags": [
+        "hdrl",
+        "hdp",
+        "heliophysics data portal",
+        "heliophysics"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "helioviewer",
+      "name": "Helioviewer",
+      "provider": "ESA / NASA Helioviewer Project",
+      "agency": [
+        "ESA",
+        "NASA"
+      ],
+      "kind": "portal",
+      "url": "https://helioviewer.org/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JP2",
+        "PNG",
+        "MP4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Browser-based viewer overlaying multi-mission solar imagery (SDO, SOHO, STEREO, Hinode, PROBA2, GOES SUVI, Solar Orbiter and more) with pan, zoom and movie making from JPEG2000 tiles. A public REST API serves images, JPEG2000 files and movies; the data are derived renderings rather than original FITS.",
+      "links": [
+        {
+          "label": "API v2 docs",
+          "url": "https://api.helioviewer.org/docs/v2/"
+        }
+      ],
+      "resolution": "Native instrument resolution as JPEG2000",
+      "temporal": "1995-present",
+      "tags": [
+        "helioviewer",
+        "solar",
+        "jpeg2000",
+        "movie"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "herschel-hsa",
+      "name": "Herschel Science Archive",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://archives.esac.esa.int/hsa/whsa/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "titan",
+        "comets",
+        "ceres",
+        "kbos"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "far-ir",
+        "submm"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "ESA Herschel Space Observatory (2009-2013) far-infrared/submm photometry and spectroscopy archive, including observations of planets, Titan, comets, Ceres and KBOs. FITS products via the web interface and TAP.",
+      "missions": [
+        "Herschel"
+      ],
+      "instruments": [
+        "PACS",
+        "SPIRE",
+        "HIFI"
+      ],
+      "temporal": "2009-2013",
+      "tags": [
+        "herschel",
+        "hsa",
+        "far-infrared",
+        "pacs",
+        "spire"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "hida-smart",
+      "name": "SMART Telescope Archive (Hida Observatory)",
+      "provider": "Kyoto University Hida Observatory",
+      "agency": [
+        "Kyoto University"
+      ],
+      "kind": "archive",
+      "url": "https://www.hida.kyoto-u.ac.jp/SMART/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Solar Magnetic Activity Research Telescope at Hida Observatory, Japan, with a public archive of full-disk H-alpha images (multiple wavelengths across the line) and vector magnetograms since 2005.",
+      "country": [
+        "Japan"
+      ],
+      "temporal": "2005-present",
+      "tags": [
+        "smart",
+        "hida",
+        "kyoto",
+        "halpha"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "inaf-metis",
+      "name": "Metis Coronagraph (Solar Orbiter) Team Site",
+      "provider": "INAF / Italian Space Agency",
+      "agency": [
+        "INAF",
+        "ASI"
+      ],
+      "kind": "mission-site",
+      "url": "https://metis.oato.inaf.it/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Team site for the Metis dual-band coronagraph on Solar Orbiter (polarized visible light and HI Lyman-alpha UV) with data descriptions and results. Calibrated data are released through the SOAR archive.",
+      "country": [
+        "Italy"
+      ],
+      "missions": [
+        "Solar Orbiter"
+      ],
+      "instruments": [
+        "Metis"
+      ],
+      "temporal": "2020-present",
+      "tags": [
+        "metis",
+        "coronagraph",
+        "solar orbiter"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "irsa",
+      "name": "IRSA - NASA/IPAC Infrared Science Archive",
+      "provider": "Caltech IPAC",
+      "agency": [
+        "NASA",
+        "IPAC"
+      ],
+      "kind": "archive",
+      "url": "https://irsa.ipac.caltech.edu/",
+      "targets": [
+        "asteroids",
+        "comets",
+        "kbos",
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "spectra"
+      ],
+      "spectral": [
+        "nir",
+        "mwir",
+        "tir",
+        "far-ir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap",
+        "rest"
+      ],
+      "description": "Archive of infrared and submillimeter missions: WISE/NEOWISE, Spitzer, SPHEREx, 2MASS, Planck, Herschel products, ZTF and more. Includes solar-system oriented tools such as the NEOWISE moving-object catalogs and images, plus TAP and image servers.",
+      "tags": [
+        "irsa",
+        "ipac",
+        "wise",
+        "neowise",
+        "spitzer",
+        "spherex",
+        "ztf",
+        "2mass",
+        "gator"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "irsa-akari",
+      "name": "AKARI Infrared Astronomy Satellite Archive (IRSA)",
+      "provider": "JAXA / Caltech IPAC",
+      "agency": [
+        "JAXA",
+        "IPAC"
+      ],
+      "kind": "archive",
+      "url": "https://irsa.ipac.caltech.edu/Missions/akari.html",
+      "targets": [
+        "asteroids",
+        "comets",
+        "jupiter",
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "thermal"
+      ],
+      "spectral": [
+        "mwir",
+        "tir",
+        "far-ir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "AKARI all-sky mid/far-infrared survey images and catalogs (2006-2011), including data on asteroid thermal emission, hosted at IRSA.",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "AKARI"
+      ],
+      "temporal": "2006-2011",
+      "tags": [
+        "akari",
+        "all-sky",
+        "infrared"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "irsa-irtf",
+      "name": "IRTF Archive (IRSA)",
+      "provider": "NASA Infrared Telescope Facility / IPAC",
+      "agency": [
+        "NASA",
+        "IPAC"
+      ],
+      "kind": "archive",
+      "url": "https://irsa.ipac.caltech.edu/Missions/irtf.html",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres",
+        "venus",
+        "mercury",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "nir",
+        "mwir",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive of NASA IRTF (Mauna Kea) observations: SpeX, NSFCAM2, MIRSI, TEXES, iSHELL and others, widely used for planetary and asteroid spectroscopy and imaging. Search and download via IRSA, with proprietary periods.",
+      "instruments": [
+        "SpeX",
+        "NSFCAM2",
+        "MIRSI",
+        "TEXES",
+        "iSHELL"
+      ],
+      "tags": [
+        "irtf",
+        "spex",
+        "ishell",
+        "irsa"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "irsa-spherex",
+      "name": "SPHEREx Data (IRSA)",
+      "provider": "Caltech IPAC / NASA",
+      "agency": [
+        "NASA",
+        "IPAC"
+      ],
+      "kind": "archive",
+      "url": "https://irsa.ipac.caltech.edu/Missions/spherex.html",
+      "targets": [
+        "comets",
+        "asteroids",
+        "kbos"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "multispectral"
+      ],
+      "spectral": [
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "NASA SPHEREx all-sky 0.75-5 micron spectral-imaging survey launched March 2025. Quick-release spectral images are served via IRSA, usable for solar-system object spectra such as comets.",
+      "missions": [
+        "SPHEREx"
+      ],
+      "temporal": "2025-present",
+      "tags": [
+        "spherex",
+        "all-sky",
+        "2025"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "irsa-spitzer",
+      "name": "Spitzer Heritage Archive (IRSA)",
+      "provider": "Caltech IPAC / Spitzer Science Center",
+      "agency": [
+        "NASA",
+        "IPAC"
+      ],
+      "kind": "archive",
+      "url": "https://irsa.ipac.caltech.edu/Missions/spitzer.html",
+      "targets": [
+        "comets",
+        "asteroids",
+        "kbos",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "thermal"
+      ],
+      "spectral": [
+        "nir",
+        "mwir",
+        "tir",
+        "far-ir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Archive of Spitzer Space Telescope IRAC, MIPS and IRS data (2003-2020), including thermal-infrared imaging of comets, asteroids, KBOs and planets. Searchable by moving-target ephemeris through the Spitzer Heritage Archive and IRSA.",
+      "missions": [
+        "Spitzer"
+      ],
+      "instruments": [
+        "IRAC",
+        "MIPS",
+        "IRS"
+      ],
+      "temporal": "2003-2020",
+      "tags": [
+        "spitzer",
+        "irac",
+        "mips",
+        "sha"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "isro-pradan-al1",
+      "name": "Aditya-L1 Data Archive (PRADAN)",
+      "provider": "ISRO Space Science Data Centre (ISSDC)",
+      "agency": [
+        "ISRO",
+        "ISSDC"
+      ],
+      "kind": "archive",
+      "url": "https://pradan.issdc.gov.in/al1/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "CSV"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Public archive for Aditya-L1 science data: SUIT near-UV imager, VELC coronagraph, SoLEXS, HEL1OS, ASPEX and PAPA. Downloads need a free PRADAN account; data are largely FITS.",
+      "country": [
+        "India"
+      ],
+      "missions": [
+        "Aditya-L1"
+      ],
+      "instruments": [
+        "SUIT",
+        "VELC",
+        "SoLEXS",
+        "HEL1OS"
+      ],
+      "temporal": "2024-present",
+      "tags": [
+        "aditya-l1",
+        "suit",
+        "velc",
+        "pradan",
+        "issdc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "jaxa-darts-hinode",
+      "name": "DARTS - Hinode Data Archive",
+      "provider": "JAXA ISAS Data ARchives and Transmission System",
+      "agency": [
+        "JAXA",
+        "ISAS"
+      ],
+      "kind": "archive",
+      "url": "https://darts.isas.jaxa.jp/solar/hinode/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible",
+        "uv",
+        "xray"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "JAXA ISAS archive of Hinode science data: SOT (Solar Optical Telescope), XRT (X-ray Telescope) and EIS (EUV Imaging Spectrometer) in FITS from 2006, with search interfaces and HTTP directory trees.",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "Hinode"
+      ],
+      "instruments": [
+        "SOT",
+        "XRT",
+        "EIS"
+      ],
+      "temporal": "2006-present",
+      "tags": [
+        "hinode",
+        "solar-b",
+        "sot",
+        "xrt",
+        "eis",
+        "darts",
+        "jaxa"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "jhelioviewer",
+      "name": "JHelioviewer",
+      "provider": "ESA / Helioviewer Project",
+      "agency": [
+        "ESA",
+        "NASA"
+      ],
+      "kind": "tool",
+      "url": "https://www.jhelioviewer.org/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JP2"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Open-source desktop (Java) tool for visualizing time series of solar images and 3D solar-system context, streaming JPEG2000 data from the Helioviewer servers. Supports multi-layer overlays, differential imaging, magnetic field extrapolation and spacecraft positions.",
+      "tags": [
+        "jhv",
+        "helioviewer",
+        "solar viewer",
+        "java"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "jpl-radar-echo",
+      "name": "JPL Asteroid Radar Research (Goldstone)",
+      "provider": "NASA JPL",
+      "agency": [
+        "NASA",
+        "JPL"
+      ],
+      "kind": "portal",
+      "url": "https://echo.jpl.nasa.gov/",
+      "targets": [
+        "asteroids",
+        "eros",
+        "toutatis",
+        "bennu",
+        "moon",
+        "mercury",
+        "venus",
+        "comets"
+      ],
+      "data_types": [
+        "radar",
+        "imagery",
+        "dem"
+      ],
+      "spectral": [
+        "radar"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "OBJ",
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Site of the Goldstone Solar System Radar group with radar delay-Doppler images and shape models of near-Earth asteroids, plus observation schedules and publications. Includes links to asteroid radar astrometry.",
+      "tags": [
+        "goldstone",
+        "radar images",
+        "delay doppler",
+        "radar",
+        "arecibo",
+        "asteroid radar",
+        "delay-doppler"
+      ],
+      "verified": "2026-11-05",
+      "country": [
+        "USA"
+      ],
+      "links": [
+        {
+          "label": "Asteroid shape models",
+          "url": "https://echo.jpl.nasa.gov/asteroids/shapes/shapes.html"
+        }
+      ]
+    },
+    {
+      "id": "jsoc-sdo",
+      "name": "JSOC - SDO Science Data (AIA, HMI, EVE)",
+      "provider": "Stanford University / LMSAL Joint Science Operations Center",
+      "agency": [
+        "NASA",
+        "Stanford",
+        "LMSAL"
+      ],
+      "kind": "archive",
+      "url": "http://jsoc.stanford.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral",
+        "polarimetry"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Primary archive of SDO science data: AIA full-disk EUV/UV images and HMI magnetograms, Dopplergrams and continuum intensity from 2010 onward. Queried through the JSOC lookdata form or the DRMS interfaces (drms Python package); exports are staged as FITS and require a registered email address.",
+      "links": [
+        {
+          "label": "Lookdata (data search)",
+          "url": "http://jsoc.stanford.edu/ajax/lookdata.html"
+        },
+        {
+          "label": "Data export",
+          "url": "http://jsoc.stanford.edu/ajax/exportdata.html"
+        }
+      ],
+      "missions": [
+        "SDO"
+      ],
+      "instruments": [
+        "AIA",
+        "HMI",
+        "EVE"
+      ],
+      "resolution": "4096x4096 px, 0.6 arcsec/px; 12 s (EUV) / 45 s cadence",
+      "temporal": "2010-present",
+      "tags": [
+        "sdo",
+        "aia",
+        "hmi",
+        "drms",
+        "solar dynamics observatory",
+        "magnetogram"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "kis-gregor-sdc",
+      "name": "GREGOR / KIS Solar Data Center",
+      "provider": "Leibniz Institute for Solar Physics (KIS)",
+      "agency": [
+        "KIS"
+      ],
+      "kind": "archive",
+      "url": "https://sdc.leibniz-kis.de/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Science data center for the GREGOR solar telescope and other KIS instruments (VTT, ChroTel), providing high-resolution solar imaging and spectropolarimetry from Tenerife in FITS.",
+      "country": [
+        "Germany"
+      ],
+      "tags": [
+        "gregor",
+        "vtt",
+        "chrotel",
+        "kis",
+        "tenerife"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "kodai-kso",
+      "name": "Kodaikanal Solar Observatory Digitized Archive",
+      "provider": "Indian Institute of Astrophysics",
+      "agency": [
+        "IIA"
+      ],
+      "kind": "archive",
+      "url": "https://kso.iiap.res.in/data",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Digitized photographic solar archive from 1904 onward (white-light, Ca II K, H-alpha) from Kodaikanal Observatory, one of the longest continuous solar image series, plus modern digital observations.",
+      "country": [
+        "India"
+      ],
+      "temporal": "1904-present",
+      "tags": [
+        "kodaikanal",
+        "kso",
+        "iia",
+        "historical solar",
+        "ca ii k"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "kso-cesar",
+      "name": "Kanzelhoehe Observatory Data Archive (CESAR)",
+      "provider": "University of Graz",
+      "agency": [
+        "Univ. Graz"
+      ],
+      "kind": "archive",
+      "url": "https://cesar.kso.ac.at/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive of the Kanzelhoehe Observatory (Austria): daily full-disk H-alpha, white-light and Ca II K images in FITS, plus flare and filament event data. Open download via the CESAR web interface.",
+      "country": [
+        "Austria"
+      ],
+      "tags": [
+        "kanzelhoehe",
+        "kso",
+        "cesar",
+        "halpha",
+        "graz"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lco-archive",
+      "name": "Las Cumbres Observatory Science Archive",
+      "provider": "Las Cumbres Observatory",
+      "agency": [
+        "LCO"
+      ],
+      "kind": "archive",
+      "url": "https://archive.lco.global/",
+      "targets": [
+        "asteroids",
+        "comets",
+        "moon",
+        "jupiter",
+        "mars",
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Archive of all LCO global telescope network images (0.4 m to 2 m) including NEO follow-up, comet monitoring (LOOK project) and education data. API-based search and download; public after the proprietary period, with a free account for downloading.",
+      "tags": [
+        "lco",
+        "las cumbres",
+        "look",
+        "neo followup"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lmsal-hek",
+      "name": "Heliophysics Event Knowledgebase (HEK)",
+      "provider": "Lockheed Martin Solar and Astrophysics Laboratory",
+      "agency": [
+        "NASA",
+        "LMSAL"
+      ],
+      "kind": "catalog",
+      "url": "https://www.lmsal.com/hek/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "uv",
+        "xray"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Searchable catalog of solar events (flares, filaments, active regions, coronal holes, CMEs) with links to the corresponding imagery, accessible via web and REST API. Helps locate which images to download for an event.",
+      "tags": [
+        "hek",
+        "flares",
+        "events",
+        "active regions"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lmsal-iris",
+      "name": "IRIS - Interface Region Imaging Spectrograph",
+      "provider": "Lockheed Martin Solar and Astrophysics Laboratory",
+      "agency": [
+        "NASA",
+        "LMSAL"
+      ],
+      "kind": "mission-site",
+      "url": "https://iris.lmsal.com/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Mission site of NASA's IRIS with the observation catalog, slit-jaw images and spectrograph rasters in FITS, movies and SolarSoft tools. Level-2 data cover chromosphere and transition-region lines (Mg II, C II, Si IV).",
+      "links": [
+        {
+          "label": "Data access",
+          "url": "https://iris.lmsal.com/data.html"
+        }
+      ],
+      "missions": [
+        "IRIS"
+      ],
+      "instruments": [
+        "IRIS SJI",
+        "IRIS spectrograph"
+      ],
+      "temporal": "2013-present",
+      "tags": [
+        "iris",
+        "chromosphere",
+        "slit-jaw"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lmsal-sot",
+      "name": "Hinode SOT Team Site (LMSAL)",
+      "provider": "Lockheed Martin Solar and Astrophysics Laboratory",
+      "agency": [
+        "LMSAL",
+        "NASA",
+        "JAXA"
+      ],
+      "kind": "mission-site",
+      "url": "https://sot.lmsal.com/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "LMSAL's Hinode SOT site with Filtergraph and Spectro-Polarimeter data, the SOT catalog, quicklook images and level-0/1 FITS.",
+      "missions": [
+        "Hinode"
+      ],
+      "instruments": [
+        "SOT",
+        "FG",
+        "SP"
+      ],
+      "temporal": "2006-present",
+      "tags": [
+        "sot",
+        "hinode",
+        "spectropolarimeter"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lmsal-trace",
+      "name": "TRACE (Transition Region and Coronal Explorer)",
+      "provider": "Lockheed Martin Solar and Astrophysics Laboratory",
+      "agency": [
+        "NASA",
+        "LMSAL"
+      ],
+      "kind": "archive",
+      "url": "https://trace.lmsal.com/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive and movies of NASA's TRACE EUV/UV imager (1998-2010), giving 1 arcsec images of the corona and transition region. Data also searchable through the VSO.",
+      "missions": [
+        "TRACE"
+      ],
+      "temporal": "1998-2010",
+      "tags": [
+        "trace",
+        "transition region"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "lofar-lta",
+      "name": "LOFAR Long Term Archive",
+      "provider": "ASTRON / LOFAR",
+      "agency": [
+        "ASTRON"
+      ],
+      "kind": "archive",
+      "url": "https://www.astron.nl/telescopes/lofar/",
+      "targets": [
+        "sun",
+        "jupiter"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "radio"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "binary",
+        "FITS"
+      ],
+      "access": "free-registration",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Long-term archive of LOFAR low-frequency radio observations, including solar and Jupiter decametre data. Access via the LTA catalog; large data volumes with staging, and an account for retrieval.",
+      "country": [
+        "Netherlands"
+      ],
+      "tags": [
+        "lofar",
+        "radio",
+        "low frequency"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mast",
+      "name": "MAST - Barbara A. Mikulski Archive for Space Telescopes",
+      "provider": "Space Telescope Science Institute",
+      "agency": [
+        "NASA",
+        "STScI"
+      ],
+      "kind": "archive",
+      "url": "https://archive.stsci.edu/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres",
+        "venus",
+        "mercury",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "multispectral"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest",
+        "tap"
+      ],
+      "description": "Main archive for HST, JWST, TESS, Kepler, GALEX, IUE, FUSE and many high-level science products. Observations of planets, moons, comets and small bodies are found by moving-target (solar-system object) search in the MAST Portal or via astroquery and the MAST API.",
+      "links": [
+        {
+          "label": "MAST Portal",
+          "url": "https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html"
+        },
+        {
+          "label": "MAST API docs",
+          "url": "https://mast.stsci.edu/api/v0/"
+        }
+      ],
+      "connector": "mast",
+      "tags": [
+        "mast",
+        "stsci",
+        "hubble",
+        "jwst",
+        "astroquery",
+        "moving target"
+      ],
+      "temporal": "1990-present",
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mast-hst",
+      "name": "Hubble Space Telescope Archive (MAST)",
+      "provider": "Space Telescope Science Institute",
+      "agency": [
+        "NASA",
+        "STScI"
+      ],
+      "kind": "archive",
+      "url": "https://archive.stsci.edu/hst/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Hubble observations since 1990 in raw and calibrated FITS, including decades of planetary imaging: Jupiter, Saturn, Uranus, Neptune, Pluto, Mars, comets and asteroids. Search with target names or solar-system ephemeris (moving-target) search.",
+      "missions": [
+        "HST"
+      ],
+      "instruments": [
+        "WFC3",
+        "ACS",
+        "WFPC2",
+        "STIS",
+        "NICMOS"
+      ],
+      "temporal": "1990-present",
+      "tags": [
+        "hst",
+        "hubble",
+        "wfpc2",
+        "wfc3",
+        "acs"
+      ],
+      "verified": "2026-11-05",
+      "connector": "mast"
+    },
+    {
+      "id": "mast-iue",
+      "name": "International Ultraviolet Explorer Archive (MAST)",
+      "provider": "Space Telescope Science Institute",
+      "agency": [
+        "NASA",
+        "ESA",
+        "STScI"
+      ],
+      "kind": "archive",
+      "url": "https://archive.stsci.edu/iue/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "mars",
+        "venus",
+        "comets",
+        "io",
+        "uranus",
+        "neptune"
+      ],
+      "data_types": [
+        "spectra"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Legacy archive of IUE UV spectra and images (1978-1996) with observations of planets, comets and moons such as Io's torus. Downloadable FITS spectra.",
+      "missions": [
+        "IUE"
+      ],
+      "temporal": "1978-1996",
+      "tags": [
+        "iue",
+        "ultraviolet",
+        "legacy"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mast-jwst",
+      "name": "James Webb Space Telescope Archive (MAST)",
+      "provider": "Space Telescope Science Institute",
+      "agency": [
+        "NASA",
+        "STScI",
+        "ESA",
+        "CSA"
+      ],
+      "kind": "archive",
+      "url": "https://archive.stsci.edu/missions-and-data/jwst",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres",
+        "mars"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "nir",
+        "mwir",
+        "tir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "JWST data (NIRCam, NIRSpec, MIRI, NIRISS) from 2022, including solar-system programs: Jupiter, Saturn, Uranus, Neptune, Titan, Pluto, Kuiper Belt objects, comets and asteroids. Exclusive-access periods apply to some programs; public data are free.",
+      "missions": [
+        "JWST"
+      ],
+      "instruments": [
+        "NIRCam",
+        "NIRSpec",
+        "MIRI",
+        "NIRISS"
+      ],
+      "temporal": "2022-present",
+      "tags": [
+        "jwst",
+        "webb",
+        "nircam",
+        "miri"
+      ],
+      "verified": "2026-11-05",
+      "connector": "mast"
+    },
+    {
+      "id": "mlso-hao",
+      "name": "Mauna Loa Solar Observatory (MLSO) Data",
+      "provider": "NCAR High Altitude Observatory",
+      "agency": [
+        "NCAR",
+        "HAO",
+        "NSF"
+      ],
+      "kind": "archive",
+      "url": "https://mlso.hao.ucar.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "MLSO operates the K-Cor and UCoMP coronagraphs, the PICS H-alpha imager and earlier CoMP; archives of coronal polarized brightness and magnetic data with browse images and movies. FITS from the MLSO data server.",
+      "missions": [
+        "MLSO"
+      ],
+      "instruments": [
+        "K-Cor",
+        "UCoMP",
+        "CoMP",
+        "PICS"
+      ],
+      "tags": [
+        "mlso",
+        "k-cor",
+        "ucomp",
+        "comp",
+        "coronagraph",
+        "hao"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mps-solo-phi",
+      "name": "Solar Orbiter PHI Team Site (MPS)",
+      "provider": "Max Planck Institute for Solar System Research",
+      "agency": [
+        "MPS",
+        "ESA"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.mps.mpg.de/solar-physics/solar-orbiter-phi",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "MPS page for the Polarimetric and Helioseismic Imager on Solar Orbiter, producing vector magnetograms and Doppler maps of the photosphere, including views of the Sun's poles. Data are distributed via SOAR.",
+      "country": [
+        "Germany"
+      ],
+      "missions": [
+        "Solar Orbiter"
+      ],
+      "instruments": [
+        "PHI"
+      ],
+      "temporal": "2020-present",
+      "tags": [
+        "phi",
+        "vector magnetogram",
+        "solar orbiter",
+        "mps"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "mssl-hinode-eis",
+      "name": "Hinode EIS Team Site (MSSL/UCL)",
+      "provider": "Mullard Space Science Laboratory, UCL",
+      "agency": [
+        "UKSA",
+        "UCL"
+      ],
+      "kind": "mission-site",
+      "url": "https://solarb.mssl.ucl.ac.uk/SolarB/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "UK EIS team site with the EUV Imaging Spectrometer data catalog, study descriptions, raster data and software notes. Data are also in DARTS and the VSO.",
+      "country": [
+        "UK"
+      ],
+      "missions": [
+        "Hinode"
+      ],
+      "instruments": [
+        "EIS"
+      ],
+      "temporal": "2006-present",
+      "tags": [
+        "eis",
+        "hinode",
+        "euv spectrometer"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nancay-rh",
+      "name": "Nancay Radioheliograph",
+      "provider": "Observatoire de Paris - Station de radioastronomie de Nancay",
+      "agency": [
+        "Observatoire de Paris",
+        "CNRS"
+      ],
+      "kind": "archive",
+      "url": "https://www.obs-nancay.fr/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "radio"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "French radioheliograph imaging the solar corona at meter wavelengths (150-450 MHz); images and dynamic spectra are available from the Nancay solar data pages.",
+      "country": [
+        "France"
+      ],
+      "tags": [
+        "nancay",
+        "radioheliograph",
+        "meter wave"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nao-hinode",
+      "name": "Hinode Science Center Japan (NAOJ)",
+      "provider": "National Astronomical Observatory of Japan",
+      "agency": [
+        "NAOJ",
+        "JAXA"
+      ],
+      "kind": "mission-site",
+      "url": "https://hinode.nao.ac.jp/en/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible",
+        "xray",
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Japanese Hinode Science Center with mission news, instrument descriptions, observation planning and data access links.",
+      "country": [
+        "Japan"
+      ],
+      "missions": [
+        "Hinode"
+      ],
+      "tags": [
+        "hinode",
+        "naoj",
+        "solar-b"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nao-norh",
+      "name": "Nobeyama Radioheliograph (NoRH)",
+      "provider": "National Astronomical Observatory of Japan",
+      "agency": [
+        "NAOJ"
+      ],
+      "kind": "archive",
+      "url": "https://solar.nro.nao.ac.jp/norh/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "radio",
+        "microwave"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive of the Nobeyama Radioheliograph imaging the full Sun at 17 and 34 GHz from 1992, plus the radio polarimeters. Daily synthesized images and FITS are downloadable.",
+      "country": [
+        "Japan"
+      ],
+      "temporal": "1992-2020",
+      "tags": [
+        "norh",
+        "nobeyama",
+        "radioheliograph",
+        "naoj"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "naoj-mitaka-solar",
+      "name": "NAOJ Mitaka Solar Observatory Database",
+      "provider": "National Astronomical Observatory of Japan",
+      "agency": [
+        "NAOJ"
+      ],
+      "kind": "archive",
+      "url": "https://solarwww.mtk.nao.ac.jp/en/database.html",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "historical",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NAOJ solar database including digitized historical sunspot drawings and photographs from Mitaka (from the 1920s), spectroheliograms, and the Solar Flare Telescope's H-alpha, magnetogram and continuum data.",
+      "country": [
+        "Japan"
+      ],
+      "temporal": "1927-present",
+      "tags": [
+        "mitaka",
+        "naoj",
+        "sunspot",
+        "solar flare telescope",
+        "historical"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-hla",
+      "name": "Hubble Legacy Archive (HLA)",
+      "provider": "Space Telescope Science Institute / ESAC / CADC",
+      "agency": [
+        "NASA",
+        "ESA",
+        "STScI"
+      ],
+      "kind": "archive",
+      "url": "https://hla.stsci.edu/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "mars",
+        "pluto",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "mosaic"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "derived",
+        "mosaic"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Enhanced, combined and mosaicked Hubble images and source lists produced from HST archive data, including images of solar-system targets. Legacy interface; much of the content now lives in MAST.",
+      "tags": [
+        "hla",
+        "hubble legacy"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nasa-sdac",
+      "name": "Solar Data Analysis Center (SDAC)",
+      "provider": "NASA Goddard Space Flight Center",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "archive",
+      "url": "https://umbra.nascom.nasa.gov/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NASA's SDAC server with SolarSoft, mirror archives of SOHO, TRACE, RHESSI, Yohkoh, Hinode and other solar data trees, plus documentation of solar data analysis software.",
+      "tags": [
+        "sdac",
+        "solarsoft",
+        "umbra",
+        "nascom"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nju-chase",
+      "name": "CHASE / Xihe Data (SSDC, Nanjing University)",
+      "provider": "Nanjing University Solar Science Data Center",
+      "agency": [
+        "CNSA",
+        "NJU"
+      ],
+      "kind": "archive",
+      "url": "https://ssdc.nju.edu.cn/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "spectra",
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Data center for the CHASE (Xihe) H-alpha imaging spectrograph launched in 2021, giving full-Sun raster spectra in H-alpha and Fe I bands. Level-1 and level-2 FITS data.",
+      "country": [
+        "China"
+      ],
+      "missions": [
+        "CHASE"
+      ],
+      "instruments": [
+        "HIS"
+      ],
+      "temporal": "2021-present",
+      "tags": [
+        "chase",
+        "xihe",
+        "halpha",
+        "h-alpha"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "noaa-goes-suvi",
+      "name": "GOES-R SUVI Solar Ultraviolet Imager Data (NCEI)",
+      "provider": "NOAA National Centers for Environmental Information",
+      "agency": [
+        "NOAA",
+        "NCEI"
+      ],
+      "kind": "archive",
+      "url": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "uv",
+        "xray"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS",
+        "NetCDF",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NOAA archive of GOES-R series SUVI EUV imagery in six channels (94, 131, 171, 195, 284, 304 A) from GOES-16, -17 and -18, with level-1b and composite level-2 products in FITS.",
+      "links": [
+        {
+          "label": "NCEI GOES-R products",
+          "url": "https://www.ngdc.noaa.gov/stp/satellite/goes-r.html"
+        }
+      ],
+      "missions": [
+        "GOES-R"
+      ],
+      "instruments": [
+        "SUVI"
+      ],
+      "temporal": "2017-present",
+      "tags": [
+        "suvi",
+        "goes",
+        "goes-16",
+        "goes-18",
+        "noaa",
+        "euv"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "noaa-ngdc-stp",
+      "name": "NOAA NGDC Solar-Terrestrial Physics Data",
+      "provider": "NOAA National Centers for Environmental Information",
+      "agency": [
+        "NOAA",
+        "NCEI"
+      ],
+      "kind": "archive",
+      "url": "https://www.ngdc.noaa.gov/stp/solar/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "historical"
+      ],
+      "spectral": [
+        "visible",
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NOAA solar data collections with some imaging components, including historical H-alpha and white-light solar data and GOES-R products. Access via the NCEI STP pages.",
+      "tags": [
+        "ngdc",
+        "stp",
+        "solar",
+        "historical"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "noaa-swpc-imagery",
+      "name": "NOAA SWPC Solar Imagery",
+      "provider": "NOAA Space Weather Prediction Center",
+      "agency": [
+        "NOAA"
+      ],
+      "kind": "portal",
+      "url": "https://www.swpc.noaa.gov/products/goes-solar-ultraviolet-imager-suvi",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "PNG",
+        "JPEG",
+        "MP4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Near-real-time Sun imagery: GOES SUVI, SOHO LASCO coronagraph (CME), SDO and GONG products, with JSON image feeds under services.swpc.noaa.gov. Operational browse products, not science-grade archives.",
+      "tags": [
+        "swpc",
+        "space weather",
+        "suvi",
+        "lasco",
+        "real-time"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "noirlab-astro-data-archive",
+      "name": "NOIRLab Astro Data Archive",
+      "provider": "NSF NOIRLab",
+      "agency": [
+        "NSF",
+        "NOIRLab"
+      ],
+      "kind": "archive",
+      "url": "https://astroarchive.noirlab.edu/",
+      "targets": [
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto",
+        "titan",
+        "io",
+        "europa",
+        "ganymede",
+        "callisto",
+        "enceladus",
+        "triton",
+        "comets",
+        "asteroids",
+        "kbos",
+        "ceres",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest",
+        "tap"
+      ],
+      "description": "Unified archive of NOIRLab telescopes (CTIO, Kitt Peak, DECam, Mosaic, SOAR) with raw and pipeline-processed images, including DECam and NEO-related survey images, plus cutouts via SIA/TAP.",
+      "instruments": [
+        "DECam",
+        "Mosaic",
+        "NEWFIRM"
+      ],
+      "tags": [
+        "noirlab",
+        "decam",
+        "ctio",
+        "kitt peak",
+        "astro data archive"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nrl-lasco",
+      "name": "LASCO Coronagraph Team Site (NRL)",
+      "provider": "US Naval Research Laboratory",
+      "agency": [
+        "NRL",
+        "NASA",
+        "ESA"
+      ],
+      "kind": "mission-site",
+      "url": "https://lasco-www.nrl.navy.mil/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NRL team site for the SOHO white-light coronagraphs C2 and C3, with the image archive, movies and calibrated level-1 data. Also lists SOHO-discovered sungrazing comets.",
+      "missions": [
+        "SOHO"
+      ],
+      "instruments": [
+        "LASCO"
+      ],
+      "temporal": "1996-present",
+      "tags": [
+        "lasco",
+        "coronagraph",
+        "cme",
+        "soho"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nrl-secchi",
+      "name": "SECCHI (STEREO) Team Site",
+      "provider": "US Naval Research Laboratory",
+      "agency": [
+        "NRL",
+        "NASA"
+      ],
+      "kind": "mission-site",
+      "url": "https://secchi.nrl.navy.mil/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NRL site for the SECCHI instrument suite on STEREO (EUVI, COR1, COR2, HI-1, HI-2) with image browsing, movies and calibration notes.",
+      "missions": [
+        "STEREO"
+      ],
+      "instruments": [
+        "SECCHI",
+        "EUVI",
+        "COR1",
+        "COR2",
+        "HI"
+      ],
+      "temporal": "2006-present",
+      "tags": [
+        "secchi",
+        "stereo",
+        "heliospheric imager"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nrl-solohi",
+      "name": "SoloHI (Solar Orbiter Heliospheric Imager)",
+      "provider": "US Naval Research Laboratory",
+      "agency": [
+        "NRL",
+        "ESA"
+      ],
+      "kind": "mission-site",
+      "url": "https://solohi.nrl.navy.mil/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NRL team site for the Solar Orbiter Heliospheric Imager, a white-light wide-field imager tracking CMEs and solar wind structures. Data links lead to the ESA SOAR archive.",
+      "missions": [
+        "Solar Orbiter"
+      ],
+      "instruments": [
+        "SoloHI"
+      ],
+      "temporal": "2020-present",
+      "tags": [
+        "solohi",
+        "heliospheric imager"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nso-data-portal",
+      "name": "NSO Data Portal (Synoptic and Telescope Archives)",
+      "provider": "National Solar Observatory",
+      "agency": [
+        "NSF",
+        "NSO"
+      ],
+      "kind": "portal",
+      "url": "https://nso.edu/data/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry",
+        "spectra"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NSO's data landing page across its facilities: GONG, SOLIS, DKIST and legacy Sacramento Peak/Kitt Peak synoptic archives, including historical Kitt Peak magnetograms back to the 1970s.",
+      "tags": [
+        "nso",
+        "solis",
+        "kitt peak",
+        "synoptic",
+        "sac peak"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nso-dkist",
+      "name": "DKIST Data Center (Inouye Solar Telescope)",
+      "provider": "NSF National Solar Observatory",
+      "agency": [
+        "NSF",
+        "NSO"
+      ],
+      "kind": "archive",
+      "url": "https://dkist.data.nso.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Data center for the 4 m Daniel K. Inouye Solar Telescope, the highest-resolution solar telescope. Search by instrument and download calibrated ASDF/FITS datasets via the web search or the Python dkist package.",
+      "missions": [
+        "DKIST"
+      ],
+      "instruments": [
+        "VBI",
+        "ViSP",
+        "VTF",
+        "Cryo-NIRSP",
+        "DL-NIRSP"
+      ],
+      "temporal": "2022-present",
+      "tags": [
+        "dkist",
+        "inouye",
+        "nso",
+        "vbi",
+        "visp",
+        "asdf"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "nso-gong",
+      "name": "GONG (Global Oscillation Network Group)",
+      "provider": "National Solar Observatory",
+      "agency": [
+        "NSF",
+        "NSO"
+      ],
+      "kind": "archive",
+      "url": "https://gong.nso.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Six-station ground network providing continuous full-disk magnetograms, Dopplergrams, H-alpha images and farside helioseismology since 1995. Data via NSO's GONG archive and the NISP portal.",
+      "links": [
+        {
+          "label": "NISP data portal",
+          "url": "https://nispdata.nso.edu/"
+        },
+        {
+          "label": "NSO data",
+          "url": "https://nso.edu/data/"
+        }
+      ],
+      "missions": [
+        "GONG"
+      ],
+      "temporal": "1995-present",
+      "tags": [
+        "gong",
+        "nso",
+        "helioseismology",
+        "magnetogram",
+        "nisp",
+        "synoptic"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "panstarrs-mast",
+      "name": "Pan-STARRS1 Data Archive (MAST)",
+      "provider": "STScI / Institute for Astronomy, University of Hawaii",
+      "agency": [
+        "NASA",
+        "STScI",
+        "UH"
+      ],
+      "kind": "archive",
+      "url": "https://outerspace.stsci.edu/display/PANSTARRS/",
+      "targets": [
+        "asteroids",
+        "comets"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "visible",
+        "nir"
+      ],
+      "levels": [
+        "calibrated",
+        "derived"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest",
+        "tap"
+      ],
+      "description": "Pan-STARRS1 3-pi survey images and catalogs in grizy filters hosted at STScI; useful to find archival detections of solar-system objects. Image cutouts and stack/warp FITS access.",
+      "tags": [
+        "panstarrs",
+        "ps1",
+        "survey",
+        "neo"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "pmo-aso-s",
+      "name": "ASO-S (Advanced Space-based Solar Observatory)",
+      "provider": "Purple Mountain Observatory, CAS",
+      "agency": [
+        "CAS",
+        "CNSA"
+      ],
+      "kind": "mission-site",
+      "url": "http://aso-s.pmo.ac.cn/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Chinese solar mission launched in 2022 with a full-disk vector magnetograph (FMG), Lyman-alpha Solar Telescope (LST) and Hard X-ray Imager (HXI). The site documents instruments and data products.",
+      "country": [
+        "China"
+      ],
+      "missions": [
+        "ASO-S"
+      ],
+      "instruments": [
+        "FMG",
+        "LST",
+        "HXI"
+      ],
+      "temporal": "2022-present",
+      "tags": [
+        "aso-s",
+        "kuafu-1",
+        "lst",
+        "hxi"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "psp-science-gateway",
+      "name": "Parker Solar Probe Science Gateway",
+      "provider": "Johns Hopkins APL",
+      "agency": [
+        "NASA",
+        "JHUAPL"
+      ],
+      "kind": "portal",
+      "url": "https://sppgway.jhuapl.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "CSV"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "JHU/APL science gateway for Parker Solar Probe with data access for all instruments including WISPR images, mission documentation and event timelines.",
+      "missions": [
+        "Parker Solar Probe"
+      ],
+      "instruments": [
+        "WISPR"
+      ],
+      "temporal": "2018-present",
+      "tags": [
+        "psp",
+        "parker solar probe",
+        "wispr"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "punch-swri",
+      "name": "PUNCH (Polarimeter to Unify the Corona and Heliosphere)",
+      "provider": "Southwest Research Institute / NASA",
+      "agency": [
+        "NASA",
+        "SwRI"
+      ],
+      "kind": "mission-site",
+      "url": "https://punch.space.swri.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry",
+        "mosaic"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NASA SMEX mission launched in March 2025 with four small satellites imaging the solar corona and the inner solar wind in polarized white light. The mission site links to science data products and mosaics.",
+      "missions": [
+        "PUNCH"
+      ],
+      "instruments": [
+        "NFI",
+        "WFI"
+      ],
+      "temporal": "2025-present",
+      "tags": [
+        "punch",
+        "polarized",
+        "solar wind",
+        "heliosphere"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "rhessi-gsfc",
+      "name": "RHESSI Data Archive",
+      "provider": "NASA Goddard Space Flight Center",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "archive",
+      "url": "https://hesperia.gsfc.nasa.gov/rhessi3/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "xray",
+        "gamma"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive for RHESSI hard X-ray and gamma-ray spectro-imaging of solar flares (2002-2018) with event lists, flare catalog and level-0 data; image reconstruction via the SolarSoft Hessi software.",
+      "missions": [
+        "RHESSI"
+      ],
+      "temporal": "2002-2018",
+      "tags": [
+        "rhessi",
+        "flares",
+        "hard x-ray"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "rob-proba2",
+      "name": "PROBA2 Science Center - SWAP and LYRA",
+      "provider": "Royal Observatory of Belgium (SIDC)",
+      "agency": [
+        "ROB",
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://proba2.sidc.be/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "ROB data center for ESA's PROBA2 solar instruments SWAP (174 A EUV imager with a wide field of view) and the LYRA irradiance radiometer. Image archive, movies and FITS retrieval since 2010.",
+      "country": [
+        "Belgium"
+      ],
+      "missions": [
+        "PROBA2"
+      ],
+      "instruments": [
+        "SWAP",
+        "LYRA"
+      ],
+      "temporal": "2010-present",
+      "tags": [
+        "proba2",
+        "swap",
+        "lyra",
+        "rob",
+        "sidc"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "rob-sidc-eui",
+      "name": "EUI (Solar Orbiter) Team Site",
+      "provider": "Royal Observatory of Belgium",
+      "agency": [
+        "ROB"
+      ],
+      "kind": "mission-site",
+      "url": "https://www.sidc.be/EUI/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Team site for the Extreme Ultraviolet Imager (HRI-EUV, HRI-Lyman-alpha, FSI) on Solar Orbiter with data release notes, quicklook movies and calibration software. FITS files themselves are distributed through SOAR.",
+      "country": [
+        "Belgium"
+      ],
+      "missions": [
+        "Solar Orbiter"
+      ],
+      "instruments": [
+        "EUI",
+        "FSI",
+        "HRI"
+      ],
+      "temporal": "2020-present",
+      "tags": [
+        "eui",
+        "solar orbiter",
+        "campfires"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sdo-ml",
+      "name": "SDOML Machine-Learning-Ready SDO Dataset",
+      "provider": "NASA Frontier Development Lab",
+      "agency": [
+        "NASA"
+      ],
+      "kind": "dataset",
+      "url": "https://sdoml.github.io/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "multispectral"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "derived"
+      ],
+      "formats": [
+        "binary"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "ML-ready subset of SDO AIA, HMI and EVE data with cleaned, aligned, downsampled images, intended for research with deep learning; hosted on public cloud storage.",
+      "temporal": "2010-2018",
+      "tags": [
+        "sdoml",
+        "machine learning",
+        "aia",
+        "hmi"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sdo-nasa-data",
+      "name": "SDO Mission Site - Data and Browse Images",
+      "provider": "NASA Goddard Space Flight Center",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "mission-site",
+      "url": "https://sdo.gsfc.nasa.gov/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "MP4"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Official Solar Dynamics Observatory site with near-real-time and archived browse images and movies of AIA and HMI, plus a data-access guide pointing to JSOC, VSO and Helioviewer. The browse tree offers JPEG previews in all AIA channels at several resolutions.",
+      "links": [
+        {
+          "label": "SDO data access",
+          "url": "https://sdo.gsfc.nasa.gov/data/"
+        }
+      ],
+      "missions": [
+        "SDO"
+      ],
+      "instruments": [
+        "AIA",
+        "HMI"
+      ],
+      "temporal": "2010-present",
+      "tags": [
+        "sdo",
+        "solar dynamics observatory",
+        "the sun now"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sofia-irsa",
+      "name": "SOFIA Science Archive (IRSA)",
+      "provider": "NASA / DSI / IPAC",
+      "agency": [
+        "NASA",
+        "DLR",
+        "IPAC"
+      ],
+      "kind": "archive",
+      "url": "https://irsa.ipac.caltech.edu/Missions/sofia.html",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "mars",
+        "titan",
+        "comets",
+        "venus"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "mwir",
+        "tir",
+        "far-ir"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Archive of the SOFIA airborne infrared observatory (2010-2022) with FORCAST, HAWC+, EXES, GREAT and FLITECAM data, including planetary and cometary observations.",
+      "missions": [
+        "SOFIA"
+      ],
+      "temporal": "2010-2022",
+      "tags": [
+        "sofia",
+        "forcast",
+        "hawc+"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "soho-nascom",
+      "name": "SOHO Data Archive (NASA)",
+      "provider": "NASA Goddard Space Flight Center",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "archive",
+      "url": "https://soho.nascom.nasa.gov/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "calibrated",
+        "browse"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "NASA SOHO site with data and browsable daily images and movies from EIT, LASCO and MDI since 1996, in FITS and JPEG. LASCO and EIT form the longest continuous space-based record of the corona.",
+      "links": [
+        {
+          "label": "SOHO data",
+          "url": "https://soho.nascom.nasa.gov/data/"
+        }
+      ],
+      "missions": [
+        "SOHO"
+      ],
+      "instruments": [
+        "EIT",
+        "LASCO",
+        "MDI"
+      ],
+      "temporal": "1996-present",
+      "tags": [
+        "soho",
+        "eit",
+        "lasco",
+        "mdi",
+        "coronagraph",
+        "sungrazer"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "solarmonitor",
+      "name": "SolarMonitor",
+      "provider": "Trinity College Dublin / SolarMonitor.org",
+      "agency": [
+        "TCD"
+      ],
+      "kind": "portal",
+      "url": "https://solarmonitor.org/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "browse"
+      ],
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Daily archive of full-disk solar images (SDO/AIA, HMI, GOES SUVI, SOHO LASCO) with NOAA active-region annotations; browse back to the mid-2000s.",
+      "country": [
+        "Ireland"
+      ],
+      "tags": [
+        "solarmonitor",
+        "active regions",
+        "noaa ar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sst-stockholm",
+      "name": "Swedish 1-m Solar Telescope (SST) Data",
+      "provider": "Institute for Solar Physics, Stockholm University",
+      "agency": [
+        "Stockholm University"
+      ],
+      "kind": "mission-site",
+      "url": "https://dubshen.astro.su.se/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Home of SST (La Palma) with CRISP/CHROMIS data products and a public data archive of high-resolution chromospheric and photospheric imaging and polarimetry.",
+      "country": [
+        "Sweden"
+      ],
+      "tags": [
+        "sst",
+        "crisp",
+        "chromis",
+        "la palma"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "stanford-soho-mdi",
+      "name": "SOHO/MDI Data (Stanford SOI)",
+      "provider": "Stanford University Solar Oscillations Investigation",
+      "agency": [
+        "NASA",
+        "Stanford"
+      ],
+      "kind": "mission-site",
+      "url": "http://soi.stanford.edu/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "polarimetry"
+      ],
+      "spectral": [
+        "visible"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Stanford team site for the SOHO Michelson Doppler Imager, with magnetograms, Dopplergrams and continuum images from 1996 to 2011; data are served through the JSOC lookdata and the SOI archive.",
+      "missions": [
+        "SOHO"
+      ],
+      "instruments": [
+        "MDI"
+      ],
+      "temporal": "1996-2011",
+      "tags": [
+        "mdi",
+        "soi",
+        "helioseismology",
+        "soho"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "stereo-ssc",
+      "name": "STEREO Science Center (SSC)",
+      "provider": "NASA Goddard Space Flight Center",
+      "agency": [
+        "NASA",
+        "GSFC"
+      ],
+      "kind": "archive",
+      "url": "https://stereo-ssc.nascom.nasa.gov/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "video",
+        "stereo"
+      ],
+      "spectral": [
+        "uv",
+        "visible"
+      ],
+      "levels": [
+        "raw",
+        "calibrated",
+        "browse"
+      ],
+      "formats": [
+        "FITS",
+        "JPEG"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Hub for STEREO-A and STEREO-B data: SECCHI EUVI, COR1, COR2, HI-1 and HI-2 images in FITS, beacon and browse products, and quicklook movies.",
+      "links": [
+        {
+          "label": "Data archive tree",
+          "url": "https://stereo-ssc.nascom.nasa.gov/data/"
+        }
+      ],
+      "missions": [
+        "STEREO"
+      ],
+      "instruments": [
+        "SECCHI",
+        "EUVI",
+        "COR1",
+        "COR2",
+        "HI-1",
+        "HI-2"
+      ],
+      "temporal": "2006-present",
+      "tags": [
+        "stereo",
+        "secchi",
+        "euvi",
+        "heliospheric imager"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "stix-datacenter",
+      "name": "STIX Data Center (Solar Orbiter)",
+      "provider": "FHNW Institute for Data Science (I4DS)",
+      "agency": [
+        "ESA",
+        "FHNW"
+      ],
+      "kind": "archive",
+      "url": "https://datacenter.stix.i4ds.net/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra",
+        "xray-gamma"
+      ],
+      "spectral": [
+        "xray"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Data center for the Spectrometer/Telescope for Imaging X-rays (STIX) on Solar Orbiter, offering flare lists, quicklook light curves and X-ray visibility/imaging data products with a web interface and API. Data are also in the SOAR archive.",
+      "country": [
+        "Switzerland"
+      ],
+      "missions": [
+        "Solar Orbiter"
+      ],
+      "instruments": [
+        "STIX"
+      ],
+      "temporal": "2020-present",
+      "tags": [
+        "stix",
+        "hard x-ray",
+        "flare",
+        "solar orbiter"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "sunpy",
+      "name": "SunPy",
+      "provider": "The SunPy Project",
+      "agency": [
+        "SunPy"
+      ],
+      "kind": "tool",
+      "url": "https://sunpy.org/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS",
+        "JP2"
+      ],
+      "access": "open",
+      "protocols": [
+        "https"
+      ],
+      "description": "Open-source Python package for solar data analysis with the Fido unified search/download client over VSO, JSOC, Helioviewer and others. Useful for scripted access to solar imagery.",
+      "tags": [
+        "sunpy",
+        "fido",
+        "python"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "ucf-arecibo",
+      "name": "Arecibo Observatory Legacy Data (UCF)",
+      "provider": "University of Central Florida / Arecibo Observatory",
+      "agency": [
+        "UCF",
+        "NSF"
+      ],
+      "kind": "archive",
+      "url": "https://www.naic.edu/",
+      "targets": [
+        "asteroids",
+        "moon",
+        "venus",
+        "mercury",
+        "mars",
+        "comets",
+        "titan"
+      ],
+      "data_types": [
+        "radar"
+      ],
+      "spectral": [
+        "radar",
+        "radio"
+      ],
+      "levels": [
+        "raw",
+        "derived"
+      ],
+      "formats": [
+        "binary"
+      ],
+      "access": "mixed",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Legacy archive and information for the former Arecibo Observatory's planetary radar (asteroids, Venus, Mercury, Moon, Titan) and radio data, collapsed in 2020. Data access runs through the observatory data pages and PDS Small Bodies Node radar collections.",
+      "country": [
+        "USA"
+      ],
+      "temporal": "1960s-2020",
+      "tags": [
+        "arecibo",
+        "naic",
+        "planetary radar"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "vso",
+      "name": "Virtual Solar Observatory (VSO)",
+      "provider": "NASA SDAC / NSO",
+      "agency": [
+        "NASA",
+        "NSO"
+      ],
+      "kind": "portal",
+      "url": "https://sdac.virtualsolar.org/cgi/search",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery",
+        "spectra"
+      ],
+      "spectral": [
+        "uv",
+        "visible",
+        "xray",
+        "radio"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "rest"
+      ],
+      "description": "Federated search across dozens of solar data providers (SDO, SOHO, STEREO, Hinode, GONG, Kanzelhoehe and ground observatories), returning links to the original archives. Use the web form or SunPy Fido.",
+      "links": [
+        {
+          "label": "VSO project",
+          "url": "https://virtualsolar.org/"
+        }
+      ],
+      "tags": [
+        "vso",
+        "fido",
+        "sunpy",
+        "federated"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "xmm-nxsa",
+      "name": "XMM-Newton Science Archive",
+      "provider": "ESA European Space Astronomy Centre",
+      "agency": [
+        "ESA"
+      ],
+      "kind": "archive",
+      "url": "https://nxsa.esac.esa.int/nxsa-web/",
+      "targets": [
+        "jupiter",
+        "saturn",
+        "mars",
+        "comets",
+        "moon"
+      ],
+      "data_types": [
+        "imagery",
+        "xray-gamma",
+        "spectra"
+      ],
+      "spectral": [
+        "xray",
+        "uv"
+      ],
+      "levels": [
+        "raw",
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui",
+        "tap"
+      ],
+      "description": "Archive of XMM-Newton X-ray/UV observations including solar-system targets (Jupiter, Saturn, Mars, comets). Web interface, TAP and direct download of EPIC/OM products.",
+      "missions": [
+        "XMM-Newton"
+      ],
+      "temporal": "2000-present",
+      "tags": [
+        "xmm",
+        "nxsa",
+        "x-ray"
+      ],
+      "verified": "2026-11-05"
+    },
+    {
+      "id": "yohkoh-legacy",
+      "name": "Yohkoh Legacy Data Archive",
+      "provider": "Montana State University / ISAS",
+      "agency": [
+        "ISAS",
+        "NASA"
+      ],
+      "kind": "archive",
+      "url": "http://solar.physics.montana.edu/ylegacy/",
+      "targets": [
+        "sun"
+      ],
+      "data_types": [
+        "imagery"
+      ],
+      "spectral": [
+        "xray"
+      ],
+      "levels": [
+        "calibrated"
+      ],
+      "formats": [
+        "FITS"
+      ],
+      "access": "open",
+      "protocols": [
+        "https",
+        "web-ui"
+      ],
+      "description": "Legacy archive of the Yohkoh (Solar-A) mission: SXT soft X-ray full-disk images and flare observations from 1991 to 2001, with SolarSoft readers.",
+      "missions": [
+        "Yohkoh"
+      ],
+      "instruments": [
+        "SXT",
+        "HXT",
+        "BCS",
+        "WBS"
+      ],
+      "temporal": "1991-2001",
+      "tags": [
+        "yohkoh",
+        "sxt",
+        "solar-a",
+        "soft x-ray"
+      ],
+      "verified": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,3164 @@
+{
+ "_doc": "Bodies for the target picker, globe ellipsoids and basemaps. See CONTRACTS.md section 3. Radii: IAU WGCCRE 2015 (a, b, c in metres) for planets, satellites, Ceres and Vesta; published shape-model/flyby values for small bodies (see _sources). mean_radius_m is the IAU mean radius where defined, otherwise the volume-equivalent radius. Every basemap was fetched on its verified date.",
+ "_sources": [
+  "Archinal et al. 2018, Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2015, Celestial Mechanics and Dynamical Astronomy 130:22, https://doi.org/10.1007/s10569-017-9805-5",
+  "NASA/JPL NAIF SPICE body ID codes, https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/naif_ids.html",
+  "NASA/JPL Solar System Dynamics, Planetary Satellite Physical Parameters and small-body database, https://ssd.jpl.nasa.gov/",
+  "Thomas 2010 Icarus 208 and Thomas et al. 2013 Icarus 226 (Saturn small moons); Weaver et al. 2016 Science 351 (Pluto small moons)",
+  "Watanabe et al. 2019 Science 364 (Ryugu); Barnouin et al. 2019 Nature Geoscience 12 (Bennu); Daly et al. 2023 Nature 616 and Naidu et al. 2020 Icarus 348 (Didymos/Dimorphos); Stern et al. 2019 Science 364 (Arrokoth); Ostro et al. 1999 Icarus 137 (Toutatis); Shepard et al. 2021 PSJ 2 (Psyche)",
+  "NASA Solar System Treks WMTS, https://trek.nasa.gov/tiles/apidoc/trekAPI.html",
+  "USGS Astrogeology planetary WMS, https://planetarymaps.usgs.gov/",
+  "NASA GIBS, https://nasa-gibs.github.io/gibs-api-docs/; Esri World Imagery; OpenStreetMap tile usage policy https://operations.osmfoundation.org/policies/tiles/; EOX s2maps.eu; OpenPlanetaryMap https://www.openplanetary.org/opm",
+  "Thumbnails: Wikimedia Commons copies of NASA/JPL/USGS/ESA images, credits in web/img/bodies/CREDITS.md"
+ ],
+ "bodies": [
+  {
+   "id": "sun",
+   "name": "Sun",
+   "aliases": [
+    "Sol",
+    "Solar",
+    "Helios",
+    "Sonne",
+    "Soleil"
+   ],
+   "group": "Sun",
+   "type": "star",
+   "parent": null,
+   "naif_id": 10,
+   "radii_m": [
+    695700.0,
+    695700.0,
+    695700.0
+   ],
+   "mean_radius_m": 695700.0,
+   "color": "#ffcc33",
+   "thumb": "img/bodies/sun.jpg",
+   "summary": "The Sun is the G2V star at the centre of the Solar System, observed from space by SDO, SOHO, STEREO, Hinode, Parker Solar Probe and Solar Orbiter.",
+   "basemaps": []
+  },
+  {
+   "id": "mercury",
+   "name": "Mercury",
+   "aliases": [
+    "Mercurius",
+    "Hermes",
+    "Mercure",
+    "Merkur",
+    "Mercurio"
+   ],
+   "group": "Inner planets",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 199,
+   "radii_m": [
+    2440530.0,
+    2440530.0,
+    2438260.0
+   ],
+   "mean_radius_m": 2439400.0,
+   "color": "#9e9e9e",
+   "thumb": "img/bodies/mercury.jpg",
+   "summary": "Mercury is the innermost planet, mapped globally by the MESSENGER orbiter (2011-2015) and now studied by ESA/JAXA BepiColombo.",
+   "basemaps": [
+    {
+     "id": "mercury-messenger-color-trek",
+     "name": "MESSENGER MDIS enhanced color",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mercury/EQ/Mercury_MESSENGER_MDIS_Basemap_EnhancedColor_Mosaic_Global_665m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 7,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JHUAPL/Carnegie Institution of Washington (MESSENGER MDIS); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mercury-messenger-bdr-trek",
+     "name": "MESSENGER MDIS BDR mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mercury/EQ/Mercury_MESSENGER_MDIS_Basemap_BDR_Mosaic_Global_166m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 7,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JHUAPL/Carnegie Institution of Washington (MESSENGER MDIS); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mercury-usgs-messenger",
+     "name": "MESSENGER MDIS global mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mercury/mercury_simp_cyl.map",
+     "layers": "MESSENGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mercury-usgs-messenger_color",
+     "name": "MESSENGER MDIS color (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mercury/mercury_simp_cyl.map",
+     "layers": "MESSENGER_Color",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mercury-openplanetarymap",
+     "name": "OpenPlanetaryMap Mercury feature basemap",
+     "provider": "OpenPlanetaryMap",
+     "type": "xyz",
+     "url": "https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-mercury-basemap-v0-1/all/{z}/{x}/{y}.png",
+     "tiling": "webmercator",
+     "format": "image/png",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 12,
+     "tile_size": 256,
+     "kind": "map",
+     "attribution": "OpenPlanetaryMap contributors (openplanetary.org); IAU nomenclature, USGS Gazetteer of Planetary Nomenclature; transparent overlay of feature names",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "venus",
+   "name": "Venus",
+   "aliases": [
+    "Venere",
+    "Vénus",
+    "Venera",
+    "Cytherean",
+    "Aphrodite",
+    "Hesperus",
+    "Phosphorus"
+   ],
+   "group": "Inner planets",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 299,
+   "radii_m": [
+    6051800.0,
+    6051800.0,
+    6051800.0
+   ],
+   "mean_radius_m": 6051800.0,
+   "color": "#e8cda2",
+   "thumb": "img/bodies/venus.jpg",
+   "summary": "Venus is the cloud-shrouded second planet, imaged through its clouds by Magellan radar and by Akatsuki, Venus Express and Parker Solar Probe in infrared and ultraviolet.",
+   "basemaps": [
+    {
+     "id": "venus-magellan-trek",
+     "name": "Magellan SAR mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Venus/EQ/Venus_Magellan_C3-MDIR_Global_Mosaic_2025m/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL Magellan SAR; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "venus-magellan-color-trek",
+     "name": "Magellan SAR color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Venus/EQ/Venus_Magellan_C3-MDIR_Colorized_Global_Mosaic_4641m/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 4,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL Magellan SAR; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "venus-usgs-magellan",
+     "name": "Magellan SAR mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/venus/venus_simp_cyl.map",
+     "layers": "MAGELLAN",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "venus-usgs-magellan_topography",
+     "name": "Magellan topography (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/venus/venus_simp_cyl.map",
+     "layers": "MAGELLAN_topography",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "color-dem",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "earth",
+   "name": "Earth",
+   "aliases": [
+    "Tellus",
+    "Erde",
+    "Tierra",
+    "Terre"
+   ],
+   "group": "Earth & Moon",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 399,
+   "radii_m": [
+    6378137.0,
+    6378137.0,
+    6356752.0
+   ],
+   "mean_radius_m": 6371008.8,
+   "color": "#3d7fd9",
+   "thumb": "img/bodies/earth.jpg",
+   "summary": "Earth is the third planet and the only one with an extensive public Earth-observation archive from hundreds of satellites; radii are the WGS 84 ellipsoid.",
+   "basemaps": [
+    {
+     "id": "earth-esri-world-imagery",
+     "name": "Esri World Imagery",
+     "provider": "Esri",
+     "type": "xyz",
+     "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+     "tiling": "webmercator",
+     "format": "image/jpeg",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 19,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community (Esri World Imagery terms apply)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-bluemarble",
+     "name": "Blue Marble shaded relief and bathymetry (GIBS)",
+     "provider": "NASA GIBS",
+     "type": "xyz",
+     "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg",
+     "tiling": "webmercator",
+     "format": "image/jpeg",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 8,
+     "tile_size": 256,
+     "kind": "shaded-relief",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-modis-truecolor",
+     "name": "MODIS Terra true colour, latest daily (GIBS)",
+     "provider": "NASA GIBS",
+     "type": "xyz",
+     "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg",
+     "tiling": "webmercator",
+     "format": "image/jpeg",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 9,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-viirs-truecolor",
+     "name": "VIIRS SNPP true colour, latest daily (GIBS)",
+     "provider": "NASA GIBS",
+     "type": "xyz",
+     "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/default/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpeg",
+     "tiling": "webmercator",
+     "format": "image/jpeg",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 9,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-eox-s2cloudless-2016",
+     "name": "Sentinel-2 cloudless 2016 (EOX)",
+     "provider": "EOX IT Services GmbH",
+     "type": "xyz",
+     "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg",
+     "tiling": "webmercator",
+     "format": "image/jpeg",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 14,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016), CC BY 4.0",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-osm",
+     "name": "OpenStreetMap",
+     "provider": "OpenStreetMap Foundation",
+     "type": "xyz",
+     "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+     "tiling": "webmercator",
+     "format": "image/png",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 19,
+     "tile_size": 256,
+     "kind": "map",
+     "attribution": "(c) OpenStreetMap contributors, ODbL; subject to the OSM tile usage policy (light, interactive use only; identify the app)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-bluemarble-wms",
+     "name": "Blue Marble shaded relief and bathymetry, WMS EPSG:4326 (GIBS)",
+     "provider": "NASA GIBS",
+     "type": "wms",
+     "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+     "layers": "BlueMarble_ShadedRelief_Bathymetry",
+     "version": "1.1.1",
+     "format": "image/jpeg",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "EPSG:4326",
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-modis-wms",
+     "name": "MODIS Terra true colour, WMS EPSG:4326 (GIBS; add TIME=YYYY-MM-DD)",
+     "provider": "NASA GIBS",
+     "type": "wms",
+     "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+     "layers": "MODIS_Terra_CorrectedReflectance_TrueColor",
+     "version": "1.1.1",
+     "format": "image/jpeg",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "EPSG:4326",
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-antarctic-bluemarble",
+     "name": "Blue Marble, Antarctic polar stereographic EPSG:3031 (GIBS)",
+     "provider": "NASA GIBS",
+     "type": "wms",
+     "url": "https://gibs.earthdata.nasa.gov/wms/epsg3031/best/wms.cgi",
+     "layers": "BlueMarble_ShadedRelief_Bathymetry",
+     "version": "1.1.1",
+     "format": "image/jpeg",
+     "srs": [
+      "EPSG:3031"
+     ],
+     "crs": "EPSG:3031",
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-antarctic-modis",
+     "name": "MODIS Terra true colour, Antarctic polar EPSG:3031 (GIBS; add TIME=YYYY-MM-DD)",
+     "provider": "NASA GIBS",
+     "type": "wms",
+     "url": "https://gibs.earthdata.nasa.gov/wms/epsg3031/best/wms.cgi",
+     "layers": "MODIS_Terra_CorrectedReflectance_TrueColor",
+     "version": "1.1.1",
+     "format": "image/jpeg",
+     "srs": [
+      "EPSG:3031"
+     ],
+     "crs": "EPSG:3031",
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-arctic-bluemarble",
+     "name": "Blue Marble, Arctic polar stereographic EPSG:3413 (GIBS)",
+     "provider": "NASA GIBS",
+     "type": "wms",
+     "url": "https://gibs.earthdata.nasa.gov/wms/epsg3413/best/wms.cgi",
+     "layers": "BlueMarble_ShadedRelief_Bathymetry",
+     "version": "1.1.1",
+     "format": "image/jpeg",
+     "srs": [
+      "EPSG:3413"
+     ],
+     "crs": "EPSG:3413",
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "earth-gibs-arctic-modis",
+     "name": "MODIS Terra true colour, Arctic polar EPSG:3413 (GIBS; add TIME=YYYY-MM-DD)",
+     "provider": "NASA GIBS",
+     "type": "wms",
+     "url": "https://gibs.earthdata.nasa.gov/wms/epsg3413/best/wms.cgi",
+     "layers": "MODIS_Terra_CorrectedReflectance_TrueColor",
+     "version": "1.1.1",
+     "format": "image/jpeg",
+     "srs": [
+      "EPSG:3413"
+     ],
+     "crs": "EPSG:3413",
+     "kind": "imagery",
+     "attribution": "NASA EOSDIS GIBS / Global Imagery Browse Services",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "moon",
+   "name": "Moon",
+   "aliases": [
+    "Luna",
+    "Lunar",
+    "Mond",
+    "Lune",
+    "Earth's Moon",
+    "the Moon",
+    "Cynthia"
+   ],
+   "group": "Earth & Moon",
+   "type": "moon",
+   "parent": "earth",
+   "naif_id": 301,
+   "radii_m": [
+    1737400.0,
+    1737400.0,
+    1737400.0
+   ],
+   "mean_radius_m": 1737400.0,
+   "color": "#b0b0b0",
+   "thumb": "img/bodies/moon.jpg",
+   "summary": "The Moon is Earth's only natural satellite, covered by Apollo, Lunar Orbiter, Clementine, Kaguya, LRO, Chang'e, Chandrayaan and SELENE imagery and altimetry.",
+   "basemaps": [
+    {
+     "id": "moon-wac-trek",
+     "name": "LRO LROC WAC global mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd_v02/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 8,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/GSFC/Arizona State University (LRO LROC WAC); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-kaguya-tc-trek",
+     "name": "Kaguya TC ortho mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Moon/EQ/Kaguya_TCortho_Mosaic_Global_4096ppd/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 10,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "JAXA/SELENE (Kaguya) Terrain Camera ortho mosaic; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-clementine-trek",
+     "name": "Clementine UVVIS mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Moon/EQ/Clem_UVVIS_Mosaic_Global_256ppd_v02/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 6,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/DoD/USGS Clementine UVVIS; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-usgs-lroc_wac",
+     "name": "LRO WAC global mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/earth/moon_simp_cyl.map",
+     "layers": "LROC_WAC",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-usgs-kaguyatc_ortho",
+     "name": "Kaguya TC ortho mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/earth/moon_simp_cyl.map",
+     "layers": "KaguyaTC_Ortho",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-lola-clrshade-trek",
+     "name": "LRO LOLA color hillshade",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Moon/EQ/LRO_LOLA_ClrShade_Global_128ppd_v04/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "color-dem",
+     "attribution": "NASA/GSFC LRO LOLA; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-usgs-lola_color",
+     "name": "LOLA color elevation (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/earth/moon_simp_cyl.map",
+     "layers": "LOLA_color",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "color-dem",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "moon-openplanetarymap",
+     "name": "OpenPlanetaryMap Moon feature basemap",
+     "provider": "OpenPlanetaryMap",
+     "type": "xyz",
+     "url": "https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-moon-basemap-v0-1/all/{z}/{x}/{y}.png",
+     "tiling": "webmercator",
+     "format": "image/png",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 12,
+     "tile_size": 256,
+     "kind": "map",
+     "attribution": "OpenPlanetaryMap contributors (openplanetary.org); IAU nomenclature, USGS Gazetteer of Planetary Nomenclature; transparent overlay of feature names",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "mars",
+   "name": "Mars",
+   "aliases": [
+    "Red Planet",
+    "Ares",
+    "Areos",
+    "Martian",
+    "Marte"
+   ],
+   "group": "Mars system",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 499,
+   "radii_m": [
+    3396190.0,
+    3396190.0,
+    3376200.0
+   ],
+   "mean_radius_m": 3389500.0,
+   "color": "#c1440e",
+   "thumb": "img/bodies/mars.jpg",
+   "summary": "Mars is the fourth planet and the most extensively imaged after Earth, with decades of orbiter and rover data from MRO, MGS, Odyssey, MAVEN, Mars Express, TGO, Tianwen-1, Curiosity and Perseverance.",
+   "basemaps": [
+    {
+     "id": "mars-viking-color-trek",
+     "name": "Viking MDIM 2.1 color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 7,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/USGS Viking MDIM 2.1; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-themis-day-trek",
+     "name": "THEMIS day IR controlled mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mars/EQ/THEMIS_DayIR_ControlledMosaics_100m_v2_oct2018/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 9,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL-Caltech/Arizona State University (Mars Odyssey THEMIS); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-moc-trek",
+     "name": "MGS MOC Atlas color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mars/EQ/msss_atlas_simp_clon/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 6,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/Malin Space Science Systems (MGS MOC); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-usgs-mdim21",
+     "name": "Viking MDIM 2.1 mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map",
+     "layers": "MDIM21",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-usgs-themis",
+     "name": "THEMIS-IR day mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map",
+     "layers": "THEMIS",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-usgs-hrsc_mola_blend_hillshade",
+     "name": "HRSC/MOLA blend hillshade (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map",
+     "layers": "HRSC_MOLA_Blend_Hillshade",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "shaded-relief",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-mola-clrshade-trek",
+     "name": "MOLA color hillshade",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 7,
+     "tile_size": 256,
+     "kind": "color-dem",
+     "attribution": "NASA/GSFC MGS MOLA Science Team; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-hrsc-mola-trek",
+     "name": "HRSC+MOLA color hillshade",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 8,
+     "tile_size": 256,
+     "kind": "color-dem",
+     "attribution": "ESA/DLR/FU Berlin (HRSC) and NASA MGS MOLA; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-usgs-mola_color",
+     "name": "MOLA color elevation (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/mars_simp_cyl.map",
+     "layers": "MOLA_color",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "color-dem",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "mars-openplanetarymap",
+     "name": "OpenPlanetaryMap Mars feature basemap",
+     "provider": "OpenPlanetaryMap",
+     "type": "xyz",
+     "url": "https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-mars-basemap-v0-1/all/{z}/{x}/{y}.png",
+     "tiling": "webmercator",
+     "format": "image/png",
+     "crs": "EPSG:3857",
+     "min_zoom": 0,
+     "max_zoom": 12,
+     "tile_size": 256,
+     "kind": "map",
+     "attribution": "OpenPlanetaryMap contributors (openplanetary.org); IAU nomenclature, USGS Gazetteer of Planetary Nomenclature; transparent overlay of feature names",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "phobos",
+   "name": "Phobos",
+   "aliases": [
+    "Mars I",
+    "Fobos"
+   ],
+   "group": "Mars system",
+   "type": "moon",
+   "parent": "mars",
+   "naif_id": 401,
+   "radii_m": [
+    13000.0,
+    11400.0,
+    9100.0
+   ],
+   "mean_radius_m": 11080.0,
+   "color": "#8b7d6b",
+   "thumb": "img/bodies/phobos.jpg",
+   "summary": "Phobos is the larger and inner moon of Mars, mapped by Viking, Mars Express HRSC/SRC and MRO HiRISE.",
+   "basemaps": [
+    {
+     "id": "phobos-mex-trek",
+     "name": "MEX SRC + Viking ortho mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Phobos/EQ/Base_Orthomosaik_MExLab/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "ESA/DLR/FU Berlin (Mars Express SRC), NASA Viking Orbiter; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "phobos-viking-trek",
+     "name": "Viking VIS mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Phobos/EQ/Phobos_Viking_Mosaic_40ppd_DLRcontrol/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL Viking Orbiter, DLR-controlled; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "phobos-usgs-viking",
+     "name": "Viking Orbiter mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/phobos_simp_cyl.map",
+     "layers": "VIKING",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "deimos",
+   "name": "Deimos",
+   "aliases": [
+    "Mars II"
+   ],
+   "group": "Mars system",
+   "type": "moon",
+   "parent": "mars",
+   "naif_id": 402,
+   "radii_m": [
+    7800.0,
+    6000.0,
+    5100.0
+   ],
+   "mean_radius_m": 6200.0,
+   "color": "#a39383",
+   "thumb": "img/bodies/deimos.jpg",
+   "summary": "Deimos is the smaller and outer moon of Mars, imaged by Viking, Mars Express and MRO HiRISE.",
+   "basemaps": [
+    {
+     "id": "deimos-usgs-viking",
+     "name": "Viking Orbiter mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/mars/deimos_simp_cyl.map",
+     "layers": "VIKING",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "ceres",
+   "name": "Ceres",
+   "aliases": [
+    "(1) Ceres",
+    "1 Ceres",
+    "Cerere",
+    "Cérès",
+    "1801 AA"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "dwarf-planet",
+   "parent": "sun",
+   "naif_id": 2000001,
+   "radii_m": [
+    487300.0,
+    487300.0,
+    446000.0
+   ],
+   "mean_radius_m": 469700.0,
+   "color": "#8a8a8a",
+   "thumb": "img/bodies/ceres.jpg",
+   "summary": "Ceres is the largest main-belt object and the only dwarf planet in the inner Solar System, mapped globally by the Dawn framing camera in 2015-2018.",
+   "basemaps": [
+    {
+     "id": "ceres-fc-trek",
+     "name": "Dawn FC global mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Ceres/EQ/Ceres_Dawn_FC_DLR_global_59ppd_Feb2016/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA (Dawn FC); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "ceres-clrshade-trek",
+     "name": "Dawn FC HAMO color hillshade",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Ceres/EQ/Ceres_Dawn_FC_HAMO_ClrShade_DLR_Global_60ppd_Oct2016/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "color-dem",
+     "attribution": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA (Dawn FC); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "vesta",
+   "name": "Vesta",
+   "aliases": [
+    "(4) Vesta",
+    "4 Vesta",
+    "1807 FA"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000004,
+   "radii_m": [
+    286300.0,
+    278600.0,
+    223200.0
+   ],
+   "mean_radius_m": 262700.0,
+   "color": "#a0968a",
+   "thumb": "img/bodies/vesta.jpg",
+   "summary": "Vesta is the second most massive main-belt asteroid, a differentiated protoplanet mapped by Dawn in 2011-2012.",
+   "basemaps": [
+    {
+     "id": "vesta-fc-trek",
+     "name": "Dawn FC HAMO mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Vesta/EQ/Vesta_Dawn_FC_HAMO_Mosaic_Global_74ppd/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 6,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA (Dawn FC); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "vesta-clrshade-trek",
+     "name": "Dawn color hillshade",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Vesta/EQ/Vesta_Dawn_HAMO_ClrShade_DLR_Global_48ppd/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "color-dem",
+     "attribution": "NASA/JPL-Caltech/UCLA/MPS/DLR/IDA (Dawn FC); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "psyche",
+   "name": "Psyche",
+   "aliases": [
+    "(16) Psyche",
+    "16 Psyche",
+    "1852 H1"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000016,
+   "radii_m": [
+    139500.0,
+    116000.0,
+    94500.0
+   ],
+   "mean_radius_m": 113000.0,
+   "color": "#9a958c",
+   "thumb": null,
+   "summary": "Psyche is a large metal-rich M-type main-belt asteroid targeted by NASA's Psyche orbiter, launched in October 2023, with arrival expected in 2029.",
+   "basemaps": []
+  },
+  {
+   "id": "lutetia",
+   "name": "Lutetia",
+   "aliases": [
+    "(21) Lutetia",
+    "21 Lutetia",
+    "1852 H2"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000021,
+   "radii_m": [
+    62000.0,
+    50500.0,
+    46500.0
+   ],
+   "mean_radius_m": 49000.0,
+   "color": "#8f8a80",
+   "thumb": null,
+   "summary": "Lutetia is a large main-belt asteroid flown past by ESA's Rosetta in July 2010 at 3,160 km.",
+   "basemaps": []
+  },
+  {
+   "id": "steins",
+   "name": "Šteins",
+   "aliases": [
+    "(2867) Šteins",
+    "(2867) Steins",
+    "2867 Šteins",
+    "2867 Steins",
+    "Steins",
+    "1969 VC"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2002867,
+   "radii_m": [
+    3335.0,
+    2905.0,
+    2235.0
+   ],
+   "mean_radius_m": 2900.0,
+   "color": "#999",
+   "thumb": "img/bodies/steins.jpg",
+   "summary": "Šteins is a small E-type main-belt asteroid imaged by Rosetta during its September 2008 flyby.",
+   "basemaps": []
+  },
+  {
+   "id": "gaspra",
+   "name": "Gaspra",
+   "aliases": [
+    "(951) Gaspra",
+    "951 Gaspra",
+    "1916 S45"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000951,
+   "radii_m": [
+    9100.0,
+    5200.0,
+    4400.0
+   ],
+   "mean_radius_m": 6100.0,
+   "color": "#999",
+   "thumb": "img/bodies/gaspra.jpg",
+   "summary": "Gaspra is a small S-type main-belt asteroid, the first asteroid imaged close-up by a spacecraft (Galileo, October 1991).",
+   "basemaps": []
+  },
+  {
+   "id": "ida",
+   "name": "Ida (and Dactyl)",
+   "aliases": [
+    "(243) Ida",
+    "243 Ida",
+    "1884 SB",
+    "Dactyl",
+    "(243) Ida I Dactyl",
+    "Ida I"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000243,
+   "radii_m": [
+    29900.0,
+    12700.0,
+    9300.0
+   ],
+   "mean_radius_m": 15700.0,
+   "color": "#999",
+   "thumb": "img/bodies/ida.jpg",
+   "summary": "Ida is an S-type main-belt asteroid with the small moon Dactyl, flown past by Galileo in August 1993.",
+   "basemaps": []
+  },
+  {
+   "id": "mathilde",
+   "name": "Mathilde",
+   "aliases": [
+    "(253) Mathilde",
+    "253 Mathilde",
+    "1885 H1"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000253,
+   "radii_m": [
+    33000.0,
+    24000.0,
+    23000.0
+   ],
+   "mean_radius_m": 26500.0,
+   "color": "#777",
+   "thumb": "img/bodies/mathilde.jpg",
+   "summary": "Mathilde is a dark C-type main-belt asteroid flown past by NEAR Shoemaker in June 1997.",
+   "basemaps": []
+  },
+  {
+   "id": "annefrank",
+   "name": "Annefrank",
+   "aliases": [
+    "(5535) Annefrank",
+    "5535 Annefrank",
+    "1942 EM",
+    "Anne Frank"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2005535,
+   "radii_m": [
+    3300.0,
+    2500.0,
+    1700.0
+   ],
+   "mean_radius_m": 2500.0,
+   "color": "#999",
+   "thumb": null,
+   "summary": "Annefrank is a small main-belt asteroid imaged by Stardust during its November 2002 flyby.",
+   "basemaps": []
+  },
+  {
+   "id": "braille",
+   "name": "Braille",
+   "aliases": [
+    "(9969) Braille",
+    "9969 Braille",
+    "1992 KD"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2009969,
+   "radii_m": [
+    1050.0,
+    500.0,
+    500.0
+   ],
+   "mean_radius_m": 640.0,
+   "color": "#999",
+   "thumb": null,
+   "summary": "Braille is a small Mars-crossing asteroid flown past by Deep Space 1 in July 1999.",
+   "basemaps": []
+  },
+  {
+   "id": "dinkinesh",
+   "name": "Dinkinesh (and Selam)",
+   "aliases": [
+    "(152830) Dinkinesh",
+    "152830 Dinkinesh",
+    "1999 VD57",
+    "Selam",
+    "(152830) Dinkinesh I Selam"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2152830,
+   "radii_m": [
+    395.0,
+    395.0,
+    395.0
+   ],
+   "mean_radius_m": 395.0,
+   "color": "#999",
+   "thumb": null,
+   "summary": "Dinkinesh is a small main-belt asteroid with a contact-binary satellite (Selam) discovered by NASA's Lucy during its November 2023 flyby.",
+   "basemaps": []
+  },
+  {
+   "id": "donaldjohanson",
+   "name": "Donaldjohanson",
+   "aliases": [
+    "(52246) Donaldjohanson",
+    "52246 Donaldjohanson",
+    "1981 EQ5"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2052246,
+   "radii_m": [
+    4000.0,
+    1750.0,
+    1750.0
+   ],
+   "mean_radius_m": 2200.0,
+   "color": "#999",
+   "thumb": null,
+   "summary": "Donaldjohanson is an elongated main-belt asteroid flown past by NASA's Lucy in April 2025.",
+   "basemaps": []
+  },
+  {
+   "id": "asteroids",
+   "name": "Other asteroids",
+   "aliases": [
+    "asteroid",
+    "minor planet",
+    "main belt",
+    "main-belt",
+    "small bodies",
+    "Trojan",
+    "Jupiter trojans",
+    "Patroclus",
+    "Eurybates",
+    "Polymele",
+    "Orus",
+    "Leucus",
+    "Kleopatra",
+    "Hygiea",
+    "Pallas",
+    "Juno asteroid",
+    "Hebe",
+    "Iris",
+    "Flora",
+    "Metis",
+    "Davida",
+    "Interamnia"
+   ],
+   "group": "Main-belt asteroids & dwarf planets",
+   "type": "group",
+   "parent": null,
+   "naif_id": null,
+   "radii_m": null,
+   "mean_radius_m": null,
+   "color": "#888",
+   "thumb": null,
+   "summary": "Group entry for all other asteroids (e.g. Pallas, Hygiea, Kleopatra, Jupiter Trojans) and for catch-all asteroid datasets and small-body archives.",
+   "basemaps": []
+  },
+  {
+   "id": "eros",
+   "name": "Eros",
+   "aliases": [
+    "(433) Eros",
+    "433 Eros",
+    "1898 DQ"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2000433,
+   "radii_m": [
+    17000.0,
+    5500.0,
+    5500.0
+   ],
+   "mean_radius_m": 8400.0,
+   "color": "#b39b7d",
+   "thumb": "img/bodies/eros.jpg",
+   "summary": "Eros is a large S-type near-Earth asteroid orbited and landed on by NEAR Shoemaker in 2000-2001.",
+   "basemaps": []
+  },
+  {
+   "id": "itokawa",
+   "name": "Itokawa",
+   "aliases": [
+    "(25143) Itokawa",
+    "25143 Itokawa",
+    "1998 SF36"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2025143,
+   "radii_m": [
+    268.0,
+    147.0,
+    104.0
+   ],
+   "mean_radius_m": 165.0,
+   "color": "#a89f91",
+   "thumb": null,
+   "summary": "Itokawa is a small peanut-shaped near-Earth asteroid visited by JAXA's Hayabusa in 2005, the first asteroid sample-return target.",
+   "basemaps": []
+  },
+  {
+   "id": "ryugu",
+   "name": "Ryugu",
+   "aliases": [
+    "(162173) Ryugu",
+    "162173 Ryugu",
+    "1999 JU3",
+    "Ryugū"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2162173,
+   "radii_m": [
+    502.0,
+    502.0,
+    438.0
+   ],
+   "mean_radius_m": 448.0,
+   "color": "#6b6560",
+   "thumb": null,
+   "summary": "Ryugu is a carbonaceous top-shaped near-Earth asteroid visited by JAXA's Hayabusa2 in 2018-2019, which returned samples to Earth in December 2020.",
+   "basemaps": [
+    {
+     "id": "ryugu-onc-trek",
+     "name": "Hayabusa2 ONC-T v-band global mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Ryugu/EQ/ryugu_global_v_band/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 4,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "JAXA, University of Tokyo and collaborators (Hayabusa2 ONC-T); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "bennu",
+   "name": "Bennu",
+   "aliases": [
+    "(101955) Bennu",
+    "101955 Bennu",
+    "1999 RQ36"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2101955,
+   "radii_m": [
+    282.5,
+    267.5,
+    254.0
+   ],
+   "mean_radius_m": 245.0,
+   "color": "#5f5a55",
+   "thumb": "img/bodies/bennu.jpg",
+   "summary": "Bennu is a rubble-pile carbonaceous near-Earth asteroid mapped by NASA's OSIRIS-REx in 2018-2021, which returned samples in September 2023.",
+   "basemaps": []
+  },
+  {
+   "id": "didymos",
+   "name": "Didymos",
+   "aliases": [
+    "(65803) Didymos",
+    "65803 Didymos",
+    "1996 GT",
+    "Didymos A"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2065803,
+   "radii_m": [
+    424.5,
+    425.5,
+    310.0
+   ],
+   "mean_radius_m": 390.0,
+   "color": "#8c857c",
+   "thumb": null,
+   "summary": "Didymos is a near-Earth binary asteroid whose small moon Dimorphos was targeted by NASA's DART impactor in September 2022.",
+   "basemaps": []
+  },
+  {
+   "id": "dimorphos",
+   "name": "Dimorphos",
+   "aliases": [
+    "(65803) Didymos I Dimorphos",
+    "Didymos B",
+    "Didymoon",
+    "S/2003 (65803) 1"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "didymos",
+   "naif_id": 120065803,
+   "radii_m": [
+    88.5,
+    87.0,
+    58.0
+   ],
+   "mean_radius_m": 75.5,
+   "color": "#8c857c",
+   "thumb": null,
+   "summary": "Dimorphos is the small moon of the binary asteroid Didymos, impacted by DART on 26 September 2022 and due to be revisited by ESA's Hera spacecraft (arrival December 2026).",
+   "basemaps": []
+  },
+  {
+   "id": "toutatis",
+   "name": "Toutatis",
+   "aliases": [
+    "(4179) Toutatis",
+    "4179 Toutatis",
+    "1989 AC"
+   ],
+   "group": "Near-Earth asteroids",
+   "type": "asteroid",
+   "parent": "sun",
+   "naif_id": 2004179,
+   "radii_m": [
+    2375.0,
+    975.0,
+    750.0
+   ],
+   "mean_radius_m": 1200.0,
+   "color": "#999",
+   "thumb": null,
+   "summary": "Toutatis is an elongated tumbling near-Earth asteroid imaged by radar and flown past by Chang'e 2 in December 2012.",
+   "basemaps": []
+  },
+  {
+   "id": "jupiter",
+   "name": "Jupiter",
+   "aliases": [
+    "Jove",
+    "Jovian",
+    "Zeus",
+    "Júpiter",
+    "Giove"
+   ],
+   "group": "Jupiter system",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 599,
+   "radii_m": [
+    71492.0,
+    71492.0,
+    66854.0
+   ],
+   "mean_radius_m": 69911.0,
+   "color": "#d8ca9d",
+   "thumb": "img/bodies/jupiter.jpg",
+   "summary": "Jupiter is the largest planet, imaged by Voyager, Galileo, Cassini, New Horizons, Juno and Hubble/JWST.",
+   "basemaps": [
+    {
+     "id": "jupiter-usgs-cassini",
+     "name": "Cassini ISS map (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/jupiter/jupiter_simp_cyl.map",
+     "layers": "CASSINI",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "io",
+   "name": "Io",
+   "aliases": [
+    "Jupiter I"
+   ],
+   "group": "Jupiter system",
+   "type": "moon",
+   "parent": "jupiter",
+   "naif_id": 501,
+   "radii_m": [
+    1829400.0,
+    1819400.0,
+    1815700.0
+   ],
+   "mean_radius_m": 1821490.0,
+   "color": "#e9d64f",
+   "thumb": "img/bodies/io.jpg",
+   "summary": "Io is the most volcanically active body in the Solar System, imaged by Voyager, Galileo, New Horizons and Juno.",
+   "basemaps": [
+    {
+     "id": "io-gll-trek",
+     "name": "Voyager/Galileo color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Io/EQ/Io_GalileoSSI_Voyager_Global_Mosaic_ClrMerge_1km/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 4,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/USGS (Voyager, Galileo SSI); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "io-usgs-ssi_color",
+     "name": "Galileo/Voyager color mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/jupiter/io_simp_cyl.map",
+     "layers": "SSI_color",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "io-usgs-ssi_bw",
+     "name": "Galileo SSI mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/jupiter/io_simp_cyl.map",
+     "layers": "SSI_bw",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "europa",
+   "name": "Europa",
+   "aliases": [
+    "Jupiter II",
+    "Europa moon"
+   ],
+   "group": "Jupiter system",
+   "type": "moon",
+   "parent": "jupiter",
+   "naif_id": 502,
+   "radii_m": [
+    1562600.0,
+    1560300.0,
+    1559500.0
+   ],
+   "mean_radius_m": 1560800.0,
+   "color": "#c9b79c",
+   "thumb": "img/bodies/europa.jpg",
+   "summary": "Europa is an ice-covered Jovian moon with a subsurface ocean, imaged by Galileo, Voyager and Juno and the target of Europa Clipper and JUICE.",
+   "basemaps": [
+    {
+     "id": "europa-gll-trek",
+     "name": "Voyager/Galileo mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Europa/EQ/Europa_Voyager_GalileoSSI_global_mosaic_500m/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/USGS (Voyager, Galileo SSI); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "europa-gll-color-trek",
+     "name": "Voyager/Galileo color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Europa/EQ/20150218_europa_global_map_20000x10000/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/USGS (Voyager, Galileo SSI); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "europa-usgs-galileo_voyager",
+     "name": "Galileo/Voyager mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/jupiter/europa_simp_cyl.map",
+     "layers": "GALILEO_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "ganymede",
+   "name": "Ganymede",
+   "aliases": [
+    "Jupiter III",
+    "Ganymed"
+   ],
+   "group": "Jupiter system",
+   "type": "moon",
+   "parent": "jupiter",
+   "naif_id": 503,
+   "radii_m": [
+    2631200.0,
+    2631200.0,
+    2631200.0
+   ],
+   "mean_radius_m": 2631200.0,
+   "color": "#8f8478",
+   "thumb": "img/bodies/ganymede.jpg",
+   "summary": "Ganymede is the largest moon in the Solar System and has its own magnetic field, imaged by Voyager, Galileo and Juno and targeted by ESA's JUICE.",
+   "basemaps": [
+    {
+     "id": "ganymede-vg-trek",
+     "name": "Voyager/Galileo mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Ganymede/EQ/Ganymede_global_equi_000_359m/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 6,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/USGS (Voyager, Galileo SSI), Juno; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "ganymede-color-trek",
+     "name": "Voyager/Galileo color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Ganymede/EQ/Ganymede_Voyager_GalileoSSI_Global_ClrMosaic_1435m/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 4,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/USGS (Voyager, Galileo SSI); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "ganymede-usgs-galileo_voyager",
+     "name": "Galileo/Voyager mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/jupiter/ganymede_simp_cyl.map",
+     "layers": "GALILEO_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "callisto",
+   "name": "Callisto",
+   "aliases": [
+    "Jupiter IV",
+    "Kallisto"
+   ],
+   "group": "Jupiter system",
+   "type": "moon",
+   "parent": "jupiter",
+   "naif_id": 504,
+   "radii_m": [
+    2410300.0,
+    2410300.0,
+    2410300.0
+   ],
+   "mean_radius_m": 2410300.0,
+   "color": "#5e5448",
+   "thumb": "img/bodies/callisto.jpg",
+   "summary": "Callisto is a heavily cratered Jovian moon imaged by Voyager and Galileo and visited by JUICE flybys.",
+   "basemaps": [
+    {
+     "id": "callisto-usgs-galileo_voyager",
+     "name": "Galileo/Voyager mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/jupiter/callisto_simp_cyl.map",
+     "layers": "GALILEO_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "amalthea",
+   "name": "Amalthea",
+   "aliases": [
+    "Jupiter V",
+    "Amaltea"
+   ],
+   "group": "Jupiter system",
+   "type": "moon",
+   "parent": "jupiter",
+   "naif_id": 505,
+   "radii_m": [
+    125000.0,
+    73000.0,
+    64000.0
+   ],
+   "mean_radius_m": 83500.0,
+   "color": "#a0523d",
+   "thumb": "img/bodies/amalthea.jpg",
+   "summary": "Amalthea is a small, irregular inner moon of Jupiter imaged by Voyager 1 and Galileo.",
+   "basemaps": []
+  },
+  {
+   "id": "himalia",
+   "name": "Himalia",
+   "aliases": [
+    "Jupiter VI",
+    "Himalia group"
+   ],
+   "group": "Jupiter system",
+   "type": "moon",
+   "parent": "jupiter",
+   "naif_id": 506,
+   "radii_m": [
+    85000.0,
+    60000.0,
+    60000.0
+   ],
+   "mean_radius_m": 67000.0,
+   "color": "#999",
+   "thumb": null,
+   "summary": "Himalia is the largest irregular moon of Jupiter, imaged at long range by Cassini, New Horizons and Juno.",
+   "basemaps": []
+  },
+  {
+   "id": "saturn",
+   "name": "Saturn",
+   "aliases": [
+    "Cronus",
+    "Kronos",
+    "Saturnus",
+    "Saturne",
+    "Saturnian"
+   ],
+   "group": "Saturn system",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 699,
+   "radii_m": [
+    60268.0,
+    60268.0,
+    54364.0
+   ],
+   "mean_radius_m": 58232.0,
+   "color": "#e3c16f",
+   "thumb": "img/bodies/saturn.jpg",
+   "summary": "Saturn is the ringed gas giant, orbited by Cassini from 2004 to 2017 and observed by Voyager, Hubble and JWST.",
+   "basemaps": [
+    {
+     "id": "saturn-usgs-cassini",
+     "name": "Cassini ISS map (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/saturn_simp_cyl.map",
+     "layers": "CASSINI",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "mimas",
+   "name": "Mimas",
+   "aliases": [
+    "Saturn I"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 601,
+   "radii_m": [
+    207800.0,
+    196700.0,
+    190600.0
+   ],
+   "mean_radius_m": 198200.0,
+   "color": "#cfcfcf",
+   "thumb": "img/bodies/mimas.jpg",
+   "summary": "Mimas is a small inner moon of Saturn dominated by Herschel crater, imaged by Voyager and Cassini.",
+   "basemaps": [
+    {
+     "id": "mimas-usgs-cassini_mimas_mosaic",
+     "name": "Cassini ISS mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/mimas_simp_cyl.map",
+     "layers": "CASSINI_MIMAS_MOSAIC",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "enceladus",
+   "name": "Enceladus",
+   "aliases": [
+    "Saturn II",
+    "Encélado"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 602,
+   "radii_m": [
+    256600.0,
+    251400.0,
+    248300.0
+   ],
+   "mean_radius_m": 252100.0,
+   "color": "#f2f2f2",
+   "thumb": "img/bodies/enceladus.jpg",
+   "summary": "Enceladus is a small icy moon of Saturn with active south-polar water plumes, extensively imaged by Cassini.",
+   "basemaps": [
+    {
+     "id": "enceladus-iss-trek",
+     "name": "Cassini ISS mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Enceladus/EQ/Enceladus_Cassini_mosaic_global_110m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/Space Science Institute (Cassini ISS); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "enceladus-color-trek",
+     "name": "Cassini ISS color mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Enceladus/EQ/Enceladus_cyl_KH/1.0.0/default/default028mm/{z}/{y}/{x}.jpg",
+     "tiling": "geographic-2x1",
+     "format": "image/jpeg",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 5,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/Space Science Institute (Cassini ISS); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "enceladus-usgs-cassini",
+     "name": "Cassini ISS mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/enceladus_simp_cyl.map",
+     "layers": "CASSINI",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "tethys",
+   "name": "Tethys",
+   "aliases": [
+    "Saturn III"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 603,
+   "radii_m": [
+    538400.0,
+    528300.0,
+    526300.0
+   ],
+   "mean_radius_m": 531100.0,
+   "color": "#dcdcdc",
+   "thumb": "img/bodies/tethys.jpg",
+   "summary": "Tethys is a mid-sized icy moon of Saturn with a giant impact crater (Odysseus) and a long canyon (Ithaca Chasma), imaged by Voyager and Cassini.",
+   "basemaps": [
+    {
+     "id": "tethys-usgs-cassini",
+     "name": "Cassini ISS mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/tethys_simp_cyl.map",
+     "layers": "CASSINI",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "dione",
+   "name": "Dione",
+   "aliases": [
+    "Saturn IV"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 604,
+   "radii_m": [
+    563400.0,
+    561300.0,
+    559600.0
+   ],
+   "mean_radius_m": 561400.0,
+   "color": "#d4d4d4",
+   "thumb": "img/bodies/dione.jpg",
+   "summary": "Dione is a mid-sized icy moon of Saturn imaged by Voyager and Cassini, with bright wispy terrain on its trailing hemisphere.",
+   "basemaps": [
+    {
+     "id": "dione-usgs-cassini_voyager",
+     "name": "Cassini/Voyager mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/dione_simp_cyl.map",
+     "layers": "CASSINI_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "rhea",
+   "name": "Rhea",
+   "aliases": [
+    "Saturn V",
+    "Rea"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 605,
+   "radii_m": [
+    765000.0,
+    763100.0,
+    762400.0
+   ],
+   "mean_radius_m": 763800.0,
+   "color": "#cfcfcf",
+   "thumb": "img/bodies/rhea.jpg",
+   "summary": "Rhea is Saturn's second-largest moon, a heavily cratered icy world imaged by Voyager and Cassini.",
+   "basemaps": [
+    {
+     "id": "rhea-usgs-cassini_voyager",
+     "name": "Cassini/Voyager mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/rhea_simp_cyl.map",
+     "layers": "CASSINI_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "titan",
+   "name": "Titan",
+   "aliases": [
+    "Saturn VI",
+    "Titán"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 606,
+   "radii_m": [
+    2575150.0,
+    2575150.0,
+    2575150.0
+   ],
+   "mean_radius_m": 2575150.0,
+   "color": "#e8a33d",
+   "thumb": "img/bodies/titan.jpg",
+   "summary": "Titan is Saturn's largest moon with a dense nitrogen atmosphere and hydrocarbon lakes, mapped by Cassini ISS, VIMS and RADAR and sampled by the Huygens probe.",
+   "basemaps": [
+    {
+     "id": "titan-iss-trek",
+     "name": "Cassini ISS global mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Titan/EQ/Titan_ISS_P19658_Mosaic_Global_4km/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 3,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/Space Science Institute (Cassini ISS); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "titan-iss-ctl-trek",
+     "name": "Cassini ISS controlled mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Titan/EQ/Titan_ISS_Globe_65Sto45N_450M_AvgMos/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 6,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL/Space Science Institute (Cassini ISS controlled mosaic); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "titan-vims-trek",
+     "name": "Cassini VIMS color ratio",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Titan/EQ/Titan_global_32ppd_ColorRatio_v2/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 4,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL (Cassini VIMS), LPG Nantes; via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "titan-sar-trek",
+     "name": "Cassini RADAR SAR mosaic",
+     "provider": "NASA Solar System Treks",
+     "type": "xyz",
+     "url": "https://trek.nasa.gov/tiles/Titan/EQ/Titan_SAR_HiSAR_MosaicThru_T104_Jan2015_clon180_128ppd/1.0.0/default/default028mm/{z}/{y}/{x}.png",
+     "tiling": "geographic-2x1",
+     "format": "image/png",
+     "crs": "lonlat",
+     "min_zoom": 0,
+     "max_zoom": 6,
+     "tile_size": 256,
+     "kind": "imagery",
+     "attribution": "NASA/JPL (Cassini RADAR); via NASA Solar System Treks",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "titan-usgs-cassini",
+     "name": "Cassini ISS mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/titan_simp_cyl.map",
+     "layers": "CASSINI",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    },
+    {
+     "id": "titan-usgs-titan_hisar_mosaic",
+     "name": "Cassini RADAR HiSAR mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/titan_simp_cyl.map",
+     "layers": "Titan_HiSAR_Mosaic",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "hyperion",
+   "name": "Hyperion",
+   "aliases": [
+    "Saturn VII"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 607,
+   "radii_m": [
+    180100.0,
+    133000.0,
+    102700.0
+   ],
+   "mean_radius_m": 135000.0,
+   "color": "#b8a88f",
+   "thumb": "img/bodies/hyperion.jpg",
+   "summary": "Hyperion is an irregular, chaotically tumbling, sponge-like moon of Saturn imaged by Voyager 2 and Cassini.",
+   "basemaps": [
+    {
+     "id": "hyperion-usgs-voyager2",
+     "name": "Voyager 2 mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/hyperion_simp_cyl.map",
+     "layers": "VOYAGER2",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "iapetus",
+   "name": "Iapetus",
+   "aliases": [
+    "Saturn VIII",
+    "Japetus"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 608,
+   "radii_m": [
+    745700.0,
+    745700.0,
+    712100.0
+   ],
+   "mean_radius_m": 734500.0,
+   "color": "#8a7a66",
+   "thumb": "img/bodies/iapetus.jpg",
+   "summary": "Iapetus is a Saturnian moon with a dark leading hemisphere, a bright trailing hemisphere and an equatorial ridge, imaged by Voyager and Cassini.",
+   "basemaps": [
+    {
+     "id": "iapetus-usgs-cassini_voyager",
+     "name": "Cassini/Voyager mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/iapetus_simp_cyl.map",
+     "layers": "CASSINI_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "phoebe",
+   "name": "Phoebe",
+   "aliases": [
+    "Saturn IX",
+    "Febe"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 609,
+   "radii_m": [
+    109400.0,
+    108500.0,
+    101800.0
+   ],
+   "mean_radius_m": 106500.0,
+   "color": "#555",
+   "thumb": "img/bodies/phoebe.jpg",
+   "summary": "Phoebe is a retrograde irregular moon of Saturn, flown past by Cassini in June 2004.",
+   "basemaps": [
+    {
+     "id": "phoebe-usgs-cassini",
+     "name": "Cassini ISS mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/saturn/phoebe_simp_cyl.map",
+     "layers": "CASSINI",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "janus",
+   "name": "Janus",
+   "aliases": [
+    "Saturn X"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 610,
+   "radii_m": [
+    101700.0,
+    93000.0,
+    76300.0
+   ],
+   "mean_radius_m": 89500.0,
+   "color": "#bbb",
+   "thumb": null,
+   "summary": "Janus is a small co-orbital inner moon of Saturn that swaps orbits with Epimetheus, imaged by Voyager and Cassini.",
+   "basemaps": []
+  },
+  {
+   "id": "epimetheus",
+   "name": "Epimetheus",
+   "aliases": [
+    "Saturn XI"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 611,
+   "radii_m": [
+    64900.0,
+    57000.0,
+    53100.0
+   ],
+   "mean_radius_m": 58100.0,
+   "color": "#bbb",
+   "thumb": null,
+   "summary": "Epimetheus is a small co-orbital inner moon of Saturn that swaps orbits with Janus, imaged by Voyager and Cassini.",
+   "basemaps": []
+  },
+  {
+   "id": "prometheus",
+   "name": "Prometheus",
+   "aliases": [
+    "Saturn XVI"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 616,
+   "radii_m": [
+    68200.0,
+    41600.0,
+    28200.0
+   ],
+   "mean_radius_m": 42800.0,
+   "color": "#bbb",
+   "thumb": null,
+   "summary": "Prometheus is an elongated shepherd moon on the inner edge of Saturn's F ring, imaged by Voyager and Cassini.",
+   "basemaps": []
+  },
+  {
+   "id": "pandora",
+   "name": "Pandora",
+   "aliases": [
+    "Saturn XVII"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 617,
+   "radii_m": [
+    52200.0,
+    40800.0,
+    31500.0
+   ],
+   "mean_radius_m": 40600.0,
+   "color": "#bbb",
+   "thumb": null,
+   "summary": "Pandora is a small shepherd moon on the outer edge of Saturn's F ring, imaged by Voyager and Cassini.",
+   "basemaps": []
+  },
+  {
+   "id": "pan",
+   "name": "Pan",
+   "aliases": [
+    "Saturn XVIII"
+   ],
+   "group": "Saturn system",
+   "type": "moon",
+   "parent": "saturn",
+   "naif_id": 618,
+   "radii_m": [
+    17200.0,
+    15400.0,
+    10400.0
+   ],
+   "mean_radius_m": 14100.0,
+   "color": "#bbb",
+   "thumb": null,
+   "summary": "Pan is a tiny ravioli-shaped moon in Saturn's Encke Gap, imaged by Cassini.",
+   "basemaps": []
+  },
+  {
+   "id": "uranus",
+   "name": "Uranus",
+   "aliases": [
+    "Ouranos",
+    "Urano",
+    "Herschel planet",
+    "Georgium Sidus",
+    "Uranian"
+   ],
+   "group": "Uranus system",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 799,
+   "radii_m": [
+    25559.0,
+    25559.0,
+    24973.0
+   ],
+   "mean_radius_m": 25362.0,
+   "color": "#9fd8e0",
+   "thumb": "img/bodies/uranus.jpg",
+   "summary": "Uranus is the tilted ice giant, visited only by Voyager 2 in January 1986 and observed by Hubble, Keck and JWST.",
+   "basemaps": [
+    {
+     "id": "uranus-usgs-jht_voyager_hst",
+     "name": "Voyager/HST map (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/uranus/uranus_simp_cyl.map",
+     "layers": "JHT_VOYAGER_HST",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "miranda",
+   "name": "Miranda",
+   "aliases": [
+    "Uranus V"
+   ],
+   "group": "Uranus system",
+   "type": "moon",
+   "parent": "uranus",
+   "naif_id": 705,
+   "radii_m": [
+    240400.0,
+    234200.0,
+    232900.0
+   ],
+   "mean_radius_m": 235800.0,
+   "color": "#a9a9a9",
+   "thumb": "img/bodies/miranda.jpg",
+   "summary": "Miranda is a small Uranian moon with extreme patchwork terrain and the giant cliff Verona Rupes, imaged by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "ariel",
+   "name": "Ariel",
+   "aliases": [
+    "Uranus I"
+   ],
+   "group": "Uranus system",
+   "type": "moon",
+   "parent": "uranus",
+   "naif_id": 701,
+   "radii_m": [
+    581100.0,
+    577900.0,
+    577700.0
+   ],
+   "mean_radius_m": 578900.0,
+   "color": "#b5b5b5",
+   "thumb": "img/bodies/ariel.jpg",
+   "summary": "Ariel is a Uranian moon with extensive canyons and valleys, imaged by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "umbriel",
+   "name": "Umbriel",
+   "aliases": [
+    "Uranus II"
+   ],
+   "group": "Uranus system",
+   "type": "moon",
+   "parent": "uranus",
+   "naif_id": 702,
+   "radii_m": [
+    584700.0,
+    584700.0,
+    584700.0
+   ],
+   "mean_radius_m": 584700.0,
+   "color": "#6e6e6e",
+   "thumb": "img/bodies/umbriel.jpg",
+   "summary": "Umbriel is a dark, ancient, heavily cratered moon of Uranus imaged by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "titania",
+   "name": "Titania",
+   "aliases": [
+    "Uranus III"
+   ],
+   "group": "Uranus system",
+   "type": "moon",
+   "parent": "uranus",
+   "naif_id": 703,
+   "radii_m": [
+    788900.0,
+    788900.0,
+    788900.0
+   ],
+   "mean_radius_m": 788900.0,
+   "color": "#a39b94",
+   "thumb": "img/bodies/titania.jpg",
+   "summary": "Titania is the largest moon of Uranus, imaged by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "oberon",
+   "name": "Oberon",
+   "aliases": [
+    "Uranus IV"
+   ],
+   "group": "Uranus system",
+   "type": "moon",
+   "parent": "uranus",
+   "naif_id": 704,
+   "radii_m": [
+    761400.0,
+    761400.0,
+    761400.0
+   ],
+   "mean_radius_m": 761400.0,
+   "color": "#8f8580",
+   "thumb": "img/bodies/oberon.jpg",
+   "summary": "Oberon is the outermost large moon of Uranus, imaged by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "neptune",
+   "name": "Neptune",
+   "aliases": [
+    "Poseidon",
+    "Neptunus",
+    "Neptuno",
+    "Neptun"
+   ],
+   "group": "Neptune system",
+   "type": "planet",
+   "parent": "sun",
+   "naif_id": 899,
+   "radii_m": [
+    24764.0,
+    24764.0,
+    24341.0
+   ],
+   "mean_radius_m": 24622.0,
+   "color": "#4b70dd",
+   "thumb": "img/bodies/neptune.jpg",
+   "summary": "Neptune is the outermost planet, visited only by Voyager 2 in August 1989 and observed by Hubble, Keck and JWST.",
+   "basemaps": [
+    {
+     "id": "neptune-usgs-jht_voyager",
+     "name": "Voyager/HST map (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/neptune/neptune_simp_cyl.map",
+     "layers": "JHT_VOYAGER",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "triton",
+   "name": "Triton",
+   "aliases": [
+    "Neptune I",
+    "Tritón"
+   ],
+   "group": "Neptune system",
+   "type": "moon",
+   "parent": "neptune",
+   "naif_id": 801,
+   "radii_m": [
+    1353400.0,
+    1353400.0,
+    1353400.0
+   ],
+   "mean_radius_m": 1353400.0,
+   "color": "#cfc2b4",
+   "thumb": "img/bodies/triton.jpg",
+   "summary": "Triton is Neptune's large retrograde moon, a probable captured Kuiper Belt object with active nitrogen geysers, imaged by Voyager 2.",
+   "basemaps": [
+    {
+     "id": "triton-usgs-triton_voyager2",
+     "name": "Voyager 2 mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/neptune/triton_simp_cyl.map",
+     "layers": "TRITON_VOYAGER2",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "proteus",
+   "name": "Proteus",
+   "aliases": [
+    "Neptune VIII",
+    "S/1989 N 1"
+   ],
+   "group": "Neptune system",
+   "type": "moon",
+   "parent": "neptune",
+   "naif_id": 808,
+   "radii_m": [
+    218000.0,
+    208000.0,
+    201000.0
+   ],
+   "mean_radius_m": 210000.0,
+   "color": "#777",
+   "thumb": "img/bodies/proteus.jpg",
+   "summary": "Proteus is Neptune's largest inner moon, an irregular dark body imaged by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "nereid",
+   "name": "Nereid",
+   "aliases": [
+    "Neptune II"
+   ],
+   "group": "Neptune system",
+   "type": "moon",
+   "parent": "neptune",
+   "naif_id": 802,
+   "radii_m": [
+    170000.0,
+    170000.0,
+    170000.0
+   ],
+   "mean_radius_m": 170000.0,
+   "color": "#888",
+   "thumb": null,
+   "summary": "Nereid is an outer irregular moon of Neptune with a highly eccentric orbit, resolved only as a few pixels by Voyager 2.",
+   "basemaps": []
+  },
+  {
+   "id": "pluto",
+   "name": "Pluto",
+   "aliases": [
+    "(134340) Pluto",
+    "134340 Pluto",
+    "Plutón",
+    "Plouton",
+    "1930 MA"
+   ],
+   "group": "Pluto & Kuiper Belt",
+   "type": "dwarf-planet",
+   "parent": "sun",
+   "naif_id": 999,
+   "radii_m": [
+    1188300.0,
+    1188300.0,
+    1188300.0
+   ],
+   "mean_radius_m": 1188300.0,
+   "color": "#c9a27e",
+   "thumb": "img/bodies/pluto.jpg",
+   "summary": "Pluto is a Kuiper Belt dwarf planet imaged globally in 2015 by NASA's New Horizons.",
+   "basemaps": [
+    {
+     "id": "pluto-usgs-newhorizons_pluto_mosaic",
+     "name": "New Horizons LORRI/MVIC mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/pluto/pluto_simp_cyl.map",
+     "layers": "NEWHORIZONS_PLUTO_MOSAIC",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "charon",
+   "name": "Charon",
+   "aliases": [
+    "Pluto I",
+    "(134340) Pluto I Charon",
+    "S/1978 P 1"
+   ],
+   "group": "Pluto & Kuiper Belt",
+   "type": "moon",
+   "parent": "pluto",
+   "naif_id": 901,
+   "radii_m": [
+    606000.0,
+    606000.0,
+    606000.0
+   ],
+   "mean_radius_m": 606000.0,
+   "color": "#9a9a9a",
+   "thumb": "img/bodies/charon.jpg",
+   "summary": "Charon is Pluto's largest moon, about half its size, imaged by New Horizons in 2015.",
+   "basemaps": [
+    {
+     "id": "charon-usgs-newhorizons_charon_mosaic",
+     "name": "New Horizons LORRI/MVIC mosaic (USGS)",
+     "provider": "USGS Astrogeology Science Center",
+     "type": "wms",
+     "url": "https://planetarymaps.usgs.gov/cgi-bin/mapserv?map=/maps/pluto/charon_simp_cyl.map",
+     "layers": "NEWHORIZONS_CHARON_MOSAIC",
+     "version": "1.1.1",
+     "format": "image/png",
+     "srs": [
+      "EPSG:4326"
+     ],
+     "crs": "lonlat",
+     "kind": "imagery",
+     "attribution": "USGS Astrogeology Science Center, NASA and mission teams (planetarymaps.usgs.gov)",
+     "verified": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "id": "nix",
+   "name": "Nix",
+   "aliases": [
+    "Pluto II",
+    "S/2005 P 2"
+   ],
+   "group": "Pluto & Kuiper Belt",
+   "type": "moon",
+   "parent": "pluto",
+   "naif_id": 902,
+   "radii_m": [
+    25200.0,
+    16600.0,
+    15450.0
+   ],
+   "mean_radius_m": 18600.0,
+   "color": "#aaa",
+   "thumb": null,
+   "summary": "Nix is a small irregular moon of Pluto imaged by New Horizons.",
+   "basemaps": []
+  },
+  {
+   "id": "hydra",
+   "name": "Hydra",
+   "aliases": [
+    "Pluto III",
+    "S/2005 P 1"
+   ],
+   "group": "Pluto & Kuiper Belt",
+   "type": "moon",
+   "parent": "pluto",
+   "naif_id": 903,
+   "radii_m": [
+    32150.0,
+    21950.0,
+    15450.0
+   ],
+   "mean_radius_m": 22200.0,
+   "color": "#aaa",
+   "thumb": null,
+   "summary": "Hydra is a small irregular outer moon of Pluto imaged by New Horizons.",
+   "basemaps": []
+  },
+  {
+   "id": "arrokoth",
+   "name": "Arrokoth",
+   "aliases": [
+    "(486958) Arrokoth",
+    "486958 Arrokoth",
+    "2014 MU69",
+    "Ultima Thule",
+    "MU69",
+    "PT1"
+   ],
+   "group": "Pluto & Kuiper Belt",
+   "type": "kbo",
+   "parent": "sun",
+   "naif_id": 2486958,
+   "radii_m": [
+    18000.0,
+    10000.0,
+    5000.0
+   ],
+   "mean_radius_m": 9650.0,
+   "color": "#a0522d",
+   "thumb": null,
+   "summary": "Arrokoth is a bilobed contact-binary Kuiper Belt object flown past by New Horizons on 1 January 2019.",
+   "basemaps": []
+  },
+  {
+   "id": "kbos",
+   "name": "Other Kuiper Belt objects",
+   "aliases": [
+    "Kuiper belt",
+    "Kuiper Belt object",
+    "KBO",
+    "TNO",
+    "trans-Neptunian",
+    "transneptunian",
+    "Eris",
+    "Haumea",
+    "Makemake",
+    "Gonggong",
+    "Quaoar",
+    "Sedna",
+    "Orcus",
+    "Varuna",
+    "Dysnomia",
+    "Hiʻiaka",
+    "Namaka",
+    "Weywot",
+    "scattered disc",
+    "Centaur",
+    "Chiron",
+    "Pholus"
+   ],
+   "group": "Pluto & Kuiper Belt",
+   "type": "group",
+   "parent": null,
+   "naif_id": null,
+   "radii_m": null,
+   "mean_radius_m": null,
+   "color": "#888",
+   "thumb": null,
+   "summary": "Group entry for other Kuiper Belt and trans-Neptunian objects (e.g. Eris, Haumea, Makemake, Quaoar, Sedna, Centaurs) and for catch-all TNO datasets.",
+   "basemaps": []
+  },
+  {
+   "id": "halley",
+   "name": "1P/Halley",
+   "aliases": [
+    "1P/Halley",
+    "1P",
+    "Halley's Comet",
+    "Comet Halley"
+   ],
+   "group": "Comets & interstellar",
+   "type": "comet",
+   "parent": "sun",
+   "naif_id": 1000036,
+   "radii_m": [
+    7650.0,
+    3600.0,
+    3600.0
+   ],
+   "mean_radius_m": 4600.0,
+   "color": "#666",
+   "thumb": null,
+   "summary": "1P/Halley is the best-known periodic comet, imaged at close range by the Giotto, Vega 1 and Vega 2 probes in March 1986.",
+   "basemaps": []
+  },
+  {
+   "id": "borrelly",
+   "name": "19P/Borrelly",
+   "aliases": [
+    "19P/Borrelly",
+    "19P",
+    "Comet Borrelly"
+   ],
+   "group": "Comets & interstellar",
+   "type": "comet",
+   "parent": "sun",
+   "naif_id": 1000092,
+   "radii_m": [
+    4000.0,
+    1600.0,
+    1600.0
+   ],
+   "mean_radius_m": 2600.0,
+   "color": "#666",
+   "thumb": "img/bodies/borrelly.jpg",
+   "summary": "19P/Borrelly is a Jupiter-family comet flown past by Deep Space 1 in September 2001.",
+   "basemaps": []
+  },
+  {
+   "id": "wild-2",
+   "name": "81P/Wild 2",
+   "aliases": [
+    "81P/Wild",
+    "81P/Wild 2",
+    "81P",
+    "Comet Wild 2",
+    "Wild2"
+   ],
+   "group": "Comets & interstellar",
+   "type": "comet",
+   "parent": "sun",
+   "naif_id": 1000107,
+   "radii_m": [
+    2750.0,
+    2000.0,
+    1650.0
+   ],
+   "mean_radius_m": 2000.0,
+   "color": "#666",
+   "thumb": "img/bodies/wild-2.jpg",
+   "summary": "81P/Wild 2 is a Jupiter-family comet flown past by Stardust in January 2004, which returned coma dust samples to Earth in 2006.",
+   "basemaps": []
+  },
+  {
+   "id": "tempel-1",
+   "name": "9P/Tempel 1",
+   "aliases": [
+    "9P/Tempel",
+    "9P/Tempel 1",
+    "9P",
+    "Comet Tempel 1"
+   ],
+   "group": "Comets & interstellar",
+   "type": "comet",
+   "parent": "sun",
+   "naif_id": 1000093,
+   "radii_m": [
+    3800.0,
+    2450.0,
+    2450.0
+   ],
+   "mean_radius_m": 3000.0,
+   "color": "#666",
+   "thumb": null,
+   "summary": "9P/Tempel 1 is a Jupiter-family comet impacted by Deep Impact in July 2005 and revisited by Stardust-NExT in February 2011.",
+   "basemaps": []
+  },
+  {
+   "id": "hartley-2",
+   "name": "103P/Hartley 2",
+   "aliases": [
+    "103P/Hartley",
+    "103P/Hartley 2",
+    "103P",
+    "Comet Hartley 2"
+   ],
+   "group": "Comets & interstellar",
+   "type": "comet",
+   "parent": "sun",
+   "naif_id": 1000041,
+   "radii_m": [
+    1100.0,
+    400.0,
+    400.0
+   ],
+   "mean_radius_m": 580.0,
+   "color": "#666",
+   "thumb": "img/bodies/hartley-2.jpg",
+   "summary": "103P/Hartley 2 is a small hyperactive Jupiter-family comet flown past by EPOXI in November 2010.",
+   "basemaps": []
+  },
+  {
+   "id": "67p",
+   "name": "67P/Churyumov–Gerasimenko",
+   "aliases": [
+    "67P/Churyumov-Gerasimenko",
+    "67P/Churyumov–Gerasimenko",
+    "67P",
+    "Churyumov-Gerasimenko",
+    "Comet 67P",
+    "Chury"
+   ],
+   "group": "Comets & interstellar",
+   "type": "comet",
+   "parent": "sun",
+   "naif_id": 1000012,
+   "radii_m": [
+    2050.0,
+    1650.0,
+    1000.0
+   ],
+   "mean_radius_m": 1650.0,
+   "color": "#555",
+   "thumb": "img/bodies/67p.jpg",
+   "summary": "67P/Churyumov-Gerasimenko is the Jupiter-family comet orbited by ESA's Rosetta (2014-2016), which landed Philae on its surface.",
+   "basemaps": []
+  },
+  {
+   "id": "3i-atlas",
+   "name": "3I/ATLAS",
+   "aliases": [
+    "3I/ATLAS",
+    "3I",
+    "C/2025 N1",
+    "C/2025 N1 (ATLAS)",
+    "3I ATLAS",
+    "interstellar comet"
+   ],
+   "group": "Comets & interstellar",
+   "type": "interstellar",
+   "parent": "sun",
+   "naif_id": 1004083,
+   "radii_m": null,
+   "mean_radius_m": null,
+   "color": "#7fb2ff",
+   "thumb": null,
+   "summary": "3I/ATLAS is the third confirmed interstellar object, discovered in July 2025 and observed during its 2025-2026 passage by Hubble, JWST, Mars orbiters and ground telescopes.",
+   "basemaps": []
+  },
+  {
+   "id": "comets",
+   "name": "Other comets",
+   "aliases": [
+    "comet",
+    "cometary",
+    "Oort cloud",
+    "Hale-Bopp",
+    "C/1995 O1",
+    "C/2020 F3",
+    "Shoemaker-Levy 9",
+    "SL9",
+    "ISON",
+    "McNaught",
+    "2I/Borisov",
+    "Borisov",
+    "1I/ʻOumuamua",
+    "Oumuamua",
+    "ʻOumuamua",
+    "interstellar object",
+    "Encke",
+    "2P/Encke",
+    "Giacobini-Zinner",
+    "21P",
+    "Swift-Tuttle",
+    "Tsuchinshan-ATLAS",
+    "C/2023 A3"
+   ],
+   "group": "Comets & interstellar",
+   "type": "group",
+   "parent": null,
+   "naif_id": null,
+   "radii_m": null,
+   "mean_radius_m": null,
+   "color": "#666",
+   "thumb": null,
+   "summary": "Group entry for all other comets and interstellar objects (e.g. Hale-Bopp, Shoemaker-Levy 9, 2I/Borisov, 1I/ʻOumuamua) and for catch-all comet datasets.",
+   "basemaps": []
+  },
+  {
+   "id": "rings",
+   "name": "Planetary rings",
+   "aliases": [
+    "ring",
+    "ring system",
+    "ring systems",
+    "Saturn rings",
+    "Saturn's rings",
+    "A ring",
+    "B ring",
+    "C ring",
+    "F ring",
+    "E ring",
+    "Cassini Division",
+    "Encke Gap",
+    "Jupiter ring",
+    "Uranus rings",
+    "Neptune rings",
+    "Chariklo rings",
+    "Haumea ring",
+    "Quaoar ring"
+   ],
+   "group": "Planetary rings",
+   "type": "group",
+   "parent": null,
+   "naif_id": null,
+   "radii_m": null,
+   "mean_radius_m": null,
+   "color": "#d9c38a",
+   "thumb": null,
+   "summary": "Group entry for planetary ring systems (Saturn, Jupiter, Uranus, Neptune and small-body rings) used by ring-specific datasets such as Cassini ISS, VIMS and UVIS ring observations and occultations.",
+   "basemaps": []
+  }
+ ]
+}
