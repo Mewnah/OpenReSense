@@ -98,9 +98,11 @@ var
 begin
   Dir := ExpandConstant('{app}\');
   StringChangeEx(Dir, '''', '''''', True);  // a quote inside a PowerShell '...' string
+  // not unins*.exe: the uninstaller's first stage runs from this folder until the uninstall ends; stopping it made the
+  // uninstall report failure (exit code -1) although it had worked
   Exec(ExpandConstant('{sys}\WindowsPowerShell\v1.0\powershell.exe'), '-NoProfile -NonInteractive -ExecutionPolicy Bypass ' +
     '-Command "Get-CimInstance Win32_Process | Where-Object { $_.ExecutablePath -and $_.ExecutablePath.StartsWith(''' + Dir +
-    ''', [StringComparison]::OrdinalIgnoreCase) } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }"',
+    ''', [StringComparison]::OrdinalIgnoreCase) -and $_.Name -notlike ''unins*'' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }"',
     '', SW_HIDE, ewWaitUntilTerminated, Code);
 end;
 
