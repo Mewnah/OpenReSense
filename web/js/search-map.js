@@ -121,6 +121,10 @@ export function createMap(el, { onHover, onSelect, onBox }) {
       map.addInteraction(drawing);
     },
     resize() { map.updateSize(); if (!footprints.getFeatures().length) fitWorld(); },
+    size() { map.updateSize(); },  // follow a new size, keeping where the user panned/zoomed
+    shown: () => !!map.getSize()?.[0],  // false while the tab or the map is hidden
+    getView() { const v = map.getView(); return { center: v.getCenter(), resolution: v.getResolution() }; },
+    setView({ center, resolution }) { const v = map.getView(); v.setCenter(center); v.setResolution(resolution); },
   };
   return api;
 }

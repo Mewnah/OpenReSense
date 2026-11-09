@@ -1,17 +1,26 @@
 // Render settings shared by the image/map views (OpenLayers WebGL style) and server-rendered PNGs
 // (globe, exports). The per-pixel pipeline is CONTRACTS.md section 6; server/raster implements the same math.
 
+// Robust first: the percentile ranges ignore a few extreme values; Min – max and the data-type range do not.
 export const PRESETS = {
-  dtype: 'Full data-type range',
-  minmax: 'Min – max',
-  p01: '0.1 – 99.9 %',
   p05: '0.5 – 99.5 %',
+  p01: '0.1 – 99.9 %',
   p1: '1 – 99 %',
   p2: '2 – 98 %',
   sigma2: 'Mean ± 2σ',
   sigma3: 'Mean ± 3σ',
-  manual: 'Manual',
+  minmax: 'Min – max (every value)',
+  dtype: 'Full data-type range',
+  manual: 'Manual (histogram)',
 };
+
+// Share of the range [lo, hi] that the middle 99 % of the pixels take up. Tiny when a few extreme values (fill values,
+// hot or saturated pixels) set the range: the picture is then near-black or flat.
+export function coreShare(bandStats, lo, hi) {
+  const p = bandStats?.percentiles;
+  if (!p || !(hi > lo) || !(p['99.5'] > p['0.5'])) return 1;  // nothing to judge (constant band)
+  return Math.min(1, (p['99.5'] - p['0.5']) / (hi - lo));
+}
 
 const DTYPE_RANGE = {
   uint8: [0, 255], int8: [-128, 127], uint16: [0, 65535], int16: [-32768, 32767],

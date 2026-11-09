@@ -1,4 +1,5 @@
 """FastAPI app: wires routers and static files. Feature code lives in the routers (see CONTRACTS.md)."""
+import hashlib
 import json
 import math
 import mimetypes
@@ -75,6 +76,13 @@ def vocab():
 def bodies():
     return {"bodies": _read_json("bodies.json").get("bodies", []),
             "regions": _read_json("vocab.json").get("regions", {})}
+
+
+@app.get("/api/instance")
+def instance():
+    """Which app folder this server runs from, as a hash (not the path): OpenReSense.exe only reuses a server of its own
+    folder, never another copy's or another user's that happens to listen on the port."""
+    return {"root": hashlib.sha1(str(ROOT).lower().encode()).hexdigest()[:16]}
 
 
 @app.get("/api/settings")

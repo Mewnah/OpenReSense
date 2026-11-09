@@ -154,7 +154,7 @@ export function createMapView(el, colormaps, cb) {
       return Math.abs(lat) <= 90 && Math.abs(lon) <= 900 ? { lon: ((lon + 540) % 360 + 360) % 360 - 180, lat } : null;
     };
     map.on('pointermove', (e) => !e.dragging && !ctx?.empty && cb.onMove(pos(e.coordinate)));
-    map.on('singleclick', (e) => !ctx?.empty && cb.onPick(pos(e.coordinate)));
+    map.on('singleclick', (e) => { const p = !ctx?.empty && pos(e.coordinate); if (p) cb.onPick({ ...p, coord: e.coordinate }); });
     el.addEventListener('mouseleave', () => cb.onMove(null));
     new ResizeObserver(() => map.updateSize()).observe(el);
   }

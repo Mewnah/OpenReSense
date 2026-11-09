@@ -5,9 +5,20 @@
 .vw-right { border-left: 1px solid var(--border); }
 .vw-center { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
 
+.vw.nopanels { grid-template-columns: minmax(0, 1fr); }  /* 'h': the picture gets the whole width */
+.vw.nopanels .vw-left, .vw.nopanels .vw-right { display: none; }
+@media (max-width: 1200px) { .vw { grid-template-columns: 250px minmax(0, 1fr) 300px; } }
+
 .vw-sec { padding: 10px 12px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 8px; }
 .vw-sec h4 { margin: 0; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-details.vw-sec > summary { cursor: pointer; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+details.vw-sec > summary { cursor: pointer; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600;
+  margin: -2px -4px; padding: 2px 4px; border-radius: 4px; transition: color .12s, background-color .12s; }
+details.vw-sec > summary:hover { color: var(--text); background: var(--panel-2); }
+details.vw-sec:not([open]) { gap: 0; }
+.vw-adjhead { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; gap: 8px; padding: 8px 12px;
+  background: var(--panel); border-bottom: 1px solid var(--border); }
+.vw-warn { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 7px 9px; border-radius: 6px; font-size: 12.5px;
+  background: rgba(229, 192, 123, .1); border: 1px solid rgba(229, 192, 123, .45); color: var(--warn); }
 .vw .select, .vw .input { min-width: 0; padding: 4px 8px; }
 .vw-small { font-size: 12px; }
 .row.nowrap { flex-wrap: nowrap; gap: 6px; }
@@ -16,9 +27,10 @@ details.vw-sec > summary { cursor: pointer; font-size: 12px; letter-spacing: .08
 .vw-drop { border: 1px dashed var(--border); border-radius: var(--radius); padding: 14px 10px; text-align: center; cursor: pointer; color: var(--muted); }
 .vw-drop:hover, .vw-drop.over { border-color: var(--accent); color: var(--text); background: var(--panel-2); }
 .vw-list { display: flex; flex-direction: column; gap: 4px; }
-.vw-item { padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel-2); display: flex; flex-direction: column; gap: 4px; }
+.vw-item { padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel-2); display: flex; flex-direction: column; gap: 4px;
+  transition: border-color .12s, background-color .12s, box-shadow .12s; }
 .vw-item.ready { cursor: pointer; }
-.vw-item.ready:hover { border-color: var(--muted); }
+.vw-item.ready:hover { border-color: var(--border-hi); background: var(--panel-3); box-shadow: 0 2px 8px rgba(0, 0, 0, .35); }
 .vw-item.active { border-color: var(--accent); background: var(--panel-3); }
 .vw-item-top { flex-wrap: nowrap; gap: 6px; }
 .vw-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -33,11 +45,23 @@ details.vw-sec > summary { cursor: pointer; font-size: 12px; letter-spacing: .08
 /* toolbar / stage / status */
 .vw-toolbar { display: flex; align-items: center; gap: 6px; padding: 6px 10px; background: var(--panel); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
 .vw-seg { display: inline-flex; gap: 2px; margin-right: 6px; }
+.vw-toolbar .select { max-width: 190px; }  /* a basemap name must not push the rest off the toolbar */
+.vw-geotools { min-width: 0; }
 .vw-stage { position: relative; flex: 1 1 auto; min-height: 0; background: #05070b; }
 .vw-pane { position: absolute; inset: 0; }
 .vw-msg { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); max-width: 70%; text-align: center;
   padding: 10px 16px; border-radius: var(--radius); background: rgba(18, 23, 34, .88); color: var(--muted); z-index: 5; pointer-events: none; }
-.vw-msg.error { color: var(--danger); }
+.vw-msg.error { color: var(--danger); pointer-events: auto; cursor: pointer; }
+/* pixel values: a card over the picture's corner (viewer-info.js), and a crosshair on the pixel */
+.vw-probe { position: absolute; left: 10px; top: 10px; z-index: 6; width: min(340px, calc(100% - 20px)); max-height: calc(100% - 20px); overflow: auto;
+  padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; border-radius: var(--radius);
+  background: rgba(18, 23, 34, .94); border: 1px solid var(--border-hi); box-shadow: 0 6px 22px rgba(0, 0, 0, .5); }
+.vw-probe-head { display: flex; align-items: center; gap: 6px; }
+.vw-marker { width: 21px; height: 21px; pointer-events: none;
+  background: linear-gradient(#ffb454, #ffb454) center / 2px 100% no-repeat, linear-gradient(#ffb454, #ffb454) center / 100% 2px no-repeat;
+  filter: drop-shadow(0 0 1.5px #000) drop-shadow(0 0 1.5px #000); }
+.vw-loading { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); }
+.vw-loading .spinner { width: 11px; height: 11px; border-width: 2px; }
 .vw-status { display: flex; gap: 14px; align-items: center; padding: 4px 12px; background: var(--panel); border-top: 1px solid var(--border);
   font-size: 12.5px; min-height: 28px; white-space: nowrap; overflow: hidden; }
 .vw-zoom { min-width: 54px; color: var(--accent-2); }
@@ -52,16 +76,23 @@ details.vw-sec > summary { cursor: pointer; font-size: 12px; letter-spacing: .08
 .vw-bandsels, .vw-hists { display: flex; flex-direction: column; gap: 6px; }
 .vw-field { display: grid; grid-template-columns: 78px 1fr; align-items: center; gap: 6px; }
 .vw-slider { display: grid; grid-template-columns: 76px 1fr 64px; align-items: center; gap: 6px; }
-.vw-range { width: 100%; min-width: 0; }
+.vw-slider-name { cursor: default; }
+.vw-slider-name:hover { color: var(--text); text-decoration: underline dotted var(--muted); text-underline-offset: 3px; }
+.vw-range { width: 100%; min-width: 0; transition: filter .12s; }
+.vw-range:hover { filter: brightness(1.2); }
 .vw-num { width: 100%; max-width: 90px; }
 .vw-histblk { display: flex; flex-direction: column; gap: 4px; }
 .vw-histblk .row { flex-wrap: nowrap; gap: 6px; }
-.vw-histblk .vw-num { max-width: none; flex: 1 1 0; }
-.vw-hist { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; cursor: ew-resize; touch-action: none; max-width: 100%; }
-.vw-cmaps { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
-.vw-cmap { display: flex; flex-direction: column; gap: 2px; padding: 3px; border: 1px solid var(--border); border-radius: 4px; background: var(--panel-2); color: var(--text); cursor: pointer; font: inherit; font-size: 11.5px; text-align: left; }
-.vw-cmap i { display: block; height: 10px; border-radius: 2px; }
-.vw-cmap:hover { border-color: var(--muted); }
+.vw-histblk .vw-num { max-width: none; flex: 1 1 0; min-width: 0; }
+.vw-hist { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; cursor: ew-resize; touch-action: none; max-width: 100%;
+  transition: border-color .12s; }
+.vw-hist:hover { border-color: var(--border-hi); }
+.vw-cmaps { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; }
+.vw-cmap { display: flex; flex-direction: column; gap: 2px; padding: 3px; border: 1px solid var(--border); border-radius: 4px; background: var(--panel-2); color: var(--text);
+  cursor: pointer; font: inherit; font-size: 11px; text-align: left; transition: border-color .12s, transform .12s; }
+.vw-cmap span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vw-cmap i { display: block; height: 8px; border-radius: 2px; }
+.vw-cmap:hover { border-color: var(--muted); transform: translateY(-1px); }
 .vw-cmap.active { border-color: var(--accent); background: var(--panel-3); }
 
 /* info */
@@ -71,6 +102,14 @@ details.vw-sec > summary { cursor: pointer; font-size: 12px; letter-spacing: .08
 .vw-probe-scroll { max-height: 170px; overflow: auto; }
 .vw-spectrum { margin-top: 6px; max-width: 100%; }
 .vw-label { margin: 6px 0 0; max-height: 280px; overflow: auto; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 6px; font-size: 11.5px; white-space: pre; }
+
+/* dialogs: .dlg label stacks its children; the viewer's label fields stay two columns */
+.dlg .vw-field { display: grid; flex-direction: initial; text-align: left; }
+.vw-keys { width: min(520px, 92vw); }
+.vw-keys th { padding: 3px 14px 3px 0; }
+.vw-keys td { padding: 3px 0; word-break: normal; }
+kbd { display: inline-block; padding: 1px 6px; border: 1px solid var(--border-hi); border-bottom-width: 2px; border-radius: 4px;
+  background: var(--panel-2); color: var(--text); font: 12px var(--mono); white-space: nowrap; }
 
 /* export dialog */
 .vw-export { width: min(520px, 92vw); }

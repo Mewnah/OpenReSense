@@ -43,6 +43,15 @@ OVERZOOM = 4
 DOWNSAMPLE = {"nearest", "bilinear", "cubic", "cubic_spline", "lanczos", "average", "mode", "rms"}
 MAGNIFY = {"nearest", "bilinear", "cubic", "cubic_spline", "lanczos"}
 PERCENTILES = [0.1, 0.5, 1, 2, 5, 95, 98, 99, 99.5, 99.9]
+# In 32-bit float data, values this large are fill or special values (-3.4e38 fills and ISIS special pixels are often not
+# declared as no-data), never measurements: tiles, the probe and the statistics treat them as no-data. Otherwise they
+# would make Min-max (and the exact histogram) span 1e38, leaving the picture flat. 64-bit data may really be that large.
+FILL_ABOVE = 1e30
+
+
+def _fills(dtype) -> bool:
+    dt = np.dtype(dtype)
+    return dt.kind == "f" and dt.itemsize <= 4
 
 # ---------------------------------------------------------------- handles
 
@@ -407,6 +416,11 @@ def _read(ds, bands, col0, row0, width, height, scale, resampling, nodata, all_v
     if data.dtype.kind == "f":
         alpha[~np.isfinite(data).all(axis=0)] = 0
         data[~np.isfinite(data)] = 0
+        for i, b in enumerate(bands):  # fill / special values (and their blends at reduced resolutions) show as no-data
+            if _fills(ds.dtypes[b - 1]):
+                fill = np.abs(data[i]) >= FILL_ABOVE
+                alpha[fill] = 0
+                data[:, fill] = 0
     return data, alpha
 
 
@@ -533,14 +547,16 @@ def _warp_one(ds, bands, dst_crs, bbox, window_bbox, w, h, resampling, magnify, 
 
 # ---------------------------------------------------------------- statistics
 
+
 def _summarise(values: np.ndarray, band: int, total: int, sample: tuple | None = None, hist=None) -> dict:
     """values: 1-D float64 of valid pixels. hist=(counts_fine, lo, hi) switches to histogram-derived quantiles."""
     qs = [100 * k / 32 for k in range(33)]
     base = {"band": band, "valid": int(values.size) if hist is None else int(hist[0].sum()), "total": total}
     if hist is None and values.size == 0 or hist is not None and hist[0].sum() == 0:
         zero = {"min": 0.0, "max": 0.0, "mean": 0.0, "std": 0.0}  # no valid pixels: valid == 0 says so
+        empty = {"counts": [0] * 256, "min": 0.0, "max": 0.0}
         return {**base, **zero, "percentiles": {f"{p:g}": 0.0 for p in PERCENTILES}, "quantiles": [0.0] * 33,
-                "histogram": {"counts": [0] * 256, "min": 0.0, "max": 0.0}}
+                "histogram": empty, "core": empty}
     if hist is None:
         lo, hi = float(values.min()), float(values.max())
         pc = np.percentile(values, PERCENTILES + qs)
@@ -552,9 +568,21 @@ def _summarise(values: np.ndarray, band: int, total: int, sample: tuple | None =
         cdf = np.concatenate([[0], np.cumsum(fine)]) / fine.sum()
         pc = np.interp(np.array(PERCENTILES + qs) / 100, cdf, centers)
         counts = fine.reshape(256, -1).sum(axis=1)
+    # The middle of the data (0.1-99.9 %, widened 5 %) in 256 bins too: with a few far-off values (fill, hot pixels) the
+    # full-range histogram puts nearly every pixel into one bar, and the viewer's histogram shows nothing to drag on.
+    p01, p999 = (float(pc[PERCENTILES.index(p)]) for p in (0.1, 99.9))
+    pad = (p999 - p01) * 0.05
+    clo, chi = max(lo, p01 - pad), min(hi, p999 + pad)
+    if chi > clo:
+        edges = np.linspace(clo, chi, 257)
+        cc = (np.histogram(values, edges)[0] if hist is None
+              else np.rint(np.diff(np.interp(edges, centers, cdf)) * fine.sum()))  # the full scan: from its fine histogram
+        core = {"counts": [int(c) for c in cc], "min": clo, "max": chi}
+    else:
+        core = {"counts": [int(c) for c in counts], "min": float(lo), "max": float(hi)}  # one value: nothing to zoom into
     return {**base, **stats, "percentiles": {f"{p:g}": float(v) for p, v in zip(PERCENTILES, pc)},
             "quantiles": [float(v) for v in pc[len(PERCENTILES):]],
-            "histogram": {"counts": [int(c) for c in counts], "min": float(lo), "max": float(hi)}}
+            "histogram": {"counts": [int(c) for c in counts], "min": float(lo), "max": float(hi)}, "core": core}
 
 
 @guarded
@@ -575,6 +603,8 @@ def _stats(ds, bands: list[int], exact: bool, nodata: float | None = None) -> di
                 v = ds.read(b, window=win, out_shape=(oh, ow), resampling=Resampling.nearest, out_dtype="float64")
                 m = ds.read_masks(b, window=win, out_shape=(oh, ow), resampling=Resampling.nearest) > 0
             m &= np.isfinite(v)
+            if _fills(ds.dtypes[b - 1]):
+                m &= np.abs(v) < FILL_ABOVE
             if nodata is not None:
                 m &= v != _stored(nodata, ds.dtypes[b - 1])
             if k > 1 and _bleed(ds, k, Resampling.nearest, nodata):  # reduced-resolution blends at no-data edges
@@ -593,6 +623,8 @@ def _stats(ds, bands: list[int], exact: bool, nodata: float | None = None) -> di
             ok = ds.read_masks(b, window=win) > 0
         if v.dtype.kind == "f":
             ok &= np.isfinite(v)
+        if _fills(ds.dtypes[b - 1]):
+            ok &= np.abs(v) < FILL_ABOVE
         nd = _stored(nodata, ds.dtypes[b - 1])
         return v[ok & (v != nd) if nd is not None else ok]
 
@@ -679,7 +711,8 @@ def pixel(path: str, col=None, row=None, x=None, y=None, crs: str = "lonlat", no
             mask = ds.read_masks(window=win)[:, 0, 0]
         res["values"] = [v.item() for v in raw]
         res["scaled"] = [v.item() * s + o for v, s, o in zip(raw, ds.scales, ds.offsets)]
-        res["nodata"] = [bool(m == 0 or (nodata is not None and v == nodata)) for v, m in zip(raw, mask)]
+        res["nodata"] = [bool(m == 0 or (nodata is not None and v == nodata) or (_fills(dt) and not abs(v) < FILL_ABOVE))
+                         for v, m, dt in zip(raw, mask, ds.dtypes)]
     return res
 
 

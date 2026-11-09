@@ -13,8 +13,9 @@ export function createHistogram(onRange) {
   let hist = null, lo = 0, hi = 1, log = false, axis = [0, 1], drag = null;
 
   const xOf = (v) => PAD + valueToFrac(v, axis) * (W - 2 * PAD);
-  const valueAt = (clientX) => {
-    const f = (clientX - canvas.getBoundingClientRect().left - PAD) / (W - 2 * PAD);
+  const valueAt = (clientX) => {  // the canvas may be drawn narrower than W (a narrow panel): scale to its drawn width
+    const r = canvas.getBoundingClientRect();
+    const f = ((clientX - r.left) * (W / (r.width || W)) - PAD) / (W - 2 * PAD);
     return fracToValue(Math.min(1, Math.max(0, f)), axis);
   };
 
@@ -60,10 +61,16 @@ export function createHistogram(onRange) {
 
   return {
     el: canvas,
-    // bandStats.histogram + current range; the axis is frozen while dragging so handles don't run away.
+    // bandStats histograms + current range; the histogram and axis are frozen while dragging so handles don't run away.
+    // The middle-of-the-data histogram (core) when the range lies near it: a few far-off values squeeze the full one.
     set(bandStats, newLo, newHi) {
-      hist = bandStats?.histogram ?? null;
-      if (!drag) { lo = newLo; hi = newHi; if (hist) axis = histAxis(hist, lo, hi); }
+      if (!drag) {
+        lo = newLo; hi = newHi;
+        const full = bandStats?.histogram ?? null, core = bandStats?.core;
+        const span = core ? core.max - core.min : 0;
+        hist = core && span > 0 && lo >= core.min - span && hi <= core.max + span ? core : full;
+        if (hist) axis = histAxis(hist, lo, hi);
+      }
       draw();
     },
     setLog(on) { log = on; draw(); },

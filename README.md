@@ -13,9 +13,10 @@ Get the [latest release](../../releases/latest); nothing else to install (no Pyt
 * **`OpenReSense-<version>-portable.zip`**: unzip into a short folder you can write to (e.g. `C:\` or
   Documents; `README-portable.txt` gives the exact path limit) and double-click **`OpenReSense.exe`**.
 
-The app opens in your browser at <http://127.0.0.1:8765/> and runs while its console window is open. The
-files are not code-signed yet: if Windows says "Windows protected your PC", click *More info*, then *Run
-anyway*. `SHA256SUMS.txt` on the release page lets you check a download.
+OpenReSense opens in its own window; closing the window stops it. The window uses the Microsoft Edge WebView2
+Runtime that comes with Windows 11 and updated Windows 10; without it (or with `OpenReSense.exe --browser`) the app
+opens in your web browser instead. The files are not code-signed yet: if Windows says "Windows protected your PC",
+click *More info*, then *Run anyway*. `SHA256SUMS.txt` on the release page lets you check a download.
 
 ## Run from source
 
@@ -56,6 +57,10 @@ Click a target such as *Titan* or *Moon*, or a region such as *Antarctica*, to s
 Pick a target, region or bbox, dates and keywords. Archives that only search inside a dataset
 list their datasets first ("Browse products"). Each result has thumbnails, footprints on a map,
 links to the source page, and **Open in viewer** (labels and companion files are fetched too).
+
+Every search is kept: **← Back** (or Alt+←) returns to the previous results instantly, e.g. from a dataset's
+products to the dataset list, or to Explore; → goes forward again. Drag the divider beside the map to resize it
+(double-click resets it).
 
 **Viewer** opens a URL, a local path (or **Browse...**), or dropped files (drop a `.LBL` and an
 `.IMG` together).
@@ -125,7 +130,7 @@ In an installed or portable release, use `python\python.exe scripts\validate_cat
 | `web/` | Frontend (plain ES modules, no build step); OpenLayers, CesiumJS and proj4 come from `node_modules` |
 | `catalog/` | `sources/*.json` (the catalog), `bodies.json` (radii, basemaps), `vocab.json` (targets, regions, vocabularies) |
 | `cache/` | Downloads, conversions, dataset list (safe to delete while the app is stopped) |
-| `installer/` | `OpenReSense.exe` launcher source, icon, Inno Setup script for the installer |
+| `installer/` | `launcher.cs` (`OpenReSense.exe`: the app window), icon, Inno Setup script for the installer |
 | `scripts/build_release.ps1` | Builds the release into `dist/` (see *Making a release*) |
 | `.github/workflows/release.yml` | Builds and publishes a GitHub Release for every `v*` tag |
 | `CONTRACTS.md` | API and data contracts between all parts |
@@ -165,14 +170,15 @@ portable zip and `SHA256SUMS.txt`, and publishes them as a GitHub Release with g
 on the Actions tab builds the same files as a downloadable artifact without publishing).
 
 To build the same files locally (needs the source setup above, plus [Inno Setup 6](https://jrsoftware.org/isdl.php)
-for the installer; the first build downloads Python's embeddable package and the wheels):
+for the installer; the first build downloads Python's embeddable package, the wheels and the WebView2 SDK from nuget.org):
 
 ```bash
 powershell -ExecutionPolicy Bypass -File scripts\build_release.ps1 -Installer
 ```
 
 The release bundles Python's embeddable package with the exact package versions the tests use, the app, the web
-libraries and an `OpenReSense.exe` launcher compiled from `installer/launcher.cs`. Code signing (e.g. the free
+libraries and `OpenReSense.exe`, compiled from `installer/launcher.cs` against Microsoft's WebView2 SDK (fetched from
+nuget.org at a pinned version and checked). Code signing (e.g. the free
 [SignPath Foundation](https://signpath.org) program for open-source projects) would remove the SmartScreen warning.
 
 ## Known limits

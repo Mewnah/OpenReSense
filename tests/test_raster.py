@@ -595,6 +595,44 @@ def test_second_start_on_a_busy_port(ours):
     assert ("already running" in r.stdout) if ours else ("used by another program" in r.stderr)
 
 
+@pytest.mark.parametrize("exact", [0, 1])
+def test_stats_leave_out_undeclared_float_fill(client, tmp_path, exact):
+    """-3.4e38 fill / ISIS special pixels that are not declared no-data would make Min-max span 1e38 (a flat image)
+    and squeeze the exact histogram into one bin; they are left out of the statistics (still shown, clipped)."""
+    a = np.linspace(200, 400, 60 * 80, dtype="float32").reshape(60, 80)
+    a[:, :4] = -3.4028235e38
+    a[0, 10] = 3.4e38
+    s = open_path(client, write_tif(tmp_path / "fill.tif", a, "EPSG:4326", from_origin(0, 10, 0.1, 0.1)))
+    b = client.get(f"/api/datasets/{s['id']}/stats?exact={exact}").json()["bands"][0]
+    assert 200 <= b["min"] < 205 and 395 < b["max"] <= 400
+    assert 200 < b["percentiles"]["0.5"] < b["percentiles"]["99.5"] < 400
+    assert b["valid"] == a.size - 60 * 4 - 1
+    probe = lambda col: client.get(f"/api/datasets/{s['id']}/pixel?col={col}&row=0").json()["nodata"]  # noqa: E731
+    assert probe(0) == [True] and probe(10) == [True] and probe(20) == [False]
+
+
+@pytest.mark.parametrize("exact", [0, 1])
+def test_core_histogram_spreads_data_that_outliers_squeeze(client, tmp_path, exact):
+    """A few hot pixels (65535) put the whole 100..120 signal into the first bar of the full histogram; `core` bins
+    the middle of the data, so the viewer's histogram still shows its shape."""
+    rng = np.random.default_rng(1)
+    a = rng.integers(100, 121, (200, 200)).astype("uint16")
+    a[5, 5:12] = 65535
+    s = open_path(client, write_tif(tmp_path / "hot.tif", a, "EPSG:4326", from_origin(0, 10, 0.1, 0.1)))
+    b = client.get(f"/api/datasets/{s['id']}/stats?exact={exact}").json()["bands"][0]
+    full, core = b["histogram"], b["core"]
+    assert max(full["counts"]) > 0.99 * sum(full["counts"])  # the problem: one bar holds everything
+    assert len(core["counts"]) == 256 and 99 <= core["min"] <= 100 and 120 <= core["max"] <= 123  # exact: fine bins ~1 wide
+    assert max(core["counts"]) < 0.1 * sum(core["counts"]) and sum(core["counts"]) >= 0.99 * (a.size - 7)
+
+
+def test_instance_is_a_hash_of_the_app_folder(client):
+    """OpenReSense.exe reuses a server on its port only when this matches its own folder (launcher.cs RootId)."""
+    import hashlib
+    from server.config import ROOT
+    assert client.get("/api/instance").json() == {"root": hashlib.sha1(str(ROOT).lower().encode()).hexdigest()[:16]}
+
+
 def test_cross_site_writes_refused(client):
     assert client.post("/api/datasets/open", json={"path": "x"}, headers={"Origin": "http://evil.example"}).status_code == 403
     assert client.post("/api/datasets/open", json={"path": "missing"}, headers={"Origin": "http://testserver"}).status_code == 404

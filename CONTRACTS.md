@@ -97,6 +97,8 @@ when a file's mtime changes. Results are ordered by relevance (whole-word > pref
 
 `GET /api/catalog/{id}` → one Entry. `GET /api/bodies` (scaffold) → `{"bodies": [...], "regions": {...}}`.
 `GET /api/vocab` (scaffold) → vocab.json.
+`GET /api/instance` → `{"root": "<16 hex>"}`: SHA-1 of the lower-cased app folder path. OpenReSense.exe
+(installer/launcher.cs) reuses a server already on its port only when this matches its own folder.
 
 `catalog/bodies.json`:
 
@@ -281,8 +283,15 @@ picker). `driver` names the source format (PDS, FITS, HDF4, ...) even when `conv
    "band": 1, "min": 3.0, "max": 4011.0, "mean": 812.3, "std": 140.2, "valid": 524000, "total": 524288,
    "percentiles": {"0.1": .., "0.5": .., "1": .., "2": .., "5": .., "95": .., "98": .., "99": .., "99.5": .., "99.9": ..},
    "quantiles": [33 values at k/32, k = 0..32],
-   "histogram": {"counts": [256 ints], "min": 3.0, "max": 4011.0}}]}
+   "histogram": {"counts": [256 ints], "min": 3.0, "max": 4011.0},
+   "core": {"counts": [256 ints], "min": 640.1, "max": 1001.9}}]}
 ```
+
+`core` bins the middle of the data (0.1–99.9 %, widened by 5 % of that span, within min..max): when a few far-off values
+(fill values, hot pixels) set min/max, `histogram` puts nearly every pixel into one bar, so the viewer draws `core` while
+the display range lies near it. In 32-bit float bands, values with |v| ≥ 1e30 (undeclared -3.4e38 fill, ISIS special
+pixels) are no-data everywhere: left out of the statistics, transparent in tiles, warps and rendered exports, and "no
+data" in the probe; raw exports keep them as stored.
 
 Approximate stats use a nearest-neighbour decimated read (≤ ~1024² px, true values, no
 averaging); `exact=1` scans the full image (8/16-bit data in one pass that counts every value). A shared JPEG 2000

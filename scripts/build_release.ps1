@@ -4,7 +4,7 @@
 #   dist\OpenReSense-<version>-setup.exe       per-user installer (with -Installer; needs Inno Setup 6)
 #   dist\SHA256SUMS.txt
 # Needs the dev setup that run.bat creates (.venv with Python 3.12, node_modules) and internet the first time
-# (Python's embeddable package from python.org and the wheels from PyPI; both are cached).
+# (Python's embeddable package from python.org, the wheels from PyPI and the WebView2 SDK from nuget.org; all cached).
 # Usage: powershell -ExecutionPolicy Bypass -File scripts\build_release.ps1 [-Version 1.2.3] [-Installer]
 param([string]$Version, [switch]$Installer)
 $ErrorActionPreference = 'Stop'
@@ -76,6 +76,36 @@ foreach ($v in $vendor) {
     New-Item -ItemType Directory -Force (Split-Path $dst -Parent) | Out-Null
     Copy-Item -Recurse $v $dst
 }
+# OpenReSense.exe shows the app in its own window with WebView2. Microsoft's WebView2 SDK from NuGet (pinned, hash- and
+# signature-checked) has the two .NET DLLs it is compiled against and WebView2Loader.dll; all three ship next to it.
+$wv2ver = '1.0.4314.35'
+$wv2pkg = Join-Path $work "microsoft.web.webview2.$wv2ver.nupkg"
+if (-not (Test-Path $wv2pkg)) {
+    Invoke-WebRequest "https://api.nuget.org/v3-flatcontainer/microsoft.web.webview2/$wv2ver/microsoft.web.webview2.$wv2ver.nupkg" -OutFile "$wv2pkg.tmp" -UseBasicParsing
+    Move-Item -Force "$wv2pkg.tmp" $wv2pkg
+}
+if ((Get-FileHash $wv2pkg -Algorithm SHA256).Hash -ne '90778deb1b77e36292828b4b5833c9255c27533f40e0ddd55891ae718944edc4') {
+    throw "$wv2pkg is not the WebView2 SDK $wv2ver this build expects; delete it and retry."
+}
+$wv2 = Join-Path $work 'webview2'
+if (Test-Path $wv2) { Remove-Item -Recurse -Force $wv2 }
+New-Item -ItemType Directory $wv2 | Out-Null
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+$wv2want = 'lib/net462/Microsoft.Web.WebView2.Core.dll', 'lib/net462/Microsoft.Web.WebView2.WinForms.dll',
+           'runtimes/win-x64/native/WebView2Loader.dll', 'LICENSE.txt', 'NOTICE.txt'
+$nupkg = [IO.Compression.ZipFile]::OpenRead($wv2pkg)
+try {
+    foreach ($e in $nupkg.Entries | Where-Object { $_.FullName -in $wv2want }) {
+        [IO.Compression.ZipFileExtensions]::ExtractToFile($e, (Join-Path $wv2 $e.Name))
+    }
+} finally { $nupkg.Dispose() }
+$wv2dlls = 'Microsoft.Web.WebView2.Core.dll', 'Microsoft.Web.WebView2.WinForms.dll', 'WebView2Loader.dll' | ForEach-Object { Join-Path $wv2 $_ }
+foreach ($d in $wv2dlls) {
+    $sig = Get-AuthenticodeSignature $d
+    if ($sig.Status -ne 'Valid' -or $sig.SignerCertificate.Subject -notmatch 'CN=Microsoft Corporation') {
+        throw "$d is not signed by Microsoft ($($sig.Status)); delete $wv2pkg and retry."
+    }
+}
 # OpenReSense.exe: compiled with the C# compiler that ships with Windows; the version shows in its file properties
 $numeric = ((($Version -split '[-+]')[0].Split('.')) + @('0', '0', '0', '0'))[0..3] -join '.'
 $info = Join-Path $work 'AssemblyInfo.cs'
@@ -88,9 +118,14 @@ Set-Content $info -Encoding Ascii -Value @(
     "[assembly: System.Reflection.AssemblyInformationalVersion(`"$Version`")]"
 )
 $csc = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
-& $csc /nologo /optimize+ /target:exe /platform:x64 '/win32icon:installer\OpenReSense.ico' `
+& $csc /nologo /optimize+ /target:winexe /platform:x64 '/win32icon:installer\OpenReSense.ico' '/resource:installer\OpenReSense.ico,OpenReSense.ico' `
+    /r:System.Windows.Forms.dll /r:System.Drawing.dll "/r:$($wv2dlls[0])" "/r:$($wv2dlls[1])" `
     "/out:$(Join-Path $out 'OpenReSense.exe')" 'installer\launcher.cs' $info
 if ($LASTEXITCODE -ne 0) { throw 'compiling the launcher failed' }
+Copy-Item $wv2dlls $out
+New-Item -ItemType Directory -Force (Join-Path $out 'licenses') | Out-Null
+Copy-Item (Join-Path $wv2 'LICENSE.txt') (Join-Path $out 'licenses\WebView2-LICENSE.txt')
+Copy-Item (Join-Path $wv2 'NOTICE.txt') (Join-Path $out 'licenses\WebView2-NOTICE.txt')
 # Windows paths stop at 259 characters: the app folder's own path can be at most 258 - its deepest file's path inside it
 $deepest = (Get-ChildItem $out -Recurse -File | ForEach-Object { $_.FullName.Length - $out.Length - 1 } | Measure-Object -Maximum).Maximum
 $maxdir = 258 - $deepest
@@ -98,11 +133,14 @@ $maxparent = $maxdir - 'OpenReSense\'.Length
 Set-Content (Join-Path $out 'README-portable.txt') -Encoding Ascii -Value @(
     "OpenReSense $Version for Windows 10/11 (64-bit). Nothing to install.",
     '',
-    'Start:  double-click OpenReSense.exe. The app opens in your browser at http://127.0.0.1:8765/',
-    '        and runs while its black window is open; close that window to stop it.',
-    'Other port: OpenReSense.exe --port 9000. Starting it again while it runs just opens the running app.',
+    'Start:  double-click OpenReSense.exe. OpenReSense opens in its own window; closing the window stops it.',
+    '        Starting it again while it runs brings its window to the front.',
+    'The window needs the Microsoft Edge WebView2 Runtime (part of Windows 11 and of updated Windows 10). Without it,',
+    'or with "OpenReSense.exe --browser", the app opens in your web browser and a small window shows that it runs.',
+    'Other port: OpenReSense.exe --port 9000 (the window takes the next free port when 8765 is taken).',
     '',
-    'Your data (downloads, conversions, the dataset list, settings) is kept in the "cache" folder here.',
+    'Your data (downloads, conversions, the dataset list, settings) is kept in the "cache" folder here; the window''s',
+    'browser data (its cache, size and remembered layout) in %LOCALAPPDATA%\OpenReSense.',
     'To update: replace everything except "cache" (and catalog\user, if you added sources) with the new version.',
     "Unzip it into a folder you can write to whose path has at most $maxparent characters, e.g. C:\ or Documents",
     '(not Program Files): from deeper folders Windows cannot create or load some of its files.',
@@ -113,8 +151,8 @@ Set-Content (Join-Path $out 'README-portable.txt') -Encoding Ascii -Value @(
     'README.md explains the app (its "Run from source" and "Making a release" parts are for the source code on the',
     'project page). Where it says .venv/Scripts/python.exe, use python\python.exe from this folder.',
     '',
-    'OpenReSense is MIT-licensed (LICENSE). The Python, packages, native libraries and web libraries it contains',
-    'keep their own licenses: see THIRD-PARTY-NOTICES.txt.'
+    'OpenReSense is MIT-licensed (LICENSE). The Python, packages, native libraries, WebView2 SDK and web libraries it',
+    'contains keep their own licenses: see THIRD-PARTY-NOTICES.txt.'
 )
 
 Write-Host 'Checking that every package imports with the bundled Python...'

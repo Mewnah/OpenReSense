@@ -15,10 +15,25 @@ export function h(tag, props = {}, ...kids) {
 }
 
 export const select = (options, value, onchange, props = {}) => {
-  const s = h('select', { class: 'select', ...props, onchange: () => onchange(s.value) },
+  let mouse = false;  // picked with the mouse: give the focus back, so the viewer's keyboard shortcuts work again
+  const s = h('select', { class: 'select', ...props, onpointerdown: () => { mouse = true; }, onkeydown: () => { mouse = false; },
+    onchange: () => { onchange(s.value); if (mouse) s.blur(); } },
     options.map(([v, label]) => h('option', { value: v, selected: v === value }, label)));
   return s;
 };
+
+// Collapsible panel section whose open/closed state is remembered.
+const OPEN_KEY = 'ors.viewer.sections';
+let openState;
+try { openState = JSON.parse(localStorage.getItem(OPEN_KEY)) || {}; } catch { openState = {}; }
+export function section(key, title, open, ...kids) {
+  const d = h('details', { class: 'vw-sec', open: openState[key] ?? open }, h('summary', {}, title), ...kids);
+  d.addEventListener('toggle', () => {
+    openState[key] = d.open;
+    try { localStorage.setItem(OPEN_KEY, JSON.stringify(openState)); } catch { /* storage off */ }
+  });
+  return d;
+}
 
 export const fmt = (v, digits = 6) => (v == null || Number.isNaN(v) ? '–' : Number(Number(v).toPrecision(digits)).toString());
 
@@ -40,5 +55,8 @@ export function slider({ label, min, max, step, value, log, onInput }) {
     onchange: () => { const v = Math.min(max, Math.max(min, Number(num.value))); if (Number.isFinite(v)) { set(v); onInput(v); } } });
   const set = (v) => { range.value = Math.round(map.from(Math.min(max, Math.max(min, v))) * 1000); num.value = round(v); };
   set(value);
-  return { el: h('label', { class: 'vw-slider' }, h('span', {}, label), range, num), set };
+  const reset = () => { set(value); onInput(value); };  // back to where it started (its neutral value)
+  const name = h('span', { class: 'vw-slider-name', title: `Double-click to reset ${label.toLowerCase()} to ${value}`, ondblclick: reset }, label);
+  range.addEventListener('dblclick', reset);
+  return { el: h('label', { class: 'vw-slider' }, name, range, num), set };
 }

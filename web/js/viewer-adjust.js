@@ -1,7 +1,7 @@
 // Right panel: band mode, stretch + histograms, tonal sliders, colormap, resampling.
-import { PRESETS, getColormaps } from './render.js';
+import { PRESETS, coreShare, getColormaps } from './render.js';
 import { createHistogram } from './viewer-hist.js';
-import { h, select, slider, fmt } from './viewer-ui.js';
+import { h, select, slider, fmt, section } from './viewer-ui.js';
 
 const STRETCH = [['linear', 'Linear'], ['equalize', 'Histogram equalize'], ['log', 'Logarithmic']];
 const DOWN = [['average', 'Average (box)'], ['nearest', 'Nearest (decimate)'], ['bilinear', 'Bilinear'], ['cubic', 'Cubic'],
@@ -10,6 +10,7 @@ const UP = [['nearest', 'Nearest (true pixels)'], ['bilinear', 'Bilinear'], ['cu
 const SLIDERS = [['gamma', 'Gamma', 0.1, 5, 0.01, true], ['brightness', 'Brightness', -1, 1, 0.01], ['contrast', 'Contrast', -1, 1, 0.01],
   ['exposure', 'Exposure', -1, 1, 0.01], ['saturation', 'Saturation', -1, 1, 0.01]];
 const RGB_NM = [640, 550, 470];
+const OUTLIER_PRESETS = new Set(['minmax', 'dtype', 'sigma2', 'sigma3']);  // ranges a few extreme values can blow up
 
 // Natural-colour band triple: the bands nearest red/green/blue wavelengths when known, else 1,2,3.
 export function pickRgb(info) {
@@ -34,8 +35,9 @@ export function createAdjust(host, api) {
     const bandOptions = Array.from({ length: info.count }, (_, i) => [i + 1, bandLabel(info, i + 1)]);
     ui.mode = select([['gray', 'Single band'], ['rgb', 'RGB composite']], 'gray', (m) => api.change({ bands: m === 'rgb' ? pickRgb(info) : [1] }), { disabled: info.count < 3 });
     ui.bandSel = [0, 1, 2].map((i) => select(bandOptions, 1, (v) => api.change({ bands: ui.cur.bands.map((b, j) => (j === i ? Number(v) : b)) })));
-    ui.preset = select(Object.entries(PRESETS), 'p05', (preset) => api.change({ preset }));
-    ui.stretch = select(STRETCH, 'linear', (stretch) => api.change({ stretch }));
+    ui.preset = select(Object.entries(PRESETS), 'p05', (preset) => api.change({ preset }), { title: 'How the display range is chosen from the statistics' });
+    ui.stretch = select(STRETCH, 'linear', (stretch) => api.change({ stretch }), { title: 'How values inside the range map to brightness' });
+    ui.warn = h('div', { class: 'vw-warn', hidden: true, role: 'status' });
     ui.histBox = h('div', { class: 'vw-hists' });
     for (const [key, label, min, max, step, log] of SLIDERS) {
       ui.sliders[key] = slider({ label, min, max, step, log, value: key === 'gamma' ? 1 : 0, onInput: (v) => api.change({ [key]: v }, { live: true }) });
@@ -50,20 +52,24 @@ export function createAdjust(host, api) {
     ui.smooth = h('input', { type: 'checkbox', onchange: () => api.change({ interpolate: ui.smooth.checked }) });
     ui.nodata = select([['transparent', 'Transparent'], ['black', 'Black']], 'transparent', (nodata) => api.change({ nodata }));
     ui.exact = h('input', { type: 'checkbox', onchange: () => api.setExact(ui.exact.checked) });
-    ui.single = h('section', { class: 'vw-sec' }, h('h4', {}, 'Colormap'), ui.cmaps);
+    ui.bands = section('bands', 'Bands', true, ui.mode, h('div', { class: 'vw-bandsels' }, ui.bandSel));
+    ui.bands.hidden = info.count < 2;  // one band: nothing to choose
+    ui.single = section('colormap', 'Colormap', true, ui.cmaps);
     host.replaceChildren(
-      h('section', { class: 'vw-sec' }, h('h4', {}, 'Bands'), ui.mode, h('div', { class: 'vw-bandsels' }, ui.bandSel)),
-      h('section', { class: 'vw-sec' }, h('h4', {}, 'Stretch'), h('div', { class: 'row' }, ui.preset, ui.stretch), ui.histBox,
-        check(ui.exact, 'Exact statistics (full scan)', 'Default statistics use a decimated read of at most ~1024 x 1024 true pixels')),
-      h('section', { class: 'vw-sec' }, h('h4', {}, 'Tone'), Object.values(ui.sliders).map((s) => s.el),
+      h('div', { class: 'vw-adjhead' }, h('b', { class: 'grow' }, 'Adjustments'),
+        h('button', { class: 'btn small', title: 'Reset every adjustment (r)', onclick: () => api.reset() }, 'Reset')),
+      ui.bands,
+      section('stretch', 'Stretch', true, h('div', { class: 'row nowrap' }, ui.preset, ui.stretch), ui.warn, ui.histBox,
+        check(ui.exact, 'Exact statistics (full scan)', 'Scans every pixel (minutes on huge files). Makes the percentile and σ ranges exact; '
+          + 'Min – max can only get wider, as rare extreme values are found too.')),
+      section('tone', 'Tone', true, Object.values(ui.sliders).map((s) => s.el),
         h('div', { class: 'row' }, check(ui.invert, 'Invert (i)'), check(ui.gray, 'Black & white (g)'))),
       ui.single,
-      h('section', { class: 'vw-sec' }, h('h4', {}, 'Resampling'),
+      section('display', 'Display', false,
         h('label', { class: 'vw-field' }, h('span', {}, 'Zoom out'), ui.down),
         h('label', { class: 'vw-field' }, h('span', {}, 'Zoom in'), ui.up),
         check(ui.smooth, 'Smooth interpolation (GPU)', 'Bilinear filtering of the raw values between pixels; off shows true pixels'),
         h('label', { class: 'vw-field' }, h('span', {}, 'No-data'), ui.nodata)),
-      h('button', { class: 'btn small', onclick: () => api.reset() }, 'Reset adjustments (r)'),
     );
   }
 
@@ -79,7 +85,7 @@ export function createAdjust(host, api) {
       const hist = createHistogram(range);
       const sc = info.scales?.[b - 1] ?? 1, off = info.offsets?.[b - 1] ?? 0;
       const edit = (isMin) => h('input', {
-        type: 'number', class: 'input vw-num', step: 'any',
+        type: 'number', class: 'input vw-num', step: 'any', title: isMin ? 'Lowest value shown (black)' : 'Highest value shown (white)',
         onchange: (e) => {
           const v = (Number(e.target.value) - off) / sc;
           if (Number.isFinite(v)) range(isMin ? v : ui.cur.min[i], isMin ? ui.cur.max[i] : v, false);
@@ -91,10 +97,28 @@ export function createAdjust(host, api) {
       return h('div', { class: 'vw-histblk' },
         s.bands.length > 1 ? h('div', { class: 'muted' }, `${['R', 'G', 'B'][i]} · ${bandLabel(info, b)}`) : null,
         hist.el,
-        h('div', { class: 'row' }, h('label', { class: 'vw-check' }, log, 'log counts'), lo, '–', hi),
-        sc !== 1 || off !== 0 ? h('div', { class: 'muted vw-small' }, `scaled = raw × ${fmt(sc)} + ${fmt(off)}${info.units?.[b - 1] ? ` (${info.units[b - 1]})` : ''}`) : null);
+        h('div', { class: 'row vw-minmax' }, lo, '–', hi),
+        h('div', { class: 'row' }, h('label', { class: 'vw-check vw-small', title: 'Bar heights on a log scale: shows rare values' }, log, 'log counts'),
+          sc !== 1 || off !== 0 ? h('span', { class: 'muted vw-small' }, `scaled = raw × ${fmt(sc)} + ${fmt(off)}${info.units?.[b - 1] ? ` (${info.units[b - 1]})` : ''}`) : null));
     }));
     ui.histBands = s.bands.length;
+  }
+
+  // Warn when most pixels sit in a sliver of the range (the usual reason for a black or flat picture): a few extreme values
+  // set it (Min – max, σ), or the data uses little of its data type (full data-type range).
+  function warn(s, getStats) {
+    const share = OUTLIER_PRESETS.has(s.preset) ? Math.min(...s.bands.map((b, i) => coreShare(getStats(b), s.min[i], s.max[i]))) : 1;
+    ui.warn.hidden = share >= 0.1;
+    if (ui.warn.hidden) return;
+    const pct = share < 0.01 ? 'under 1' : Math.round(share * 100);
+    const text = s.preset === 'dtype'
+      ? `Most pixels use only ${pct} % of the full data-type range, so the picture looks dark or flat.`
+      : `Most pixels use only ${pct} % of this range: a few extreme values (fill values, hot or saturated pixels) set it, `
+        + 'so the picture looks dark or flat.';
+    if (ui.warnText === text) return;  // unchanged: keep the element (screen readers announce changes only)
+    ui.warnText = text;
+    ui.warn.replaceChildren(h('span', {}, text),
+      h('button', { class: 'btn small primary', onclick: () => api.change({ preset: 'p05' }) }, 'Use 0.5 – 99.5 %'));
   }
 
   // Push settings into the controls without rebuilding (safe while dragging).
@@ -118,6 +142,7 @@ export function createAdjust(host, api) {
         if (document.activeElement !== input) input.value = fmt(v * sc + off, 8);
       }
     });
+    warn(s, getStats);
   }
 
   return {

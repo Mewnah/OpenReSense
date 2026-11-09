@@ -42,7 +42,7 @@ export function createImageView(el, colormaps, cb) {
       if (Math.abs(fx) > 0.01 || Math.abs(fy) > 0.01) v.setCenter([centre[0] + fx * k, centre[1] - fy * k]);
     });
     map.on('pointermove', (e) => !e.dragging && cb.onMove(pos(e.coordinate)));
-    map.on('singleclick', (e) => cb.onPick(pos(e.coordinate)));
+    map.on('singleclick', (e) => cb.onPick({ ...pos(e.coordinate), coord: [Math.floor(e.coordinate[0]) + 0.5, Math.ceil(e.coordinate[1]) - 0.5] }));
     el.addEventListener('mouseleave', () => cb.onMove(null));
     new ResizeObserver(() => map.updateSize()).observe(el);
   }

@@ -85,12 +85,26 @@ export async function init(root) {
     fetchPage();
   }
 
-  function select(target, region = '') {
+  function apply(target, region) {
     s.target = target; s.region = region;
     live.show(target, region);
     fetchPage();
     main.scrollTop = 0;
   }
+  function select(target, region = '') { apply(target, region); record(); }
+
+  // ---- history: each target/region picked is an entry, so Back/Forward step through them (and back here from Search)
+  const here = () => ({ target: s.target, region: s.region });
+  function record() {
+    const cur = history.state?.ex;
+    if (cur && cur.target === s.target && cur.region === s.region) return;
+    if (cur) history.pushState({ ex: here() }, '', '#explore');
+    else history.replaceState({ ...(history.state || {}), ex: here() }, '', '#explore');
+  }
+  addEventListener('popstate', (e) => {
+    const ex = e.state?.ex;
+    if (ex && (ex.target !== s.target || ex.region !== s.region)) apply(ex.target, ex.region);
+  });
 
   // ---- left rail
   function renderRail() {
@@ -121,7 +135,7 @@ export async function init(root) {
     const rc = facets.regions || {};
     return h('div', { class: 'ex-regions' }, Object.entries(regions).map(([id, r]) => h('button', {
       class: `ex-region${s.region === id ? ' sel' : ''}${rc[id] ? '' : ' zero'}`, 'aria-pressed': s.region === id,
-      onclick: () => { s.region = s.region === id ? '' : id; live.show(s.target, s.region); fetchPage(); },
+      onclick: () => { s.region = s.region === id ? '' : id; live.show(s.target, s.region); fetchPage(); record(); },
     }, h('span', { class: 'grow' }, r.name), h('span', { class: 'ex-n' }, rc[id] || 0))));
   }
 
@@ -217,6 +231,12 @@ export async function init(root) {
       ev.preventDefault(); search.focus(); search.select();
     }
   });
-  on('tab:shown', ({ tab }) => { if (tab === 'explore' && !seq) fetchPage(); });
+  on('tab:shown', ({ tab }) => {
+    if (tab !== 'explore') return;
+    if (!seq) fetchPage();
+    if (!history.state?.ex) history.replaceState({ ...(history.state || {}), ex: here() }, '', '#explore');  // tag the tab's entry
+  });
+  const ex0 = history.state?.ex;  // reloaded on a picked target: show it again
+  if (ex0 && bodyById.has(ex0.target)) { s.target = ex0.target; s.region = regions[ex0.region] ? ex0.region : ''; live.show(s.target, s.region); }
   await fetchPage();
 }

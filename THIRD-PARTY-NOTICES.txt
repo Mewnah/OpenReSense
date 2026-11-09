@@ -50,6 +50,13 @@ NATIVE LIBRARIES BUNDLED INSIDE THOSE PACKAGES (python\Lib\site-packages\*.libs,
   GEOS and libiconv are LGPL libraries. They are used unmodified, as separate DLLs that can be replaced with
   compatible builds; their source code is available at the addresses above.
 
+APP WINDOW (OpenReSense.exe)
+  Microsoft WebView2 SDK         BSD-3-Clause (Microsoft) licenses\WebView2-LICENSE.txt, with its own third-party
+  (Microsoft.Web.WebView2.Core.dll, Microsoft.Web.WebView2.WinForms.dll, WebView2Loader.dll)
+                                                          notices in licenses\WebView2-NOTICE.txt
+  The window itself is drawn by the Microsoft Edge WebView2 Runtime that comes with Windows; it is not part of
+  OpenReSense.
+
 WEB LIBRARIES (node_modules)
   OpenLayers                     BSD-2-Clause             node_modules\ol\LICENSE.md
   CesiumJS                       Apache-2.0, with the notices of its bundled libraries   node_modules\cesium\LICENSE.md

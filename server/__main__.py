@@ -16,6 +16,7 @@ a = p.parse_args()
 url = f"http://127.0.0.1:{a.port}/"
 
 with socket.socket() as s:
+    s.settimeout(0.3)  # a listener on this PC accepts at once; Windows takes ~2 s to report a refused connection
     busy = s.connect_ex(("127.0.0.1", a.port)) == 0
 if busy:  # usually OpenReSense started a second time: show the running one instead of a bind error
     try:

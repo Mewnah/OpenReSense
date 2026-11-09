@@ -10,7 +10,17 @@ import { createInfo } from './viewer-info.js';
 import { createImageView } from './viewer-image.js';
 import { createMapView, projectionChoices } from './viewer-map.js';
 import { createExport } from './viewer-export.js';
+import { onTilesLoading } from './viewer-layer.js';
 import { h, select, fmt, download } from './viewer-ui.js';
+
+const KEYS = [
+  ['0', 'Fit the picture to the window'], ['1', 'One image pixel per screen pixel'], ['+  −  or the wheel', 'Zoom in / out'],
+  ['Drag', 'Pan'], ['Click', 'Values of that pixel (Esc closes them)'],
+  ['i', 'Invert'], ['g', 'Black & white'], ['r', 'Reset the adjustments'],
+  ['Double-click a slider name', 'Reset that slider'],
+  ['h', 'Hide or show the side panels'], ['f', 'Fullscreen'], ['?', 'This list'],
+  ['Alt + ←  /  Alt + →', 'Back / forward (every tab)'],
+];
 
 const STORE = 'ors.viewer.';
 const stored = (k) => { try { return JSON.parse(localStorage.getItem(STORE + k)); } catch { return null; } };
@@ -39,31 +49,47 @@ export async function init(section) {
   const projSel = h('span', {});
   const bmSel = h('span', {});
   const grat = h('input', { type: 'checkbox', onchange: () => maps.setGraticule(grat.checked) });
-  const snap = h('input', { type: 'checkbox', checked: true, onchange: () => { image.setSnap(snap.checked); store('snap', snap.checked); statusBar(); } });
+  const snap = h('input', { type: 'checkbox', onchange: () => { image.setSnap(snap.checked); store('snap', snap.checked); statusBar(); } });
   const tbtn = (label, title, fn) => h('button', { class: 'btn small', title, onclick: fn }, label);
-  const geoTools = h('span', { class: 'row nowrap', hidden: true }, projSel, bmSel,
+  const geoTools = h('span', { class: 'row nowrap vw-geotools', hidden: true }, projSel, bmSel,
     h('label', { class: 'vw-check' }, grat, 'Graticule'));
-  const imgTools = h('label', { class: 'vw-check', title: 'Zoom only to whole power-of-two levels so pixels display exactly' }, snap, 'Snap zoom levels');
+  const imgTools = h('label', { class: 'vw-check', title: 'Zoom only in whole power-of-two steps, so every pixel always displays exactly (off: smooth zoom)' }, snap, 'Snap zoom');
+  const zoomBtns = [tbtn('Fit', 'Fit to the window (0)', () => ctrl()?.fit()), tbtn('1:1', 'One image pixel per screen pixel (1)', () => ctrl()?.native()),
+    tbtn('−', 'Zoom out (−)', () => ctrl()?.zoom(-1)), tbtn('+', 'Zoom in (+)', () => ctrl()?.zoom(1))];
+  const snapshotBtn = tbtn('Snapshot', 'Save the current view as a PNG image', savePng);
+  for (const b of [...zoomBtns, snapshotBtn]) b.dataset.title = b.title;  // their own tooltips, swapped out in the globe
+  const fullscreen = () => (document.fullscreenElement ? document.exitFullscreen() : stage.requestFullscreen());
+  const panelsBtn = tbtn('◧ Panels', 'Hide or show the side panels (h)', () => togglePanels());
+  const keysDlg = h('dialog', { class: 'dlg vw-keys', 'aria-label': 'Keyboard shortcuts' },
+    h('h3', {}, 'Viewer shortcuts'),
+    h('table', { class: 'vw-meta' }, KEYS.map(([k, what]) => h('tr', {}, h('th', {}, h('kbd', {}, k)), h('td', {}, what)))),
+    h('form', { method: 'dialog', class: 'row end' }, h('button', { class: 'btn' }, 'Close')));
   const toolbar = h('div', { class: 'vw-toolbar' },
     h('span', { class: 'vw-seg' }, Object.values(viewBtns)),
-    tbtn('Fit', 'Fit to window (0)', () => ctrl()?.fit()),
-    tbtn('1:1', 'Native pixels (1)', () => ctrl()?.native()),
-    tbtn('−', 'Zoom out (-)', () => ctrl()?.zoom(-1)),
-    tbtn('+', 'Zoom in (+)', () => ctrl()?.zoom(1)),
+    h('span', { class: 'vw-seg' }, zoomBtns),
     imgTools, geoTools,
     h('span', { class: 'grow' }),
     tbtn('Export…', 'Export the rendered image or the raw data', () => st.status && exporter.open()),
-    tbtn('Save view PNG', 'Save the current view as PNG', savePng),
-    tbtn('Fullscreen', 'Fullscreen', () => (document.fullscreenElement ? document.exitFullscreen() : stage.requestFullscreen())));
+    snapshotBtn, panelsBtn,
+    tbtn('⛶', 'Fullscreen (f)', fullscreen),
+    tbtn('?', 'Keyboard shortcuts (?)', () => keysDlg.showModal()));
   const sZoom = h('span', { class: 'vw-zoom mono' });
+  const sLoading = h('span', { class: 'vw-loading', hidden: true, title: 'Tiles are still loading' }, h('span', { class: 'spinner' }), 'loading');
   const sResample = h('span', {});
   const sStretch = h('span', { class: 'muted' });
   const sCursor = h('span', { class: 'mono' });
   const sValues = h('span', { class: 'mono grow' });
-  const statusEl = h('div', { class: 'vw-status' }, sZoom, sResample, sStretch, h('span', { class: 'grow' }), sCursor, sValues);
-  section.replaceChildren(h('div', { class: 'vw' }, leftEl,
+  const statusEl = h('div', { class: 'vw-status' }, sZoom, sLoading, sResample, sStretch, h('span', { class: 'grow' }), sCursor, sValues);
+  const vw = h('div', { class: 'vw' }, leftEl,
     h('div', { class: 'vw-center' }, toolbar, stage, statusEl),
-    h('aside', { class: 'vw-right' }, adjustEl, infoEl)));
+    h('aside', { class: 'vw-right' }, adjustEl, infoEl));
+  section.replaceChildren(vw, keysDlg);
+  function togglePanels() {
+    panelsBtn.classList.toggle('primary', vw.classList.toggle('nopanels'));
+    setTimeout(() => { ctrl()?.resize(); globe?.resize(); }, 0);
+  }
+  let loadTimer;  // only say "loading" when it takes a moment, so quick updates do not flicker
+  onTilesLoading((busy) => { clearTimeout(loadTimer); if (busy) loadTimer = setTimeout(() => { sLoading.hidden = false; }, 300); else sLoading.hidden = true; });
 
   // ---- state ----
   const st = { status: null, info: null, body: null, settings: null, view: 'image', proj: null, basemap: undefined,
@@ -74,7 +100,15 @@ export async function init(section) {
   const bandStats = (s = st.settings) => s.bands.map(getStats);
   const statsObj = (bands) => ({ bands: bands.map(getStats) });
   const showing = () => section.getClientRects().length > 0;
-  const msg = (text, isError) => { msgEl.hidden = !text; msgEl.textContent = text || ''; msgEl.classList.toggle('error', !!isError); };
+  let msgTimer;
+  // transient: an error about one action (export, probe...), which goes away by itself; any error goes away on a click
+  const msg = (text, isError, transient) => {
+    clearTimeout(msgTimer);
+    msgEl.hidden = !text; msgEl.textContent = text || ''; msgEl.classList.toggle('error', !!isError);
+    msgEl.title = isError ? 'Click to dismiss' : '';
+    if (text && transient) msgTimer = setTimeout(() => msg(''), 8000);
+  };
+  msgEl.addEventListener('click', () => { if (msgEl.classList.contains('error')) msg(''); });
 
   const image = createImageView(imgEl, colormaps, { onMove: (p) => hover(p), onPick: (p) => pick(p), onView: () => statusBar() });
   const maps = createMapView(geoEl, colormaps, { onMove: (p) => hover(p), onPick: (p) => pick(p), onView: () => statusBar() });
@@ -87,9 +121,21 @@ export async function init(section) {
     reset: () => reset(),
     setExact: (on) => setExact(on),
   });
-  const info = createInfo(infoEl);
+  const info = createInfo(infoEl, { onClose: () => mark(null) });
+  stage.append(info.probeEl);
   const open = createOpen(leftEl, (status) => activate(status));
   adjust.clear();
+
+  // A small crosshair on the probed pixel, in the view where it was picked (one OL overlay per map).
+  const markers = {};
+  function mark(coord) {
+    for (const [v, o] of Object.entries(markers)) o.setPosition(v === st.view ? coord ?? undefined : undefined);
+    const map = ctrl()?.map;
+    if (!coord || !map || markers[st.view]) return;
+    markers[st.view] = new ol.Overlay({ element: h('div', { class: 'vw-marker' }), positioning: 'center-center', stopEvent: false });
+    map.addOverlay(markers[st.view]);
+    markers[st.view].setPosition(coord);
+  }
 
   // ---- statistics ----
   // Bumped when the dataset or the exact mode changes: a reply requested before (an exact scan takes minutes) is stale.
@@ -114,7 +160,7 @@ export async function init(section) {
       if (patch.bands && s.preset === 'manual') s.preset = st.info.dtype === 'uint8' ? 'dtype' : 'p05';
       applyPreset(s, statsObj(s.bands), st.info);
       commit(s);
-    }).catch((e) => msg(`Statistics failed: ${e.message}`, true));
+    }).catch((e) => msg(`Statistics failed: ${e.message}`, true, true));
   }
 
   function commit(s, live) {
@@ -157,6 +203,7 @@ export async function init(section) {
   async function activate(status) {
     const mine = ++activation;
     statsGen++;
+    info.clearProbe(); mark(null);  // the pixel shown belongs to the dataset being left
     if (!status || status.status !== 'ready' || !status.info) {
       st.status = null;
       st.loaded = { image: null, map: null, globe: null };
@@ -190,10 +237,15 @@ export async function init(section) {
       viewBtns.map.title = viewBtns.globe.title = georef ? '' : 'This dataset has no georeferencing';
       const choices = projectionChoices(inf, st.body);
       if (!choices.some((c) => c.id === st.proj)) st.proj = choices[0].id;
-      projSel.replaceChildren(select(choices.map((c) => [c.id, c.label]), st.proj, (v) => { st.proj = v; st.loaded.map = null; save(); showView('map'); }));
+      projSel.replaceChildren(select(choices.map((c) => [c.id, c.label]), st.proj, (v) => {
+        st.proj = v; st.loaded.map = null; save();
+        info.clearProbe(); mark(null);  // the crosshair's coordinates belong to the old projection
+        showView('map');
+      }));
       emit('viewer:active', { id: status.id, status });
       emit('render:change', { id: status.id, settings: st.settings });
       info.clearProbe();
+      mark(null);
       await showView(saved?.view && (georef || saved.view === 'image') ? saved.view : 'image');
     } catch (e) {
       if (mine === activation) msg(`Could not prepare the dataset: ${e.message}`, true);
@@ -207,6 +259,10 @@ export async function init(section) {
     imgEl.hidden = name !== 'image'; geoEl.hidden = name !== 'map'; globeEl.hidden = name !== 'globe';
     for (const [k, b] of Object.entries(viewBtns)) b.classList.toggle('primary', k === name);
     imgTools.hidden = name !== 'image'; geoTools.hidden = name !== 'map';
+    for (const b of [...zoomBtns, snapshotBtn]) {  // the globe has its own camera controls (drag, wheel)
+      b.disabled = name === 'globe';
+      b.title = name === 'globe' ? 'Not in the globe view: drag and use the wheel there' : b.dataset.title;
+    }
     save();
     if (!showing()) return; // loaded on tab:shown, when the containers have a size
     const status = st.status, s = st.settings, id = status.id;
@@ -249,12 +305,13 @@ export async function init(section) {
 
   async function savePng() {
     const name = `${st.status.name.replace(/\.[^.]+$/, '')}-view.png`;
+    if (!ctrl()) return;
     try { download(await ctrl().png(), name); } catch (e) {
       // Basemap tiles are cross-origin images, which taint the canvas: retry with the dataset alone.
-      if (st.view !== 'map' || !st.basemap) return msg(`Could not export the view: ${e.message}`, true);
+      if (st.view !== 'map' || !st.basemap) return msg(`Could not export the view: ${e.message}`, true, true);
       maps.setBasemap(null);
       try { download(await maps.png(), name); msg('Exported without the basemap (the tile server does not allow exporting its images).'); setTimeout(() => msg(''), 4000); }
-      catch (e2) { msg(`Could not export the view: ${e2.message}`, true); }
+      catch (e2) { msg(`Could not export the view: ${e2.message}`, true, true); }
       maps.setBasemap(st.basemap);
     }
   }
@@ -325,8 +382,13 @@ export async function init(section) {
   async function pick(p) {
     const q = p && pixelQuery(p);
     if (!q) return;
-    try { info.showProbe(await getJSON(`/api/datasets/${st.status.id}/pixel`, q), st.info); }
-    catch (e) { msg(`Probe failed: ${e.message}`, true); }
+    const id = st.status.id, view = st.view, mine = activation;
+    try {
+      const r = await getJSON(`/api/datasets/${id}/pixel`, q);
+      if (mine !== activation || st.status?.id !== id || st.view !== view) return;  // another dataset or view by now
+      info.showProbe(r, st.info);
+      mark(p.coord);
+    } catch (e) { msg(`Probe failed: ${e.message}`, true, true); }
   }
 
   // ---- events ----
@@ -341,18 +403,25 @@ export async function init(section) {
     else { ctrl()?.resize(); globe?.resize(); }
   });
   document.addEventListener('fullscreenchange', () => { ctrl()?.resize(); globe?.resize(); });
+  // Shortcuts work unless you are typing: a slider, checkbox or button with the focus does not block them.
+  const typing = (t) => t.isContentEditable || /^(TEXTAREA|SELECT)$/.test(t.tagName)
+    || (t.tagName === 'INPUT' && !['range', 'checkbox', 'radio', 'button'].includes(t.type));
   document.addEventListener('keydown', (e) => {
-    if (!showing() || !st.settings || e.ctrlKey || e.metaKey || e.altKey || /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
-    const c = ctrl();
+    if (!showing() || e.ctrlKey || e.metaKey || e.altKey || typing(e.target) || document.querySelector('dialog[open]')) return;
+    const c = st.view === 'globe' ? null : ctrl();
     const act = {
-      '+': () => c?.zoom(1), '=': () => c?.zoom(1), '-': () => c?.zoom(-1), 0: () => c?.fit(), 1: () => c?.native(),
-      i: () => change({ invert: !st.settings.invert }), g: () => change({ grayscale: !st.settings.grayscale }), r: reset,
+      '?': () => keysDlg.showModal(), h: togglePanels, f: fullscreen,
+      ...(st.settings && {
+        '+': () => c?.zoom(1), '=': () => c?.zoom(1), '-': () => c?.zoom(-1), 0: () => c?.fit(), 1: () => c?.native(),
+        i: () => change({ invert: !st.settings.invert }), g: () => change({ grayscale: !st.settings.grayscale }), r: reset,
+        Escape: () => { info.clearProbe(); mark(null); },
+      }),
     }[e.key];
     if (act) { e.preventDefault(); act(); }
   });
 
   section.viewerDebug = { st, image, maps, change, showView, get globe() { return globe; } }; // inspection hook for tests
-  snap.checked = stored('snap') ?? true;
+  snap.checked = stored('snap') ?? false;  // smooth wheel zoom unless the user asked for exact power-of-two steps
   // Resume the last dataset after a reload.
   open.loaded.then(() => {
     const last = stored('active'), d = last && open.get(last);

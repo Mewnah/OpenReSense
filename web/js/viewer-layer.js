@@ -9,11 +9,20 @@ async function fetchF32(url, signal, expected) {
   return data;
 }
 
+// Tiles being fetched (both views), so the status bar can say the picture is still loading.
+let pending = 0;
+const watchers = new Set();
+export const onTilesLoading = (fn) => watchers.add(fn);
+const loading = (d) => { pending += d; watchers.forEach((fn) => fn(pending > 0)); };
+
 // nb displayed bands -> tiles carry nb + 1 channels (alpha last).
 export function dataSource({ grid, projection, nb, interpolate, url, wrapX }) {
   return new ol.source.DataTile({
     tileGrid: grid, projection, bandCount: nb + 1, interpolate, transition: 0, wrapX,
-    loader: (z, x, y, { signal }) => fetchF32(url(z, x, y), signal, TILE * TILE * (nb + 1)),
+    loader: async (z, x, y, { signal }) => {
+      loading(1);
+      try { return await fetchF32(url(z, x, y), signal, TILE * TILE * (nb + 1)); } finally { loading(-1); }
+    },
   });
 }
 

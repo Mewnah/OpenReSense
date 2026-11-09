@@ -42,7 +42,8 @@ LicenseFile=..\LICENSE
 Compression=lzma2/max
 SolidCompression=yes
 WizardStyle=modern
-; a running copy (a console app Windows cannot ask to close) would otherwise make an upgrade abort
+; a running copy (its window, and the hidden Python server Windows cannot ask to close) would otherwise make an
+; upgrade abort
 CloseApplications=force
 RestartApplications=no
 
@@ -57,6 +58,7 @@ Type: filesandordirs; Name: "{app}\server"
 Type: filesandordirs; Name: "{app}\web"
 Type: filesandordirs; Name: "{app}\node_modules"
 Type: filesandordirs; Name: "{app}\scripts"
+Type: filesandordirs; Name: "{app}\licenses"
 
 [Files]
 Source: "{#SourceDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
@@ -108,15 +110,28 @@ end;
 
 procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 var
-  Data: String;
+  Data, Web: String;
+  I: Integer;
 begin
   if CurUninstallStep = usUninstall then
     StopRunningApp();  // a running copy keeps its files locked and its port busy
   if CurUninstallStep = usPostUninstall then
   begin
     Data := ExpandConstant('{app}\cache');
-    if DirExists(Data) and (SuppressibleMsgBox('Also delete your OpenReSense data (downloaded files, dataset list and settings) in' + #13#10 + Data + ' ?',
-        mbConfirmation, MB_YESNO or MB_DEFBUTTON2, IDNO) = IDYES) then
+    Web := ExpandConstant('{localappdata}\OpenReSense');  // the app window's browser data, size and layout
+    // (a line must not start with #13#10: the preprocessor reads lines starting with # as its own)
+    if (DirExists(Data) or DirExists(Web)) and (SuppressibleMsgBox('Also delete your OpenReSense data (downloaded files, dataset list, settings and the window''s browser data) in' + #13#10 +
+        Data + #13#10 + Web + ' ?', mbConfirmation, MB_YESNO or MB_DEFBUTTON2, IDNO) = IDYES) then
+    begin
       DelTree(Data, True, True, True);
+      for I := 1 to 10 do  // the window's browser engine may still be closing for a moment
+      begin
+        if not DirExists(Web) then Break;
+        if not DelTree(Web, True, True, True) then Sleep(500);
+      end;
+      if DirExists(Web) then
+        SuppressibleMsgBox('Some files in ' + Web + ' are in use (is OpenReSense running from another folder?) and were not deleted.',
+          mbInformation, MB_OK, IDOK);
+    end;
   end;
 end;

@@ -1,5 +1,5 @@
-// Right panel (bottom): pixel probe, metadata table, label text.
-import { h, fmt } from './viewer-ui.js';
+// Pixel probe (a card over the picture, see probeEl) and, in the right panel, the metadata table and label text.
+import { h, fmt, section } from './viewer-ui.js';
 
 const W = 300, H = 90;
 
@@ -26,21 +26,31 @@ function spectrum(info, probe) {
   return canvas;
 }
 
-export function createInfo(host) {
+// The button says whether it worked (no clipboard on a plain-http address other than this PC's).
+function copy(btn, text) {
+  const say = (t) => { btn.textContent = t; setTimeout(() => (btn.textContent = 'Copy'), 1500); };
+  if (!navigator.clipboard) return say('Copy failed');
+  navigator.clipboard.writeText(text).then(() => say('Copied'), () => say('Copy failed'));
+}
+
+// onClose(): the probe card was closed (the viewer removes its marker).
+export function createInfo(host, { onClose } = {}) {
   const probeBox = h('div', {});
   const metaBox = h('div', {});
   const labelBox = h('div', {});
-  host.replaceChildren(
-    h('section', { class: 'vw-sec' }, h('h4', {}, 'Pixel'), probeBox),
-    h('section', { class: 'vw-sec' }, h('h4', {}, 'Dataset'), metaBox),
-    labelBox,
-  );
-  const clearProbe = () => probeBox.replaceChildren(h('p', { class: 'muted vw-small' }, 'Click the image to probe a pixel.'));
-  clearProbe();
+  let probeText = '';
+  const copyBtn = h('button', { class: 'btn small', title: 'Copy the position and values (tab-separated)', onclick: () => copy(copyBtn, probeText) }, 'Copy');
+  const probeEl = h('div', { class: 'vw-probe', hidden: true, role: 'region', 'aria-label': 'Pixel values' },
+    h('div', { class: 'vw-probe-head' }, h('b', { class: 'grow' }, 'Pixel'), copyBtn,
+      h('button', { class: 'btn small ghost', title: 'Close', 'aria-label': 'Close the pixel values', onclick: () => { clearProbe(); onClose?.(); } }, '✕')),
+    probeBox);
+  host.replaceChildren(section('dataset', 'Dataset', true, metaBox), labelBox);
+  const clearProbe = () => { probeEl.hidden = true; probeBox.replaceChildren(); };
 
   const row = (k, v, mono) => (v == null || v === '' ? null : h('tr', {}, h('th', {}, k), h('td', { class: mono ? 'mono' : '' }, v)));
 
   return {
+    probeEl,
     clearProbe,
     clear() { clearProbe(); metaBox.replaceChildren(); labelBox.replaceChildren(); },
     show(status) {
@@ -64,19 +74,24 @@ export function createInfo(host) {
         row('Files', i.files?.length ? i.files.join('\n') : null, true)));
       labelBox.replaceChildren(...(i.label ? [h('details', { class: 'vw-sec' },
         h('summary', {}, 'Label / header'),
-        h('button', { class: 'btn small', onclick: (e) => { navigator.clipboard.writeText(i.label); e.target.textContent = 'Copied'; setTimeout(() => (e.target.textContent = 'Copy'), 1200); } }, 'Copy'),
+        h('button', { class: 'btn small', onclick: (e) => copy(e.currentTarget, i.label) }, 'Copy'),
         h('pre', { class: 'vw-label' }, i.label))] : []));
     },
     // probe: /pixel response
     showProbe(probe, info) {
-      if (!probe.inside) return probeBox.replaceChildren(h('p', { class: 'muted vw-small' }, 'Outside the dataset.'));
+      probeEl.hidden = false;
+      if (!probe.inside) { probeText = ''; return probeBox.replaceChildren(h('p', { class: 'muted vw-small' }, 'Outside the dataset.')); }
       const scaled = info.scales?.some((s) => s !== 1) || info.offsets?.some((o) => o !== 0);
+      const name = (b) => `${b + 1}${info.band_names?.[b] && info.band_names[b] !== `Band ${b + 1}` ? ` ${info.band_names[b]}` : ''}`;
+      const where = `col ${probe.col}, row ${probe.row}${probe.lonlat ? `, lon ${fmt(probe.lonlat[0], 8)}, lat ${fmt(probe.lonlat[1], 8)}` : ''}`;
+      probeText = [where, ['band', 'raw', ...(scaled ? ['scaled'] : [])].join('\t'),
+        ...probe.values.map((v, b) => [name(b), probe.nodata[b] ? 'no data' : fmt(v, 9), ...(scaled ? [probe.nodata[b] ? '' : fmt(probe.scaled[b], 9)] : [])].join('\t'))].join('\n');
       probeBox.replaceChildren(
-        h('div', { class: 'vw-small' }, `col ${probe.col}, row ${probe.row}`, probe.lonlat ? ` · lon ${fmt(probe.lonlat[0], 8)}, lat ${fmt(probe.lonlat[1], 8)}` : ''),
+        h('div', { class: 'vw-small' }, where.replace(', lon', ' · lon')),
         h('div', { class: 'vw-probe-scroll' }, h('table', { class: 'vw-meta' },
           h('tr', {}, h('th', {}, 'Band'), h('th', {}, 'Raw'), scaled ? h('th', {}, 'Scaled') : null),
           probe.values.map((v, b) => h('tr', {},
-            h('td', {}, `${b + 1}${info.band_names?.[b] && info.band_names[b] !== `Band ${b + 1}` ? ` ${info.band_names[b]}` : ''}`),
+            h('td', {}, name(b)),
             h('td', { class: 'mono' }, probe.nodata[b] ? 'no data' : fmt(v, 9)),
             scaled ? h('td', { class: 'mono' }, probe.nodata[b] ? '' : fmt(probe.scaled[b], 9)) : null)))),
         ...(info.count > 3 ? [spectrum(info, probe)] : []));
